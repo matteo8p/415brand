@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "415brand pricing: $295 a month for one competitor report a month. Money back on the first month if you don't like the report.",
+    "415brand pricing: $295 a month per brand tracked, your own or a competitor's, one report a month. Money back on the first month if you don't like the report.",
 };
 
 export default function PricingPage() {
@@ -15,14 +15,12 @@ export default function PricingPage() {
             <div className="plan featured">
               <div className="name">Monthly</div>
               <div className="price">
-                $295 <small>/mo per competitor</small>
+                $295 <small>/mo per brand tracked</small>
               </div>
               <ul>
+                <li>Your brand or a competitor</li>
                 <li>One full report every month</li>
-                <li>Your first report covers everything: what their customers complain about, their ads, their search rankings, their pricing, their hiring</li>
-                <li>Every report after that covers what changed and what to do about it</li>
-                <li>Ranked moves with closing windows, every claim linked to its source</li>
-                <li>First report within 5 business days</li>
+                <li>First report in 5 business days</li>
                 <li>Cancel anytime</li>
               </ul>
               <a className="button primary" href="/contact">
@@ -35,10 +33,9 @@ export default function PricingPage() {
                 Quote <small>by email</small>
               </div>
               <ul>
-                <li>Reports on your schedule: weekly during a launch, quarterly for a board, or a one-off deep dive</li>
-                <li>Multiple competitors in one digest</li>
-                <li>White-label reports for agencies and investors</li>
-                <li>Same sourcing standards and refund promise</li>
+                <li>Your brand plus several competitors</li>
+                <li>Weekly, quarterly or one-off</li>
+                <li>White-label for agencies and investors</li>
               </ul>
               <a className="button" href="/contact">
                 Tell us what you need
@@ -48,6 +45,108 @@ export default function PricingPage() {
           <p className="muted" style={{ marginTop: "1.25rem" }}>
             Don't like the first report? Your first month is refunded, no questions asked.
           </p>
+        </div>
+      </section>
+
+      <section className="band">
+        <div className="wrap">
+          <h2>What's in a report.</h2>
+          <table className="sheet">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th className="n">Your brand</th>
+                <th className="n">A competitor</th>
+                <th className="n">Custom</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Social mentions on Reddit, X, LinkedIn, Hacker News and niche forums, read by hand</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+              </tr>
+              <tr>
+                <td>Reviews on G2, Capterra, Trustpilot, Google and the app stores</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+              </tr>
+              <tr>
+                <td>Sentiment split each month and what moved it</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+              </tr>
+              <tr>
+                <td>Unanswered posts worth replying to, ranked by reach</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+              </tr>
+              <tr>
+                <td>Top accounts and communities talking about the brand</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+              </tr>
+              <tr>
+                <td>Their ads: every live creative and which ones they keep duplicating</td>
+                <td className="n">–</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+              </tr>
+              <tr>
+                <td>Search rankings, paid keywords and estimated ad spend</td>
+                <td className="n">–</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+              </tr>
+              <tr>
+                <td>Pricing, plan limits and comparison-page errors</td>
+                <td className="n">–</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+              </tr>
+              <tr>
+                <td>Hiring: open roles, salaries, long-unfilled seats</td>
+                <td className="n">–</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+              </tr>
+              <tr>
+                <td>Ranked moves with closing windows, every claim linked to its source</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+              </tr>
+              <tr>
+                <td>Several brands in one digest</td>
+                <td className="n">–</td>
+                <td className="n">–</td>
+                <td className="n">✓</td>
+              </tr>
+              <tr>
+                <td>Cadence</td>
+                <td className="n">Monthly</td>
+                <td className="n">Monthly</td>
+                <td className="n">Weekly to quarterly</td>
+              </tr>
+              <tr>
+                <td>White-label reports</td>
+                <td className="n">–</td>
+                <td className="n">–</td>
+                <td className="n">✓</td>
+              </tr>
+              <tr>
+                <td>First-month refund if you don't like the report</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+                <td className="n">✓</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -130,21 +229,27 @@ export default function PricingPage() {
               <p className="muted">
                 Five business days from signup. After that, one report a month, same time each month.
               </p>
-              <h3>What counts as one competitor?</h3>
+              <h3>What counts as one brand?</h3>
               <p className="muted">
-                One company, all its products and channels. A parent company with distinct brands counts per brand.
+                One company, all its products and channels, whether it is yours or a competitor's. A parent company with distinct brands counts per brand.
+              </p>
+              <h3>Which sites do you watch?</h3>
+              <p className="muted">
+                Reddit, X, LinkedIn, Hacker News, YouTube, niche forums and Discords your buyers use, and the review
+                sites that matter for your category: G2, Capterra, Trustpilot, Google, the App Store and Google
+                Play. If your customers talk somewhere else, tell us and we add it.
               </p>
               <h3>Can you cover my niche?</h3>
               <p className="muted">
-                If your competitor advertises, hires, ranks in search or gets talked about online, yes. If they do
+                If your brand or competitor gets talked about online, advertises, hires or ranks in search, yes. If they do
                 none of those, there is nothing to read and we'll say so before you pay.
               </p>
             </div>
             <div>
               <h3>Where does the data come from?</h3>
               <p className="muted">
-                Public sources only: ad transparency libraries, app stores, SEO databases, pricing pages, job
-                boards, and hand-read social samples. Estimates are labeled as estimates.
+                Public sources only: social platforms, review sites, ad transparency libraries, app stores, SEO
+                databases, pricing pages and job boards. Mentions are read by hand, not scored by a bot. Estimates are labeled as estimates.
               </p>
               <h3>Is this confidential?</h3>
               <p className="muted">

@@ -15,12 +15,13 @@ const wordmarkFont = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://415brand.com"),
   title: {
-    default: "415brand · Competitor reports",
+    default: "415brand · Brand and competitor tracking",
     template: "%s · 415brand",
   },
   description:
-    "415brand reads your competitor's ads, search rankings, pricing, hiring and customer complaints, then sends you a finished report with ranked moves.",
+    "415brand tracks what people say about your brand and your competitors across Reddit, X, LinkedIn and review sites, plus their ads, rankings, pricing and hiring, then sends you a finished monthly report with ranked moves.",
   alternates: { canonical: "/" },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

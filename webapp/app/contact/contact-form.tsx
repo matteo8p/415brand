@@ -27,7 +27,7 @@ function Fields() {
           id="message"
           name="message"
           rows={5}
-          placeholder="Example: I'd like a report on [competitor]. We're a 10-person SaaS in the scheduling space."
+          placeholder="Example: Track our brand and [competitor]. We're a 10-person SaaS in the scheduling space."
           required
         />
       </div>

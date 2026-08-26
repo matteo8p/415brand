@@ -1,0 +1,8 @@
+{
+  "name": "415brand",
+  "short_name": "415brand",
+  "icons": [{ "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }],
+  "theme_color": "#1b1b1b",
+  "background_color": "#ffffff",
+  "display": "browser"
+}

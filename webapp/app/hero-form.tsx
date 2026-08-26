@@ -46,7 +46,7 @@ function MailtoHeroForm() {
     e.preventDefault();
     const email = String(new FormData(e.currentTarget).get("email") ?? "");
     const subject = "Report request";
-    const body = `I'd like a competitor report.\n\nMy email: ${email}\nCompetitor to research: `;
+    const body = `I'd like a brand tracking report.\n\nMy email: ${email}\nOur brand: \nCompetitor to track (optional): `;
     window.location.href = `mailto:${CONTACT}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setOpened(true);
   }

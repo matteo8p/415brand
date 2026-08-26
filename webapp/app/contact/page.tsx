@@ -4,7 +4,7 @@ import { ContactForm } from "./contact-form";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Tell us which competitor you want researched and we'll reply with a quote the same day.",
+  description: "Tell us which brands you want tracked, yours or a competitor's, and we'll reply with a quote the same day.",
 };
 
 export default function ContactPage() {

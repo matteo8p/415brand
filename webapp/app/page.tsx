@@ -7,11 +7,11 @@ export default function Home() {
     <main>
       <section className="band hero">
         <div className="wrap">
-          <h1 className="display">Know what your competitor is doing. And how to beat them.</h1>
+          <h1 className="display">Track what people are saying about your brand and your competitors.</h1>
           <p className="lede">
-            We dig through everything they do in public: their ads, prices, job postings, Google rankings, and what
-            their customers say online. Every month, you get a written report on what we found and exactly what to
-            do about it.
+            We read every public mention of your brand and theirs: Reddit threads, X and LinkedIn posts, reviews on
+            G2, the app stores and Trustpilot, plus their ads, prices, job postings and Google rankings. Every
+            month, you get a written report on what we found and exactly what to do about it.
           </p>
           <div className="cta-row">
             <HeroForm />
@@ -24,7 +24,7 @@ export default function Home() {
 
       <section className="band">
         <div className="wrap">
-          <h2>What our reports find.</h2>
+          <h2>Brand tracking: what we find about you.</h2>
           <table className="sheet">
             <thead>
               <tr>
@@ -38,11 +38,85 @@ export default function Home() {
               <tr>
                 <td className="n">1</td>
                 <td>
-                  <b>Customer complaints</b>
+                  <b>Social mentions</b>
                 </td>
                 <td>
-                  What their users are unhappy about, and every public "what should I switch to?" post nobody has
-                  answered, ranked by reach.
+                  Every post that names you on Reddit, X, LinkedIn and the forums your buyers use, ranked by reach,
+                  with the ones nobody from your team has replied to.
+                </td>
+                <td>
+                  Answer the unanswered ones. A public reply from the company turns a complaint into a
+                  recommendation, and a question into a trial.
+                </td>
+              </tr>
+              <tr>
+                <td className="n">2</td>
+                <td>
+                  <b>Reviews</b>
+                </td>
+                <td>
+                  New reviews on G2, Capterra, Trustpilot, Google and the app stores, with the recurring complaints
+                  and the words happy customers use to describe you.
+                </td>
+                <td>
+                  Fix the top complaint, then put the happy customers' own words on your landing page. They convert
+                  better than anything you would write.
+                </td>
+              </tr>
+              <tr>
+                <td className="n">3</td>
+                <td>
+                  <b>Sentiment over time</b>
+                </td>
+                <td>
+                  The split of positive, neutral and negative mentions each month, and what changed it: a launch, a
+                  price change, an outage, a viral post.
+                </td>
+                <td>
+                  Know before your numbers do. Sentiment moves weeks ahead of churn and ratings, so you get to
+                  respond while it is still cheap.
+                </td>
+              </tr>
+              <tr>
+                <td className="n">4</td>
+                <td>
+                  <b>Who is talking</b>
+                </td>
+                <td>
+                  The accounts, creators and communities that mention you most, and which ones are also
+                  recommending a competitor.
+                </td>
+                <td>
+                  Thank your advocates and recruit them. A handful of people drive most of the word of mouth in any
+                  niche.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="band">
+        <div className="wrap">
+          <h2>Competitor tracking: what we find about them.</h2>
+          <table className="sheet">
+            <thead>
+              <tr>
+                <th className="n">#</th>
+                <th>The finding</th>
+                <th>What you learn</th>
+                <th>Your move</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="n">1</td>
+                <td>
+                  <b>Their mentions and reviews</b>
+                </td>
+                <td>
+                  What their users are unhappy about on social media and review sites, and every public "what
+                  should I switch to?" post nobody has answered, ranked by reach.
                 </td>
                 <td>
                   Reply to the list. People asking for an alternative in public are the easiest customers you will
@@ -112,18 +186,18 @@ export default function Home() {
           <div className="cols three">
             <div>
               <span className="num">Step 1</span>
-              <h3>Tell us who you're up against</h3>
+              <h3>Tell us which brands to track</h3>
               <p className="muted">
-                We'll hop on an optional consulting call to walk through your business and which competitor matters
-                most. Prefer to skip the call? Just send us the company name.
+                Your own, a competitor, or both. We'll hop on an optional call to walk through your business and
+                which competitor matters most. Prefer to skip the call? Just send us the company names.
               </p>
             </div>
             <div>
               <span className="num">Step 2</span>
               <h3>Get your first report</h3>
               <p className="muted">
-                Within 5 business days you get the full report: everything they do in public, what it means, and
-                your recommended moves in order.
+                Within 5 business days you get the full report: every mention and review, everything they do in
+                public, what it means, and your recommended moves in order.
               </p>
             </div>
             <div>
@@ -140,7 +214,7 @@ export default function Home() {
 
       <section className="band">
         <div className="wrap">
-          <h2>Examples.</h2>
+          <h2>Examples from real reports.</h2>
           <div className="excerpt">
             <p className="claim">
               They mostly disappeared from free Google results this year, and now pay an estimated $446K a month to
@@ -254,10 +328,10 @@ export default function Home() {
 
       <section className="band">
         <div className="wrap">
-          <h2>$295 a month. One report a month.</h2>
+          <h2>$295 a month per brand. One report a month.</h2>
           <p className="muted">
-            One competitor, one full report every month. If you don't like your first report, your first month is
-            refunded, no questions asked.
+            Track your own brand, a competitor, or both. Each brand gets a full report every month. If you don't
+            like your first report, your first month is refunded, no questions asked.
           </p>
           <div className="cta-row">
             <Link className="button primary" href="/pricing">
