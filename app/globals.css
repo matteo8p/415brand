@@ -1,0 +1,402 @@
+/* 415brand: text-first, editorial, quiet. The design is typography. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --text: #1b1b1b;
+  --muted: #6b6b6b;
+  --faint: #9a9a9a;
+  --link: #2456c4;
+  --rule: #e2e2e2;
+  --rule-dark: #1b1b1b;
+  --box: #fafafa;
+  --accent: #14614d;
+  --serif: Georgia, "Times New Roman", Times, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--text);
+  background: #fff;
+  line-height: 1.65;
+  font-size: 0.94rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrap {
+  max-width: 66rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ---------- header ---------- */
+header.site {
+  border-bottom: 1px solid var(--rule-dark);
+}
+
+.site-inner {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 1.1rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.wordmark {
+  font-family: var(--font-wordmark), var(--sans);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.03em;
+}
+
+.wordmark:hover {
+  text-decoration: none;
+}
+
+nav.main {
+  display: flex;
+  gap: 1.4rem;
+  align-items: baseline;
+  font-size: 0.85rem;
+}
+
+nav.main a {
+  color: var(--text);
+}
+
+nav.main a.cta {
+  border: 1px solid var(--rule-dark);
+  padding: 0.3rem 0.8rem;
+  font-size: 0.82rem;
+}
+
+nav.main a.cta:hover {
+  background: var(--text);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ---------- typography ---------- */
+h1.display {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  max-width: 46rem;
+}
+
+.lede {
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 42rem;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 1.25;
+  margin-bottom: 0.9rem;
+  max-width: 44rem;
+}
+
+h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+p {
+  margin-bottom: 0.85rem;
+  max-width: 44rem;
+}
+
+p.muted {
+  color: var(--muted);
+}
+
+ul.plain {
+  margin: 0 0 0.85rem 1.4rem;
+  max-width: 42rem;
+}
+
+ul.plain li {
+  margin-bottom: 0.35rem;
+}
+
+/* ---------- sections ---------- */
+section.band {
+  padding: 3.2rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+section.band.hero {
+  padding: 4.5rem 0 3.5rem;
+}
+
+.cta-row {
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+a.button {
+  display: inline-block;
+  border: 1px solid var(--rule-dark);
+  padding: 0.55rem 1.1rem;
+  font-size: 0.86rem;
+  color: var(--text);
+}
+
+a.button:hover {
+  background: var(--text);
+  color: #fff;
+  text-decoration: none;
+}
+
+a.button.primary {
+  background: var(--text);
+  color: #fff;
+}
+
+a.button.primary:hover {
+  background: #000;
+}
+
+/* ---------- grids ---------- */
+.cols {
+  display: grid;
+  gap: 1.8rem 2.2rem;
+}
+
+.cols.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cols.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 760px) {
+  .cols.three,
+  .cols.two {
+    grid-template-columns: 1fr;
+  }
+  html {
+    font-size: 16px;
+  }
+  h1.display {
+    font-size: 2.1rem;
+  }
+}
+
+/* numbered step / area */
+.num {
+  font-size: 0.78rem;
+  color: var(--faint);
+  display: block;
+  border-top: 2px solid var(--rule-dark);
+  padding-top: 0.55rem;
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- report excerpt card ---------- */
+.excerpt {
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--rule-dark);
+  background: var(--box);
+  padding: 1rem 1.2rem;
+  max-width: 44rem;
+}
+
+.excerpt .tag {
+  font-size: 0.76rem;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 0.45rem;
+}
+
+.excerpt .claim {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+
+.excerpt .detail {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0;
+  max-width: none;
+}
+
+.excerpt + .excerpt {
+  margin-top: 1rem;
+}
+
+.excerpt .move {
+  font-size: 0.85rem;
+  margin: 0.55rem 0 0;
+  padding-top: 0.55rem;
+  border-top: 1px dashed var(--rule);
+  color: var(--accent);
+  max-width: none;
+}
+
+/* ---------- stats ---------- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 760px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat b {
+  display: block;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.7rem;
+  letter-spacing: -0.01em;
+}
+
+.stat span {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* ---------- tables ---------- */
+table.sheet {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.85rem;
+  margin: 1rem 0;
+}
+
+table.sheet th,
+table.sheet td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55rem 0.75rem 0.55rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+table.sheet thead th {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 600;
+  border-bottom: 2px solid var(--rule-dark);
+}
+
+table.sheet .n {
+  white-space: nowrap;
+}
+
+table.sheet tr.us td {
+  border-bottom: 2px solid var(--rule-dark);
+  font-weight: 600;
+}
+
+/* ---------- price cards ---------- */
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 760px) {
+  .plans {
+    grid-template-columns: 1fr;
+  }
+}
+
+.plan {
+  border: 1px solid var(--rule);
+  padding: 1.4rem 1.4rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan.featured {
+  border: 2px solid var(--rule-dark);
+}
+
+.plan .name {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.plan .price {
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  margin-bottom: 0.9rem;
+}
+
+.plan .price small {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.plan ul {
+  margin: 0 0 1.2rem 1.2rem;
+  font-size: 0.85rem;
+  flex: 1;
+}
+
+.plan li {
+  margin-bottom: 0.35rem;
+}
+
+/* ---------- footnotes / small print ---------- */
+.smallprint {
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+
+.smallprint a {
+  color: var(--muted);
+  text-decoration: underline;
+}
+
+/* ---------- footer ---------- */
+footer.site {
+  padding: 2.2rem 0 3.5rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+footer.site .cols.two {
+  gap: 1rem 2rem;
+}
+
+footer.site a {
+  color: var(--muted);
+  text-decoration: underline;
+}
