@@ -1,77 +1,53 @@
 import type { Metadata } from "next";
-import { SAMPLE_MAILTO } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "415brand pricing: $495 one-time Teardown, $295/mo Competitor Watch, custom Portfolio. No seats, no software, no annual contract.",
+    "415brand pricing: $295 a month for one competitor report a month. Money back on the first month if you don't like the report.",
 };
 
 export default function PricingPage() {
   return (
     <main>
-      <section className="band hero">
-        <div className="wrap">
-          <h1 className="display">$495 for one report. $295 a month to keep watching.</h1>
-          <p className="lede">
-            No software, no onboarding, no annual contract. If the first report isn't obviously worth more than you
-            paid, we refund it.
-          </p>
-        </div>
-      </section>
-
       <section className="band">
         <div className="wrap">
           <div className="plans">
-            <div className="plan">
-              <div className="name">Teardown</div>
-              <div className="price">
-                $495 <small>one-time</small>
-              </div>
-              <ul>
-                <li>One competitor, one full report</li>
-                <li>All five areas: sentiment and reply queue, ads, search and app stores, pricing and product, hiring</li>
-                <li>Ranked moves with closing windows</li>
-                <li>Every claim linked to its source</li>
-                <li>Delivered within 5 business days</li>
-              </ul>
-              <a className="button" href={SAMPLE_MAILTO}>
-                Start with a sample
-              </a>
-            </div>
             <div className="plan featured">
-              <div className="name">Competitor Watch</div>
+              <div className="name">Monthly</div>
               <div className="price">
                 $295 <small>/mo per competitor</small>
               </div>
               <ul>
-                <li>The full teardown first</li>
-                <li>Then a weekly update: only what changed</li>
-                <li>Which ads survived the week (those are the ones working)</li>
-                <li>New complaints worth answering, ranked by reach</li>
-                <li>Pricing, product and hiring changes, and which windows are closing</li>
+                <li>One full report every month</li>
+                <li>Your first report covers everything: what their customers complain about, their ads, their search rankings, their pricing, their hiring</li>
+                <li>Every report after that covers what changed and what to do about it</li>
+                <li>Ranked moves with closing windows, every claim linked to its source</li>
+                <li>First report within 5 business days</li>
                 <li>Cancel anytime</li>
               </ul>
-              <a className="button primary" href={SAMPLE_MAILTO}>
-                Start with a sample
+              <a className="button primary" href="/contact">
+                Get started
               </a>
             </div>
             <div className="plan">
-              <div className="name">Portfolio</div>
+              <div className="name">Custom</div>
               <div className="price">
-                Custom <small>quote by email</small>
+                Quote <small>by email</small>
               </div>
               <ul>
-                <li>Multiple competitors, one digest</li>
-                <li>White-label reports for agencies</li>
-                <li>Diligence teardowns for investors</li>
-                <li>Same sourcing standards throughout</li>
+                <li>Reports on your schedule: weekly during a launch, quarterly for a board, or a one-off deep dive</li>
+                <li>Multiple competitors in one digest</li>
+                <li>White-label reports for agencies and investors</li>
+                <li>Same sourcing standards and refund promise</li>
               </ul>
-              <a className="button" href={SAMPLE_MAILTO}>
-                Email us the list
+              <a className="button" href="/contact">
+                Tell us what you need
               </a>
             </div>
           </div>
+          <p className="muted" style={{ marginTop: "1.25rem" }}>
+            Don't like the first report? Your first month is refunded, no questions asked.
+          </p>
         </div>
       </section>
 
@@ -124,7 +100,7 @@ export default function PricingPage() {
               <tr className="us">
                 <td>415brand</td>
                 <td>Reports, delivered</td>
-                <td className="n">$495 / report</td>
+                <td className="n">$295/mo</td>
                 <td>Read it once, act on it</td>
               </tr>
             </tbody>
@@ -151,7 +127,9 @@ export default function PricingPage() {
           <div className="cols two">
             <div>
               <h3>How fast is the first report?</h3>
-              <p className="muted">Five business days from order. Watch updates land weekly, same day each week.</p>
+              <p className="muted">
+                Five business days from signup. After that, one report a month, same time each month.
+              </p>
               <h3>What counts as one competitor?</h3>
               <p className="muted">
                 One company, all its products and channels. A parent company with distinct brands counts per brand.
@@ -174,7 +152,9 @@ export default function PricingPage() {
                 watch to your competitor.
               </p>
               <h3>What's the refund policy?</h3>
-              <p className="muted">If the first report isn't worth more than you paid, say so and we refund it.</p>
+              <p className="muted">
+                If you don't like your first report, say so and we refund your first month, no questions asked.
+              </p>
             </div>
           </div>
         </div>

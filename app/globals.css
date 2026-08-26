@@ -265,30 +265,132 @@ a.button.primary:hover {
   max-width: none;
 }
 
-/* ---------- stats ---------- */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+/* ---------- nav dropdown ---------- */
+.drop {
+  position: relative;
 }
 
-@media (max-width: 760px) {
-  .stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.drop-label {
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: var(--text);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
 }
 
-.stat b {
+.drop-label::-webkit-details-marker {
+  display: none;
+}
+
+.drop-menu {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: -0.9rem;
+  padding: 0.5rem 0;
+  background: #fff;
+  border: 1px solid var(--rule-dark);
+  min-width: 15rem;
+  z-index: 10;
+}
+
+.drop-menu a {
   display: block;
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 1.7rem;
-  letter-spacing: -0.01em;
+  padding: 0.35rem 0.9rem;
+  color: var(--text);
 }
 
-.stat span {
-  font-size: 0.78rem;
-  color: var(--muted);
+.drop-menu a:hover {
+  background: var(--box);
+  text-decoration: none;
+}
+
+/* ---------- hero email capture ---------- */
+.hero-form {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  max-width: 30rem;
+}
+
+.hero-form input {
+  flex: 1;
+  min-width: 14rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--text);
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #bbb;
+  background: #fff;
+}
+
+.hero-form input:focus {
+  outline: none;
+  border-color: var(--rule-dark);
+}
+
+.hero-form-note {
+  flex-basis: 100%;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.hero-sub {
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+}
+
+/* ---------- contact form ---------- */
+.form {
+  display: grid;
+  gap: 1.1rem;
+  max-width: 30rem;
+}
+
+.field label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--text);
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--border, #bbb);
+  border-color: #bbb;
+  background: #fff;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--rule-dark);
+}
+
+button.button {
+  display: inline-block;
+  border: 1px solid var(--rule-dark);
+  padding: 0.55rem 1.1rem;
+  font-family: inherit;
+  font-size: 0.86rem;
+  cursor: pointer;
+  justify-self: start;
+}
+
+button.button.primary {
+  background: var(--text);
+  color: #fff;
+}
+
+button.button.primary:hover {
+  background: #000;
 }
 
 /* ---------- tables ---------- */
@@ -374,6 +476,39 @@ table.sheet tr.us td {
   margin-bottom: 0.35rem;
 }
 
+/* ---------- charts inside excerpt cards ---------- */
+.excerpt .mini-fig {
+  margin: 0.7rem 0 0.2rem;
+}
+
+.excerpt .mini-fig .cap {
+  font-size: 0.76rem;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.chart-tip {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10;
+  background: #202122;
+  color: #fff;
+  font-size: 12.5px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.08s;
+}
+
+.chart-tip.on {
+  opacity: 1;
+}
+
+.excerpt table.sheet {
+  margin: 0.7rem 0 0.2rem;
+  font-size: 0.8rem;
+}
+
 /* ---------- footnotes / small print ---------- */
 .smallprint {
   font-size: 0.76rem;
@@ -399,4 +534,97 @@ footer.site .cols.two {
 footer.site a {
   color: var(--muted);
   text-decoration: underline;
+}
+
+/* ---------- mobile ---------- */
+@media (max-width: 640px) {
+  section.band {
+    padding: 2.2rem 0;
+  }
+
+  section.band.hero {
+    padding: 2.8rem 0 2.4rem;
+  }
+
+  .site-inner {
+    padding: 0.9rem 0;
+    row-gap: 0.5rem;
+  }
+
+  nav.main {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+  }
+
+  .cta-row {
+    margin-top: 1.2rem;
+  }
+
+  .hero-form input {
+    min-width: 0;
+    flex-basis: 100%;
+  }
+
+  .hero-form .button {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  /* Prose tables stack into cards instead of overflowing */
+  table.sheet,
+  table.sheet tbody,
+  table.sheet tr,
+  table.sheet td {
+    display: block;
+    width: 100%;
+  }
+
+  table.sheet thead {
+    display: none;
+  }
+
+  table.sheet tr {
+    border-bottom: 1px solid var(--rule);
+    padding: 0.8rem 0;
+  }
+
+  table.sheet td {
+    border-bottom: none;
+    padding: 0.15rem 0;
+  }
+
+  table.sheet .n {
+    white-space: normal;
+    text-align: left;
+  }
+
+  /* the ordinal column on the findings table adds nothing when stacked */
+  table.sheet td.n:first-child {
+    display: none;
+  }
+
+  table.sheet tr.us td {
+    border-bottom: none;
+    font-weight: 600;
+  }
+
+  table.sheet tr.us {
+    border-bottom: 2px solid var(--rule-dark);
+  }
+
+  .plan {
+    padding: 1.1rem 1.1rem 1.3rem;
+  }
+
+  .excerpt {
+    padding: 0.85rem 1rem;
+  }
+
+  footer.site {
+    padding: 1.8rem 0 2.5rem;
+  }
 }

@@ -31,11 +31,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               415brand
             </Link>
             <nav className="main">
-              <Link href="/report">The report</Link>
+              <details className="drop">
+                <summary className="drop-label">Sample reports ▾</summary>
+                <div className="drop-menu">
+                  <Link href="/samples/wispr">Wispr Flow (voice software)</Link>
+                </div>
+              </details>
               <Link href="/pricing">Pricing</Link>
-              <Link href="/about">About</Link>
-              <Link className="cta" href="/sample">
-                Sample report
+              <Link className="cta" href="/contact">
+                Contact
               </Link>
             </nav>
           </div>
