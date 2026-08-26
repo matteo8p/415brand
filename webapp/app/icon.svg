@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#1b1b1b"/>
-  <text x="32" y="43" text-anchor="middle" font-family="'Space Grotesk', -apple-system, Helvetica, Arial, sans-serif" font-weight="700" font-size="30" letter-spacing="-1.5" fill="#ffffff">415</text>
-  <rect x="14" y="49" width="36" height="3" fill="#14614d"/>
+  <rect width="64" height="64" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="63" height="63" fill="none" stroke="#1b1b1b"/>
+  <text x="32" y="44" text-anchor="middle" font-family="Georgia, 'Times New Roman', Times, serif" font-size="32" fill="#1b1b1b">415</text>
 </svg>
