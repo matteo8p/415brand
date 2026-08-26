@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SAMPLE_MAILTO } from "@/lib/site";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "The report",
@@ -113,9 +113,9 @@ export default function ReportPage() {
             snapshot can't give you.
           </p>
           <div className="cta-row">
-            <a className="button primary" href={SAMPLE_MAILTO}>
-              Request the full sample
-            </a>
+            <Link className="button primary" href="/sample">
+              Read the full sample report
+            </Link>
           </div>
         </div>
       </section>

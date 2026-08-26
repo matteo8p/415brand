@@ -1,0 +1,375 @@
+/* Standalone Wikipedia-style theme for /analysis pages. Scoped under
+   .analysis so the app shell's Tailwind preflight and dark theme never
+   leak in — every color and list style is set explicitly. */
+
+.analysis {
+  flex: 1;
+  color-scheme: light;
+  background: #ffffff;
+  color: #202122;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15.5px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.analysis a {
+  color: #3366cc;
+  text-decoration: none;
+}
+.analysis a:hover {
+  text-decoration: underline;
+}
+.analysis :focus-visible {
+  outline: 2px solid #3366cc;
+  outline-offset: 2px;
+}
+.analysis .page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+.analysis h1 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+.analysis .sub {
+  color: #72777d;
+  font-size: 13.5px;
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c8ccd1;
+}
+.analysis h2 {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 36px 0 12px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #c8ccd1;
+}
+.analysis h2 .num {
+  color: #72777d;
+  font-weight: 500;
+  margin-right: 8px;
+}
+.analysis h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0 8px;
+  color: #202122;
+}
+.analysis p {
+  margin: 0 0 12px;
+}
+.analysis ul {
+  list-style: disc;
+  margin: 0 0 14px;
+  padding-left: 22px;
+}
+.analysis li {
+  margin: 0 0 9px;
+}
+.analysis li::marker {
+  color: #72777d;
+}
+.analysis ul.do {
+  border-left: 3px solid #1baf7a;
+  padding-left: 24px;
+  margin-left: 2px;
+}
+.analysis ul.do li::marker {
+  color: #1baf7a;
+}
+.analysis ul.did li::marker {
+  color: #3366cc;
+}
+.analysis .note {
+  color: #72777d;
+  font-size: 13.5px;
+}
+.analysis b {
+  font-weight: 600;
+}
+.analysis .why {
+  border-left: 3px solid #1baf7a;
+  padding: 2px 0 2px 12px;
+  margin: 6px 0 10px;
+}
+.analysis .why b {
+  color: #176f4e;
+}
+.analysis code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.92em;
+  background: #f8f9fa;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+.analysis .contents {
+  display: inline-block;
+  border: 1px solid #a2a9b1;
+  background: #f8f9fa;
+  padding: 8px 18px 8px 14px;
+  margin: 2px 0 8px;
+  font-size: 14px;
+}
+.analysis .contents .t {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.analysis .contents ol {
+  list-style: decimal;
+  margin: 0;
+  padding-left: 22px;
+}
+.analysis .contents li {
+  margin: 1px 0;
+}
+.analysis details {
+  margin: 0 0 10px;
+}
+.analysis details > summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline;
+  color: #202122;
+}
+.analysis details > summary::-webkit-details-marker {
+  display: none;
+}
+.analysis details > summary .tog {
+  color: #3366cc;
+  font-size: 13.5px;
+  margin-left: 2px;
+  white-space: nowrap;
+}
+.analysis details > summary .tog::before {
+  content: "[show]";
+}
+.analysis details[open] > summary .tog::before {
+  content: "[hide]";
+}
+.analysis details > summary:hover .tog {
+  text-decoration: underline;
+}
+.analysis details > .body {
+  margin: 8px 0 4px 0;
+  padding: 6px 0 2px;
+}
+.analysis li > details {
+  margin: 0;
+}
+.analysis li > details > .body {
+  margin-top: 6px;
+}
+.analysis .src {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  line-height: 1;
+  color: #54595d;
+  border: 1px solid #dfe3e8;
+  border-radius: 999px;
+  padding: 2px 8px 2px 3px;
+  margin: 0 2px 0 4px;
+  vertical-align: middle;
+  white-space: nowrap;
+  background: #fff;
+  text-decoration: none;
+  position: relative;
+  top: -1px;
+}
+.analysis .src:hover {
+  border-color: #a2a9b1;
+  color: #202122;
+  text-decoration: none;
+}
+.analysis .src .lg {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  flex: none;
+}
+.analysis .plain .src {
+  display: inline;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  color: #3366cc;
+  background: none;
+  top: 0;
+  vertical-align: baseline;
+}
+.analysis .plain .src:hover {
+  text-decoration: underline;
+}
+.analysis .plain .src .lg {
+  display: none;
+}
+.analysis .tbl {
+  overflow-x: auto;
+  margin: 8px 0 14px;
+}
+.analysis table.data {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13.5px;
+  line-height: 1.4;
+  border: 1px solid #a2a9b1;
+}
+.analysis table.data th,
+.analysis table.data td {
+  text-align: left;
+  padding: 6px 9px;
+  border: 1px solid #c8ccd1;
+  vertical-align: top;
+}
+.analysis table.data th {
+  background: #f8f9fa;
+  font-weight: 600;
+}
+.analysis table.data td.n,
+.analysis table.data th.n {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.analysis table.data .src {
+  margin: 0 2px 2px 0;
+}
+.analysis table.scorecard td.n {
+  font-weight: 600;
+}
+.analysis table.scorecard {
+  table-layout: fixed;
+}
+.analysis table.scorecard th:nth-child(1) {
+  width: 30%;
+}
+.analysis table.scorecard th:nth-child(2),
+.analysis table.scorecard th:nth-child(3) {
+  width: 14%;
+}
+.analysis table.scorecard td.n {
+  white-space: normal;
+}
+.analysis table.scorecard td:nth-child(4) {
+  color: #202122;
+}
+.analysis .tone-good {
+  color: #176f4e;
+}
+.analysis .tone-bad {
+  color: #b3261e;
+}
+.analysis .tone-neutral {
+  color: #54595d;
+}
+.analysis ol.moves {
+  list-style: decimal;
+  margin: 0 0 14px;
+  padding-left: 26px;
+  border-left: 3px solid #1baf7a;
+  margin-left: 2px;
+}
+.analysis ol.moves > li {
+  margin: 0 0 12px;
+}
+.analysis ol.moves > li::marker {
+  color: #1baf7a;
+  font-weight: 600;
+}
+.analysis ol.moves p {
+  margin: 2px 0 0;
+}
+.analysis .win {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: #f8f9fa;
+  border: 1px solid #dfe3e8;
+  color: #54595d;
+  font-size: 12.5px;
+  line-height: 1.5;
+  vertical-align: 1px;
+}
+.analysis .ev {
+  font-size: 13px;
+  white-space: nowrap;
+}
+.analysis ul.changes li {
+  color: #202122;
+}
+.analysis .fig {
+  margin: 12px 0 16px;
+}
+.analysis figure {
+  margin: 0;
+}
+.analysis .fig .cap {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.analysis .fig .s {
+  color: #72777d;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.analysis .fig .legend {
+  display: flex;
+  gap: 14px;
+  font-size: 12.5px;
+  color: #54595d;
+  margin: 6px 0 0;
+  flex-wrap: wrap;
+}
+.analysis .fig .legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  margin-right: 5px;
+  vertical-align: -1px;
+}
+.analysis .multi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+@media (max-width: 680px) {
+  .analysis .multi {
+    grid-template-columns: 1fr;
+  }
+}
+.analysis .chart-tip {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10;
+  background: #202122;
+  color: #fff;
+  font-size: 12.5px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.08s;
+}
+.analysis .chart-tip.on {
+  opacity: 1;
+}
+.analysis .chart-tip b {
+  font-weight: 600;
+}
+.analysis footer {
+  margin-top: 40px;
+  padding-top: 12px;
+  border-top: 1px solid #c8ccd1;
+  color: #72777d;
+  font-size: 13px;
+}

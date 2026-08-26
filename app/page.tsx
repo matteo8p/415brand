@@ -108,7 +108,7 @@ export default function Home() {
         <div className="wrap">
           <h2>Real findings from a real report.</h2>
           <p className="muted">
-            Excerpts from a recent teardown of a voice software company. The full sample is free on request.
+            Excerpts from a recent teardown of a voice software company. The whole report is on this site, free.
           </p>
           <div className="excerpt">
             <span className="tag">Finding · Search</span>
@@ -146,9 +146,9 @@ export default function Home() {
             <p className="move">→ Move: sell enterprise readiness now. Window: closes when they hire.</p>
           </div>
           <div className="cta-row">
-            <a className="button" href={SAMPLE_MAILTO}>
-              Request the full sample
-            </a>
+            <Link className="button" href="/sample">
+              Read the full sample report
+            </Link>
           </div>
         </div>
       </section>

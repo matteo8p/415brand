@@ -1,0 +1,57 @@
+// The citation-pill logo sprite. Each 20x20 symbol is referenced by source
+// pills as <use href="#lg-{logo}">. Add a logo: append a <symbol id="lg-yourid">
+// to SPRITE and the id to LOGO_IDS.
+
+export const LOGO_IDS = [
+  "semrush",
+  "ahrefs",
+  "spyfu",
+  "similarweb",
+  "meta-ad-library",
+  "google-ads-transparency",
+  "google",
+  "google-play",
+  "app-store",
+  "reddit",
+  "x",
+  "instagram",
+  "tiktok",
+  "linkedin",
+  "techcrunch",
+  "the-next-web",
+  "ashby",
+  "wispr",
+  "willow",
+  "menlo",
+  "postbeam",
+  "20vc",
+  "trustpilot",
+  "g2",
+  "product-hunt",
+  "zapier",
+  "wikipedia",
+  "voibe",
+  "dub",
+  "craftnote",
+  "campaign-india",
+  "shashi",
+  "zdnet",
+] as const;
+
+export type LogoId = (typeof LOGO_IDS)[number];
+
+const SPRITE =
+  '<symbol id="lg-semrush" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#FF642D" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">S</text></symbol><symbol id="lg-ahrefs" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#054ADA" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">a</text></symbol><symbol id="lg-spyfu" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0F766E" ></rect><text           x="10"y="13.2"text-anchor="middle"font-size="9"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">SF</text></symbol><symbol id="lg-similarweb" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#3B5BFF" ></rect><text           x="10"y="13.2"text-anchor="middle"font-size="9"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">sw</text></symbol><symbol id="lg-meta-ad-library" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0866FF" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">M</text></symbol><symbol id="lg-google-ads-transparency" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#4285F4" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">G</text></symbol><symbol id="lg-google" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#4285F4" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">G</text></symbol><symbol id="lg-google-play" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#34A853" ></rect><text           x="10"y="13.2"text-anchor="middle"font-size="9"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">GP</text></symbol><symbol id="lg-app-store" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0D84FF" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">A</text></symbol><symbol id="lg-reddit" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#FF4500" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">r</text></symbol><symbol id="lg-x" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#000000" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">X</text></symbol><symbol id="lg-instagram" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#E1306C" ></rect><text           x="10"y="13.2"text-anchor="middle"font-size="9"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">IG</text></symbol><symbol id="lg-tiktok" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#111111" ></rect><text           x="10"y="13.2"text-anchor="middle"font-size="9"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">TT</text></symbol><symbol id="lg-linkedin" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0A66C2" ></rect><text           x="10"y="13.2"text-anchor="middle"font-size="9"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">in</text></symbol><symbol id="lg-techcrunch" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0A9D5D" ></rect><text           x="10"y="13.2"text-anchor="middle"font-size="9"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">TC</text></symbol><symbol id="lg-the-next-web" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#F62C5B" ></rect><text           x="10"y="12.5"text-anchor="middle"font-size="7"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">TNW</text></symbol><symbol id="lg-ashby" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#4F46E5" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">A</text></symbol><symbol id="lg-wispr" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#1F1F23" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">W</text></symbol><symbol id="lg-willow" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#1BAF7A" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">W</text></symbol><symbol id="lg-menlo" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0033A0" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">M</text></symbol><symbol id="lg-postbeam" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#6B7280" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">P</text></symbol><symbol id="lg-20vc" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#111111" ></rect><text           x="10"y="13.2"text-anchor="middle"font-size="9"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">20</text></symbol><symbol id="lg-trustpilot" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#00B67A" ></rect><text           x="10"y="13.2"text-anchor="middle"font-size="9"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">TP</text></symbol><symbol id="lg-g2" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#FF492C" ></rect><text           x="10"y="13.2"text-anchor="middle"font-size="9"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">G2</text></symbol><symbol id="lg-product-hunt" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#DA552F" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">P</text></symbol><symbol id="lg-zapier" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#FF4F00" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Z</text></symbol><symbol id="lg-wikipedia" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#6B7280" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">W</text></symbol><symbol id="lg-voibe" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#6B7280" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">V</text></symbol><symbol id="lg-dub" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#111111" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">D</text></symbol><symbol id="lg-craftnote" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#6B7280" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">C</text></symbol><symbol id="lg-campaign-india" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#6B7280" ></rect><text           x="10"y="13.2"text-anchor="middle"font-size="9"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">CI</text></symbol><symbol id="lg-shashi" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#6B7280" ></rect><text           x="10"y="13.2"text-anchor="middle"font-size="9"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Sh</text></symbol><symbol id="lg-zdnet" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#B80000" ></rect><text           x="10"y="14.1"text-anchor="middle"font-size="11.5"font-weight="700"fill="#fff"font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">Z</text></symbol>';
+
+export function LogoSprite() {
+  return (
+    <svg
+      width={0}
+      height={0}
+      style={{ position: "absolute" }}
+      aria-hidden="true"
+      // biome-ignore lint/security/noDangerouslySetInnerHtml: SPRITE is a compile-time constant, never user input
+      dangerouslySetInnerHTML={{ __html: SPRITE }}
+    />
+  );
+}

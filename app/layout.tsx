@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import Link from "next/link";
-import { CONTACT, SAMPLE_MAILTO } from "@/lib/site";
+import { CONTACT } from "@/lib/site";
 import "./globals.css";
 
 const wordmarkFont = Space_Grotesk({
@@ -34,9 +34,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/report">The report</Link>
               <Link href="/pricing">Pricing</Link>
               <Link href="/about">About</Link>
-              <a className="cta" href={SAMPLE_MAILTO}>
-                Get a sample
-              </a>
+              <Link className="cta" href="/sample">
+                Sample report
+              </Link>
             </nav>
           </div>
         </header>
