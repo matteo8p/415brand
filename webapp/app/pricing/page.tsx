@@ -34,7 +34,7 @@ export default function PricingPage() {
               </div>
               <ul>
                 <li>Your brand plus several competitors</li>
-                <li>Weekly, quarterly or one-off</li>
+                <li>Daily, weekly, quarterly or one-off</li>
                 <li>White-label for agencies and investors</li>
               </ul>
               <a className="button" href="/contact">
@@ -131,7 +131,7 @@ export default function PricingPage() {
                 <td>Cadence</td>
                 <td className="n">Monthly</td>
                 <td className="n">Monthly</td>
-                <td className="n">Weekly to quarterly</td>
+                <td className="n">Daily to quarterly</td>
               </tr>
               <tr>
                 <td>White-label reports</td>

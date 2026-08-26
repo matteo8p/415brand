@@ -25,7 +25,10 @@ export function SiteNav() {
           <summary className="drop-label">Sample reports ▾</summary>
           <div className="drop-menu">
             <Link href="/samples/wispr" onClick={close}>
-              Wispr Flow (voice software)
+              Wispr Flow (weekly report)
+            </Link>
+            <Link href="/samples/wispr-daily" onClick={close}>
+              Wispr Flow (daily report)
             </Link>
           </div>
         </details>

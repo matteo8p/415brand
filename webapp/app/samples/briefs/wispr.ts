@@ -2,7 +2,7 @@ import type { Brief } from "./types";
 
 export const wispr: Brief = {
   slug: "wispr",
-  title: "Wispr Flow brand & competitive analysis",
+  title: "Wispr Flow weekly brief: brand & competitive analysis",
   sub: "For the Willow Voice team, August 23, 2026",
   subject: "Wispr Flow",
   client: "Willow",
