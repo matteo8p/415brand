@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import Link from "next/link";
 import { CONTACT } from "@/lib/site";
+import { Providers } from "./providers";
 import "./globals.css";
 
 const wordmarkFont = Space_Grotesk({
@@ -44,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </nav>
           </div>
         </header>
-        {children}
+        <Providers>{children}</Providers>
         <footer className="site">
           <div className="wrap cols two">
             <div>

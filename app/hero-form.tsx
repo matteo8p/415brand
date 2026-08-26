@@ -1,9 +1,45 @@
 "use client";
 
+import { useMutation } from "convex/react";
 import { type FormEvent, useState } from "react";
+import { api } from "@/convex/_generated/api";
 import { CONTACT } from "@/lib/site";
+import { CONVEX_URL } from "./providers";
 
-export function HeroForm() {
+function ConvexHeroForm() {
+  const addEmailSignup = useMutation(api.leads.addEmailSignup);
+  const [status, setStatus] = useState<"idle" | "saving" | "done" | "error">("idle");
+
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const email = String(new FormData(e.currentTarget).get("email") ?? "");
+    setStatus("saving");
+    try {
+      await addEmailSignup({ email, source: "hero" });
+      setStatus("done");
+    } catch {
+      setStatus("error");
+    }
+  }
+
+  if (status === "done") {
+    return <p>Thanks. We'll be in touch within a day.</p>;
+  }
+
+  return (
+    <form className="hero-form" onSubmit={onSubmit}>
+      <input name="email" type="email" placeholder="you@company.com" aria-label="Your work email" required />
+      <button className="button primary" type="submit" disabled={status === "saving"}>
+        {status === "saving" ? "Sending..." : "Request a report"}
+      </button>
+      {status === "error" && (
+        <p className="muted hero-form-note">Something went wrong. Email us at {CONTACT} instead.</p>
+      )}
+    </form>
+  );
+}
+
+function MailtoHeroForm() {
   const [opened, setOpened] = useState(false);
 
   function onSubmit(e: FormEvent<HTMLFormElement>) {
@@ -28,4 +64,8 @@ export function HeroForm() {
       )}
     </form>
   );
+}
+
+export function HeroForm() {
+  return CONVEX_URL ? <ConvexHeroForm /> : <MailtoHeroForm />;
 }
