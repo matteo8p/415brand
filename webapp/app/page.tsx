@@ -17,7 +17,9 @@ export default function Home() {
             <HeroForm />
           </div>
           <p className="hero-sub">
-            <Link href="/samples/wispr">Read the full sample report →</Link>
+            <Link href="/samples/wispr">Read the weekly sample report →</Link>
+            {" · "}
+            <Link href="/samples/wispr-daily">Read the daily sample report →</Link>
           </p>
         </div>
       </section>
@@ -320,7 +322,10 @@ export default function Home() {
           </div>
           <div className="cta-row">
             <Link className="button" href="/samples/wispr">
-              Read the full sample report
+              Read the weekly sample report
+            </Link>
+            <Link className="button" href="/samples/wispr-daily">
+              Read the daily sample report
             </Link>
           </div>
         </div>
