@@ -55,7 +55,8 @@ header.site {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding: 1.1rem 0;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -95,6 +96,24 @@ nav.main a.cta:hover {
   text-decoration: none;
 }
 
+/* burger toggle, mobile only */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  padding: 8px 4px;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+}
+
 /* ---------- typography ---------- */
 h1.display {
   font-family: var(--serif);
@@ -109,7 +128,7 @@ h1.display {
   font-size: 1.05rem;
   color: var(--muted);
   max-width: 42rem;
-  margin-top: 1rem;
+  margin-top: 1.3rem;
 }
 
 h2 {
@@ -117,7 +136,7 @@ h2 {
   font-weight: 400;
   font-size: 1.7rem;
   line-height: 1.25;
-  margin-bottom: 0.9rem;
+  margin-bottom: 1.2rem;
   max-width: 44rem;
 }
 
@@ -147,16 +166,16 @@ ul.plain li {
 
 /* ---------- sections ---------- */
 section.band {
-  padding: 3.2rem 0;
+  padding: 4.5rem 0;
   border-bottom: 1px solid var(--rule);
 }
 
 section.band.hero {
-  padding: 4.5rem 0 3.5rem;
+  padding: 6.5rem 0 5rem;
 }
 
 .cta-row {
-  margin-top: 1.6rem;
+  margin-top: 2.2rem;
   display: flex;
   gap: 0.8rem;
   flex-wrap: wrap;
@@ -188,7 +207,7 @@ a.button.primary:hover {
 /* ---------- grids ---------- */
 .cols {
   display: grid;
-  gap: 1.8rem 2.2rem;
+  gap: 2.4rem 2.6rem;
 }
 
 .cols.three {
@@ -227,7 +246,7 @@ a.button.primary:hover {
   border: 1px solid var(--rule);
   border-left: 3px solid var(--rule-dark);
   background: var(--box);
-  padding: 1rem 1.2rem;
+  padding: 1.3rem 1.5rem;
   max-width: 44rem;
 }
 
@@ -253,7 +272,7 @@ a.button.primary:hover {
 }
 
 .excerpt + .excerpt {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .excerpt .move {
@@ -338,14 +357,14 @@ a.button.primary:hover {
 }
 
 .hero-sub {
-  margin-top: 0.9rem;
+  margin-top: 1.2rem;
   font-size: 0.85rem;
 }
 
 /* ---------- contact form ---------- */
 .form {
   display: grid;
-  gap: 1.1rem;
+  gap: 1.4rem;
   max-width: 30rem;
 }
 
@@ -398,14 +417,14 @@ table.sheet {
   border-collapse: collapse;
   width: 100%;
   font-size: 0.85rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 table.sheet th,
 table.sheet td {
   text-align: left;
   vertical-align: top;
-  padding: 0.55rem 0.75rem 0.55rem 0;
+  padding: 0.7rem 0.85rem 0.7rem 0;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -429,7 +448,7 @@ table.sheet tr.us td {
 .plans {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 @media (max-width: 760px) {
@@ -440,7 +459,7 @@ table.sheet tr.us td {
 
 .plan {
   border: 1px solid var(--rule);
-  padding: 1.4rem 1.4rem 1.6rem;
+  padding: 1.8rem 1.8rem 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -522,7 +541,7 @@ table.sheet tr.us td {
 
 /* ---------- footer ---------- */
 footer.site {
-  padding: 2.2rem 0 3.5rem;
+  padding: 3rem 0 4.5rem;
   font-size: 0.78rem;
   color: var(--muted);
 }
@@ -539,21 +558,52 @@ footer.site a {
 /* ---------- mobile ---------- */
 @media (max-width: 640px) {
   section.band {
-    padding: 2.2rem 0;
+    padding: 2.8rem 0;
   }
 
   section.band.hero {
-    padding: 2.8rem 0 2.4rem;
+    padding: 3.6rem 0 3rem;
   }
 
   .site-inner {
-    padding: 0.9rem 0;
-    row-gap: 0.5rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    align-items: center;
+  }
+
+  .burger {
+    display: inline-flex;
   }
 
   nav.main {
+    display: none;
+  }
+
+  nav.main.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
     gap: 1rem;
-    flex-wrap: wrap;
+    margin-top: 0.4rem;
+    padding: 1rem 0 0.4rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.95rem;
+  }
+
+  nav.main.open .drop-menu {
+    position: static;
+    border: none;
+    min-width: 0;
+    padding: 0.4rem 0 0 1rem;
+  }
+
+  nav.main.open .drop-menu a {
+    padding: 0.2rem 0;
+  }
+
+  nav.main.open a.cta {
+    padding: 0.45rem 1rem;
   }
 
   h2 {

@@ -7,17 +7,17 @@ export default function Home() {
     <main>
       <section className="band hero">
         <div className="wrap">
-          <h1 className="display">We study your competitor and tell you how to beat them.</h1>
+          <h1 className="display">Know what your competitor is doing. And how to beat them.</h1>
           <p className="lede">
-            We dig through everything your competitor does in public: their ads, their prices, their job postings,
-            their Google rankings, and what their customers say about them online. Then we send you a written
-            report that makes sense of what we found and recommends your next moves.
+            We dig through everything they do in public: their ads, prices, job postings, Google rankings, and what
+            their customers say online. Every month, you get a written report on what we found and exactly what to
+            do about it.
           </p>
           <div className="cta-row">
             <HeroForm />
           </div>
           <p className="hero-sub">
-            <Link href="/samples/wispr">Read a sample report →</Link>
+            <Link href="/samples/wispr">Read the full sample report →</Link>
           </p>
         </div>
       </section>

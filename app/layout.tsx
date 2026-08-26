@@ -3,6 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import Link from "next/link";
 import { CONTACT } from "@/lib/site";
 import { Providers } from "./providers";
+import { SiteNav } from "./site-nav";
 import "./globals.css";
 
 const wordmarkFont = Space_Grotesk({
@@ -31,18 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="wordmark">
               415brand
             </Link>
-            <nav className="main">
-              <details className="drop">
-                <summary className="drop-label">Sample reports ▾</summary>
-                <div className="drop-menu">
-                  <Link href="/samples/wispr">Wispr Flow (voice software)</Link>
-                </div>
-              </details>
-              <Link href="/pricing">Pricing</Link>
-              <Link className="cta" href="/contact">
-                Contact
-              </Link>
-            </nav>
+            <SiteNav />
           </div>
         </header>
         <Providers>{children}</Providers>
