@@ -22,20 +22,16 @@ export const wisprDaily: Brief = {
           "type": "table",
           "headers": [
             {
-              "text": "Where"
-            },
+              "text": "Where", "w": "14%" },
             {
-              "text": "Date"
-            },
+              "text": "Date", "w": "7%", "nw": true },
             {
               "text": "Post"
             },
             {
-              "text": "Reach"
-            },
+              "text": "Reach", "w": "11%" },
             {
-              "text": "What you can do"
-            }
+              "text": "What you can do", "w": "24%" }
           ],
           "rows": [
             [
@@ -218,20 +214,16 @@ export const wisprDaily: Brief = {
           "type": "table",
           "headers": [
             {
-              "text": "Where"
-            },
+              "text": "Where", "w": "14%" },
             {
-              "text": "Date"
-            },
+              "text": "Date", "w": "7%", "nw": true },
             {
               "text": "Post"
             },
             {
-              "text": "Reach"
-            },
+              "text": "Reach", "w": "11%" },
             {
-              "text": "What you can do"
-            }
+              "text": "What you can do", "w": "24%" }
           ],
           "rows": [
             [
@@ -379,20 +371,16 @@ export const wisprDaily: Brief = {
           "type": "table",
           "headers": [
             {
-              "text": "Where"
-            },
+              "text": "Where", "w": "14%" },
             {
-              "text": "Date"
-            },
+              "text": "Date", "w": "7%", "nw": true },
             {
               "text": "Post"
             },
             {
-              "text": "Reach"
-            },
+              "text": "Reach", "w": "11%" },
             {
-              "text": "Why it matters"
-            }
+              "text": "Why it matters", "w": "24%" }
           ],
           "rows": [
             [
@@ -533,11 +521,9 @@ export const wisprDaily: Brief = {
           "type": "table",
           "headers": [
             {
-              "text": "Launched"
-            },
+              "text": "Launched", "w": "9%", "nw": true },
             {
-              "text": "Advertiser"
-            },
+              "text": "Advertiser", "w": "16%" },
             {
               "text": "Headline (click to open)"
             },

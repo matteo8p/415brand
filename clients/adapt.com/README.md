@@ -14,7 +14,7 @@ Do deep research about their company
 # Goal 
 After you do the high level summary of Adapt, I want you to start generating reports. 
 
-# Weekly report 
+# Deep research
 1. I want you to do deep research on their competitor, Viktor (viktor.com). First, do the same deep research and write a summary of what you find about Viktor and write it to VIKTOR.md
 
 2. I want you to take a look at webapp/app/samples/briefs/wispr.ts. Create a new sample for Viktor against Adapt. 

@@ -30,6 +30,9 @@ export function SiteNav() {
             <Link href="/samples/wispr-daily" onClick={close}>
               Wispr Flow (daily report)
             </Link>
+            <Link href="/samples/viktor" onClick={close}>
+              Viktor vs Adapt (weekly report)
+            </Link>
           </div>
         </details>
         <Link href="/pricing" onClick={close}>
