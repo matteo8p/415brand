@@ -15,7 +15,7 @@ export const viktor: Brief = {
           metric: "Monthly website visits",
           primary: "646K",
           us: "82K",
-          change: "Viktor gets 8 times the visitors, but the number hasn't moved since June. Adapt's grew 21% in July. Half of Viktor's visitors type the address in; about 30% click an ad.",
+          change: "Viktor gets 8 times the visitors, but the number hasn't moved since June. Adapt's grew 21% in July. Half of Viktor's visitors type the address in. About 30% click an ad.",
         },
         {
           metric: "Share of visitors who arrive from free Google results",
@@ -33,7 +33,7 @@ export const viktor: Brief = {
           metric: "Estimated monthly Google Ads spend (US)",
           primary: "$176K",
           us: "$903",
-          change: "Up from $99K in May. A second tool (Semrush) puts July at $82K; the truth is likely in between. Neither figure includes banner ads, YouTube or paid social posts.",
+          change: "Up from $99K in May. A second tool (Semrush) puts July at $82K. The truth is likely in between. Neither figure includes banner ads, YouTube or paid social posts.",
         },
         {
           metric: "Different Google searches it shows up in for free (worldwide)",
@@ -45,7 +45,7 @@ export const viktor: Brief = {
           metric: "G2 reviews (average rating)",
           primary: "54 (4.9)",
           us: "no listing",
-          change: "G2 is the main review site for business software. Viktor added 10 reviews in two weeks; 7 of the 9 written in August complain about the cost of credits in the \"dislike\" box.",
+          change: "G2 is the main review site for business software. Viktor added 10 reviews in two weeks. 7 of the 9 written in August complain about the cost of credits in the \"dislike\" box.",
         },
         {
           metric: "Facebook and Instagram ads running right now",
@@ -103,13 +103,13 @@ export const viktor: Brief = {
       collapsed: true,
       items: [
         {
-          action: "Buy the Google searches Viktor isn't buying: \"viktor alternative\", \"viktor pricing\", \"credits\" and security.",
+          action: "Buy the Google searches Viktor isn't buying, like \"viktor alternative\" and \"viktor pricing\".",
           why: "Viktor's $176K a month goes to searches like \"chatgpt alternative\", \"cowork\" and \"slack\". It does not buy \"viktor alternative\" (a search that didn't exist before May, now 90 a month at $6 to 20 per click) or \"viktor pricing\". Those are the searches people make when they're already thinking about leaving Viktor. Adapt should bid on them.",
           evidence: "search-and-marketplaces",
         },
         {
-          action: "Fix adapt.com/compare/viktor. Lead with price and spending limits.",
-          why: "Adapt's page still says Viktor costs \"$50/mo\" and works \"in Slack only\". Both are now wrong: in early August Viktor doubled its cheapest plan to $100 a month, and it has since added a web app, Discord and a way for other software to plug into it. Replace the stale rows with the two things Viktor's own customers complain about (bills they can't predict, a half-finished security audit) and spending limits that Adapt now has.",
+          action: "Lead with the new spending limits feature Adapt has. Fix adapt.com/compare/viktor.",
+          why: "Adapt's page still says Viktor costs \"$50/mo\" and works \"in Slack only\". Both are now wrong. In early August Viktor doubled its cheapest plan to $100 a month, and it has since added a web app, Discord and a way for other software to plug into it. Replace the stale rows with the two things Viktor's own customers complain about (bills they can't predict, a half-finished security audit) and spending limits that Adapt now has.",
           evidence: "pricing-and-product",
         },
         {
@@ -127,7 +127,7 @@ export const viktor: Brief = {
         [
           "X, @dierre (1.2K followers)",
           "Jul 30",
-          "[Who rips Viktor - AI employee? Curious to hear testimonies / applicable use cases. Worth or fade?](https://x.com/dierre/status/2082671414281191634)",
+          "[Who rips Viktor, AI employee? Curious to hear testimonies / applicable use cases. Worth or fade?](https://x.com/dierre/status/2082671414281191634)",
           "1.9K views, 9 replies",
         ],
         [
@@ -175,7 +175,7 @@ export const viktor: Brief = {
         [
           "X, @asapdar (516)",
           "Aug 20",
-          "[@Scobleizer @Benioff fair enough — have you tried Viktor in Slack? how do you like that?](https://x.com/asapdar/status/2090331762996269418)",
+          "[@Scobleizer @Benioff fair enough, have you tried Viktor in Slack? how do you like that?](https://x.com/asapdar/status/2090331762996269418)",
           "13 views",
         ],
         [
@@ -188,7 +188,7 @@ export const viktor: Brief = {
           "Hacker News (a forum popular with programmers)",
           "Mar 2026",
           "[Reverse-engineering Viktor and making it open source](https://news.ycombinator.com/item?id=47409885)",
-          "181 points, 85 comments; the code was taken down within three days",
+          "181 points, 85 comments. The code was taken down within three days",
         ],
       ],
     },
@@ -227,12 +227,12 @@ export const viktor: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** Viktor's spending isn't touching the searches Adapt should want. \"viktor alternative\" (new since May, 90 searches a month) and \"viktor pricing\" are cheap, unclaimed, and typed by people already thinking of leaving. Adapt has the comparison page for them; it just needs to bid. Viktor is about to hire a Google Ads lead with \"$1M+/month\" experience, so move before that seat is filled. [[keyword-planner]] [[ashby]]",
+                  text: "**Why it matters for Adapt:** Viktor's spending isn't touching the searches Adapt should want. \"viktor alternative\" (new since May, 90 searches a month) and \"viktor pricing\" are cheap, unclaimed, and typed by people already thinking of leaving. Adapt has the comparison page for them. It just needs to bid. Viktor is about to hire a Google Ads lead with \"$1M+/month\" experience, so move before that seat is filled. [[keyword-planner]] [[ashby]]",
                 },
               ],
             },
             {
-              claim: "Viktor's social media buzz is paid for: creators, commissions, and friendly accounts cheering on launch day.",
+              claim: "Viktor's social media buzz is paid for by creators, commissions, and friendly accounts cheering on launch day.",
               body: [
                 {
                   type: "p",
@@ -240,7 +240,7 @@ export const viktor: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** Adapt has no creator or referral program at all. Viktor's creators are marketers and office managers; nobody is being paid to talk to developers, the people Adapt is built for. Copy the machine, pay in credits (nearly free for Adapt), and point it at the audience Viktor ignores. [[x-adapt]] [[youtube-adapt]]",
+                  text: "**Why it matters for Adapt:** Adapt has no creator or referral program at all. Viktor's creators are marketers and office managers. Nobody is being paid to talk to developers, the people Adapt is built for. Copy the machine, pay in credits (nearly free for Adapt), and point it at the audience Viktor ignores. [[x-adapt]] [[youtube-adapt]]",
                 },
               ],
             },
@@ -249,7 +249,7 @@ export const viktor: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "Viktor has 27 open jobs: 8 in marketing, 5 in engineering, 4 in sales and support, the rest in product, design and operations. The job descriptions say what the marketing doesn't: \"half of paying workspaces still have only one active human\" and \"one power user drives most of the usage\". None lists a salary except the New York sales job ($100K to 270K). [[ashby]] [[linkedin-jobs]]",
+                  text: "Of Viktor's 27 open jobs, 8 are in marketing, 5 in engineering, 4 in sales and support, and the rest in product, design and operations. The job descriptions say what the marketing doesn't. \"Half of paying workspaces still have only one active human\" and \"one power user drives most of the usage\". None lists a salary except the New York sales job ($100K to 270K). [[ashby]] [[linkedin-jobs]]",
                 },
                 {
                   type: "why",
@@ -262,11 +262,11 @@ export const viktor: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "Both companies charge in \"credits\", pre-paid units the AI uses up as it works. In early August Viktor's cheapest plan went from $50 to $100 a month. On G2, 7 of the 9 reviews written in August complain about credit costs (\"a black box on how tokens are used\"). Viktor has only done the first, lighter stage of SOC 2, the security audit big companies ask for; Adapt has the full version. Adapt's comparison page still says Viktor costs \"$50/mo\" and works \"in Slack only\", both now wrong. [[viktor-pricing]] [[slack-marketplace]] [[g2]] [[adapt-compare-viktor]] [[viktor-changelog]]",
+                  text: "Both companies charge in \"credits\", pre-paid units the AI uses up as it works. In early August Viktor's cheapest plan went from $50 to $100 a month. On G2, 7 of the 9 reviews written in August complain about credit costs (\"a black box on how tokens are used\"). Viktor has only done the first, lighter stage of SOC 2, the security audit big companies ask for. Adapt has the full version. Adapt's comparison page still says Viktor costs \"$50/mo\" and works \"in Slack only\", both now wrong. [[viktor-pricing]] [[slack-marketplace]] [[g2]] [[adapt-compare-viktor]] [[viktor-changelog]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** Adapt's best selling points (a $50 start, a clear itemized bill, spending limits per person, a completed security audit) sit behind a page with wrong facts. Anyone who checks it against Viktor's site will stop trusting it. Fix the page, then say the price out loud in ads; none of Viktor's 238 ads mentions price, credits or security. [[adapt-changelog]] [[meta-ad-library]]",
+                  text: "**Why it matters for Adapt:** Adapt's best selling points (a $50 start, a clear itemized bill, spending limits per person, a completed security audit) sit behind a page with wrong facts. Anyone who checks it against Viktor's site will stop trusting it. Fix the page, then say the price out loud in ads. None of Viktor's 238 ads mentions price, credits or security. [[adapt-changelog]] [[meta-ad-library]]",
                 },
               ],
             },
@@ -299,19 +299,19 @@ export const viktor: Brief = {
             ],
             [
               "Cheapest paid plan",
-              "Team, $100 a month for 40,000 credits (was $50 for 20,000 until early August); unused credits roll over; you can buy more",
-              "Pro, $50 to $5,000 a month paid up front; 1 credit = 1 cent; up to 10% bonus credits",
+              "Team, $100 a month for 40,000 credits (was $50 for 20,000 until early August). Unused credits roll over. You can buy more",
+              "Pro, $50 to $5,000 a month paid up front. 1 credit = 1 cent. Up to 10% bonus credits",
               "No, on either",
               "Viktor: one limit for the whole workspace. Adapt: a monthly limit per person, with warnings at 75% and 90%",
               "Same as above",
             ],
             [
               "Enterprise",
-              "Custom price; per-person spending limits, invoicing, European data storage, security review",
-              "Custom price; a dedicated Adapt engineer, discounts for committed spending, invoicing",
+              "Custom price. Per-person spending limits, invoicing, European data storage, security review",
+              "Custom price. A dedicated Adapt engineer, discounts for committed spending, invoicing",
               "No, on either",
               "Both",
-              "Viktor: single sign-on listed on its site, but its Slack listing says \"no SAML\"; Adapt: role-based permissions, audit logs, approval rules",
+              "Viktor: single sign-on listed on its site, but its Slack listing says \"no SAML\". Adapt: role-based permissions, audit logs, approval rules",
             ],
           ],
         },
@@ -324,20 +324,20 @@ export const viktor: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "Reviews up to Aug 12 quote $50 for 20,000 credits; by Aug 9 it was $100 for 40,000. The price per credit didn't change, the minimum did. Customers report spending $750 to 1,000 a month, and \"$200 in two days while learning\". Viktor's only budgeting help is rough ranges; Adapt prints the price per credit and itemizes every bill. [[viktor-pricing]] [[thisandthat]] [[saascrmreview]] [[chiefmarketingdad]] [[latka]] [[adapt-pricing]]",
+                  text: "Reviews up to Aug 12 quote $50 for 20,000 credits. By Aug 9 it was $100 for 40,000. The price per credit didn't change, the minimum did. Customers report spending $750 to 1,000 a month, and \"$200 in two days while learning\". Viktor's only budgeting help is rough ranges. Adapt prints the price per credit and itemizes every bill. [[viktor-pricing]] [[thisandthat]] [[saascrmreview]] [[chiefmarketingdad]] [[latka]] [[adapt-pricing]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** the price doubled quietly, and the reviews written since follow the same pattern: five stars, then a complaint about cost. Nobody has called it a price increase yet. Adapt can, with a page that says \"Viktor doubled its minimum; we didn't\" and shows the spending limits. [[g2]]",
+                  text: "**Why it matters for Adapt:** the price doubled quietly, and the reviews written since follow the same pattern, five stars and then a complaint about cost. Nobody has called it a price increase yet. Adapt can, with a page that says \"Viktor doubled its minimum. We didn't\" and shows the spending limits. [[g2]]",
                 },
               ],
             },
             {
-              claim: "Both shipped plug-ins for other software in August. Adapt shipped what customers ask for: spending limits.",
+              claim: "Both shipped plug-ins for other software in August. Adapt shipped the thing customers ask for, spending limits.",
               body: [
                 {
                   type: "p",
-                  text: "Viktor in August: Discord, a web chat, video generation, and a plug-in that lets coding tools send it work (the Aug 20 launch that lit up X). Adapt in the same window: its own coding-tool plug-in, a Slack assistant branded with the customer's name, and monthly spending limits per person with warnings at 75% and 90%. Viktor's pace slowed from daily to weekly. [[viktor-changelog]] [[adapt-changelog]]",
+                  text: "In August Viktor added Discord, a web chat, video generation, and a plug-in that lets coding tools send it work (the Aug 20 launch that lit up X). In the same window Adapt added its own coding-tool plug-in, a Slack assistant branded with the customer's name, and monthly spending limits per person with warnings at 75% and 90%. Viktor's pace slowed from daily to weekly. [[viktor-changelog]] [[adapt-changelog]]",
                 },
                 {
                   type: "why",
@@ -357,7 +357,7 @@ export const viktor: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "Lead with bills you can't predict (7 of 9 August G2 reviews), a half-finished security audit while selling to law firms, and one spending limit for the whole workspace versus Adapt's per person. Delete the rows that are now wrong (\"$50/mo\", \"Slack only\"). Keep the ones that still hold: full audit versus stage one, a full record of what the AI did, connections that start private. [[adapt-compare-viktor]] [[g2]] [[viktor-security]]",
+                  text: "Lead with bills you can't predict (7 of 9 August G2 reviews), a half-finished security audit while selling to law firms, and one spending limit for the whole workspace versus Adapt's per person. Delete the rows that are now wrong (\"$50/mo\", \"Slack only\"). Keep the ones that still hold, like the full audit versus stage one, a full record of what the AI did, and connections that start private. [[adapt-compare-viktor]] [[g2]] [[viktor-security]]",
                 },
               ],
             },
@@ -402,31 +402,31 @@ export const viktor: Brief = {
                 [
                   "Security audit",
                   "\"Type II in progress\"",
-                  "Still true: Viktor has stage one; stage two and ISO 27001 are listed as \"in progress\"",
+                  "Still true: Viktor has stage one. Stage two and ISO 27001 are listed as \"in progress\"",
                   "[[viktor-security]]",
                 ],
                 [
                   "What customers spend",
                   "\"active workspaces spend $300–$400 a month\"",
-                  "An outside estimate says $400 on average; reviewers report $750 to 1,000; the new minimum is $100",
+                  "An outside estimate says $400 on average. Reviewers report $750 to 1,000. The new minimum is $100",
                   "[[latka]] [[chiefmarketingdad]]",
                 ],
                 [
                   "How it decides to speak up",
                   "\"Heartbeat polls Slack about four times a day\"",
-                  "Still what Viktor's engineering blog describes; nothing in the August updates contradicts it",
+                  "Still what Viktor's engineering blog describes. Nothing in the August updates contradicts it",
                   "[[viktor-changelog]]",
                 ],
                 [
                   "Privacy",
                   "\"Per-user Private Mode is on the public roadmap\"",
-                  "No private mode has shipped as of Aug 26; per-person channel privacy has existed since February",
+                  "No private mode has shipped as of Aug 26. Per-person channel privacy has existed since February",
                   "[[viktor-changelog]]",
                 ],
                 [
                   "Headquarters",
                   "\"Warsaw / Munich / NY\"",
-                  "Warsaw and Munich, Dublin added, a New York office \"setting up now\"; the legal company is registered in Delaware",
+                  "Warsaw and Munich, Dublin added, a New York office \"setting up now\". The legal company is registered in Delaware",
                   "[[ashby]]",
                 ],
               ],
@@ -434,7 +434,7 @@ export const viktor: Brief = {
             { type: "h3", text: "Prices" },
             {
               type: "p",
-              text: "Viktor: Free ($100 of credits that never expire), Team ($100 a month for 40,000 credits shared by the workspace, unused credits roll over), Enterprise (custom, with per-person limits and EU data storage). Adapt: Starter ($0 with $25 of credits, more for connecting Slack and email), Pro ($50 to $5,000 a month at one cent per credit), Enterprise (custom, with a dedicated engineer). Neither charges per user. Adapt's $50 start dates from May 26; Viktor doubled its start in August. [[viktor-pricing]] [[adapt-pricing]] [[latka]]",
+              text: "Viktor: Free ($100 of credits that never expire), Team ($100 a month for 40,000 credits shared by the workspace, unused credits roll over), Enterprise (custom, with per-person limits and EU data storage). Adapt: Starter ($0 with $25 of credits, more for connecting Slack and email), Pro ($50 to $5,000 a month at one cent per credit), Enterprise (custom, with a dedicated engineer). Neither charges per user. Adapt's $50 start dates from May 26. Viktor doubled its start in August. [[viktor-pricing]] [[adapt-pricing]] [[latka]]",
             },
             { type: "h3", text: "What Viktor shipped" },
             {
@@ -463,7 +463,7 @@ export const viktor: Brief = {
                 ["Included credits", "$100, never expire", "40,000 a month, unused roll over", "Volume pricing", "$25, plus $100 for Slack, plus up to $300 for a work email", "Paid up front, up to 10% bonus", "Discounts for committed spending"],
                 ["Price per credit", "Not published", "A quarter of a cent (implied)", "Custom", "1 cent", "1 cent", "Custom"],
                 ["Charge per user", "No", "No", "No", "No", "No", "No"],
-                ["Where it works", "Slack, Teams, Discord, web", "Same", "Same", "Slack, web, GitHub, Linear, iMessage, Chrome; Teams coming", "Same", "Same"],
+                ["Where it works", "Slack, Teams, Discord, web", "Same", "Same", "Slack, web, GitHub, Linear, iMessage, Chrome. Teams coming", "Same", "Same"],
                 ["Connections to other software", "27 built in, \"3,200+\" through third-party connectors", "Same", "Same", "140+ built in", "Same", "Same"],
                 ["Spending limits", "A cap on automatic top-ups", "One cap for the workspace", "A cap per person", "A monthly cap per person", "Per-person caps, automatic refills", "Per-person caps"],
                 ["How detailed the bill is", "Rough ranges", "Rough ranges", "Custom", "Itemized per conversation and automation", "Same", "Same"],
@@ -475,7 +475,7 @@ export const viktor: Brief = {
             },
             {
               type: "note",
-              text: "Captured from viktor.com/pricing, viktor.com/security, adapt.com/pricing and adapt.com/security on Aug 26, 2026. Viktor's price per credit is worked out from $100 for 40,000 credits; it isn't printed anywhere. [[viktor-pricing]] [[adapt-pricing]] [[viktor-security]] [[adapt-security]]",
+              text: "Captured from viktor.com/pricing, viktor.com/security, adapt.com/pricing and adapt.com/security on Aug 26, 2026. Viktor's price per credit is worked out from $100 for 40,000 credits. It isn't printed anywhere. [[viktor-pricing]] [[adapt-pricing]] [[viktor-security]] [[adapt-security]]",
             },
           ],
         },
@@ -531,11 +531,11 @@ export const viktor: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "In May Viktor showed up in free Google results for 56 different searches; by August it was 662, while its ad budget went from $99K to $176K. The free traffic is thin: 87% of it is people typing \"viktor\" or a misspelling, and 88% of Viktor's Google clicks are on paid ads. [[semrush]] [[spyfu]] [[ahrefs]]",
+                  text: "In May Viktor showed up in free Google results for 56 different searches. By August it was 662, while its ad budget went from $99K to $176K. The free traffic is thin: 87% of it is people typing \"viktor\" or a misspelling, and 88% of Viktor's Google clicks are on paid ads. [[semrush]] [[spyfu]] [[ahrefs]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** the searches that describe the category are wide open: \"slack ai agent\" (320 a month, $11 a click), \"viktor alternative\" (90 a month, brand new), \"viktor vs claude tag\". None has a winner. Adapt's one page that wins search traffic today is a comparison page; make more, aimed at Viktor. [[keyword-planner]] [[ahrefs-adapt]]",
+                  text: "**Why it matters for Adapt:** the searches that describe the category are wide open. \"slack ai agent\" (320 a month, $11 a click), \"viktor alternative\" (90 a month, brand new), \"viktor vs claude tag\". None has a winner. Adapt's one page that wins search traffic today is a comparison page. Make more, aimed at Viktor. [[keyword-planner]] [[ahrefs-adapt]]",
                 },
               ],
             },
@@ -624,7 +624,7 @@ export const viktor: Brief = {
             { type: "h3", text: "Traffic and authority" },
             {
               type: "p",
-              text: "Viktor's visitors: 48% type the address in, 30% click an ad, 9% come from free Google results. Adapt's: 72% type the address in, 5% free Google, 2% ads. Adapt's visitors stay eight minutes and view six pages, meaning they're using the product, not reading marketing. On link strength (a 0-to-100 score of how many reputable sites link to you), Viktor scores 63 and Adapt 34; both domains date from 2006 and carry old links, so both are flattered. [[similarweb]] [[similarweb-adapt]] [[ahrefs]] [[semrush]]",
+              text: "Viktor's visitors: 48% type the address in, 30% click an ad, 9% come from free Google results. Adapt's: 72% type the address in, 5% free Google, 2% ads. Adapt's visitors stay eight minutes and view six pages, meaning they're using the product, not reading marketing. On link strength (a 0-to-100 score of how many reputable sites link to you), Viktor scores 63 and Adapt 34. Both domains date from 2006 and carry old links, so both are flattered. [[similarweb]] [[similarweb-adapt]] [[ahrefs]] [[semrush]]",
             },
             {
               type: "fig",
@@ -672,7 +672,7 @@ export const viktor: Brief = {
               panels: [
                 {
                   cap: "Monthly website visits, May to July",
-                  sub: "Similarweb. Viktor tripled in June and then stopped; Adapt keeps climbing",
+                  sub: "Similarweb. Viktor tripled in June and then stopped. Adapt keeps climbing",
                   chart: {
                     kind: "lines",
                     series: [
@@ -756,15 +756,15 @@ export const viktor: Brief = {
                 { text: "Who shows up today" },
               ],
               rows: [
-                ["viktor ai", "5,400", "$5.62", "Viktor is the top free result; it is also the search that sends Adapt the most valuable visitors"],
-                ["viktor alternative", "90 (new since May)", "$8.68; advertisers pay $6 to 20", "Nobody buys it; no page ranks for it"],
+                ["viktor ai", "5,400", "$5.62", "Viktor is the top free result. It is also the search that sends Adapt the most valuable visitors"],
+                ["viktor alternative", "90 (new since May)", "$8.68. Advertisers pay $6 to 20", "Nobody buys it. No page ranks for it"],
                 ["viktor.com / \"viktor com\"", "260", "$4.54", "Viktor"],
-                ["slack ai agent", "320", "$11.26", "No clear winner; Viktor and Adapt both absent"],
-                ["ai employee slack", "under 10", "n/a", "Viktor's own phrase; almost nobody searches it"],
-                ["chatgpt alternative", "18,100", "$1.22", "Viktor's biggest paid search; the ad goes to its Claude Tag comparison page"],
-                ["cowork / what is claude cowork", "8,100 / 5,400", "$4.26 / $5.69", "Viktor buys these; Adapt buys \"claude cost\" (2,900 searches, $5.32)"],
+                ["slack ai agent", "320", "$11.26", "No clear winner. Viktor and Adapt both absent"],
+                ["ai employee slack", "under 10", "n/a", "Viktor's own phrase. Almost nobody searches it"],
+                ["chatgpt alternative", "18,100", "$1.22", "Viktor's biggest paid search. The ad goes to its Claude Tag comparison page"],
+                ["cowork / what is claude cowork", "8,100 / 5,400", "$4.26 / $5.69", "Viktor buys these. Adapt buys \"claude cost\" (2,900 searches, $5.32)"],
                 ["how to build an ai agent", "2,400", "$7.55", "Adapt buys it (ad headline: \"Don't Build 30 AI Agents\")"],
-                ["adapt ai", "320 (peaked at 1,000 in March)", "$5.44", "Adapt is the second free result; unrelated \"Adapt\" companies sit above it"],
+                ["adapt ai", "320 (peaked at 1,000 in March)", "$5.44", "Adapt is the second free result. Unrelated \"Adapt\" companies sit above it"],
               ],
             },
             {
@@ -785,14 +785,14 @@ export const viktor: Brief = {
                 ["Product Hunt upvotes (rank on launch day)", "696 (#4 of the day)", "134 (#13 of the day)"],
                 ["Product Hunt followers, reviews", "2.2K, 16 reviews at 4.9", "172, 2 reviews at 5.0"],
                 ["Product Hunt launches", "4 (Mar 3, Mar 31, Apr 10, Jun 18)", "1 (June)"],
-                ["Listed in Slack's app directory", "Yes, under ZETA AI, Inc.; no rating shown; listing says \"no HIPAA, no SAML\"", "Not found"],
+                ["Listed in Slack's app directory", "Yes, under ZETA AI, Inc.. No rating shown. Listing says \"no HIPAA, no SAML\"", "Not found"],
                 ["Trustpilot", "4.5 from 16 reviews by one count, 3.4 by another", "none"],
                 ["Hacker News", "A 181-point thread about reverse-engineering it (March)", "none"],
               ],
             },
             {
               type: "p",
-              text: "Viktor built this the same way as everything else: four Product Hunt launches, a review push (10 G2 reviews in two weeks), and a Community Manager job that names \"Trustpilot, G2\" as targets. Adapt launched once and has never asked for reviews. [[g2]] [[product-hunt]] [[product-hunt-adapt]] [[ashby]]",
+              text: "Viktor built this the same way it builds everything, with four Product Hunt launches, a review push (10 G2 reviews in two weeks), and a Community Manager job that names \"Trustpilot, G2\" as targets. Adapt launched once and has never asked for reviews. [[g2]] [[product-hunt]] [[product-hunt-adapt]] [[ashby]]",
             },
             { type: "h3", text: "AI search" },
             {
@@ -814,12 +814,12 @@ export const viktor: Brief = {
             { type: "h3", text: "The brand leaks" },
             {
               type: "p",
-              text: "\"Viktor\" is also a League of Legends character, a Dutch engineering firm (viktor.ai) and a language app whose TikToks have 10.8 million plays. Misspellings are 14% of Viktor's free search traffic, and it ranks first for all of them. 13 unrelated companies run Google ads to viktor.com, likely farming its referral commission. Adapt's problem runs the other way: \"adapt\" is an ordinary word, and the search that sends Adapt its best visitors is \"viktor ai\". [[semrush]] [[google-ads-transparency]] [[viktor-creators]] [[similarweb-adapt]]",
+              text: "\"Viktor\" is also a League of Legends character, a Dutch engineering firm (viktor.ai) and a language app whose TikToks have 10.8 million plays. Misspellings are 14% of Viktor's free search traffic, and it ranks first for all of them. 13 unrelated companies run Google ads to viktor.com, likely farming its referral commission. Adapt's problem runs the other way. \"adapt\" is an ordinary word, and the search that sends Adapt its best visitors is \"viktor ai\". [[semrush]] [[google-ads-transparency]] [[viktor-creators]] [[similarweb-adapt]]",
             },
             { type: "h3", text: "The narrative the market uses against them" },
             {
               type: "p",
-              text: "Doubt is forming in search: \"viktor alternative\" (90 a month, none before May), \"viktor com\" (people checking whether it's real). Viktor's own marketing job ad lists the objections it needs answers for, including \"the Slack bot built in a weekend\". In March a Hacker News thread on reverse-engineering Viktor hit 181 points before the code was taken down. A TikTok clip says Viktor's default settings let the whole Slack see your Gmail. On X the doubt is quieter: a rival pitching a cheaper alternative, a developer calling the product \"meh\". Adapt is not named anywhere in Viktor's materials. [[keyword-planner]] [[ashby]] [[hacker-news]] [[tiktok-search]] [[x]]",
+              text: "Doubt is showing up in search. People now look for \"viktor alternative\" (90 a month, none before May) and \"viktor com\" (checking whether it's real). Viktor's own marketing job ad lists the objections it needs answers for, including \"the Slack bot built in a weekend\". In March a Hacker News thread on reverse-engineering Viktor hit 181 points before the code was taken down. A TikTok clip says Viktor's default settings let the whole Slack see your Gmail. On X the doubt is quieter, a rival pitching a cheaper alternative and a developer calling the product \"meh\". Adapt is not named anywhere in Viktor's materials. [[keyword-planner]] [[ashby]] [[hacker-news]] [[tiktok-search]] [[x]]",
             },
             {
               type: "note",
@@ -881,7 +881,7 @@ export const viktor: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "All 238 ads were launched Aug 24 to 26; the old ones were switched off, so none has run long enough to prove it works. Only 5 look creator-made. 180 send people to the homepage and 42 to a new law-firm page. Themes: \"Slack or Teams\" (148 ads), hiring and payroll (112, \"One founder gave the $90K ops role to Viktor\"), \"45,000+ teams\" (30), the funding round (14). Price, credits or security: none. [[meta-ad-library]]",
+                  text: "All 238 ads were launched Aug 24 to 26. The old ones were switched off, so none has run long enough to prove it works. Only 5 look creator-made. 180 send people to the homepage and 42 to a new law-firm page. The ads talk about \"Slack or Teams\" (148 ads), hiring and payroll (112, \"One founder gave the $90K ops role to Viktor\"), \"45,000+ teams\" (30), the funding round (14). None mention price, credits or security. [[meta-ad-library]]",
                 },
                 {
                   type: "fig",
@@ -944,7 +944,7 @@ export const viktor: Brief = {
                   rows: [
                     ["\"Founders get pitched AI companies every day and reject most on sight. Viktor clears the bar\"", "credibility: 45,000+ teams, $87M raised", "Aug 25", "1", "4", "/"],
                     ["\"One founder gave the $90K ops role to Viktor. The work is done daily in Slack, and the budget stayed.\"", "pay for it from the hiring budget", "Aug 25", "1", "4", "/"],
-                    ["\"Viktor raised $75M because the work he returns is real\"", "funding; a demo pulling from Stripe, HubSpot and Linear", "Aug 25", "1", "3", "/"],
+                    ["\"Viktor raised $75M because the work he returns is real\"", "funding. A demo pulling from Stripe, HubSpot and Linear", "Aug 25", "1", "3", "/"],
                     ["\"Viktor is one hire that comes with every frontier model built in\"", "choice of AI models", "Aug 25", "1", "3", "/"],
                     ["\"Tools help you work. Viktor does the work.\"", "the category line", "Aug 24", "2", "3", "/"],
                     ["\"Your 5 paralegals should not have to remember every deadline across every matter\"", "law firms, deadlines", "Aug 25", "1", "2", "/for/legal"],
@@ -965,7 +965,7 @@ export const viktor: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "Viktor's own TikTok has 323 followers. The 44 creator videos about it have 294K plays, but 192K are two podcast clips and 79K are one Brazilian creator's #ad posts; strip those out and a typical creator video gets about 300 plays. YouTube is the same: 772K lifetime views, mostly from ads, on a channel with 781 subscribers. Of 34 creator reviews on YouTube, only one is labelled as paid. Instagram (17,601 followers) is the one company channel that works. [[tiktok-getviktor]] [[tiktok-search]] [[youtube-search]] [[youtube-getviktor]] [[instagram]]",
+                  text: "Viktor's own TikTok has 323 followers. The 44 creator videos about it have 294K plays, but 192K are two podcast clips and 79K are one Brazilian creator's #ad posts. Strip those out and a typical creator video gets about 300 plays. YouTube is the same: 772K lifetime views, mostly from ads, on a channel with 781 subscribers. Of 34 creator reviews on YouTube, only one is labelled as paid. Instagram (17,601 followers) is the one company channel that works. [[tiktok-getviktor]] [[tiktok-search]] [[youtube-search]] [[youtube-getviktor]] [[instagram]]",
                 },
                 {
                   type: "table",
@@ -978,10 +978,10 @@ export const viktor: Brief = {
                   ],
                   rows: [
                     ["Aug 21", "[20vc_tok](https://www.tiktok.com/@20vc_tok/video/7676344984995433745)", "273K", "184K", "Podcast clip: Viktor's Head of Growth on creators earning $20 to 30K a month"],
-                    ["Jul 3", "[ricardomartinsbrk](https://www.tiktok.com/@ricardomartinsbrk/video/7658296335380008193)", "3.5M", "28.9K", "#ad, in Portuguese; his four #ad posts total 79K plays"],
+                    ["Jul 3", "[ricardomartinsbrk](https://www.tiktok.com/@ricardomartinsbrk/video/7658296335380008193)", "3.5M", "28.9K", "#ad, in Portuguese. His four #ad posts total 79K plays"],
                     ["Aug 15", "[20vc_tok](https://www.tiktok.com/@20vc_tok/video/7674257955419606273)", "273K", "8.0K", "Podcast clip introducing the Head of Growth"],
-                    ["Mar 17", "[usefulaiwebsites](https://www.tiktok.com/@usefulaiwebsites/video/7618328149356498206)", "406K", "7.8K", "\"3 brand new AI tools\"; TikTok marks it as an ad"],
-                    ["Jun 11", "[keltysage](https://www.tiktok.com/@keltysage/video/7650281327924858142)", "20.6K", "901", "\"Yall gotta try the new Viktor tool!\"; no disclosure"],
+                    ["Mar 17", "[usefulaiwebsites](https://www.tiktok.com/@usefulaiwebsites/video/7618328149356498206)", "406K", "7.8K", "\"3 brand new AI tools\". TikTok marks it as an ad"],
+                    ["Jun 11", "[keltysage](https://www.tiktok.com/@keltysage/video/7650281327924858142)", "20.6K", "901", "\"Yall gotta try the new Viktor tool!\". No disclosure"],
                     ["May 14", "[thepmfguy](https://www.tiktok.com/@thepmfguy/video/7639886206251109646)", "1.5K", "855", "Critical: default settings share your Gmail and meeting notes with the whole Slack"],
                     ["May 25", "[jeromesdigitalshopllc](https://www.tiktok.com/@jeromesdigitalshopllc/video/7643946083210562830)", "5.0K", "808", "Commission link in bio, not disclosed"],
                     ["Jul 13", "[theagencymavericks](https://www.tiktok.com/@theagencymavericks/video/7661892495344717063)", "405", "772", "A paid set-up partner"],
@@ -991,7 +991,7 @@ export const viktor: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** these creators post for whoever pays, and most posts get a few hundred plays. The two things that actually reached people were free: a podcast clip and the CEO's conference talk. Adapt's CEO has the résumé for that kind of attention and hasn't used it on video. [[tiktok-search]] [[youtube-search]]",
+                  text: "**Why it matters for Adapt:** these creators post for whoever pays, and most posts get a few hundred plays. The two things that actually reached people were free, a podcast clip and the CEO's conference talk. Adapt's CEO has the résumé for that kind of attention and hasn't used it on video. [[tiktok-search]] [[youtube-search]]",
                 },
               ],
             },
@@ -1000,24 +1000,24 @@ export const viktor: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "129 of 236 X posts landed on Aug 20 and 21, when Viktor launched its plug-in. 31 came from accounts with over 50,000 followers, mostly one-line replies to each other (\"Excellent contribution\", \"noice\"); Viktor's own staff were the most frequent posters. Outside launch days the real conversation is 5 to 10 posts a day, mostly praise. Adapt's reach comes from two paid-promotion posts (649K and 617K views, under 100 likes each). Adapt was mentioned once. [[x]] [[x-adapt]] [[x-viktor-com]]",
+                  text: "129 of 236 X posts landed on Aug 20 and 21, when Viktor launched its plug-in. 31 came from accounts with over 50,000 followers, mostly one-line replies to each other (\"Excellent contribution\", \"noice\"). Viktor's own staff were the most frequent posters. Outside launch days the real conversation is 5 to 10 posts a day, mostly praise. Adapt's reach comes from two paid-promotion posts (649K and 617K views, under 100 likes each). Adapt was mentioned once. [[x]] [[x-adapt]] [[x-viktor-com]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** Viktor's launch-day numbers are manufactured, and Adapt's are too, just bought from X instead of from creators; 6,000 views per like reads as an ad. The cheapest fix is founders posting about what Viktor's cheerleaders never mention: spending limits, a full record of what the AI did, the completed security audit. [[x]]",
+                  text: "**Why it matters for Adapt:** Viktor's launch-day numbers are manufactured, and Adapt's are too, just bought from X instead of from creators. 6,000 views per like reads as an ad. The cheapest fix is founders posting about what Viktor's cheerleaders never mention, like spending limits, a full record of what the AI did, and the completed security audit. [[x]]",
                 },
               ],
             },
             {
-              claim: "How the machine works: pay creators per view, referrers per sale, consultants to install it, and replace ads constantly.",
+              claim: "How the machine works. Viktor pays creators per view, referrers per sale, and consultants to install it, and replaces its ads constantly.",
               body: [
                 {
                   type: "p",
-                  text: "Creators get $200 for a post seen by 1,000 to 5,000 people, up to $10,000 for 100,000+, or 50% more in credits (83% take credits); every creator gets a referral link at sign-up. Referrers get 15 to 20% of a customer's spending for a year. Consultants who set Viktor up keep their fee plus 20% of the client's spending for a year; Viktor's own example is $44,000 to 79,000 a year from five clients. Plus newsletter deals and podcast ads. Job ads describe paid spend \"scaling toward 2x\" and a marketer managing \"around $400k\" a month. [[viktor-creators]] [[viktor-ways-to-earn]] [[viktor-experts]] [[ashby]] [[x-viktor-com]]",
+                  text: "Creators get $200 for a post seen by 1,000 to 5,000 people, up to $10,000 for 100,000+, or 50% more in credits (83% take credits). Every creator gets a referral link at sign-up. Referrers get 15 to 20% of a customer's spending for a year. Consultants who set Viktor up keep their fee plus 20% of the client's spending for a year. Viktor's own example is $44,000 to 79,000 a year from five clients. Plus newsletter deals and podcast ads. Job ads describe paid spend \"scaling toward 2x\" and a marketer managing \"around $400k\" a month. [[viktor-creators]] [[viktor-ways-to-earn]] [[viktor-experts]] [[ashby]] [[x-viktor-com]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** copy the machine (credits for creators, a revenue share for consultants, a referral link at sign-up), not the message. Viktor's story is \"hire an employee from the hiring budget\". The story it dropped is the one Adapt tells: one assistant for the whole company, your own knowledge, spending you can see. [[viktor-ways-to-earn]]",
+                  text: "**Why it matters for Adapt:** copy the machine (credits for creators, a revenue share for consultants, a referral link at sign-up), not the message. Viktor's story is \"hire an employee from the hiring budget\". The story it dropped is the one Adapt tells, one assistant for the whole company, your own knowledge, spending you can see. [[viktor-ways-to-earn]]",
                 },
               ],
             },
@@ -1042,7 +1042,7 @@ export const viktor: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "Adapt has no creator, referral or partner program; adapt.com/affiliates, /referral and /partners all return \"page not found\". Credits cost Adapt almost nothing to give away. Launch a credits-only creator program aimed at developers and technical operators on YouTube and X, the audience Viktor's creators never reach, and pay consultants the way Viktor does. [[viktor-ways-to-earn]] [[adapt-pricing]]",
+                  text: "Adapt has no creator, referral or partner program. Adapt.com/affiliates, /referral and /partners all return \"page not found\". Credits cost Adapt almost nothing to give away. Launch a credits-only creator program aimed at developers and technical operators on YouTube and X, the audience Viktor's creators never reach, and pay consultants the way Viktor does. [[viktor-ways-to-earn]] [[adapt-pricing]]",
                 },
               ],
             },
@@ -1051,7 +1051,7 @@ export const viktor: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "None of Viktor's 238 ads mentions price, credits or security; its customers mention little else. A small Facebook and LinkedIn test saying \"spending limits per person, an itemized bill, $50 to start\", aimed at founders and ops leads, costs a few thousand dollars and tells Adapt within two weeks whether the pricing story sells. Add a law-firm version while Viktor's law-firm ads are still being tested. [[meta-ad-library]] [[g2]]",
+                  text: "None of Viktor's 238 ads mentions price, credits or security. Its customers mention little else. A small Facebook and LinkedIn test saying \"spending limits per person, an itemized bill, $50 to start\", aimed at founders and ops leads, costs a few thousand dollars and tells Adapt within two weeks whether the pricing story sells. Add a law-firm version while Viktor's law-firm ads are still being tested. [[meta-ad-library]] [[g2]]",
                 },
               ],
             },
@@ -1069,8 +1069,8 @@ export const viktor: Brief = {
               rows: [
                 [
                   "X, Jul 30",
-                  "\"Who rips Viktor - AI employee? Curious to hear testimonies / applicable use cases. Worth or fade?\" 1.9K views, 9 replies.",
-                  "Someone openly asking whether to buy; the replies are other users, no company",
+                  "\"Who rips Viktor, AI employee? Curious to hear testimonies / applicable use cases. Worth or fade?\" 1.9K views, 9 replies.",
+                  "Someone openly asking whether to buy. The replies are other users, no company",
                   "[[x-dierre]]",
                 ],
                 [
@@ -1087,14 +1087,14 @@ export const viktor: Brief = {
                 ],
                 [
                   "X, Aug 20",
-                  "\"@Scobleizer @Benioff fair enough — have you tried Viktor in Slack? how do you like that?\"",
+                  "\"@Scobleizer @Benioff fair enough, have you tried Viktor in Slack? how do you like that?\"",
                   "A question aimed at two people with big audiences, unanswered",
                   "[[x-asapdar]]",
                 ],
                 [
                   "G2, Aug 14 to 24",
                   "Eight 5-star reviews whose \"dislike\" box is about credits: \"kind of a black box on how tokens are used / spent\", \"sometimes I am not sure what uses a lot of credits\", \"the price tag\".",
-                  "Happy customers who can't predict the bill; Adapt's spending-limits pitch, in their own words",
+                  "Happy customers who can't predict the bill. Adapt's spending-limits pitch, in their own words",
                   "[[g2]]",
                 ],
                 [
@@ -1120,7 +1120,7 @@ export const viktor: Brief = {
             { type: "h3", text: "What people said on X (236 posts, Aug 6 to 26)" },
             {
               type: "p",
-              text: "About a third praise (\"best SaaS I have ever used\"), 2% complaints, the rest launch hype and listicles. Every Viktor announcement produces the same shape: five or six near-identical posts from big accounts within an hour. The unpaid praise is real and specific. The unpaid doubt is thin and unanswered. Adapt appears once. [[x]] [[x-adapt]]",
+              text: "About a third praise (\"best SaaS I have ever used\"), 2% complaints, the rest launch hype and listicles. Every Viktor announcement produces the same shape, five or six near-identical posts from big accounts within an hour. The unpaid praise is real and specific. The unpaid doubt is thin and unanswered. Adapt appears once. [[x]] [[x-adapt]]",
             },
             { type: "h3", text: "Paid footprint, Aug 26" },
             {
@@ -1129,31 +1129,31 @@ export const viktor: Brief = {
               rows: [
                 [
                   "Facebook, Instagram, Messenger, Threads",
-                  "238 ads, all launched Aug 24 to 26 in batches of 73, 126 and 39. Made in-house; 42 aimed at law firms",
-                  "Page active since 2025; ads rebuilt Aug 24",
+                  "238 ads, all launched Aug 24 to 26 in batches of 73, 126 and 39. Made in-house. 42 aimed at law firms",
+                  "Page active since 2025. Ads rebuilt Aug 24",
                   "[[meta-ad-library]]",
                 ],
                 [
                   "Google Search",
-                  "200+ ads from ZETA AI, Inc.; 89 shown in the last week; new batches of text ads on Jun 9, Jun 17, Jul 2, Jul 24 and Aug 9 to 14. Estimated budget $176K a month (SpyFu) or $82K (Semrush, July)",
+                  "200+ ads from ZETA AI, Inc.. 89 shown in the last week. New batches of text ads on Jun 9, Jun 17, Jul 2, Jul 24 and Aug 9 to 14. Estimated budget $176K a month (SpyFu) or $82K (Semrush, July)",
                   "Mar 12, 2026",
                   "[[google-ads-transparency]] [[spyfu]] [[semrush]]",
                 ],
                 [
                   "YouTube",
-                  "36 video ads in Google's records; 772K lifetime views on a channel with 781 subscribers",
+                  "36 video ads in Google's records. 772K lifetime views on a channel with 781 subscribers",
                   "Mar 2026",
                   "[[google-ads-transparency]] [[youtube-getviktor]]",
                 ],
                 [
                   "Banner ads",
-                  "12.5% of website visits; shown on sites like Digital Spy and Ecosia",
+                  "12.5% of website visits. Shown on sites like Digital Spy and Ecosia",
                   "2026",
                   "[[similarweb]]",
                 ],
                 [
                   "LinkedIn",
-                  "\"Paid is scaling on Meta, LinkedIn and Google\", per the video editor job ad; not measurable from outside",
+                  "\"Paid is scaling on Meta, LinkedIn and Google\", per the video editor job ad. Not measurable from outside",
                   "2026",
                   "[[ashby]]",
                 ],
@@ -1165,19 +1165,19 @@ export const viktor: Brief = {
                 ],
                 [
                   "Creators and referrers",
-                  "$200 to $10,000 a post depending on views, or 50% more in credits; 15 to 20% commission on referred customers for a year; 20% of client spending for consultants who install it; 5% for referring other partners",
+                  "$200 to $10,000 a post depending on views, or 50% more in credits. 15 to 20% commission on referred customers for a year. 20% of client spending for consultants who install it. 5% for referring other partners",
                   "2026, \"5x'd\" in May",
                   "[[viktor-creators]] [[viktor-ways-to-earn]] [[viktor-experts]]",
                 ],
                 [
                   "Newsletters and podcasts",
-                  "A co-branded $100-credit page for a newsletter with 180,000 subscribers; the first podcast ad cost $1,000",
+                  "A co-branded $100-credit page for a newsletter with 180,000 subscribers. The first podcast ad cost $1,000",
                   "Mar 2026",
                   "[[viktor-strategy-breakdowns]] [[x-viktor-com]]",
                 ],
                 [
                   "Adapt, for comparison",
-                  "31 Google ads since Apr 23, $903 to 3K a month; two paid-promotion posts on X with 649K and 617K views; one YouTube ad with 268K views; no Facebook ads, no creators, no referral program",
+                  "31 Google ads since Apr 23, $903 to 3K a month. Two paid-promotion posts on X with 649K and 617K views. One YouTube ad with 268K views. No Facebook ads, no creators, no referral program",
                   "Apr 2026",
                   "[[google-ads-transparency]] [[x-adapt]] [[youtube-adapt]]",
                 ],
@@ -1224,7 +1224,7 @@ export const viktor: Brief = {
             },
             {
               type: "p",
-              text: "Actual ad spend isn't public. SpyFu's $176K and Semrush's $82K are estimates that disagree by two to one, and both cover only US Google search; banners, YouTube, LinkedIn and paid social come on top. Viktor's own job ads point higher: \"$500K+/month\", \"$1M+/month\", a marketer managing \"around $400k\" a month. Only a paid ad tracker like Pathmatics would give a firmer number. [[spyfu]] [[semrush]] [[ashby]] [[linkedin]]",
+              text: "Actual ad spend isn't public. SpyFu's $176K and Semrush's $82K are estimates that disagree by two to one, and both cover only US Google search. Banners, YouTube, LinkedIn and paid social come on top. Viktor's own job ads point higher, asking for \"$500K+/month\" and \"$1M+/month\" experience, and one marketer says she manages \"around $400k\" a month. Only a paid ad tracker like Pathmatics would give a firmer number. [[spyfu]] [[semrush]] [[ashby]] [[linkedin]]",
             },
           ],
         },
@@ -1261,7 +1261,7 @@ export const viktor: Brief = {
             },
             {
               cap: "Viktor's headcount as reported",
-              sub: "From press, job ads and LinkedIn; the job ads say \"heading toward 100\"",
+              sub: "From press, job ads and LinkedIn. The job ads say \"heading toward 100\"",
               chart: {
                 kind: "columns",
                 rows: [
@@ -1287,20 +1287,20 @@ export const viktor: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "Viktor's 27 openings: 8 in marketing (a Head of Conversion to turn free users into paying ones, a Lifecycle Manager for onboarding emails, two Google Ads roles, community, social, product marketing, a video editor), 4 in sales and support, 5 in engineering, 10 in product, design and operations. 25 of 26 require the office, mostly Warsaw. None lists a salary except the New York sales job ($100K to 270K). Ten were posted after the new sales chief arrived Jul 29; none is engineering. [[ashby]] [[linkedin-jobs]] [[builtin]]",
+                  text: "Viktor's 27 openings: 8 in marketing (a Head of Conversion to turn free users into paying ones, a Lifecycle Manager for onboarding emails, two Google Ads roles, community, social, product marketing, a video editor), 4 in sales and support, 5 in engineering, 10 in product, design and operations. 25 of 26 require the office, mostly Warsaw. None lists a salary except the New York sales job ($100K to 270K). Ten were posted after the new sales chief arrived Jul 29. None is engineering. [[ashby]] [[linkedin-jobs]] [[builtin]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** Viktor thinks the product is good enough and distribution is the problem: it's building a sales floor and a marketing operation while leaving five engineering seats open. Adapt's 13-person, mostly-engineering team can out-build Viktor for the next two quarters; it can't out-market it. Pick the fight accordingly. [[ashby]] [[linkedin-adapt]]",
+                  text: "**Why it matters for Adapt:** Viktor thinks the product is good enough and distribution is the problem. It's building a sales floor and a marketing operation while leaving five engineering seats open. Adapt's 13-person, mostly-engineering team can't match that spend, so don't try to. Compete on the things Viktor's hires can't fix quickly. Ship the features its customers are asking for (spending visibility, per-person limits, a full record of what the AI did), keep the security lead, and put engineers in front of technical buyers. Spend marketing dollars only on the cheap, specific searches and comparison pages listed above, not on brand campaigns. [[ashby]] [[linkedin-adapt]]",
                 },
               ],
             },
             {
-              claim: "The job ads admit what the marketing doesn't: most paying accounts are one person, and the numbers live in spreadsheets.",
+              claim: "The job ads admit what the marketing doesn't. Most paying accounts are one person, and the numbers live in spreadsheets.",
               body: [
                 {
                   type: "p",
-                  text: "In Viktor's own words: \"half of paying workspaces still have only one active human\"; \"one power user drives most of the usage\"; \"our biggest leak is between a user's first message and their first scheduled task\"; onboarding emails are \"run by the Head of Growth as a side quest\"; decisions on \"retention, pricing, channel mix, and unit economics happen from spreadsheets... no data lead\"; \"hiring is the bottleneck\". [[ashby]]",
+                  text: "Viktor's own job ads say \"half of paying workspaces still have only one active human\", \"one power user drives most of the usage\" and \"our biggest leak is between a user's first message and their first scheduled task\". They say onboarding emails are \"run by the Head of Growth as a side quest\", that decisions on \"retention, pricing, channel mix, and unit economics happen from spreadsheets... no data lead\", and that \"hiring is the bottleneck\". [[ashby]]",
                 },
                 {
                   type: "why",
@@ -1325,20 +1325,11 @@ export const viktor: Brief = {
               ],
             },
             {
-              claim: "Recruit the engineers Viktor's office rule shuts out.",
-              body: [
-                {
-                  type: "p",
-                  text: "Viktor's engineering jobs require Warsaw or Munich, with one remote exception limited to Europe. Every US engineer who reads Viktor's ads is ineligible. Adapt requires five days a week in San Francisco, its own filter, but it's the only one of the two hiring engineers in the US. Say so on a careers page; Adapt doesn't have one. [[ashby]] [[adapt-company]]",
-                },
-              ],
-            },
-            {
               claim: "Win big-company buyers before Viktor finishes its security audit.",
               body: [
                 {
                   type: "p",
-                  text: "Viktor's operations job ad names the goal: \"compliance, security questionnaires, and the processes that let us sell to companies bigger than us.\" Adapt already has the full SOC 2 audit, a data-processing agreement, approval rules and audit logs, while Viktor's Slack listing says no HIPAA (US health-privacy law) and no SAML (single sign-on). That gap closes the day Viktor's audit report arrives. Use it in every legal, healthcare and finance deal now. [[ashby]] [[adapt-security]] [[slack-marketplace]]",
+                  text: "Viktor's operations job ad says the goal is \"compliance, security questionnaires, and the processes that let us sell to companies bigger than us.\" Adapt already has the full SOC 2 audit, a data-processing agreement, approval rules and audit logs, while Viktor's Slack listing says no HIPAA (US health-privacy law) and no SAML (single sign-on). That gap closes the day Viktor's audit report arrives. Use it in every legal, healthcare and finance deal now. [[ashby]] [[adapt-security]] [[slack-marketplace]]",
                 },
               ],
             },
@@ -1356,7 +1347,7 @@ export const viktor: Brief = {
             },
             {
               type: "p",
-              text: "**Sales, success and support (4):** founding salespeople for Europe and the US (New York, $100K to 270K), a Customer Success Manager, and a Support Specialist because Teams \"is adding load\". These are the only jobs Viktor posts on LinkedIn; each drew 39 to 144 applicants. [[ashby]] [[linkedin-jobs]]",
+              text: "**Sales, success and support (4):** founding salespeople for Europe and the US (New York, $100K to 270K), a Customer Success Manager, and a Support Specialist because Teams \"is adding load\". These are the only jobs Viktor posts on LinkedIn. Each drew 39 to 144 applicants. [[ashby]] [[linkedin-jobs]]",
             },
             {
               type: "p",
@@ -1381,7 +1372,7 @@ export const viktor: Brief = {
                 { text: "Posted", w: "10%", nw: true },
               ],
               rows: [
-                ["[Head of Conversion](https://jobs.ashbyhq.com/viktor/a6c84161-2162-4926-aebe-b77002593166)", "Growth", "Not disclosed", "Warsaw or other EU cities; NYC second", "May 3"],
+                ["[Head of Conversion](https://jobs.ashbyhq.com/viktor/a6c84161-2162-4926-aebe-b77002593166)", "Growth", "Not disclosed", "Warsaw or other EU cities. NYC second", "May 3"],
                 ["[Product Marketing Manager](https://jobs.ashbyhq.com/viktor/fbc8f479-0579-4f1d-a7fc-09b8994ce1c5)", "Growth", "Not disclosed", "Warsaw or NYC", "May 13"],
                 ["[Community Manager](https://jobs.ashbyhq.com/viktor/75622999-77c5-45cf-a908-828be23d1153)", "Growth", "Not disclosed", "Warsaw or NYC", "Jun 1"],
                 ["[Social Media Manager](https://jobs.ashbyhq.com/viktor/42d719bd-5fc5-4f3f-871f-540fdcce8f93)", "Growth", "Not disclosed", "Warsaw or NYC", "Jun 1"],
@@ -1417,21 +1408,21 @@ export const viktor: Brief = {
             { type: "h3", text: "Who joined" },
             {
               type: "p",
-              text: "Announced: Robbie O'Connor, Chief Revenue Officer (Jul 29; ex-Google, Dropbox, Asana, Notion), Matt Swulinski, Head of Growth (Aug 6; from Wispr Flow), Michael Matloka, Product Engineer (Aug 19; PostHog's fifth employee). About a dozen more joined quietly since June: engineers, a data engineer, a founding salesperson, a partnerships hire in Dublin, a recruiter. LinkedIn's count went from 40 to 50 in six weeks; real staff is about 37 to 40, with 26 in Poland and 8 in the US. [[linkedin]] [[linkedin-viktor-people]]",
+              text: "Three hires were announced. Robbie O'Connor, Chief Revenue Officer (Jul 29, ex-Google, Dropbox, Asana, Notion). Matt Swulinski, Head of Growth (Aug 6, from Wispr Flow). Michael Matloka, Product Engineer (Aug 19, PostHog's fifth employee). About a dozen more joined quietly since June: engineers, a data engineer, a founding salesperson, a partnerships hire in Dublin, a recruiter. LinkedIn's count went from 40 to 50 in six weeks. Real staff is about 37 to 40, with 26 in Poland and 8 in the US. [[linkedin]] [[linkedin-viktor-people]]",
             },
             { type: "h3", text: "Adapt's side" },
             {
               type: "table",
               headers: [{ text: "Job", w: "26%" }, { text: "Location", w: "16%" }, { text: "Salary", n: true, w: "12%" }, { text: "Notes" }],
               rows: [
-                ["[Account Executive](https://ats.rippling.com/adapt/jobs/0a7c6983-469b-45d1-aa7b-7e4be1498310)", "San Francisco, in office", "Not disclosed; the form asks for \"desired annual salary\"", "Created Sep 2025, re-posted Feb 3; 38 applicants. Deals of $10K to 50K a year, 8 to 12 week sales cycle, 4-week pilots. The form asks for a GitHub link."],
-                ["Product Specialist", "San Francisco", "Not disclosed", "Only visible in ZipRecruiter's index; the page itself is blocked"],
+                ["[Account Executive](https://ats.rippling.com/adapt/jobs/0a7c6983-469b-45d1-aa7b-7e4be1498310)", "San Francisco, in office", "Not disclosed. The form asks for \"desired annual salary\"", "Created Sep 2025, re-posted Feb 3. 38 applicants. Deals of $10K to 50K a year, 8 to 12 week sales cycle, 4-week pilots. The form asks for a GitHub link."],
+                ["Product Specialist", "San Francisco", "Not disclosed", "Only visible in ZipRecruiter's index. The page itself is blocked"],
                 ["General Application: Exceptional Talent", "San Francisco", "Not disclosed", "Only visible in ZipRecruiter's index"],
               ],
             },
             {
               type: "p",
-              text: "Adapt has no careers page. Its LinkedIn lists 19 people; minus advisors and investors that's about 13 staff: 7 in engineering, 5 in business development, 3 in sales, all in San Francisco five days a week. Nine joined in 2026 without a public job ad, including a VP of Product and Engineering (April) and a Solutions Architect (August). Neither company has reviews on Glassdoor, Indeed or Blind. [[adapt-company]] [[linkedin-adapt]] [[rippling]]",
+              text: "Adapt has no careers page. Its LinkedIn lists 19 people. Minus advisors and investors that's about 13 staff: 7 in engineering, 5 in business development, 3 in sales, all in San Francisco five days a week. Nine joined in 2026 without a public job ad, including a VP of Product and Engineering (April) and a Solutions Architect (August). Neither company has reviews on Glassdoor, Indeed or Blind. [[adapt-company]] [[linkedin-adapt]] [[rippling]]",
             },
           ],
         },
@@ -1450,14 +1441,14 @@ export const viktor: Brief = {
             "Reviews, press and teardowns: [[g2]], [[product-hunt]], [[product-hunt-adapt]], [[hacker-news]], [Fortune on the funding round](https://fortune.com/2026/05/19/viktor-ai-startup-raises-75-million-for-virtual-coworker-exclusive/), [Next Play on joining Viktor](https://nextplayso.substack.com/p/should-you-join-viktor), [[latka]], [thisandthat review](https://www.thisandthat.chat/blog/viktor-review-2026/), [SaaS CRM Review](https://saascrmreview.com/viktor-review/), [Chief Marketing Dad](https://chiefmarketingdad.com/blogs/learn/viktor-ai-review), [Built In listing](https://builtin.com/job/senior-designer-web/10293196), [VentureBeat on Claude Tag](https://venturebeat.com/orchestration/anthropics-new-claude-tag-update-lets-its-slack-agent-read-the-full-conversation-and-jump-in-unprompted), [Slack on Add to Slack](https://slack.com/blog/news/add-to-slack).",
             "Social, Aug 6 to 26: [X search](https://x.com/search?q=viktor.com%20OR%20%22viktor%20ai%22%20OR%20%40viktor_com&f=live), [@viktor_com](https://x.com/viktor_com), [@frydwia](https://x.com/frydwia), [@Adapt](https://x.com/Adapt), [@jim_benton](https://x.com/jim_benton), [[linkedin]], [[linkedin-adapt]], [[instagram]], [[youtube-getviktor]], [[youtube-adapt]], [[tiktok-getviktor]].",
             "Ads and video, pulled Aug 26 to 27, 2026 via Apify: [[meta-ad-library]] (238 running ads for the Viktor page: launch dates, formats, landing pages, wording), [[tiktok-search|TikTok search results for \"viktor ai employee\"]] (44 relevant videos after removing the language app and the video-game character), [[youtube-search|YouTube search results]] (40 relevant videos), [[instagram]] posts tagged #getviktor and #viktorai.",
-            "Social, pulled Aug 27, 2026 via Apify: [[x|X, latest 300 posts]] for viktor.com / \"viktor ai\" / @viktor_com (236 relevant, Aug 6 to 26) and 60 for Adapt (1 relevant); [[reddit|Reddit]] exact-name search for both companies since Jul 20 (0 posts); [[linkedin-jobs|LinkedIn jobs and company pages]] for both companies; [[x-adapt|Adapt's X profile and posts]].",
+            "Social, pulled Aug 27, 2026 via Apify: [[x|X, latest 300 posts]] for viktor.com / \"viktor ai\" / @viktor_com (236 relevant, Aug 6 to 26) and 60 for Adapt (1 relevant). [[reddit|Reddit]] exact-name search for both companies since Jul 20 (0 posts). [[linkedin-jobs|LinkedIn jobs and company pages]] for both companies. [[x-adapt|Adapt's X profile and posts]].",
           ],
         },
       ],
     },
   ],
   footer:
-    "Traffic, search and ad-spend figures are estimates from outside tools and disagree by up to two to one; trust the shapes, not the exact numbers. Revenue figures are unaudited. Data pulled Aug 26 to 27, 2026 via Apify. Compiled Aug 27, 2026.",
+    "Traffic, search and ad-spend figures are estimates from outside tools and disagree by up to two to one. Trust the shapes, not the exact numbers. Revenue figures are unaudited. Data pulled Aug 26 to 27, 2026 via Apify. Compiled Aug 27, 2026.",
   sources: {
     semrush: { label: "Semrush", href: "https://www.semrush.com/analytics/overview/?q=viktor.com&searchType=domain", logo: "semrush" },
     spyfu: { label: "SpyFu", href: "https://www.spyfu.com/overview/domain?query=viktor.com", logo: "spyfu" },
