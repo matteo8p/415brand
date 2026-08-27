@@ -1,12 +1,52 @@
 import type { Brief } from "./types";
 
 export const deepgram: Brief = {
-  slug: "deepgram-08-27-2026",
-  title: "Deepgram weekly brief: who is buying, what changed, what to do",
-  sub: "For Ian and Alex at Sprag, August 27, 2026",
+  slug: "deepgram-08-28-2026",
+  title: "Deepgram weekly brief & analysis",
+  sub: "For Sprag, August 28, 2026",
   subject: "Deepgram",
   client: "Sprag",
   intro: [
+    { type: "h3", text: "Deepgram customers to contact this week" },
+    {
+      type: "table",
+      headers: [
+        { text: "Who to contact", w: "19%" },
+        { text: "Company", w: "16%" },
+        { text: "What they are doing with Deepgram, and how to open" },
+      ],
+      rows: [
+        [
+          "[Marcel Karas](https://github.com/dobexx)",
+          "JUNGHERZ GmbH, Germany",
+          "Spent Aug 26 fixing language detection in his Deepgram speech-to-text: three commits in one day about language hints, a language veto, and following the caller's language mid-call. [[gh-jungherz]] Open with the ISSEN numbers, because that is the same problem measured: Deepgram around 70% on code-switched audio, Sprag 90% at under 300ms. He is German, so Chorus can answer as well as listen.",
+        ],
+        [
+          "[Neevash Ramdial](https://github.com/Nash0x7E2), Co-founder",
+          "Stream (GetStream), Boulder CO",
+          "Their Vision-Agents SDK ships `deepgram-sdk`, and the most recent commit on that file, dated Aug 26, adds Gemini transcription alongside it. [[gh-stream]] They are actively adding a second provider right now, which is the moment to arrive. They resell voice inside their own product, so Deepgram's per-minute price is their gross margin.",
+        ],
+        [
+          "[Mohammed Zaid Shaikh](https://www.linkedin.com/in/mohdzaidshaikh), Founder and CTO",
+          "Cubosquare Technology (tam.ai.in), India",
+          'Asked Deepgram for startup pricing on its own page and got no reply: "Facing a lot of issues Deepgram I do not have deep pocket to switch better model… My product is all pay as you go model… But it works is fluctuating." [[li-zaid-comment]] Reply in the thread, then a direct message. Sprag is pay-as-you-go at a quarter of the price.',
+        ],
+        [
+          "[Steffen H.](https://www.linkedin.com/in/steffen-h-7a6b102), Senior Technical PM, AI and Voice",
+          "1&1 Mail & Media, Germany",
+          'Waiting on a language Deepgram has not shipped, under its Flux launch: "Can\'t wait to see this go live with German voices." [[li-flux-comments]] Chorus speaks German today. Write to him in German and lead with the ten output languages.',
+        ],
+        [
+          "[Pierson Marks](https://github.com/piersonmarks), Co-founder",
+          "Jellypod",
+          "Owns `speech-sdk/src/providers/deepgram/index.ts`, a Deepgram provider module inside a pluggable interface. [[gh-jellypod]] They have already paid the cost of being able to switch, so the ask is not a meeting. Open a pull request adding a Sprag provider and let the diff make the argument.",
+        ],
+      ],
+    },
+    {
+      type: "why",
+      text: "**Why it matters for Sprag:** every row is a named person with a public profile and a specific thing to open with, which is the difference between a lead and a list. Two of the five moved on Aug 26: Marcel Karas spent the day fighting the exact multilingual problem Sprag measured at 90% against Deepgram's 70%, and Stream committed a second transcription provider, which means they are choosing right now. Work these five before asking for more. Seven further named contacts are researched and waiting for the next report.",
+    },
     { type: "h3", text: "Scorecard" },
     {
       type: "scorecard",
@@ -15,7 +55,7 @@ export const deepgram: Brief = {
           metric: "Named companies found using Deepgram this week",
           primary: "31 on their site, 24 more found in public posts",
           us: "1 (ISSEN)",
-          change: "The 24 are the lead list. Full table in section 4.",
+          change: "5 named people to contact are in the table above. Seven more are held for the next report.",
           tone: "bad",
           source: "[[x-deepgram]] [[li-deepgram]] [[dg-customers]]",
         },
@@ -123,9 +163,9 @@ export const deepgram: Brief = {
       collapsed: true,
       items: [
         {
-          action: "Reply this week to the 24 builders who named Deepgram in public, starting with the 9 who run a real company.",
-          why: "Section 4 lists every one of them with a link and a reason. Deepgram's own community manager is already doing this, in the open, on X: she replies to people who mention Deepgram and offers them the startup programme within hours. That is the entire playbook and it costs one person's afternoon. Sprag has one named customer. These 24 are the cheapest 24 conversations available, and 9 of them describe a production workload Sprag can price against today.",
-          evidence: "advertising-and-social-media",
+          action: "Message Marcel Karas, Neevash Ramdial and Mohammed Zaid Shaikh today.",
+          why: "All three did something on Aug 26 that opens a door. Karas at JUNGHERZ spent the day fixing language detection in his Deepgram integration, which is the problem ISSEN measured Sprag winning at 90% against Deepgram's 70%. Stream committed a second transcription provider into the SDK they resell, so they are picking one right now. Shaikh asked Deepgram in public for a startup price and got no answer. Send three messages, then work the other two rows. This costs one person an afternoon.",
+          evidence: "key-findings",
         },
         {
           action: "Publish a Deepgram comparison page before Sep 13, priced against Deepgram's list rate rather than its promotion.",
@@ -255,15 +295,15 @@ export const deepgram: Brief = {
           items: [
             {
               claim:
-                "Twenty-four companies named Deepgram as the thing they build on this week, in public, with their own names attached.",
+                "Fifty-nine companies can be shown to use Deepgram right now, and twelve of them come with a named person and a way to reach them.",
               body: [
                 {
                   type: "p",
-                  text: "A search of X and LinkedIn for the last seven days turned up 90 X posts and 40 LinkedIn posts mentioning Deepgram. Stripping out Deepgram's own staff, recruiters and spam leaves 24 identifiable builders who say in their own words that they run Deepgram in a product. Nine of them are running a real company rather than a side project: Vokalith AI, CallKaro.AI, Divinci AI, Speko, NF Tech, airtxt.ai, SubtitleNEXT, 2X Solutions AI and Four-Leaf AI. Deepgram's own site names 31 more. The full table with links and a reason for each is in section 4. [[x-deepgram]] [[li-deepgram]] [[dg-customers]]",
+                  text: "Five pulls produced 59 rows: fifteen companies with Deepgram credentials in public code, 24 builders who named Deepgram on X or LinkedIn in the last seven days, twelve people who commented something specific on Deepgram's own posts, six G2 reviewers with a live complaint and a job title, and two found through a job ad and a Hacker News thread. Deepgram publishes 34 more customers itself. Reading the commit history on the code rows turned twelve of them into a named engineer with a public profile. The five best are at the top of this brief and the other seven are held for the next report. [[gh-search]] [[g2-deepgram]] [[x-deepgram]] [[li-deepgram]] [[dg-customers]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** this is the list Ian and Alex asked for, and it renews itself every week for the cost of two searches. Sprag has one named customer. Every name in that table has already decided to pay for hosted speech, has told the internet which vendor they use, and can be reached today. Start with the nine companies and open with the price comparison, not a product tour. [[x-deepgram]]",
+                  text: "**Why it matters for Sprag:** this is the list Ian and Alex asked for, and it renews itself every week for the cost of five searches. Sprag has one named customer today. Every name at the top of this brief has already decided to pay for hosted speech, has said publicly which vendor they use, and can be reached this afternoon. Work those five before asking for the next seven. [[gh-search]]",
                 },
               ],
             },
@@ -411,7 +451,7 @@ export const deepgram: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** every builder in section 4 who is shipping a phone agent will hit this. Sprag's benchmark wins on end-to-end latency but the docs admit a broken interruption path, and that is the first thing that breaks on a real call. Fix the barge-in path and delete the subclass from the quickstart before pitching any of these leads. [[sprag-realtime]]",
+                  text: "**Why it matters for Sprag:** every lead in this brief who is shipping a phone agent will hit this. Sprag's benchmark wins on end-to-end latency but the docs admit a broken interruption path, and that is the first thing that breaks on a real call. Fix the barge-in path and delete the subclass from the quickstart before pitching any of these leads. [[sprag-realtime]]",
                 },
               ],
             },
@@ -712,7 +752,7 @@ export const deepgram: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "Sprag has run 25 creatives since April in short bursts that stop after a week or two, and nothing is running today. Deepgram has 173 running and 347 on record, so a broad transcription buy is unwinnable. The words Deepgram has no landing page for are audio captioning, describe an audio clip, speech to speech API, voice cloning API and multimodal inference. Sprag has a product page for each of those and Deepgram has none. Run those continuously on a small budget rather than restarting a broad campaign every month. [[gads-sprag]] [[gads-dg]] [[dg-sitemap]]",
+                  text: "Sprag has run 25 creatives since April in short bursts that stop after a week or two, and nothing was running as of Aug 27. Deepgram has 173 running and 347 on record, so a broad transcription buy is unwinnable. The words Deepgram has no landing page for are audio captioning, describe an audio clip, speech to speech API, voice cloning API and multimodal inference. Sprag has a product page for each of those and Deepgram has none. Run those continuously on a small budget rather than restarting a broad campaign every month. [[gads-sprag]] [[gads-dg]] [[dg-sitemap]]",
                 },
               ],
             },
@@ -859,7 +899,7 @@ export const deepgram: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** this is a one-person motion with no budget behind it, and it is how Deepgram is capturing the exact builders Sprag needs. Sprag can copy it this week. The searches are already written in section 6. [[x-naomi]]",
+                  text: "**Why it matters for Sprag:** this is a one-person motion with no budget behind it, and it is how Deepgram is capturing the exact builders Sprag needs. Sprag can copy it this week. The searches are already written in section 7. [[x-naomi]]",
                 },
               ],
             },
@@ -926,7 +966,7 @@ export const deepgram: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "Deepgram's version is one community manager, no budget, and a $200 credit to offer. Sprag's version has a stronger offer: Qwen3.8-27B is free on Sprag through the end of August and the transcription price is a quarter of Deepgram's. Reply from a named person with an engineering title rather than a brand account. The searches to watch are listed in section 6. [[x-naomi]] [[sprag-free]]",
+                  text: "Deepgram's version is one community manager, no budget, and a $200 credit to offer. Sprag's version has a stronger offer: Qwen3.8-27B is free on Sprag through the end of August and the transcription price is a quarter of Deepgram's. Reply from a named person with an engineering title rather than a brand account. The searches to watch are listed in section 7. [[x-naomi]] [[sprag-free]]",
                 },
               ],
             },
@@ -945,149 +985,10 @@ export const deepgram: Brief = {
           type: "toggle",
           claim: "Full analysis",
           body: [
-            { type: "h3", text: "Companies found using Deepgram in public this week" },
+            { type: "h3", text: "The names are at the top of this brief" },
             {
               type: "p",
-              text: "Pulled Aug 27 from 90 X posts and 40 LinkedIn posts covering the previous seven days, after removing Deepgram staff, recruiters and hashtag spam. Ranked with the ones that look like a real company and a real workload first. [[x-deepgram]] [[li-deepgram]]",
-            },
-            {
-              type: "table",
-              headers: [
-                { text: "Who", w: "20%" },
-                { text: "Where", w: "12%", nw: true },
-                { text: "Why we think they are a customer" },
-              ],
-              rows: [
-                [
-                  "Vokalith AI (Taranjot Kaur, founder)",
-                  "LinkedIn",
-                  "Profile reads enterprise voice AI, agentic AI and operations automation, HIPAA-compliant systems. Engaged with a post about voice-agent turn latency crossing 1,300ms. Regulated healthcare voice is the workload where Deepgram's per-minute connection billing hurts most. [[li-latency]]",
-                ],
-                [
-                  "CallKaro.AI (Ujjawal Kumar, co-founder and CTO)",
-                  "LinkedIn",
-                  'The company account commented "your agent should not go down because someone else\'s API did" on a voice-infrastructure post, and two of its engineers reacted to the same post. A company marketing failover between speech providers is already unhappy with one of them. [[li-callkaro]]',
-                ],
-                [
-                  "Divinci AI",
-                  "X",
-                  'Shipped a changelog entry on Aug 24: "set a provider for the workspace, override it per release, and bring your own Deepgram Nova-3 key". They have already built provider switching, so adding Sprag is a config change. [[x-divinci]]',
-                ],
-                [
-                  "Speko (Bek Nabdik)",
-                  "X",
-                  '"every call routed across deepgram, elevenlabs, cartesia, openai on measured latency. a better model ships, your agent improves without a rewrite." They route on measured latency and price, which is the exact basis Sprag wins on. [[x-speko]]',
-                ],
-                [
-                  "NF Tech (Jainil)",
-                  "X",
-                  '"What we run at NF Tech: STT: Deepgram over Whisper (10x faster, cheaper at scale)". They chose Deepgram explicitly on speed and cost. Sprag is cheaper on both counts. [[x-nftech]]',
-                ],
-                [
-                  "airtxt.ai",
-                  "LinkedIn",
-                  "iPhone dictation app whose 1.1 release added bring-your-own-key: connect Deepgram for speech recognition, keys stay in the Keychain. A per-user key model means their users pay the provider directly, so price is the whole pitch. [[li-airtxt]]",
-                ],
-                [
-                  "SubtitleNEXT / Profuz Digital",
-                  "X",
-                  "Promoting extended AI transcription with AssemblyAI, Deepgram, ElevenLabs and Whisper at IBC 2026, stand 8.A88. A subtitling vendor already integrating four providers, which makes a fifth cheap. [[x-subtitlenext]]",
-                ],
-                [
-                  "2X Solutions AI",
-                  "Deepgram's own X account",
-                  "Deepgram published the case study this week: Nova-2 catching opt-outs across 7.3M+ calls with sub-2-second turnaround. A high-volume compliance workload on an older model, which means a big bill and a migration already due. [[x-2x]]",
-                ],
-                [
-                  "Four-Leaf AI (Frank)",
-                  "X",
-                  '"I use deepgram for STT and can store from those logs" for an AI interviewer product with a conversational interviewer called Clover. Interview transcription is exactly what Sprag\'s captioning model does better. [[x-fourleaf]]',
-                ],
-                [
-                  "Ed Charbeneau",
-                  "X",
-                  'Building on the Deepgram Agent API and posted "I burned through $50 of Deepgram API credits last night" after leaving a socket open. Deepgram bills the agent by connection time, which is what made that expensive. Sprag bills on audio. [[x-ed]] [[x-ed-2]]',
-                ],
-                [
-                  "Vinay Jain (karyalo.in, Websinova)",
-                  "LinkedIn",
-                  "Published a full build using Deepgram Flux for speech-to-text and Deepgram Aura 2 for voice, open-sourced it, and offers to build them for businesses. An agency that will repeat this stack across many clients. [[li-vinay]]",
-                ],
-                [
-                  "Genesys",
-                  "LinkedIn",
-                  "Deepgram's AWS Alliance Lead announced Deepgram is now integrated into Genesys Virtual Agent. A platform integration rather than a customer, but it tells you where Deepgram's enterprise volume will come from next. [[li-genesys]]",
-                ],
-                [
-                  "Coval (Brooke Hopkins)",
-                  "X and LinkedIn",
-                  "Co-hosting a happy hour with Deepgram at Genesys Xperience and running a booth. Coval evaluates voice agents, so it sits between buyers and providers. [[x-coval]] [[li-genesys]]",
-                ],
-                [
-                  "Max Rovensky",
-                  "X",
-                  '"It also supports multiple voice dictation providers - ElevenLabs, Groq Whisper, Deepgram and the built-in Apple one." A paid Mac dictation app with a provider list Sprag could join. [[x-rovensky]]',
-                ],
-                [
-                  "superwhisper (Neil Chudleigh)",
-                  "X",
-                  '"we have realtime like that with Parakeet, Deepgram, 11labs Scribe. You can flick it on for any of your modes." Already multi-provider, already shipping. [[x-superwhisper]]',
-                ],
-                [
-                  "Golos",
-                  "X",
-                  "Open-source dictation tool, described in a widely shared Chinese-language post as running realtime speech through Deepgram. Open source means the provider is one config line. [[x-golos]]",
-                ],
-                [
-                  "Project Raven",
-                  "X",
-                  "Desktop meeting copilot that routes system and microphone audio through echo cancellation and then sends both streams to Deepgram over parallel websockets. Two parallel streams means two bills. [[x-raven]]",
-                ],
-                [
-                  "Samarth (@SamarthMUFC)",
-                  "X",
-                  "Posted twice in the window about a real-time voice agent handling live phone conversations using Twilio, Deepgram, OpenAI and Hume AI, with the GitHub link. Looking for work, so open to a sponsored rebuild. [[x-samarth]]",
-                ],
-                [
-                  "Alex Garcia",
-                  "X",
-                  "Building a voice interface for Apple Watch: the app provides speech intake and speech output via Deepgram and ElevenLabs, you provide the webhook. Recruiting beta testers now. [[x-alexg]]",
-                ],
-                [
-                  "Manjeet Godara (Merra)",
-                  "LinkedIn",
-                  "Live AI interviewer using OpenAI Realtime for the conversation and Deepgram for speech-to-text, with the repo public. Reacted to by five colleagues at Rosmerta Technologies. [[li-merra]]",
-                ],
-                [
-                  "Aly (@0xsilverbullet)",
-                  "X",
-                  "Porting a voice feature into a coding tool: requires a separate server and a Deepgram API key. Early enough to change providers. [[x-aly]]",
-                ],
-                [
-                  "@gatyoukatyou",
-                  "X",
-                  "Japanese meeting-minutes app currently using Deepgram, posting about trying an alternative on the day Google launched one. Actively shopping. [[x-jp-minutes]]",
-                ],
-                [
-                  "@Seg_Faul (Even g2)",
-                  "X",
-                  "Voice conversation app using Deepgram, posting about having to add a second language model pass to fix misrecognition. An accuracy complaint with a workaround attached. [[x-segfaul]]",
-                ],
-                [
-                  "@ichikiwhere",
-                  "X",
-                  '"I use deepgram now, results are more accurate, plus like you said the free $200 credits." Chose Deepgram on the free credit, which is the cheapest kind of loyalty to break. [[x-ichiki]]',
-                ],
-              ],
-            },
-            { type: "h3", text: "The 31 companies Deepgram names itself" },
-            {
-              type: "p",
-              text: "Deepgram's customers page carries 31 published stories. These are not new leads, but the mix tells you which industries Deepgram is defending and where it is quoting a price it will not move on: Five9, Telnyx, Voximplant, Synthflow AI, Red Box, MaxContact, Sharpen, Abby Connect, CallTrackingMetrics, Creovai, Revenue.io, Cloud Communications, Gradient Labs, GetVocal, Vida, SigmaMind AI, Prem AI, Klubi, Elerian, Legalmate, Nytro AI, UpdateAI, Flowtica, BigVU, Jobcase, Podsights, Wistia, Creditas, 2X Solutions AI, an unnamed Fortune 50 retail pharmacy and an unnamed leading medical transcription platform. [[dg-customers]]",
-            },
-            {
-              type: "p",
-              text: "Nineteen of the 31 are contact-centre or telephony companies. That concentration is the reason Deepgram bought a drive-thru company, hired a restaurants specialist and integrated with Genesys this week. It is also why Deepgram's public roadmap is turn detection and language breadth rather than anything Sprag competes on. Sprag's opening is the other half of the market: the individual developers and small teams in the table above. [[dg-customers]] [[dg-newsroom]]",
+              text: "The five people to contact are in the table at the top, with the evidence for each. This section covers the channel rather than the names: how Deepgram reaches those people, and what Sprag would have to do to reach them first. [[x-deepgram]] [[li-deepgram]]",
             },
             { type: "h3", text: "The ad footprint" },
             {
@@ -1216,7 +1117,7 @@ export const deepgram: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** Deepgram's self-serve experience is a hiring plan rather than a product right now, and that is the surface every lead in section 4 touches first. Sprag's signup is already good and its free tier is already generous. That advantage has a deadline on it. [[dg-jobs]] [[sprag-pricing]]",
+                  text: "**Why it matters for Sprag:** Deepgram's self-serve experience is a hiring plan rather than a product right now, and that is the surface every lead in this brief touches first. Sprag's signup is already good and its free tier is already generous. That advantage has a deadline on it. [[dg-jobs]] [[sprag-pricing]]",
                 },
               ],
             },
@@ -1359,6 +1260,12 @@ export const deepgram: Brief = {
             "[[dg-sitemap|deepgram.com/sitemap.xml]]. 1,342 addresses",
             "[[sprag-sitemap|sprag.ai/sitemap.xml]]. 72 addresses",
             "[[dg-jobs|Deepgram job board on Ashby]]. 93 listings with pay bands",
+            "[[g2-deepgram|G2 reviews of Deepgram, 1 to 3 stars]]. 10 reviews via Apify, 6 with a named reviewer",
+            "[[gh-search|GitHub code search]] for DEEPGRAM_API_KEY, api.deepgram.com, deepgram-sdk, flux-general-en and aura-2. 173 organisations, free via the GitHub API",
+            "[[li-dg-page|Deepgram's LinkedIn company page]]. Last month of posts plus every reactor and commenter, 1,063 rows via Apify",
+            "[[li-djc-job|LinkedIn job ads naming Deepgram]]. 60 ads pulled, 1 genuine match",
+            "[[hn-deepgram|Hacker News via Algolia]]. Free, no key",
+            "[[x-alternative|X search for people leaving Deepgram]]. Zero results in 30 days",
           ],
         },
         { type: "h3", text: "Deepgram's own pages" },
@@ -1416,6 +1323,10 @@ export const deepgram: Brief = {
             "[[cartesia-vs|Cartesia comparison pages]]",
           ],
         },
+        {
+          type: "note",
+          text: "Everything in this brief was pulled on Aug 27, 2026, the day before it was sent. Ad counts come from Google's own advertiser records and page counts from published sitemaps, and both are exact. Prices are public pay-as-you-go list prices, and enterprise agreements price differently on both sides. Traffic and keyword estimates are missing this week because Similarweb and SpyFu blocked the request.",
+        },
         { type: "h3", text: "Social posts cited" },
         {
           type: "links",
@@ -1459,9 +1370,63 @@ export const deepgram: Brief = {
       ],
     },
   ],
-  footer:
-    "Pulled Aug 27, 2026 by 415brand for Sprag. Ad counts come from Google's own advertiser records and are exact. Page counts come from each company's published sitemap and are exact. Social counts come from Apify searches of X, LinkedIn and Reddit run on Aug 27 covering the previous seven days for X and LinkedIn and thirty days for Reddit, and X returns no view or follower counts. Traffic, keyword and Meta ad figures are missing this week: Similarweb and SpyFu blocked the request and the Apify limit was reached after the social pulls finished. They return next week. Prices are public pay-as-you-go list prices checked on Aug 27 and enterprise agreements price differently on both sides.",
+  footer: "",
   sources: {
+    "x-alternative": {
+      label: "X",
+      href: "https://x.com/search?q=%22deepgram%20alternative%22%20OR%20%22switching%20from%20deepgram%22&f=live",
+      logo: "x",
+    },
+    "gh-jungherz": {
+      label: "GitHub",
+      href: "https://github.com/JUNGHERZ/Voice-Office-Hub/commits/main",
+      logo: "github",
+    },
+    "g2-deepgram": {
+      label: "G2",
+      href: "https://www.g2.com/products/deepgram/reviews",
+      logo: "g2",
+    },
+    "gh-search": {
+      label: "GitHub code search",
+      href: "https://github.com/search?q=%22api.deepgram.com%22+OR+DEEPGRAM_API_KEY&type=code",
+      logo: "github",
+    },
+    "gh-stream": {
+      label: "GitHub",
+      href: "https://github.com/GetStream/Vision-Agents/blob/9ee1b92b5f7e52531a0300a8d84996f76367f413/CHANGELOG.md",
+      logo: "github",
+    },
+    "gh-jellypod": {
+      label: "GitHub",
+      href: "https://github.com/Jellypod-Inc/speech-sdk/blob/df86933c6b99e34ffa7daa92cd889d9ec579db45/src/providers/deepgram/index.ts",
+      logo: "github",
+    },
+    "li-zaid-comment": {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7493382911220596736",
+      logo: "linkedin",
+    },
+    "li-flux-comments": {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7493299676075556864",
+      logo: "linkedin",
+    },
+    "li-djc-job": {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/jobs/view/member-of-technical-staff-at-david-joseph-company-4452412618",
+      logo: "linkedin",
+    },
+    "li-dg-page": {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/company/deepgram/posts",
+      logo: "linkedin",
+    },
+    "hn-deepgram": {
+      label: "Hacker News",
+      href: "https://hn.algolia.com/?query=deepgram&sort=byDate&type=all",
+      logo: "hacker-news",
+    },
     "gads-dg": {
       label: "Google Ads Transparency",
       href: "https://adstransparency.google.com/?domain=deepgram.com&region=US",
