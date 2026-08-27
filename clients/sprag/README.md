@@ -10,7 +10,15 @@ https://sprag.ai/
 2. I want you to look at some of Sprag's competitors. soniox, deepgram, cartesia. Do some of the similar analysis for those competitors and write them in the competitors.md Sprag folder.
 
 # Full report (Weekly) 
-1. 
+I want you to generate a full report for the Sprag team. Look at the clients/WEEKLY_REPORT_GUIDANCE.md for what to do. I also want you to look at the analysis we did on the webapp for Viktor and Wispr Flow for reference. 
+
+I want you to focus on doing the analysis on Deepgram to start, I think that's the most interesting. 
+
+Feel free to use Apify to scrape across social medias and ads 
+
+Remember that Sprag's ultimate goal is to find out who their competitor's customers are. We can find that out / guess based off of social media interactions. 
+
+When you create the analysis, I want you to create a new page, /analysis/deegram-08-27-2026
 
 # Daily reports 
 

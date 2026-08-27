@@ -8,3 +8,4 @@ Every report ends with ranked moves, each with a closing window and every claim 
 
 - `webapp/` – the marketing site (Next.js, Convex for lead capture, sample reports at `/samples`)
 - `clients/` – per-client reports
+- `skills/` – how the work is done: report formats, lead and competitor-customer research, the scraping toolbox
