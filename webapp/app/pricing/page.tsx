@@ -3,8 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "415brand pricing: $295 a month per brand tracked, your own or a competitor's, one report a month. Money back on the first month if you don't like the report.",
+    "415brand pricing: a two-week trial for $300, fully refundable. Weekly reports $299 a month. Daily lead briefs plus weekly reports $899 a month.",
 };
+
+const TRIAL_URL = "https://buy.stripe.com/aFa28q1yveIHeK69rZaZi01";
+const WEEKLY_URL = "https://buy.stripe.com/aFa00igtp2ZZatQ6fNaZi02";
+const DAILY_URL = "https://buy.stripe.com/4gM9ASdhdeIHcBYbA7aZi03";
 
 export default function PricingPage() {
   return (
@@ -12,52 +16,70 @@ export default function PricingPage() {
       <section className="band">
         <div className="wrap">
           <div className="plans">
-            <div className="plan featured">
-              <div className="name">Monthly</div>
+            <div className="plan">
+              <div className="name">Two-week trial</div>
               <div className="price">
-                $295 <small>/mo per brand tracked</small>
+                $300 <small>once, fully refundable</small>
               </div>
               <ul>
-                <li>Your brand or a competitor</li>
-                <li>One full report every month</li>
-                <li>First report in 5 business days</li>
-                <li>Cancel anytime</li>
+                <li>Two weeks of real reports, not a demo</li>
+                <li>One brand or competitor tracked</li>
+                <li>First report in 2 business days</li>
+                <li>Ask for your money back any time in the two weeks</li>
               </ul>
-              <a className="button primary" href="/contact">
-                Get started
+              <a className="button" href={TRIAL_URL}>
+                Start the trial
               </a>
             </div>
             <div className="plan">
-              <div className="name">Custom</div>
+              <div className="name">Weekly</div>
               <div className="price">
-                Quote <small>by email</small>
+                $299 <small>/mo per brand tracked</small>
               </div>
               <ul>
-                <li>Your brand plus several competitors</li>
-                <li>Daily, weekly, quarterly or one-off</li>
-                <li>White-label for agencies and investors</li>
+                <li>One full report every Monday morning</li>
+                <li>Their ads, pricing, search and hiring</li>
+                <li>Ranked moves with closing windows</li>
+                <li>Cancel anytime</li>
               </ul>
-              <a className="button" href="/contact">
-                Tell us what you need
+              <a className="button" href={WEEKLY_URL}>
+                Get weekly reports
+              </a>
+            </div>
+            <div className="plan featured">
+              <div className="name">Daily + weekly</div>
+              <div className="price">
+                $899 <small>/mo per brand tracked</small>
+              </div>
+              <ul>
+                <li>Everything in Weekly</li>
+                <li>A lead brief every business day</li>
+                <li>Named people to reply to, with the reply written</li>
+                <li>People already paying your competitor</li>
+                <li>Cancel anytime</li>
+              </ul>
+              <a className="button primary" href={DAILY_URL}>
+                Get daily leads
               </a>
             </div>
           </div>
           <p className="muted" style={{ marginTop: "1.25rem" }}>
-            Don't like the first report? Your first month is refunded, no questions asked.
+            Start with the trial. If the reports are not worth it, say so inside the two weeks and we refund the $300, no
+            questions asked.
           </p>
         </div>
       </section>
 
       <section className="band">
         <div className="wrap">
-          <h2>What's in a report.</h2>
+          <h2>What you get.</h2>
           <table className="sheet">
             <thead>
               <tr>
                 <th>Feature</th>
-                <th className="n">Your brand</th>
-                <th className="n">A competitor</th>
-                <th className="n">Custom</th>
+                <th className="n">Trial</th>
+                <th className="n">Weekly</th>
+                <th className="n">Daily + weekly</th>
               </tr>
             </thead>
             <tbody>
@@ -74,7 +96,7 @@ export default function PricingPage() {
                 <td className="n">✓</td>
               </tr>
               <tr>
-                <td>Sentiment split each month and what moved it</td>
+                <td>Sentiment split and what moved it</td>
                 <td className="n">✓</td>
                 <td className="n">✓</td>
                 <td className="n">✓</td>
@@ -86,14 +108,8 @@ export default function PricingPage() {
                 <td className="n">✓</td>
               </tr>
               <tr>
-                <td>Top accounts and communities talking about the brand</td>
-                <td className="n">✓</td>
-                <td className="n">✓</td>
-                <td className="n">✓</td>
-              </tr>
-              <tr>
                 <td>Their ads: every live creative and which ones they keep duplicating</td>
-                <td className="n">–</td>
+                <td className="n">✓</td>
                 <td className="n">✓</td>
                 <td className="n">✓</td>
               </tr>
@@ -122,25 +138,25 @@ export default function PricingPage() {
                 <td className="n">✓</td>
               </tr>
               <tr>
-                <td>Several brands in one digest</td>
+                <td>Named people to reply to today, with what to say</td>
+                <td className="n">✓</td>
+                <td className="n">–</td>
+                <td className="n">✓</td>
+              </tr>
+              <tr>
+                <td>People already paying your competitor, and why we think so</td>
                 <td className="n">–</td>
                 <td className="n">–</td>
                 <td className="n">✓</td>
               </tr>
               <tr>
                 <td>Cadence</td>
-                <td className="n">Monthly</td>
-                <td className="n">Monthly</td>
-                <td className="n">Daily to quarterly</td>
+                <td className="n">Daily for 2 weeks</td>
+                <td className="n">Weekly</td>
+                <td className="n">Daily + weekly</td>
               </tr>
               <tr>
-                <td>White-label reports</td>
-                <td className="n">–</td>
-                <td className="n">–</td>
-                <td className="n">✓</td>
-              </tr>
-              <tr>
-                <td>First-month refund if you don't like the report</td>
+                <td>Money back if it is not worth it</td>
                 <td className="n">✓</td>
                 <td className="n">✓</td>
                 <td className="n">✓</td>
@@ -185,10 +201,16 @@ export default function PricingPage() {
                 <td>Employ a competitive intelligence team</td>
               </tr>
               <tr>
-                <td>AI auto-analysis</td>
-                <td>Competely</td>
-                <td className="n">$0–$99/mo</td>
-                <td>Verify it, then deepen it</td>
+                <td>Signal and intent tools</td>
+                <td>Common Room, Clay</td>
+                <td className="n">$500–$1,500/mo</td>
+                <td>Wire it up, then read the firehose yourself</td>
+              </tr>
+              <tr>
+                <td>An SDR doing the research</td>
+                <td>One junior hire</td>
+                <td className="n">$4,000–$6,000/mo</td>
+                <td>Hire them, train them, manage them</td>
               </tr>
               <tr>
                 <td>Research agencies</td>
@@ -198,9 +220,9 @@ export default function PricingPage() {
               </tr>
               <tr className="us">
                 <td>415brand</td>
-                <td>Reports, delivered</td>
-                <td className="n">$295/mo</td>
-                <td>Read it once, act on it</td>
+                <td>Reports and leads, delivered</td>
+                <td className="n">$299–$899/mo</td>
+                <td>Read it once, reply to three people</td>
               </tr>
             </tbody>
           </table>
@@ -225,40 +247,48 @@ export default function PricingPage() {
           <h2>Common questions.</h2>
           <div className="cols two">
             <div>
+              <h3>What is in a daily brief?</h3>
+              <p className="muted">
+                Named people who posted something in the last two days that makes them worth contacting, with their own
+                words, a link to the post, and one line on what to reply. Plus the people we think already pay your
+                competitor, and the evidence for why we think so.
+              </p>
               <h3>How fast is the first report?</h3>
               <p className="muted">
-                Five business days from signup. After that, one report a month, same time each month.
+                Two business days from signup for the trial. After that the weekly lands Monday morning and the daily
+                lands every business day.
               </p>
               <h3>What counts as one brand?</h3>
               <p className="muted">
-                One company, all its products and channels, whether it is yours or a competitor's. A parent company with distinct brands counts per brand.
-              </p>
-              <h3>Which sites do you watch?</h3>
-              <p className="muted">
-                Reddit, X, LinkedIn, Hacker News, YouTube, niche forums and Discords your buyers use, and the review
-                sites that matter for your category: G2, Capterra, Trustpilot, Google, the App Store and Google
-                Play. If your customers talk somewhere else, tell us and we add it.
+                One company, all its products and channels, whether it is yours or a competitor&apos;s. A parent company
+                with distinct brands counts per brand.
               </p>
               <h3>Can you cover my niche?</h3>
               <p className="muted">
-                If your brand or competitor gets talked about online, advertises, hires or ranks in search, yes. If they do
-                none of those, there is nothing to read and we'll say so before you pay.
+                If your brand or competitor gets talked about online, advertises, hires or ranks in search, yes. If they
+                do none of those, there is nothing to read and we will say so before you pay.
               </p>
             </div>
             <div>
               <h3>Where does the data come from?</h3>
               <p className="muted">
                 Public sources only: social platforms, review sites, ad transparency libraries, app stores, SEO
-                databases, pricing pages and job boards. Mentions are read by hand, not scored by a bot. Estimates are labeled as estimates.
+                databases, pricing pages and job boards. Nothing behind a login. Mentions are read by hand, not scored
+                by a bot. Estimates are labeled as estimates.
               </p>
               <h3>Is this confidential?</h3>
               <p className="muted">
-                We never disclose who our clients are or which competitors they watch, and we never sell the same
-                watch to your competitor.
+                We never disclose who our clients are or which competitors they watch, and we never sell the same watch
+                to your competitor.
               </p>
-              <h3>What's the refund policy?</h3>
+              <h3>What is the refund policy?</h3>
               <p className="muted">
-                If you don't like your first report, say so and we refund your first month, no questions asked.
+                Ask inside the two-week trial and we refund the $300 in full. On a monthly plan, if the first month is
+                not worth it, say so and we refund it.
+              </p>
+              <h3>Do I have to start with the trial?</h3>
+              <p className="muted">
+                No. If you already know what you want, start on a monthly plan and cancel any time.
               </p>
             </div>
           </div>
