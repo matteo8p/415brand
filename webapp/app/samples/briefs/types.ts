@@ -83,11 +83,13 @@ export type Block =
   /** A single standalone collapsible (e.g. "Evidence"). */
   | { type: "toggle"; claim: string; body: Block[] }
   | { type: "fig"; panels: FigPanel[] }
-  | { type: "table"; headers: { text: string; n?: boolean }[]; rows: string[][] }
+  /** `w` is a CSS width for the column; `nw` keeps its cells on one line. */
+  | { type: "table"; headers: { text: string; n?: boolean; w?: string; nw?: boolean }[]; rows: string[][] }
   /** Head-to-head KPI table, subject vs client, with this week's deltas. */
   | { type: "scorecard"; rows: ScoreRow[] }
-  /** Ranked list of this week's recommended actions, with windows. */
-  | { type: "moves"; items: Move[] }
+  /** Ranked list of this week's recommended actions, with windows.
+   *  `collapsed` hides each action's reasoning behind a toggle. */
+  | { type: "moves"; items: Move[]; collapsed?: boolean }
   /** "What changed since last report" bullets, colored by tone. */
   | { type: "changes"; items: Change[] };
 

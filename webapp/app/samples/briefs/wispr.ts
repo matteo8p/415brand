@@ -113,7 +113,7 @@ export const wispr: Brief = {
     },
     {
       type: "table",
-      headers: [{ text: "Where" }, { text: "Date" }, { text: "Post" }, { text: "Reach" }],
+      headers: [{ text: "Where", w: "18%" }, { text: "Date", w: "7%", nw: true }, { text: "Post" }, { text: "Reach", w: "13%" }],
       rows: [
         [
           "r/WisprFlow",
@@ -1010,10 +1010,10 @@ export const wispr: Brief = {
                 {
                   type: "table",
                   headers: [
-                    { text: "Date" },
+                    { text: "Date", w: "8%", nw: true },
                     { text: "Creator" },
-                    { text: "Followers", n: true },
-                    { text: "Plays", n: true },
+                    { text: "Followers", n: true, w: "11%" },
+                    { text: "Plays", n: true, w: "9%" },
                     { text: "What it is" },
                   ],
                   rows: [
@@ -1158,7 +1158,7 @@ export const wispr: Brief = {
             { type: "h3", text: "Posts worth replying to" },
             {
               type: "table",
-              headers: [{ text: "Where" }, { text: "What was said" }, { text: "Why it matters" }, { text: "Post" }],
+              headers: [{ text: "Where", w: "14%" }, { text: "What was said" }, { text: "Why it matters" }, { text: "Post", w: "12%" }],
               rows: [
                 [
                   "r/WisprFlow, Aug 16",
@@ -1246,7 +1246,7 @@ export const wispr: Brief = {
             { type: "h3", text: "Paid footprint, Aug 21" },
             {
               type: "table",
-              headers: [{ text: "Channel" }, { text: "What's running" }, { text: "Since" }, { text: "Source" }],
+              headers: [{ text: "Channel", w: "20%" }, { text: "What's running" }, { text: "Since", w: "10%", nw: true }, { text: "Source", w: "12%" }],
               rows: [
                 [
                   "Meta (FB, IG, Messenger, Threads)",

@@ -54,13 +54,11 @@ function Scorecard({ rows, sources, names }: { rows: ScoreRow[]; sources: Ctx; n
   );
 }
 
-function Moves({ items, sources }: { items: Move[]; sources: Ctx }) {
+function Moves({ items, sources, collapsed }: { items: Move[]; sources: Ctx; collapsed?: boolean }) {
   return (
     <ol className="moves">
-      {items.map((move) => (
-        <li key={move.action}>
-          <b>{renderInline(move.action, sources)}</b>
-          {move.window && <span className="win">{renderInline(move.window, sources)}</span>}
+      {items.map((move) => {
+        const why = (
           <p>
             {renderInline(move.why, sources)}
             {move.evidence && (
@@ -72,8 +70,29 @@ function Moves({ items, sources }: { items: Move[]; sources: Ctx }) {
               </>
             )}
           </p>
-        </li>
-      ))}
+        );
+        return (
+          <li key={move.action}>
+            {collapsed ? (
+              <details>
+                <summary>
+                  <b>{renderInline(move.action, sources)}</b>
+                  {move.window && <span className="win">{renderInline(move.window, sources)}</span>}
+                  {"\u00A0"}
+                  <span className="tog" />
+                </summary>
+                <div className="body">{why}</div>
+              </details>
+            ) : (
+              <>
+                <b>{renderInline(move.action, sources)}</b>
+                {move.window && <span className="win">{renderInline(move.window, sources)}</span>}
+                {why}
+              </>
+            )}
+          </li>
+        );
+      })}
     </ol>
   );
 }
@@ -171,7 +190,11 @@ function Blocks({ blocks, sources, names }: { blocks: Block[]; sources: Ctx; nam
                   <thead>
                     <tr>
                       {block.headers.map((h) => (
-                        <th key={h.text} className={h.n ? "n" : undefined}>
+                        <th
+                          key={h.text}
+                          className={[h.n && "n", h.nw && "nw"].filter(Boolean).join(" ") || undefined}
+                          style={h.w ? { width: h.w } : undefined}
+                        >
                           {h.text}
                         </th>
                       ))}
@@ -181,7 +204,13 @@ function Blocks({ blocks, sources, names }: { blocks: Block[]; sources: Ctx; nam
                     {block.rows.map((row, r) => (
                       <tr key={r}>
                         {row.map((cell, c) => (
-                          <td key={c} className={block.headers[c]?.n ? "n" : undefined}>
+                          <td
+                            key={c}
+                            className={
+                              [block.headers[c]?.n && "n", block.headers[c]?.nw && "nw"].filter(Boolean).join(" ") ||
+                              undefined
+                            }
+                          >
                             {renderInline(cell, sources)}
                           </td>
                         ))}
@@ -194,7 +223,7 @@ function Blocks({ blocks, sources, names }: { blocks: Block[]; sources: Ctx; nam
           case "scorecard":
             return <Scorecard key={i} rows={block.rows} sources={sources} names={names} />;
           case "moves":
-            return <Moves key={i} items={block.items} sources={sources} />;
+            return <Moves key={i} items={block.items} sources={sources} collapsed={block.collapsed} />;
           case "changes":
             return <Changes key={i} items={block.items} sources={sources} />;
           default:
