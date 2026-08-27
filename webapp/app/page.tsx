@@ -7,11 +7,10 @@ export default function Home() {
     <main>
       <section className="band hero">
         <div className="wrap">
-          <h1 className="display">Track what people are saying about your brand and your competitors.</h1>
+          <h1 className="display">Track what people are saying about your brand and your competitors'</h1>
           <p className="lede">
-            We read every public mention of your brand and theirs: Reddit threads, X and LinkedIn posts, reviews on
-            G2, the app stores and Trustpilot, plus their ads, prices, job postings and Google rankings. Every
-            month, you get a written report on what we found and exactly what to do about it.
+            We read every public mention of your brand and theirs. Reddit threads, X and LinkedIn posts, reviews on
+            G2, the app stores and Trustpilot. SEO & Ad performance, product pricing, job postings. You get a written report on what we found and exactly what to do about it.
           </p>
           <div className="cta-row">
             <HeroForm />

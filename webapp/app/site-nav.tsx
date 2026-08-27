@@ -5,7 +5,11 @@ import { useState } from "react";
 
 export function SiteNav() {
   const [open, setOpen] = useState(false);
-  const close = () => setOpen(false);
+  const [dropOpen, setDropOpen] = useState(false);
+  const close = () => {
+    setOpen(false);
+    setDropOpen(false);
+  };
 
   return (
     <>
@@ -21,7 +25,13 @@ export function SiteNav() {
         <span />
       </button>
       <nav className={open ? "main open" : "main"}>
-        <details className="drop">
+        <details
+          className="drop"
+          open={dropOpen}
+          onToggle={(e) => setDropOpen(e.currentTarget.open)}
+          onMouseEnter={() => setDropOpen(true)}
+          onMouseLeave={() => setDropOpen(false)}
+        >
           <summary className="drop-label">Sample reports ▾</summary>
           <div className="drop-menu">
             <Link href="/samples/wispr" onClick={close}>
