@@ -104,31 +104,22 @@ export const viktor: Brief = {
       items: [
         {
           action: "Buy the Google searches Viktor isn't buying: \"viktor alternative\", \"viktor pricing\", \"credits\" and security.",
-          why: "Viktor's $176K a month goes to searches like \"chatgpt alternative\", \"cowork\" and \"slack\". It does not buy \"viktor alternative\" (a search that didn't exist before May, now 90 a month at $6 to 20 per click), \"viktor pricing\" or anything with the word \"credits\". Those are the searches people make when they're already thinking about leaving Viktor. Adapt spends $903 a month, mostly on searches like \"claude cost\" that have little to do with Adapt. Point the money at the leavers.",
+          why: "Viktor's $176K a month goes to searches like \"chatgpt alternative\", \"cowork\" and \"slack\". It does not buy \"viktor alternative\" (a search that didn't exist before May, now 90 a month at $6 to 20 per click) or \"viktor pricing\". Those are the searches people make when they're already thinking about leaving Viktor. Adapt should bid on them.",
           evidence: "search-and-marketplaces",
         },
         {
           action: "Fix adapt.com/compare/viktor. Lead with price and spending limits.",
-          why: "Adapt's page still says Viktor costs \"$50/mo\" and works \"in Slack only\". Both are now wrong: in early August Viktor doubled its cheapest plan to $100 a month, and it has since added a web app, Discord and a way for other software to plug into it. Anyone who checks the page against Viktor's will stop trusting it. Replace the stale rows with the two things Viktor's own customers complain about (bills they can't predict, a half-finished security audit) and the thing Adapt shipped on Aug 14: a spending limit per person.",
+          why: "Adapt's page still says Viktor costs \"$50/mo\" and works \"in Slack only\". Both are now wrong: in early August Viktor doubled its cheapest plan to $100 a month, and it has since added a web app, Discord and a way for other software to plug into it. Replace the stale rows with the two things Viktor's own customers complain about (bills they can't predict, a half-finished security audit) and spending limits that Adapt now has.",
           evidence: "pricing-and-product",
         },
         {
           action: "Copy Viktor's creator machine, aimed at the technical people Viktor ignores.",
-          why: "Viktor pays creators $200 to $10,000 per post depending on how many people see it, pays anyone who refers a customer 15 to 20% of what that customer spends for a year, and pays consultants who set Viktor up 20% of the client's spending. About 29% of the views on videos about Viktor come from people being paid this way. Adapt has no creator, referral or commission program at all. Viktor's creators are agency owners, marketers and office managers; nobody is paid to talk to the developers and technical people Adapt is built for. Pay in credits (Viktor says 83% of its creators take them) and it costs Adapt almost nothing.",
+          why: "Viktor pays creators $200 to $10,000 per post depending on how many people see it, pays anyone who refers a customer 15 to 20% of what that customer spends for a year, and pays consultants who set Viktor up 20% of the client's spending. About 29% of the views on videos about Viktor come from people being paid this way. Adapt has no creator, referral or commission program at all. Y'all should spin one up.",
           evidence: "advertising-and-social-media",
-        },
-        {
-          action: "Sell \"the whole team uses it\" while Viktor admits it can't.",
-          why: "Viktor's own job ads say \"half of paying workspaces still have only one active human\" and \"one power user drives most of the usage\". Getting a whole company to share one AI assistant is Adapt's entire pitch. Viktor is hiring people to fix this (an email-marketing manager, a head of conversion, its first customer-success staff), all in Warsaw, none started yet. The window is however long it takes them to hire.",
-          evidence: "hiring",
         },
       ],
     },
-    { type: "h3", text: "Viktor social media mentions (complaints, doubts and open questions)" },
-    {
-      type: "note",
-      text: "Posts from Aug 26 to 27 where someone doubts Viktor, complains, or asks whether to buy, ranked by reach. Complaints are rare, so open questions are included too. Nobody from Adapt has replied to any of them.",
-    },
+    { type: "h3", text: "Posts worth replying to this week" },
     {
       type: "table",
       headers: [{ text: "Where", w: "18%" }, { text: "Date", w: "7%", nw: true }, { text: "Post" }, { text: "Reach", w: "13%" }],

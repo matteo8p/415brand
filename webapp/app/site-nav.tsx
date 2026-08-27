@@ -31,7 +31,7 @@ export function SiteNav() {
               Wispr Flow (daily report)
             </Link>
             <Link href="/samples/viktor" onClick={close}>
-              Viktor vs Adapt (weekly report)
+              Viktor (weekly report)
             </Link>
           </div>
         </details>
