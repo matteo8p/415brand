@@ -33,7 +33,7 @@ export const viktor: Brief = {
           metric: "Estimated monthly Google Ads spend (US)",
           primary: "$176K",
           us: "$903",
-          change: "Up from $99K in May. A second tool (Semrush) puts July at $82K. The truth is likely in between. Neither figure includes banner ads, YouTube or paid social posts.",
+          change: "Up from $99K in May. A second tool (Semrush) puts July at $82K. The real number is probably between the two. Neither figure includes banner ads, YouTube or paid social posts.",
         },
         {
           metric: "Different Google searches it shows up in for free (worldwide)",
@@ -75,7 +75,7 @@ export const viktor: Brief = {
           metric: "X posts that complain, mention switching, or ask for an alternative",
           primary: "4 of 236 (2%)",
           us: "n/a",
-          change: "Found by scanning posts for complaint words, Aug 6 to 26. Praise and paid promotion drown out the doubts.",
+          change: "Found by scanning posts for complaint words, Aug 6 to 26. Praise and paid posts far outnumber the complaints.",
         },
         {
           metric: "Reddit posts mentioning it since Jul 20",
@@ -103,18 +103,23 @@ export const viktor: Brief = {
       collapsed: true,
       items: [
         {
-          action: "Buy the Google searches Viktor isn't buying, like \"viktor alternative\" and \"viktor pricing\".",
-          why: "Viktor's $176K a month goes to searches like \"chatgpt alternative\", \"cowork\" and \"slack\". It does not buy \"viktor alternative\" (a search that didn't exist before May, now 90 a month at $6 to 20 per click) or \"viktor pricing\". Those are the searches people make when they're already thinking about leaving Viktor. Adapt should bid on them.",
-          evidence: "search-and-marketplaces",
-        },
-        {
-          action: "Lead with the new spending limits feature Adapt has. Fix adapt.com/compare/viktor.",
-          why: "Adapt's page still says Viktor costs \"$50/mo\" and works \"in Slack only\". Both are now wrong. In early August Viktor doubled its cheapest plan to $100 a month, and it has since added a web app, Discord and a way for other software to plug into it. Replace the stale rows with the two things Viktor's own customers complain about (bills they can't predict, a half-finished security audit) and spending limits that Adapt now has.",
+          action: "Make adapt.com/compare/viktor the best page on the internet about Viktor's pricing.",
+          why: "The demand already exists and is aimed at Adapt. \"viktor ai\" is the search that brings Adapt its most valuable visitors, \"viktor alternative\" went from zero to 90 searches a month since May, and 7 of 9 August G2 reviews complain about credits. Adapt's page gets two facts wrong, which loses the trust of the people about to switch. Fix it and add a cost calculator that prices five everyday tasks in dollars for both products. It becomes the link people paste whenever someone asks what Viktor really costs. A few days of one person's time.",
           evidence: "pricing-and-product",
         },
         {
-          action: "Copy Viktor's creator machine, aimed at the technical people Viktor ignores.",
-          why: "Viktor pays creators $200 to $10,000 per post depending on how many people see it, pays anyone who refers a customer 15 to 20% of what that customer spends for a year, and pays consultants who set Viktor up 20% of the client's spending. About 29% of the views on videos about Viktor come from people being paid this way. Adapt has no creator, referral or commission program at all. Y'all should spin one up.",
+          action: "Buy the searches Viktor isn't buying, and only those.",
+          why: "Viktor's $176K a month bids against OpenAI and Anthropic on \"chatgpt alternative\" and \"cowork\". It leaves \"viktor alternative\", \"viktor pricing\", \"viktor credits\" and \"slack ai agent\" ($11 a click, 320 a month, no winner) untouched. Adapt spends $903 a month, mostly on unrelated terms like \"claude cost\". Move that budget, add $3 to 5K a month, and Adapt owns the searches people make when leaving Viktor. Do it before the Google Ads lead Viktor posted on Jul 21 starts, because that person will make every category search expensive.",
+          evidence: "search-and-marketplaces",
+        },
+        {
+          action: "Get listed on G2 and Slack's app directory.",
+          why: "Adapt is on neither. Viktor has 54 G2 reviews, growing by five a week, and a Slack Marketplace listing. Anyone comparing tools in either place cannot find Adapt. Seed a G2 listing with the customers already on Adapt's case-study page. Two weeks of work that keeps paying.",
+          evidence: "search-and-marketplaces",
+        },
+        {
+          action: "Replicate Viktor's referral program, paid in credits, aimed at developers.",
+          why: "Referrals and paid creators are Viktor's real growth engine. 29% of views on videos about Viktor come from people it pays, and 13 unrelated companies run Google ads for viktor.com just to collect the commission. Adapt has nothing here. adapt.com/affiliates, /referral and /partners all return \"page not found\". Credits cost Adapt almost nothing to give away. Viktor pays agency owners and office managers. Nobody is paid to talk to developers, and developers are Adapt's buyers.",
           evidence: "advertising-and-social-media",
         },
       ],
@@ -206,7 +211,7 @@ export const viktor: Brief = {
           type: "findings",
           items: [
             {
-              claim: "Viktor's traffic is 8x Adapt's, but most of it is bought.",
+              claim: "Viktor's traffic is 8x Adapt's, but most of it comes from ads and people typing its name.",
               body: [
                 {
                   type: "p",
@@ -214,7 +219,7 @@ export const viktor: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** Viktor's lead is paid-for name recognition, not a better product. Adapt is growing 21% a month on almost no ad spend. The searches that describe what both companies sell, like \"slack ai agent\", have no winner yet. Adapt can take them with a better comparison page and the right search terms. [[similarweb-adapt]] [[semrush]]",
+                  text: "**Why it matters for Adapt:** Viktor's lead comes from ad spending and name recognition, not a better product. Adapt is growing 21% a month on almost no ad spend. The searches that describe what both companies sell, like \"slack ai agent\", have no winner yet. Adapt can take them with a better comparison page and the right search terms. [[similarweb-adapt]] [[semrush]]",
                 },
               ],
             },
@@ -232,7 +237,7 @@ export const viktor: Brief = {
               ],
             },
             {
-              claim: "Viktor's social media buzz is paid for by creators, commissions, and friendly accounts cheering on launch day.",
+              claim: "Most of Viktor's social media attention is paid for, through creators, referral commissions, and big accounts that reply to each other on launch day.",
               body: [
                 {
                   type: "p",
@@ -240,7 +245,7 @@ export const viktor: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** Adapt has no creator or referral program at all. Viktor's creators are marketers and office managers. Nobody is being paid to talk to developers, the people Adapt is built for. Copy the machine, pay in credits (nearly free for Adapt), and point it at the audience Viktor ignores. [[x-adapt]] [[youtube-adapt]]",
+                  text: "**Why it matters for Adapt:** Adapt has no creator or referral program at all. Viktor's creators are marketers and office managers. Nobody is being paid to talk to developers, the people Adapt is built for. Set up the same programs, pay in credits (which cost Adapt almost nothing), and aim them at developers, the audience Viktor ignores. [[x-adapt]] [[youtube-adapt]]",
                 },
               ],
             },
@@ -266,7 +271,7 @@ export const viktor: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** Adapt's best selling points (a $50 start, a clear itemized bill, spending limits per person, a completed security audit) sit behind a page with wrong facts. Anyone who checks it against Viktor's site will stop trusting it. Fix the page, then say the price out loud in ads. None of Viktor's 238 ads mentions price, credits or security. [[adapt-changelog]] [[meta-ad-library]]",
+                  text: "**Why it matters for Adapt:** Adapt's best selling points (a $50 start, a clear itemized bill, spending limits per person, a completed security audit) sit behind a page with wrong facts. Anyone who checks it against Viktor's site will stop trusting it. Fix the page, then state the price in ads. None of Viktor's 238 ads mentions price, credits or security. [[adapt-changelog]] [[meta-ad-library]]",
                 },
               ],
             },
@@ -320,7 +325,7 @@ export const viktor: Brief = {
           type: "findings",
           items: [
             {
-              claim: "Viktor doubled its cheapest plan quietly.",
+              claim: "Viktor doubled its cheapest plan without announcing it.",
               body: [
                 {
                   type: "p",
@@ -328,7 +333,7 @@ export const viktor: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** the price doubled quietly, and the reviews written since follow the same pattern, five stars and then a complaint about cost. Nobody has called it a price increase yet. Adapt can, with a page that says \"Viktor doubled its minimum. We didn't\" and shows the spending limits. [[g2]]",
+                  text: "**Why it matters for Adapt:** the price doubled with no announcement, and the reviews written since follow the same pattern, five stars and then a complaint about cost. Nobody has called it a price increase yet. Adapt can, with a page that says \"Viktor doubled its minimum. We didn't\" and shows the spending limits. [[g2]]",
                 },
               ],
             },
@@ -337,7 +342,7 @@ export const viktor: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "In August Viktor added Discord, a web chat, video generation, and a plug-in that lets coding tools send it work (the Aug 20 launch that lit up X). In the same window Adapt added its own coding-tool plug-in, a Slack assistant branded with the customer's name, and monthly spending limits per person with warnings at 75% and 90%. Viktor's pace slowed from daily to weekly. [[viktor-changelog]] [[adapt-changelog]]",
+                  text: "In August Viktor added Discord, a web chat, video generation, and a plug-in that lets coding tools send it work (the Aug 20 launch that produced 129 posts on X). In the same window Adapt added its own coding-tool plug-in, a Slack assistant branded with the customer's name, and monthly spending limits per person with warnings at 75% and 90%. Viktor's pace slowed from daily to weekly. [[viktor-changelog]] [[adapt-changelog]]",
                 },
                 {
                   type: "why",
@@ -527,7 +532,7 @@ export const viktor: Brief = {
           type: "findings",
           items: [
             {
-              claim: "Viktor bought its way onto Google. Its free traffic is mostly people typing its name.",
+              claim: "Viktor's Google presence comes from paid ads. Its free traffic is mostly people typing its name.",
               body: [
                 {
                   type: "p",
@@ -535,7 +540,7 @@ export const viktor: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** the searches that describe the category are wide open. \"slack ai agent\" (320 a month, $11 a click), \"viktor alternative\" (90 a month, brand new), \"viktor vs claude tag\". None has a winner. Adapt's one page that wins search traffic today is a comparison page. Make more, aimed at Viktor. [[keyword-planner]] [[ahrefs-adapt]]",
+                  text: "**Why it matters for Adapt:** nobody ranks for the searches that describe the category. \"slack ai agent\" (320 a month, $11 a click), \"viktor alternative\" (90 a month, brand new), \"viktor vs claude tag\". None has a winner. Adapt's one page that wins search traffic today is a comparison page. Make more, aimed at Viktor. [[keyword-planner]] [[ahrefs-adapt]]",
                 },
               ],
             },
@@ -548,7 +553,7 @@ export const viktor: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** Viktor's spending isn't making Adapt's searches expensive. Adapt's current paid terms (\"claude cost\", \"hermes agent vs openclaw\") are cheap and beside the point. Move the money to the searches Viktor ignores and the ones people make when leaving it. [[semrush]] [[keyword-planner]]",
+                  text: "**Why it matters for Adapt:** Viktor's spending isn't making Adapt's searches expensive. Adapt's current paid terms (\"claude cost\", \"hermes agent vs openclaw\") are cheap and mostly unrelated to what Adapt sells. Move the money to the searches Viktor ignores and the ones people make when leaving it. [[semrush]] [[keyword-planner]]",
                 },
               ],
             },
@@ -601,7 +606,7 @@ export const viktor: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "\"slack ai agent\" gets 320 searches a month at $11 a click and nobody owns it. Viktor's Google Ads lead job (posted Jul 21, \"$1M+/month\" experience) will make it expensive once filled. A few thousand dollars buys the position now. [[keyword-planner]] [[ashby]]",
+                  text: "\"slack ai agent\" gets 320 searches a month at $11 a click and nobody owns it. Viktor's Google Ads lead job (posted Jul 21, \"$1M+/month\" experience) will make it expensive once filled. A few thousand dollars would put Adapt at the top of that search today. [[keyword-planner]] [[ashby]]",
                 },
               ],
             },
@@ -624,7 +629,7 @@ export const viktor: Brief = {
             { type: "h3", text: "Traffic and authority" },
             {
               type: "p",
-              text: "Viktor's visitors: 48% type the address in, 30% click an ad, 9% come from free Google results. Adapt's: 72% type the address in, 5% free Google, 2% ads. Adapt's visitors stay eight minutes and view six pages, meaning they're using the product, not reading marketing. On link strength (a 0-to-100 score of how many reputable sites link to you), Viktor scores 63 and Adapt 34. Both domains date from 2006 and carry old links, so both are flattered. [[similarweb]] [[similarweb-adapt]] [[ahrefs]] [[semrush]]",
+              text: "Viktor's visitors: 48% type the address in, 30% click an ad, 9% come from free Google results. Adapt's: 72% type the address in, 5% free Google, 2% ads. Adapt's visitors stay eight minutes and view six pages, meaning they're using the product, not reading marketing. On link strength (a 0-to-100 score of how many reputable sites link to you), Viktor scores 63 and Adapt 34. Both domains date from 2006 and carry old links, so both counts are higher than they should be. [[similarweb]] [[similarweb-adapt]] [[ahrefs]] [[semrush]]",
             },
             {
               type: "fig",
@@ -814,9 +819,9 @@ export const viktor: Brief = {
             { type: "h3", text: "The brand leaks" },
             {
               type: "p",
-              text: "\"Viktor\" is also a League of Legends character, a Dutch engineering firm (viktor.ai) and a language app whose TikToks have 10.8 million plays. Misspellings are 14% of Viktor's free search traffic, and it ranks first for all of them. 13 unrelated companies run Google ads to viktor.com, likely farming its referral commission. Adapt's problem runs the other way. \"adapt\" is an ordinary word, and the search that sends Adapt its best visitors is \"viktor ai\". [[semrush]] [[google-ads-transparency]] [[viktor-creators]] [[similarweb-adapt]]",
+              text: "\"Viktor\" is also a League of Legends character, a Dutch engineering firm (viktor.ai) and a language app whose TikToks have 10.8 million plays. Misspellings are 14% of Viktor's free search traffic, and it ranks first for all of them. 13 unrelated companies run Google ads to viktor.com, most likely to earn its referral commission. Adapt has the opposite problem. \"adapt\" is an ordinary word, and the search that sends Adapt its best visitors is \"viktor ai\". [[semrush]] [[google-ads-transparency]] [[viktor-creators]] [[similarweb-adapt]]",
             },
-            { type: "h3", text: "The narrative the market uses against them" },
+            { type: "h3", text: "What people say against Viktor" },
             {
               type: "p",
               text: "Doubt is showing up in search. People now look for \"viktor alternative\" (90 a month, none before May) and \"viktor com\" (checking whether it's real). Viktor's own marketing job ad lists the objections it needs answers for, including \"the Slack bot built in a weekend\". In March a Hacker News thread on reverse-engineering Viktor hit 181 points before the code was taken down. A TikTok clip says Viktor's default settings let the whole Slack see your Gmail. On X the doubt is quieter, a rival pitching a cheaper alternative and a developer calling the product \"meh\". Adapt is not named anywhere in Viktor's materials. [[keyword-planner]] [[ashby]] [[hacker-news]] [[tiktok-search]] [[x]]",
@@ -956,7 +961,7 @@ export const viktor: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** Viktor is selling \"an AI employee you pay for from the hiring budget\" and saying nothing about price, credits or security, the three things its customers complain about. It's also chasing law firms with a half-finished security audit. Run the message Viktor won't, and watch this list to learn which law-firm angle works without paying for the lesson. [[meta-ad-library]] [[g2]]",
+                  text: "**Why it matters for Adapt:** Viktor is selling \"an AI employee you pay for from the hiring budget\" and saying nothing about price, credits or security, the three things its customers complain about. It's also chasing law firms with a half-finished security audit. Run the message Viktor won't, and watch this list to see which law-firm ads Viktor keeps running, since those are the ones that work. [[meta-ad-library]] [[g2]]",
                 },
               ],
             },
@@ -996,7 +1001,7 @@ export const viktor: Brief = {
               ],
             },
             {
-              claim: "Viktor's launch-day X buzz was big accounts cheering each other. Adapt's X reach is paid promotion with no likes.",
+              claim: "Viktor's launch-day X activity came from big accounts replying to each other. Adapt's X reach comes from paid promotion with few likes.",
               body: [
                 {
                   type: "p",
@@ -1004,12 +1009,12 @@ export const viktor: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** Viktor's launch-day numbers are manufactured, and Adapt's are too, just bought from X instead of from creators. 6,000 views per like reads as an ad. The cheapest fix is founders posting about what Viktor's cheerleaders never mention, like spending limits, a full record of what the AI did, and the completed security audit. [[x]]",
+                  text: "**Why it matters for Adapt:** Viktor's launch-day numbers are not organic, and neither are Adapt's. Adapt pays X to promote posts instead of paying creators, and 6,000 views per like makes that obvious. The cheapest fix is founders posting about what Viktor's paid supporters never mention, like spending limits, a full record of what the AI did, and the completed security audit. [[x]]",
                 },
               ],
             },
             {
-              claim: "How the machine works. Viktor pays creators per view, referrers per sale, and consultants to install it, and replaces its ads constantly.",
+              claim: "How Viktor's paid programs work. It pays creators per view, referrers per sale, and consultants to install it, and replaces its ads constantly.",
               body: [
                 {
                   type: "p",
@@ -1017,7 +1022,7 @@ export const viktor: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** copy the machine (credits for creators, a revenue share for consultants, a referral link at sign-up), not the message. Viktor's story is \"hire an employee from the hiring budget\". The story it dropped is the one Adapt tells, one assistant for the whole company, your own knowledge, spending you can see. [[viktor-ways-to-earn]]",
+                  text: "**Why it matters for Adapt:** copy the programs (credits for creators, a revenue share for consultants, a referral link at sign-up), not the sales pitch. Viktor's pitch is \"hire an employee from the hiring budget\". The pitch it stopped using is the one Adapt makes, one assistant for the whole company, your own knowledge, spending you can see. [[viktor-ways-to-earn]]",
                 },
               ],
             },
@@ -1038,7 +1043,7 @@ export const viktor: Brief = {
               ],
             },
             {
-              claim: "Copy the machine, not the message.",
+              claim: "Copy Viktor's referral and creator programs, not its sales pitch.",
               body: [
                 {
                   type: "p",
@@ -1047,7 +1052,7 @@ export const viktor: Brief = {
               ],
             },
             {
-              claim: "Run the message Viktor won't: know what it costs before you run it.",
+              claim: "Advertise the thing Viktor won't, that you know what it costs before you run it.",
               body: [
                 {
                   type: "p",
@@ -1291,7 +1296,7 @@ export const viktor: Brief = {
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Adapt:** Viktor thinks the product is good enough and distribution is the problem. It's building a sales floor and a marketing operation while leaving five engineering seats open. Adapt's 13-person, mostly-engineering team can't match that spend, so don't try to. Compete on the things Viktor's hires can't fix quickly. Ship the features its customers are asking for (spending visibility, per-person limits, a full record of what the AI did), keep the security lead, and put engineers in front of technical buyers. Spend marketing dollars only on the cheap, specific searches and comparison pages listed above, not on brand campaigns. [[ashby]] [[linkedin-adapt]]",
+                  text: "**Why it matters for Adapt:** Viktor thinks the product is good enough and distribution is the problem. It's hiring salespeople and marketers while leaving five engineering jobs open. Adapt's 13-person, mostly-engineering team can't match that spend, so don't try to. Compete on the things new marketers and salespeople can't change. Ship the features its customers are asking for (spending visibility, per-person limits, a full record of what the AI did), keep the security lead, and put engineers in front of technical buyers. Spend marketing dollars only on the cheap, specific searches and comparison pages listed above, not on brand campaigns. [[ashby]] [[linkedin-adapt]]",
                 },
               ],
             },
@@ -1448,7 +1453,7 @@ export const viktor: Brief = {
     },
   ],
   footer:
-    "Traffic, search and ad-spend figures are estimates from outside tools and disagree by up to two to one. Trust the shapes, not the exact numbers. Revenue figures are unaudited. Data pulled Aug 26 to 27, 2026 via Apify. Compiled Aug 27, 2026.",
+    "Traffic, search and ad-spend figures are estimates from outside tools and disagree by up to two to one. Trust the trends and ratios, not the exact numbers. Revenue figures are unaudited. Data pulled Aug 26 to 27, 2026 via Apify. Compiled Aug 27, 2026.",
   sources: {
     semrush: { label: "Semrush", href: "https://www.semrush.com/analytics/overview/?q=viktor.com&searchType=domain", logo: "semrush" },
     spyfu: { label: "SpyFu", href: "https://www.spyfu.com/overview/domain?query=viktor.com", logo: "spyfu" },
