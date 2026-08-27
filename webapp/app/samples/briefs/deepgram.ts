@@ -1,9 +1,9 @@
 import type { Brief } from "./types";
 
 export const deepgram: Brief = {
-  slug: "deepgram-08-28-2026",
+  slug: "deepgram-08-31-2026",
   title: "Deepgram weekly brief & analysis",
-  sub: "For Sprag, August 28, 2026",
+  sub: "For Sprag, August 31, 2026",
   subject: "Deepgram",
   client: "Sprag",
   intro: [
@@ -45,7 +45,7 @@ export const deepgram: Brief = {
     },
     {
       type: "why",
-      text: "**Why it matters for Sprag:** every row is a named person with a public profile and a specific thing to open with, which is the difference between a lead and a list. Two of the five moved on Aug 26: Marcel Karas spent the day fighting the exact multilingual problem Sprag measured at 90% against Deepgram's 70%, and Stream committed a second transcription provider, which means they are choosing right now. Work these five before asking for more. Seven further named contacts are researched and waiting for the next report.",
+      text: "**Why it matters for Sprag:** these are real people, not company names, and each one has a reason to take the call. Two of them moved on Aug 26. Karas spent that day fighting the multilingual problem Sprag already wins on, and Stream added a second transcription provider, so they are choosing one now.",
     },
     { type: "h3", text: "Scorecard" },
     {
@@ -53,9 +53,9 @@ export const deepgram: Brief = {
       rows: [
         {
           metric: "Named companies found using Deepgram this week",
-          primary: "31 on their site, 24 more found in public posts",
+          primary: "34 on their site, 59 more found in public code and posts",
           us: "1 (ISSEN)",
-          change: "5 named people to contact are in the table above. Seven more are held for the next report.",
+          change: "The five named people to contact are in the table above.",
           tone: "bad",
           source: "[[x-deepgram]] [[li-deepgram]] [[dg-customers]]",
         },
@@ -68,7 +68,7 @@ export const deepgram: Brief = {
           source: "[[gads-dg]] [[gads-sprag]]",
         },
         {
-          metric: "Google ads still running on Aug 27",
+          metric: "Google ads running, checked Aug 27",
           primary: "173",
           us: "0",
           change: "Sprag's last four ads ran Aug 21 to Aug 26 and then stopped.",
@@ -164,22 +164,22 @@ export const deepgram: Brief = {
       items: [
         {
           action: "Message Marcel Karas, Neevash Ramdial and Mohammed Zaid Shaikh today.",
-          why: "All three did something on Aug 26 that opens a door. Karas at JUNGHERZ spent the day fixing language detection in his Deepgram integration, which is the problem ISSEN measured Sprag winning at 90% against Deepgram's 70%. Stream committed a second transcription provider into the SDK they resell, so they are picking one right now. Shaikh asked Deepgram in public for a startup price and got no answer. Send three messages, then work the other two rows. This costs one person an afternoon.",
+          why: "All three moved on Aug 26. Karas was fixing the multilingual problem Sprag already wins on. Stream added a second transcription provider, so they are choosing one now. Shaikh asked Deepgram for a startup price in public and got no answer. Each is a reply to a question their vendor left open, which is the only kind of first message that gets read.",
           evidence: "key-findings",
         },
         {
           action: "Publish a Deepgram comparison page before Sep 13, priced against Deepgram's list rate rather than its promotion.",
-          why: "Deepgram is discounting streaming speech-to-text to $0.288 an hour through Sep 12. On Sep 13 the published rate goes back to $0.462, and Sprag's gap widens from 3.8 times cheaper to 6.2 times cheaper without Sprag doing anything. Sprag has no comparison page at all. Deepgram has 11, Cartesia has 30, Soniox has 489. This is the single largest gap in Sprag's marketing and the page can be written from the numbers already in this brief.",
+          why: "Deepgram's $0.288 an hour is a promotion. On Sep 13 it goes back to $0.462, and Sprag goes from 3.8 times cheaper to 6.2 times cheaper without doing anything. Sprag has no comparison page. Deepgram has 11, Cartesia 30, Soniox 489. Write it from the numbers already in this brief.",
           evidence: "pricing-and-product",
         },
         {
           action: "Turn Sprag's Google ads back on and point them at the words Deepgram's 347 ads do not cover.",
-          why: "Sprag has zero ads running as of today. The last four stopped on Aug 26. Deepgram has 173 running and launched 33 new ones this month. Sprag cannot outspend that and should not try. The opening is narrow and specific: Deepgram sells transcription and voice agents, and does not sell audio captioning, native speech-to-speech, or a single model that also takes image and video. Buy those words, not the word transcription.",
+          why: "Sprag has no ads running. The last four stopped on Aug 26. Deepgram has 173 running and started 33 this month, so a broad fight is unwinnable. Deepgram has no page for audio captioning, speech-to-speech, or a model that also reads images and video. Buy those words, not the word transcription.",
           evidence: "search-and-marketplaces",
         },
         {
           action: "Get Sprag listed inside the voice-agent tools that already carry Deepgram: LiveKit, Vapi, Pipecat and OpenRouter.",
-          why: "Deepgram ships as a first-class option inside Pipecat and LiveKit, sponsors VapiCon in November, and its Flux TTS turned up on OpenRouter this week through someone else's tutorial. Sprag has two integration pages, both built on generic OpenAI compatibility rather than a native plugin. These platforms are where voice-agent buyers pick a provider from a dropdown. A native plugin is a week of engineering and it puts Sprag in the same list as Deepgram at the moment of choice.",
+          why: "These are the tools where a buyer picks a speech provider from a dropdown, and Deepgram is already in all of them. Sprag has two integration pages, both leaning on OpenAI compatibility rather than a proper plugin. A plugin is about a week of work and puts Sprag on the list at the moment someone chooses.",
           evidence: "search-and-marketplaces",
         },
       ],
@@ -294,16 +294,15 @@ export const deepgram: Brief = {
           type: "findings",
           items: [
             {
-              claim:
-                "Fifty-nine companies can be shown to use Deepgram right now, and twelve of them come with a named person and a way to reach them.",
+              claim: "Deepgram names 34 customers on its site. Public code and public posts turn up 59 more.",
               body: [
                 {
                   type: "p",
-                  text: "Five pulls produced 59 rows: fifteen companies with Deepgram credentials in public code, 24 builders who named Deepgram on X or LinkedIn in the last seven days, twelve people who commented something specific on Deepgram's own posts, six G2 reviewers with a live complaint and a job title, and two found through a job ad and a Hacker News thread. Deepgram publishes 34 more customers itself. Reading the commit history on the code rows turned twelve of them into a named engineer with a public profile. The five best are at the top of this brief and the other seven are held for the next report. [[gh-search]] [[g2-deepgram]] [[x-deepgram]] [[li-deepgram]] [[dg-customers]]",
+                  text: "Searching public code, reviews and posts found 59 companies using Deepgram that it does not name itself. Fifteen of them left a Deepgram key or SDK call in a public repository. Checking who wrote that code gives you the engineer's name and profile, which is how the people at the top of this brief were found. [[gh-search]] [[g2-deepgram]] [[x-deepgram]] [[dg-customers]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** this is the list Ian and Alex asked for, and it renews itself every week for the cost of five searches. Sprag has one named customer today. Every name at the top of this brief has already decided to pay for hosted speech, has said publicly which vendor they use, and can be reached this afternoon. Work those five before asking for the next seven. [[gh-search]]",
+                  text: "**Why it matters for Sprag:** Sprag has one named customer. Everyone at the top of this brief already pays for hosted speech, has said in public which vendor they use, and can be reached today. The same searches run again next week. [[gh-search]]"
                 },
               ],
             },
