@@ -43,6 +43,9 @@ export function SiteNav() {
             <Link href="/samples/viktor" onClick={close}>
               Viktor (weekly report)
             </Link>
+            <Link href="/samples/openrouter" onClick={close}>
+              OpenRouter (weekly report)
+            </Link>
           </div>
         </details>
         <Link href="/pricing" onClick={close}>

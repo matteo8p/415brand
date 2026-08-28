@@ -1,0 +1,148 @@
+COMPETITOR LEADS BRIEF
+For Matt at Ref, August 29, 2026
+
+Three things to do today: (1) Reply to @_jsolly (https://x.com/_jsolly/status/2093115956620833214), who just found out cloud Cursor agents do not support plan mode. You are cloud plan mode that launches Cursor Background Agents. Closest fit on the page. (2) Write about Anthropic’s AI-Native SDLC Playbook (https://claude.com/blog/the-ai-native-sdlc-playbook) (section 4). It says your thesis back to you with a bigger logo on it, and it prescribes the one approach you already have a rebuttal for. Post while it is still this week. (3) Answer the four AGENTS.md split-brain posts sitting at zero replies: @XixiLi12498 (https://x.com/XixiLi12498/status/2093164725521785086), @thedoomguy_ai (https://x.com/thedoomguy_ai/status/2093149441830048171), @phongdesigns (https://x.com/phongdesigns/status/2093167020812743075), @AsiBy2030 (https://x.com/AsiBy2030/status/2093179143647269013).
+
+1. PEOPLE STUCK BETWEEN AGENTS
+------------------------------
+* X, @_jsolly, Aug 27 (0 likes, no replies)
+  "Turns out I can't fully migrate to cloud Cursor agents. They don't support plan mode. (what the heck!). Gotta go install the IDE I guess..."
+  https://x.com/_jsolly/status/2093115956620833214
+  Do: He wants plan mode in the cloud and Cursor does not have it. Ref Plans is plan mode in the cloud, and it launches Cursor Background Agents. Nothing else on this page is a closer fit. Reply today.
+
+* X, @XixiLi12498, Aug 28 (0 likes, no replies)
+  "AGENTS.md feels less like a config file and more like procedural memory for agents. If different tools read different files, the team gets split-brain agents."
+  https://x.com/XixiLi12498/status/2093164725521785086
+  Do: “Split-brain agents” is your alignment problem with a better name than you are using. Reply, then steal the phrase.
+
+* X, @thedoomguy_ai (PT), Aug 28 (0 likes, no replies)
+  "Claude Code só lê CLAUDE.md. Outros agentes leem AGENTS.md. Resultado: cada dev recebe instrução diferente. Um time, dois cérebros. [Claude Code only reads CLAUDE.md. Other agents read AGENTS.md. Result: every dev gets a different instruction. One team, two brains.]"
+  https://x.com/thedoomguy_ai/status/2093149441830048171
+  Do: Same point, in Portuguese, and he lands on “one team, two brains.” Reply in Portuguese. The plan lives above the harness, so it does not matter which file each agent reads.
+
+* X, @phongdesigns, Aug 28 (0 likes, no replies)
+  "Symlinks make the file portable. They do not make the behaviour portable. Same AGENTS.md, different harness, different result, because what each one can verify differs."
+  https://x.com/phongdesigns/status/2093167020812743075
+  Do: The most technically precise version of this problem anyone posted. He has worked out that config files do not survive a harness change. Good person to get into the beta.
+
+* X, @AsiBy2030, Aug 28 (0 likes, no replies)
+  "There should be context standard. We have AGENTS.md, SOUL, MEMORY, SKILL, what else. Should/can everything be easily migrateable?"
+  https://x.com/AsiBy2030/status/2093179143647269013
+  Do: He is asking for the thing you sell, out loud, and nobody has answered him.
+
+* X, @lizikk_zhu (ZH), Aug 28 (0 likes, no replies)
+  "Warp 的代码 review agent 老发没用的评论… 后来想通本质：反馈在 session 结束时消失了，根本没进入 agent 循环。 [Warp's code review agent kept posting useless comments… the real problem: the feedback disappears when the session ends, it never enters the agent loop.]"
+  https://x.com/lizikk_zhu/status/2093161322078929082
+  Do: He independently arrived at your old tagline: chats disappear, decisions should not. Reply in Chinese if you can, or in English with the essay.
+
+* X, @AiDevCraft, Aug 28 (0 likes, 1 reply)
+  "Six months, zero hand-written lines of code, about 20 agent VMs at peak… everyone running parallel agents climbs the same isolation ladder, and each rung fixes exactly one thing."
+  https://x.com/AiDevCraft/status/2093155148210323964
+  Do: Twenty agents at once is the ceiling case for your product. He has solved the git side and not the alignment side. Ask him what he uses to keep track of what each one is doing.
+
+* Hacker News, gherkinnn, Aug 26 (comment in a 43-point thread)
+  "now that I am dabbling in spec-driven development (unsure whether I like it) I have to read a lot of prose and I simply cannot get myself to read a page of claudisms. It is that painful… everything is evenly bombastic and lacks any sense of rhythm."
+  https://news.ycombinator.com/item?id=49445289
+  Do: Two days old rather than one, but it is the clearest statement anyone made of the problem your “plans designed to be read” feature exists to solve. He is not sold on SDD, he is sold on the complaint. That is the better opening.
+
+* X, @callumflack, Aug 27 (2 likes, 2 replies)
+  "After a year of taking a global AGENTS.md seriously, here's what I use… What's yours? What am I missing? What could be better?"
+  https://x.com/callumflack/status/2093120046780543156
+  Do: An open invitation with only two answers so far. Cheap to be the third and most useful one.
+
+2. DOCS AND CONTEXT, THE REF CONTEXT FRONT
+------------------------------------------
+* X, @chasen_liao (ZH), Aug 28 (71 likes, 10 replies)
+  "很多模型会默认调用 bash 命令，而不用内置的 grep、find… 直接使用这些会导致上下文膨胀的很厉害。bash 里的 grep 是上下文杀手。 [Models default to bash instead of the built-in grep and find, and that bloats the context badly. grep in bash is a context killer.]"
+  https://x.com/chasen_liao/status/2093195857772609862
+  Do: The biggest context-efficiency thread in the window. Token waste is exactly what Ref Context sells against. Reply with the numbers from your search benchmark post.
+
+* X, @itsandreramon, Aug 27 (1 like, no replies)
+  "context7 and proper docs necessary otherwise your agent doesn't know how to writer proper code though"
+  https://x.com/itsandreramon/status/2093033965711949919
+  Do: A satisfied Context7 user who has not heard of the alternative. Do not attack Context7. Just say you built the same thing with private repos included and let him check the token count.
+
+* X, @cryptodavidw, Aug 28 (5 likes, no replies)
+  "claude saving things to memory instead of AGENTS.md is not ideal"
+  https://x.com/cryptodavidw/status/2093147651885723650
+  Do: He wants decisions in a durable, readable place rather than hidden in a model's memory. That is your whole pitch in one line.
+
+3. THE PLAN LAYER, AND PEOPLE ARGUING YOUR THESIS
+-------------------------------------------------
+* X, @_axtone (ES), Aug 28 (266 likes, 8 replies, 9 reposts)
+  "Hoy termine la fase 1 de mi primer proyecto con harness engineering + spec-driven development… la parte técnica fue lo de menos. Lo difícil (y lo valioso) estuvo en otro lado. [Finished phase 1 of my first project with harness engineering and SDD… the technical part mattered least. The hard and valuable part was elsewhere.]"
+  https://x.com/_axtone/status/2093165505511035212
+  Do: The highest-engagement post in the window and it lands on your conclusion: the hard part is human, not technical. Reply in Spanish. This is a room, not a lead.
+
+* X, @inakitajes (ES), Aug 27 (115 likes, 3 replies, 9 reposts)
+  "Asúmelo: has perdido el control del código. Intentar recuperarlo es la batalla equivocada. [Accept it: you have lost control of the code. Trying to get it back is the wrong battle.]"
+  https://x.com/inakitajes/status/2092975925923115359
+  Do: Your “agents making critical decisions” bullet, in Spanish, with real reach. Your counter is that you keep control at the plan, not at the diff. That is a better answer than his.
+
+* X, @viettranxuan, Aug 28 (4 likes, 3 replies)
+  "One workflow file makes them argue from the same context, and it costs less than it looks, because they only talk before implementation."
+  https://x.com/viettranxuan/status/2093141771727622377
+  Do: He has independently derived your pre-work argument, including the cost case. Agree with him publicly and show him the multiplayer version.
+
+* X, @kristovatlas, Aug 28 (0 likes, 1 reply)
+  "Quoting another tool's docs: “i don't believe in planning. the best spec is code.” His reply was a single 😬"
+  https://x.com/kristovatlas/status/2093162559868203217
+  Do: Someone else's product shipped an anti-planning stance and he winced at it. Free opening to make the case, and you are not the one starting the fight.
+
+* X, @ludo_zz (PT), Aug 28 (0 likes, no replies)
+  "plan mode com Sol é absolutamente terrível pqp [plan mode with Sol is absolutely terrible]"
+  https://x.com/ludo_zz/status/2093215370735698134
+  Do: Built-in plan mode failing is your best possible ad. Ask what broke before you pitch anything.
+
+* X, @MrugeshThesiya, Aug 28 (0 likes, no replies)
+  "why does my opencode start editing in plan mode please fix"
+  https://x.com/MrugeshThesiya/status/2093194360263504377
+  Do: Plan mode that edits code is not plan mode. Small account, but it is the exact failure that makes people look for a real plan tool.
+
+* X, @yagiryuuu (JA), Aug 28 (5 likes, no replies)
+  "ShopifyのCEOトビが「Claude CodeをShopifyで禁止しようか考えている」… 理由は性能ではなく設定ファイル問題 [Shopify's CEO said he is considering banning Claude Code at Shopify. The reason is not performance, it is the config file problem.]"
+  https://x.com/yagiryuuu/status/2093165167777554813
+  Do: Unverified second-hand, so do not repeat it as fact. But if a CEO is weighing a ban over which markdown file an agent reads, that is your argument at enterprise scale. Worth watching, not quoting.
+
+4. WHAT THE COMPETITION SHIPPED
+------------------------------
+* Aug 28, Traycer: Mobile confirmed as “coming very soon”, after remote headless host landed in 1.2.0
+  https://x.com/TraycerAI/status/2093165703746797608
+  Why: Second shipping announcement in two days. They are moving off the IDE and onto every surface.
+
+* Aug 27, Traycer: Bring your own HuggingFace API and run open models directly inside Traycer
+  https://x.com/TraycerAI/status/2092955704621715910
+  Why: Open-model support is a cost and privacy play at the same time. You have no equivalent answer published.
+
+* Aug 26, Anthropic: The AI-Native SDLC Playbook, from the Applied AI team. Six stages, Plan through Maintain, every stage committing an artifact to git
+  https://claude.com/blog/the-ai-native-sdlc-playbook
+  Why: The most important thing that happened this week. See the takeaway below.
+
+* Aug 26, Academic: “Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?”
+  https://x.com/MaineFrameworks/status/2093132770482549033
+  Why: Someone is now measuring whether the repo-markdown approach works at all. Watch for the result, whichever way it goes.
+
+* Aug 25, Research: SPECMINE, a large-scale corpus of spec-driven development artifacts (Agarwal and Vasilescu)
+  https://x.com/ComputerPapers/status/2092959191828730297
+  Why: Academia is building datasets on this category. It is becoming a real field, which raises the ceiling and the noise.
+
+What this means: Anthropic just published your argument. The playbook opens with "code is no longer the bottleneck, your SDLC is" and moves human attention "from reading every line to judging intent and risk at the gates." That is your essay with Anthropic's name on it, and it is the single best piece of third-party air cover you will get this year. But read the second half. Their prescribed answer is markdown artifacts committed to git: intent.md, spec.md, plan.md. That is exactly the "markdown in the repo" approach you already wrote a comparison page against. Anthropic has told the whole market to do the thing you argue is not enough. Your move is not to disagree with the playbook. It is to say yes, and here is what happens when plan.md gets to 4,000 lines and your designer cannot open it. One more gift buried in there: the playbook asks teams to measure "how often the merged diff still matches the committed plan.md." That is plan blame, which is already on your roadmap, now an Anthropic-recommended metric.
+
+5. WHAT HAPPENED THIS WEEK
+--------------------------
+* Anthropic validated the category and picked a different answer. The AI-Native SDLC Playbook landed Aug 26 and is being picked apart all week. It is a tailwind and a threat in the same document. Full reasoning in section 4. Source: claude.com (https://claude.com/blog/the-ai-native-sdlc-playbook), and Waydev's breakdown (https://waydev.co/anthropics-ai-native-sdlc-playbook-has-a-missing-layer-measurement/), which is a competitor for the measurement layer but useful reading.
+
+* The AGENTS.md versus CLAUDE.md split is now the loudest complaint in the category. Nine separate posts in two days, in five languages, all describing the same thing: different agents read different files, so one team ends up with two sets of instructions. Nobody is selling the obvious answer, which is that the plan should live above the harness. That is an open lane and it is yours.
+
+* Traycer shipped twice more. HuggingFace open models on Aug 27, mobile confirmed on Aug 28, on top of last week's Desktop and headless host. Their founders replied to individual users on both days. They are not out-thinking you, they are out-appearing you.
+
+* Your own reach is the problem, and here is the number. Your Hacker News submission of “How I design with AI” (https://news.ycombinator.com/item?id=49458339) on Aug 27 got 1 point and 0 comments. Across 196 posts pulled this window about exactly your problem space, Ref was named by nobody except you. The thinking is landing. The product is not being mentioned.
+
+* Two follow-ups from Aug 26 that are still open. @akbrouwer4 (https://x.com/akbrouwer4/status/2092658340434182579) ("Memory doesn't carry across any of them. I'm still the router") got a reply from Traycer's founder and nothing from you. @caiopizzol (https://x.com/caiopizzol/status/2092721310648455255) hit Context7's quota wall and is still unanswered. Both are outside today's window and both are still worth a reply.
+
+6. WHERE THIS CAME FROM
+-----------------------
+X searched via Apify `scraper_one/x-posts-search` on two queries, one for competitor names (`context7`, `traycer`, `ref.tools`, `spec-driven`) and one for the problem space (`plan mode`, `AGENTS.md`, `lost context`), both `latest` over 48 hours, 196 posts total. Reddit via `harshmaur/reddit-scraper` across `context7`, `traycer`, `spec kit` and `plan mode claude`, which returned heavy noise and one useful thread. Hacker News via the Algolia API. All pulled Aug 28 around 6am PT. Reach means likes, replies and reposts as the tools reported them at pull time. Translations in square brackets are ours. No ads section: neither Ref nor its competitors run paid social, so there is nothing to report there.
+
+---
+Sent by 415brand. Unsubscribe: {{{RESEND_UNSUBSCRIBE_URL}}}
