@@ -13,7 +13,7 @@ We want to look at any mentions of OpenTag competitors on social media. We also 
 
 # Workflow (daily)
 
-Follow `skills/DAILY_REPORT_GUIDANCE.md` for format and `skills/FIND_LEADS.md` for what counts as a lead. Background: `OPEN_TAG.md` and `COMPETITORS.md`. Reader is Tony Kam (CEO). Report is built from `reports/build_report.py`: edit the `BILL`, `SHOPPING` and `BULLETS` lists, run it, it writes `reports/<MM-DD-YYYY>.html`.
+Follow `skills/DAILY_REPORT_GUIDANCE.md` for format and `skills/FIND_LEADS.md` for what counts as a lead. Background: `OPEN_TAG.md` and `COMPETITORS.md`. Readers are the three OpenTag founders: Tony Kam (CEO), Shelden Shi (CTO) and Wilson Nguyen (Chief Engineer). Report is built from `reports/build_report.py`: edit the `BILL`, `SHOPPING` and `BULLETS` lists, run it, it writes `reports/<MM-DD-YYYY>.html`.
 
 The brief is lead-first. Table 1 is always people who pay a competitor and said something that makes them takeable. Table 2 is people asking what to use. Everything else is four or five bullets.
 
@@ -33,14 +33,14 @@ Never search the bare string `OpenTag`. It returns four unrelated GitHub project
 - Best single lead: `@ptaranat`, who disabled Claude Tag over cost and fell back to Linear agents.
 - AgentConnect launched Aug 26 as an open-source Claude Tag alternative, amplified by about ten accounts in six hours with near-identical copy. Watch whether this recurs, and do not count the amplifier posts as organic mentions.
 - Salesforce and Anthropic announced Claudeforce on Aug 26.
-- `@raphaelschaad` is publicly pitching OpenTag as "100 choices, 10x cheaper" while the site says 80+ models and 70%. Ask Tony which number is right.
+- `@raphaelschaad` is publicly pitching OpenTag as "100 choices, 10x cheaper" while the site says 80+ models and 70%. Ask the founders which number is right.
 
 ## Fix on the next run
 
 1. **Pull the reply tree of the big threads.** `@ashwingop`'s Jun 24 post has 480 replies and `@random_walker`'s has 60. That is the richest untouched vein of leads. Use `xquik/x-tweet-scraper` in replies mode on those two post IDs.
 2. **LinkedIn needs different queries.** Searching "AI coworker Slack" returned 1,242 results that were almost all engagement-farming accounts. Instead pull Anthropic's and Viktor's own company-page posts with `harvestapi/linkedin-profile-posts` and `scrapeReactions`, then filter reactors by job title before enriching anyone.
 3. **Viktor's G2 reviews.** The review scraper could not find the product by name. Get the exact G2 URL and pass it directly.
-4. Ask Tony what completes the sentence in the Initialize section above, and whether he wants the daily emailed.
+4. Ask the founders what completes the sentence in the Initialize section above, and whether they want the daily emailed.
 
 ## Correction, Aug 28 run
 
