@@ -1,0 +1,202 @@
+WISPR FLOW DAILY BRIEF
+For Tim at Cloudless, August 28, 2026
+
+Three things to do today: (1) Reply in the r/ClaudeAI microphone thread (https://www.reddit.com/r/ClaudeAI/comments/1vzsgg6/what_microphone_are_you_using_for_your_prompts/). Someone in there says he is “paranoid about wispr flow stealing my data and I dont want to pay extra”, which is Cloudless in one sentence, and Wispr’s own help page (https://docs.wisprflow.ai/articles/3467817258-security-and-compliance-faq) now backs him up. (2) Write up the privacy find yourself (section 5). Wispr says they train on your voice by default on the free and standard plans, and only leave you alone on enterprise. That is a post, not a reply. (3) Answer the Aug 27 complaints nobody has replied to yet: @heyamalantony (https://x.com/heyamalantony/status/2093068822832136511), @WeDistill (https://x.com/WeDistill/status/2093113896760709160), @HeetShah21 (https://x.com/HeetShah21/status/2093007440577176025), @charliecoscina (https://x.com/charliecoscina/status/2092997348267786451).
+
+1. PEOPLE COMPLAINING ABOUT WISPR
+---------------------------------
+* Reddit, r/ClaudeAI, Aug 27 (18 comments)
+  "I'm paranoid about wispr flow stealing my data and I dont want to pay extra, so I just use the built in claude voice feature"
+  https://www.reddit.com/r/ClaudeAI/comments/1vzsgg6/what_microphone_are_you_using_for_your_prompts/
+  Do: He is worried about his data and he does not want to pay. That is Cloudless in one sentence. He is also right to worry: Wispr's own help page (section 5) says they train on your voice unless you turn it off. Quote it, then tell him about Cloudless.
+
+* Reddit, r/WisprFlow, Aug 26 (26 upvotes, 40 comments)
+  "Love Wispr Flow on Mac, hate it on iPhone. What am I doing wrong? … I'm constantly switching between keyboards"
+  https://www.reddit.com/r/WisprFlow/comments/1vz0fnk/love_wispr_flow_on_mac_hate_it_on_iphone_what_am/
+  Do: The biggest pile of annoyed iPhone users anywhere this week. It went from 22 comments yesterday to 40 today and nobody from our side has said a word.
+
+* X, @heyamalantony, Aug 27 (4 likes, no replies)
+  "@WisprFlow Quality has been terrible lately. FYI, I’ve been using Wispr Flow since you guys launched"
+  https://x.com/heyamalantony/status/2093068822832136511
+  Do: He has used it since day one and says it has got worse. Wispr has not answered him. Be the first person who does.
+
+* X, @balaji_ayyappan, Aug 26 (1 like, no replies)
+  "Paid for the whole damn year and now I need to keep correcting it constantly @WisprFlow fix it or refund 😤"
+  https://x.com/balaji_ayyappan/status/2092900275426042275
+  Do: He paid for a full year and he is asking for his money back in public. The money is already gone, so do not lead with free. Lead with it works and it keeps working.
+
+* X, @HeetShah21, Aug 27 (1 like, no replies)
+  "I’m using @WisprFlow at work via enterprise account and it’s completely unusable right now. There is a noticeably startup lag whenever I press the hotkey."
+  https://x.com/HeetShah21/status/2093007440577176025
+  Do: A work account, broken, said out loud. The lag is there because it has to call a server first. Cloudless does not. Worth a reply, and worth writing down for enterprise.
+
+* X, @WeDistill, Aug 27 (0 likes, no replies)
+  "WTH my Wispr Flow transcripts got really crappy today"
+  https://x.com/WeDistill/status/2093113896760709160
+  Do: Posted a few hours ago and nobody has replied. Short, specific, easy. Start here if you only have five minutes.
+
+* X, @farazpatankar, Aug 26 (1 like, 3 replies)
+  "Anyone else using @WisprFlow notice it just ignores/eats their first word? Wasn’t happening last week but seems to be happening pretty often today."
+  https://x.com/farazpatankar/status/2092882617557561469
+  Do: Another it used to work post. Aqua Voice people are already answering in the thread, so get in before they finish.
+
+* X, @thealexbanks, Aug 26 (9 likes, 2 replies)
+  "I’ve recently switched all my dictation from WisprFlow to HeyClicky… I’ve also noticed Wispr recently cuts parts of the transcript"
+  https://x.com/thealexbanks/status/2092948502368170440
+  Do: He already jumped ship, just to another paid cloud app. He has proved he will move. Free and running on his own laptop is a better place to land.
+
+* X, @charliecoscina, Aug 27 (0 likes, no replies)
+  "hey guys, got some issues login in with my apple account since this morning. Been logged out without reason and can’t use the tool since then"
+  https://x.com/charliecoscina/status/2092997348267786451
+  Do: He is locked out of something he pays for. Cloudless does not need an account at all. That is the whole reply.
+
+* X, @davidlloayza, Aug 27 (1 like, 1 reply)
+  "press fn, use wisprflow and then when you want to use the keyboard you have deconfigured the keyboard. It makes the experience with the product very frustrating."
+  https://x.com/davidlloayza/status/2093069824834351601
+  Do: A real annoyance with a real answer. Holding Caps Lock in Cloudless does not steal his fn key.
+
+2. PEOPLE SHOPPING AROUND OR ON THE FENCE
+-----------------------------------------
+* X, @ammaar (Google), Aug 26 (975 likes, 77 replies)
+  "Introducing Gemini 3.5 Transcribe… I vibe coded a Wispr Flow like app powered by the model. Demo + open sourcing below!"
+  https://x.com/ammaar/status/2092662017517600823
+  Do: Still the busiest room of people asking what to use instead, and we still have not said anything in it. The line to use: Gemini needs the internet, Cloudless does not.
+
+* X, @davidlee, Aug 27 (25 likes, 4 replies)
+  "As a user I just want Apple to buy @WisprFlow or make it the keyboard default. Android experience 10x better and growing reason to stay on Android"
+  https://x.com/davidlee/status/2092990167368040757
+  Do: He is saying the iPhone keyboard is bad enough that he would change phones over it. Three other dictation founders are already in the replies. Be the fourth.
+
+* X, @hazan0608, Aug 26 (16 likes, 13 replies)
+  "Trying out wispr flow – will report back."
+  https://x.com/hazan0608/status/2092428953206010096
+  Do: He is trying it out in public with 13 people waiting to hear how it went. Reply once and you reach all of them.
+
+* X, @Dhananjay_Tech, Aug 26 (114 likes, 13 replies)
+  "If anyone wants Free Wispr Flow Pro to try it out. Even CRED has some offer where you get 10 months Pro for 25000 coins."
+  https://x.com/Dhananjay_Tech/status/2092921324327080257
+  Do: A crowd burning credit card points so they do not have to pay for Wispr. They are never going to hand over $15 a month, which makes them the cheapest people on this page to win.
+
+* X, @anwesh_bh, Aug 27 (0 likes, no replies)
+  "@amrnth0 would you recommend switching from wisprflow?"
+  https://x.com/anwesh_bh/status/2093119101598040493
+  Do: He is asking out loud whether he should switch. Nobody has answered him.
+
+3. PEOPLE HAPPY WITH WISPR
+--------------------------
+* X, @irabukht, Aug 26 (857 likes, 38 replies)
+  "Cursor - 1,100 active ads / 6,400 tested 🤯 | Wispr Flow - 820 / 3,300 | Emergent - 410 / 7,000"
+  https://x.com/irabukht/status/2092743370804171081
+  Why: Someone counted Wispr's ads from the outside. 820 running at once. That is what you are up against.
+
+* X, @NewsAlgebraIND, Aug 26 (624 likes, 92 reposts)
+  "Wispr Flow strikes again: After painting Bengaluru purple with 100 autos, the voice to text app takes over Mumbai & Bangalore airports"
+  https://x.com/NewsAlgebraIND/status/2092525764994617433
+  Why: Wispr is buying billboards in India now. With 20 of their 30 new ads pointing at their India page, that is clearly where the money is going.
+
+* X, @rorysutherland, Aug 26 (185 likes, 33 replies)
+  "Wispr Flow *is* occasionally bad, but almost always acceptable - and often *surprisingly good*."
+  https://x.com/rorysutherland/status/2092567560604520655
+  Why: A famous ad man saying nice things. But read what he actually said: almost always acceptable. That is the bar. Cloudless does not have to be perfect, just as good.
+
+* X, @WisprFlow, Aug 27 (71 likes, 9 replies)
+  "That vision has always gone beyond dictation. With Notetaker, we’re taking another step toward helping people do more simply by speaking."
+  https://x.com/WisprFlow/status/2093064881134313804
+  Why: Wispr is talking about meetings now, not typing. Every day they spend on the notetaker is a day they are not defending the thing you are attacking.
+
+* X, @CandiceRose, Aug 27 (2 replies)
+  "Everyone’s Using This A.I. Dictation App That I Want to Murder With a Hammer (New York Times)"
+  https://x.com/CandiceRose/status/2093017586741002582
+  Why: The New York Times ran a piece slagging Wispr off. It is the biggest coverage they got all week. Read it before you write any comparison copy.
+
+4. CREATORS POSTING ABOUT WISPR RIGHT NOW
+----------------------------------------
+Everyone who posted about Wispr in the last few days, newest first. All from Aug 24 onwards, all linked.
+
+* @alliekmiller (113K followers), Aug 26 (2,150 views, 14 comments)
+  "Here are some of the best AI tools for small businesses… Wispr Flow… Tell me your best replacements in the comments (I’ll steal the good ones)"
+  https://www.tiktok.com/@alliekmiller/video/7678404293057203487
+  Do: She is asking people to name a replacement. Just answer her. Best thing on this page.
+* @ra.dave (304K followers), Aug 25 (44,200 views, 3,103 likes, 86 comments)
+  "Nutzt du Diktiersoftware? (German, “do you use dictation software?”)"
+  https://www.tiktok.com/@ra.dave/video/7678010861641813280
+  Do: Biggest dictation post of the week by a mile, and the comments are full of people naming tools. Worth a reply. Note Cloudless has French, Spanish and Italian pages but nothing in German.
+* @celestemariamiller (24K followers), Aug 24 (34,200 views, 1,311 likes)
+  "This is not an ad. I just really love Wispr flow 😂"
+  https://www.tiktok.com/@celestemariamiller/video/7677675595068738829
+  Do: A real unpaid fan with real reach. Do not argue with her. Send her a free build instead and see what happens.
+* @lukegarv.ai (5.3K followers), Aug 27 (229 views)
+  "Comment FLOW and I’ll send it to you!"
+  https://www.tiktok.com/@lukegarv.ai/video/7678761327950564630
+  Do: He is farming Wispr referral links. Ignore him, but his comment section is people actively looking for a dictation app.
+* @thorpeedo_ (1.0K followers), Aug 27 (277 views)
+  "@Wisprflow’s new functionality blows a lot of them out of the water. It highlights a person’s name…"
+  https://www.tiktok.com/@thorpeedo_/video/7678716810572631310
+  Do: Promoting the meeting notetaker. Useful mainly as a sign of what Wispr is asking creators to talk about now.
+* @hearflowusa (1.1K followers), Aug 27 (263 views)
+  "ur using wisprflow, trust me and try hearflow bro"
+  https://www.tiktok.com/@hearflowusa/video/7678791320470621472
+  Do: A rival running exactly your play, on TikTok, yesterday. Nobody is contesting that ground and it costs nothing.
+* @toolfinderhq (646 followers), Aug 27 (87 views)
+  "Wispr Flow vs Typeless: Here’s our take"
+  https://www.tiktok.com/@toolfinderhq/video/7678810202187042080
+  Do: Small, but it is a channel that makes head-to-head videos and will make more. Get Cloudless in front of them.
+
+What this means: TikTok is wide open. Wispr has 92 co-branded ads running on Meta across 16 creators, but they did not put a creator on a single one of the 32 ads they launched on Aug 27. On TikTok right now it is mostly small accounts chasing referral links, and a rival with 1,092 followers is already running your play there. Cloudless has almost no presence on TikTok at all.
+
+5. WHAT WISPR ADMITS ABOUT YOUR DATA
+-----------------------------------
+Wispr updated their security help page (https://docs.wisprflow.ai/articles/3467817258-security-and-compliance-faq) on Aug 26. Two bits are worth keeping in your pocket. Both are word for word.
+
+* They train on your voice unless you pay for enterprise.
+  “Privacy Mode off (standard mode): audio and transcription data may be used to evaluate, train, and improve Wispr’s models. This is the default for trial and standard accounts.” And then: “Enterprise and HIPAA BAA customers run with Privacy Mode on by default.”
+
+* They cancelled their own security certificates in March.
+  “Both were proactively invalidated in March 2026 due to platform integrity concerns at the original auditor.” They only hold a SOC 2 Type I now (April 2026). The Type II is “observation period underway; report not yet issued.”
+
+How to use it: this is the best week you have had for the privacy argument, because you are not the one making it. Wispr wrote it down themselves, quite openly. The same page also admits Flow “is not end-to-end encrypted… audio must be decrypted to produce a transcription”. That is the whole point. If it runs in the cloud it has to work that way. If it runs on your laptop it does not. One thing to watch: Cloudless has no SOC 2 either, so talk about how it is built, not about certificates.
+
+6. WILLOW'S FAKE REDDIT POSTS
+-----------------------------
+You asked for the links, so here they are. Fifteen posts, fifteen subreddits, fifteen brand new accounts, over three days. Every one is the same: it opens with “I started researching…”, lists four options with pros and cons, puts Wispr third with the same complaints copied over each time, puts Willow fourth, then says go with Willow. Two of them have the exact same title. None got more than 3 upvotes.
+
+* Aug 25, 7 posts:
+    r/artificialintelligenc: https://www.reddit.com/r/artificialintelligenc/comments/1vxwfed/if_agents_can_act_in_seconds_why_are_we_still/
+    r/artificialintelligenc: https://www.reddit.com/r/artificialintelligenc/comments/1vy068c/the_consultants_real_bottleneck_isnt_powerpoint/
+    r/careerguidance: https://www.reddit.com/r/careerguidance/comments/1vy60yg/what_voice_dictation_setup_works_best_for/
+    r/AgencyGrowthHacks: https://www.reddit.com/r/AgencyGrowthHacks/comments/1vy7ojw/voice_workflows_for_briefs_copy_feedback_and_ai/
+    r/growthmarketing: https://www.reddit.com/r/growthmarketing/comments/1vy84fe/best_voicetotext_workflow_for_writing_email/
+    r/B2BSales: https://www.reddit.com/r/B2BSales/comments/1vy8fvb/a_faster_way_to_keep_salesforce_notes_current/
+    r/AssistiveTechnology: https://www.reddit.com/r/AssistiveTechnology/comments/1vy98lp/the_product_decision_behind_free_unlimited/
+* Aug 27, 8 posts:
+    r/customerexperience: https://www.reddit.com/r/customerexperience/comments/1vzo7g1/can_voice_dictation_actually_reduce_ticket/
+    r/mac: https://www.reddit.com/r/mac/comments/1vzq0l1/apple_dictation_vs_willow_vs_superwhisper_on_macos/
+    r/LargeLanguageModels: https://www.reddit.com/r/LargeLanguageModels/comments/1vzqb4a/evaluating_ai_dictation_for_healthcare_speed_is/
+    r/lawfirms: https://www.reddit.com/r/lawfirms/comments/1vzr0np/best_legal_dictation_software_for_a_small_law/
+    r/ADHDthriving: https://www.reddit.com/r/ADHDthriving/comments/1vzre3w/voice_prompting_helped_with_the_blankscreen/
+    r/artificialintelligenc: https://www.reddit.com/r/artificialintelligenc/comments/1vzsd0w/can_voice_dictation_actually_reduce_ticket/
+    r/Learnmusicproduction: https://www.reddit.com/r/Learnmusicproduction/comments/1vzto31/voice_capture_vs_voice_composition_a_better_notes/
+    r/Notion: https://www.reddit.com/r/Notion/comments/1vztzam/best_voicetotext_workflow_for_writing_directly/
+
+What this means: do not reply to these, there is nobody home. But look at what Willow reckons Wispr is weak on, because it is your list too: the word limit, privacy, and it has got worse lately. Willow’s own copy admits they have no Linux and that switching languages is buggy.
+
+7. WHAT HAPPENED THIS WEEK
+--------------------------
+* Wispr’s own help page says they train on your voice by default if you are on the free or standard plan, and only leave you alone on enterprise. The same page says they cancelled their own SOC 2 and ISO certificates in March because of “platform integrity concerns at the original auditor”. Source: Wispr Flow security and compliance FAQ (https://docs.wisprflow.ai/articles/3467817258-security-and-compliance-faq), updated Aug 26.
+
+* Wispr’s influencer programme went quiet. They have 92 co-branded ads live across 16 creators, but not one of the 32 ads they launched on Aug 27 has a creator on it. Meanwhile the biggest Wispr video on TikTok in the last month is a 507K-follower one called “Free Wispr Flow Alternatives” (https://www.tiktok.com/@benkaluza/video/7640596377453546774) that does not mention Cloudless.
+
+* Willow is still faking Reddit posts. Fifteen of them from fifteen new accounts across fifteen subreddits on Aug 25 and Aug 27, every one pointing at Willow. All the links are in section 6.
+
+* Wispr’s ad money moved to India and developers overnight. All 32 ads they launched on Aug 27 come from their own account with no influencers, 20 of the 30 point at their India page, and the notetaker ads stopped after Aug 26. Source: Meta Ad Library (https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=110864474787474&search_type=page&media_type=all&sort_data[direction]=desc&sort_data[mode]=relevancy_monthly_grouped). They are doing it offline too, with takeovers at Mumbai and Bangalore airports (https://x.com/NewsAlgebraIND/status/2092525764994617433).
+
+* The complaints about accuracy kept coming. Six more over Aug 26 and 27, including someone who has used it since launch (@heyamalantony (https://x.com/heyamalantony/status/2093068822832136511)), someone who paid for a year and wants a refund (@balaji_ayyappan (https://x.com/balaji_ayyappan/status/2092900275426042275)) and a work account that is simply broken (@HeetShah21 (https://x.com/HeetShah21/status/2093007440577176025)).
+
+* The Google thing is still the biggest conversation in the category (975 likes, 77 replies (https://x.com/ammaar/status/2092662017517600823)), and the New York Times ran a piece called “the A.I. dictation app that I want to murder with a hammer” (https://x.com/CandiceRose/status/2093017586741002582). Wispr has not answered either one.
+
+8. WHERE THIS CAME FROM
+-----------------------
+We searched X, Reddit and LinkedIn for “wispr flow”, “wisprflow” and @WisprFlow using Apify (X twice, once for newest and once for most popular), read Wispr Flow’s page in the Meta Ad Library, and searched TikTok for “wispr flow”. All pulled Aug 27 around 5pm PT. The Wispr quotes in section 5 are word for word from docs.wisprflow.ai (https://docs.wisprflow.ai/articles/3467817258-security-and-compliance-faq). Reach means likes, replies and reposts at the time we looked. Another 47 posts were left out under the standing ignore rules. Everything here links back to where it came from.
+
+---
+Sent by 415brand for Cloudless. Unsubscribe: {{{RESEND_UNSUBSCRIBE_URL}}}

@@ -1,8 +1,9 @@
 # Posts to ignore
 
 Tim's standing list of post types that are not worth a reply, built up over time.
-Every daily report is filtered through this, and the report shows what got dropped
-and why so Tim can correct the list.
+Every daily report is filtered through this. The dropped posts are **not** shown to Tim any more
+(Matt removed the "What we left out, and why" section on Aug 28) — the filtering is silent, so this
+file is the only place the rules are recorded. Keep it current.
 
 Source of the original request: `TIMS_PREFERENCES.md` (Aug 27, 2026) —
 > "when I was doing this myself, I had a way to leave feedback on posts sourced. So for
@@ -34,3 +35,5 @@ the transaction.
 
 ## Changelog
 - **2026-08-28** — file created. Rules 1–2 from Tim; 3–7 proposed from the Aug 26–27 pull.
+
+- **2026-08-28** — the report section listing dropped posts was removed; filtering is now silent.

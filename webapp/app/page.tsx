@@ -327,11 +327,11 @@ export default function Home() {
 
       <section className="band">
         <div className="wrap">
-          <h2>$299 a month per brand. $899 with daily leads.</h2>
+          <h2>$249 a month per brand. $899 with daily leads.</h2>
           <p className="muted">
             Track your own brand, a competitor, or both. Weekly gets you a full report every Monday. Daily adds a lead
-            brief every business day: named people to reply to, with what to say. Start with a two-week trial for $300,
-            fully refundable.
+            brief every business day: named people to reply to, with what to say. Start with a two-week trial for $299 that
+            includes both, fully refundable.
           </p>
           <div className="cta-row">
             <Link className="button primary" href="/pricing">

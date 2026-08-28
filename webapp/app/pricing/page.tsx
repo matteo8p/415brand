@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "415brand pricing: a two-week trial for $300, fully refundable. Weekly reports $299 a month. Daily lead briefs plus weekly reports $899 a month.",
+    "415brand pricing: a two-week trial for $299, fully refundable, with daily and weekly reports included. Weekly reports $249 a month. Daily lead briefs plus weekly reports $899 a month.",
 };
 
-const TRIAL_URL = "https://buy.stripe.com/aFa28q1yveIHeK69rZaZi01";
-const WEEKLY_URL = "https://buy.stripe.com/aFa00igtp2ZZatQ6fNaZi02";
+const TRIAL_URL = "https://buy.stripe.com/aFa4gycd9asr8lI5bJaZi04";
+const WEEKLY_URL = "https://buy.stripe.com/fZueVc6SP2ZZ9pMgUraZi05";
 const DAILY_URL = "https://buy.stripe.com/4gM9ASdhdeIHcBYbA7aZi03";
 
 export default function PricingPage() {
@@ -19,11 +19,11 @@ export default function PricingPage() {
             <div className="plan">
               <div className="name">Two-week trial</div>
               <div className="price">
-                $300 <small>once, fully refundable</small>
+                $299 <small>once, fully refundable</small>
               </div>
               <ul>
-                <li>Two weeks of real reports, not a demo</li>
-                <li>One brand or competitor tracked</li>
+                <li>Everything in Daily + weekly, for two weeks</li>
+                <li>A lead brief every business day, plus the Monday report</li>
                 <li>First report in 2 business days</li>
                 <li>Ask for your money back any time in the two weeks</li>
               </ul>
@@ -34,7 +34,7 @@ export default function PricingPage() {
             <div className="plan">
               <div className="name">Weekly</div>
               <div className="price">
-                $299 <small>/mo per brand tracked</small>
+                $249 <small>/mo per brand tracked</small>
               </div>
               <ul>
                 <li>One full report every Monday morning</li>
@@ -64,7 +64,7 @@ export default function PricingPage() {
             </div>
           </div>
           <p className="muted" style={{ marginTop: "1.25rem" }}>
-            Start with the trial. If the reports are not worth it, say so inside the two weeks and we refund the $300, no
+            Start with the trial. If the reports are not worth it, say so inside the two weeks and we refund the $299, no
             questions asked.
           </p>
         </div>
@@ -221,7 +221,7 @@ export default function PricingPage() {
               <tr className="us">
                 <td>415brand</td>
                 <td>Reports and leads, delivered</td>
-                <td className="n">$299–$899/mo</td>
+                <td className="n">$249–$899/mo</td>
                 <td>Read it once, reply to three people</td>
               </tr>
             </tbody>
@@ -283,7 +283,7 @@ export default function PricingPage() {
               </p>
               <h3>What is the refund policy?</h3>
               <p className="muted">
-                Ask inside the two-week trial and we refund the $300 in full. On a monthly plan, if the first month is
+                Ask inside the two-week trial and we refund the $299 in full. On a monthly plan, if the first month is
                 not worth it, say so and we refund it.
               </p>
               <h3>Do I have to start with the trial?</h3>
