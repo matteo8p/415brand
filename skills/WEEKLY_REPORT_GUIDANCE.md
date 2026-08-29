@@ -36,6 +36,7 @@ The order is fixed. Do not add, remove or reorder top-level parts.
    - TikTok followers on the brand account
    - X posts about it per day
    - X posts that are complaints, switching or asking for an alternative
+   - Biggest objection this week, and its share of all complaints sorted
    - Reddit posts since a fixed date
    - LinkedIn followers (employees listed)
    - Open jobs
@@ -98,7 +99,36 @@ Findings under *What [client] should do* have a `claim` (the instruction, impera
 
 **Search and marketplaces.** Traffic and where it comes from. Organic keyword count and trend. Paid keywords, estimated spend, the biggest paid terms, who the competitor bids against. The category searches neither company owns, with volume and cost per click. Brand-name searches and misspellings. App directories and review sites with counts and how fast they're growing. AI-assistant citations. Other things that share the name. What people are searching for that shows doubt.
 
-**Advertising and social media.** Every active Meta ad: count, launch dates, formats, landing pages, themes, and which ads have the most copies (the "creative watch list", re-checked every report). Google ads on record. Creator, referral and partner programs with exact payouts. TikTok, YouTube, Instagram, X and LinkedIn: brand-account reach vs creator reach, what share of views is paid, who posts most, what a launch day looks like. X posts split into praise, complaints and hype with counts. A paid-footprint table by channel, with the client's own footprint as the last row. A paragraph on what actual spend is and isn't knowable from outside.
+**Advertising and social media.** Every active Meta ad: count, launch dates, formats, landing pages, themes, and which ads have the most copies (the "creative watch list", re-checked every report). Google ads on record. Creator, referral and partner programs with exact payouts. TikTok, YouTube, Instagram, X and LinkedIn: brand-account reach vs creator reach, what share of views is paid, who posts most, what a launch day looks like. X posts split into praise, complaints and hype with counts, then the objection mix below. A paid-footprint table by channel, with the client's own footprint as the last row. A paragraph on what actual spend is and isn't knowable from outside.
+
+**Objection mix.** A count of *why* people are unhappy, not just how many are. Sort every complaint in the window into exactly one bucket, the one the person led with, and say how many you sorted.
+
+| Bucket | What it sounds like | What the client does about it |
+|---|---|---|
+| Price | "too expensive", "not paying extra", "cancel before it renews" | Pricing page, free tier, a cost calculator |
+| Privacy | "training on my audio", "where does my data go", "no SOC 2" | Publish the policy, name what you don't collect |
+| Accuracy | "it got worse", "keeps mishearing me", "I have to fix every line" | Product. Nothing marketing says fixes this |
+| Latency | "lag when I press the key", "slow to start", "eats my first word" | Product, and a benchmark page if you win |
+| Workflow | "broke my shortcut", "doesn't work in the app I use", "have to clean it up after" | Integrations, defaults, docs |
+| Platform gap | "no Windows", "no Linux", "the iPhone one is bad", "my language isn't supported" | Roadmap. Say the date or say no |
+| Account and billing | "locked out", "charged twice", "support never answered" | Support, and an easy win in the reply |
+
+Rules for this block:
+
+- Report it as a `share` chart plus the move since the last report: "privacy 8% → 19%".
+- **Never merge these into one negative number.** Seven objections need seven different answers. A client who only sees "27% negative" cannot do anything with it. This is the whole point of the section.
+- Name the two that grew most and say what each one implies. One growing objection with a product fix behind it is worth more than the total.
+
+**Durability, not just volume.** Tag every complaint, and sort the reply table by this, not by reach alone:
+
+- **Paying and leaving.** A year of use, or the words cancel or refund in the post. Top of the table.
+- **Trialling and unimpressed.** Days old. Cheap to win and cheap to lose again.
+- **Venting.** Annoyed, not going anywhere. Answer if it is quick, don't lead with it.
+- **Already gone.** They name where they went. These are not leads. They are the only retention evidence we can see.
+
+**Switch evidence.** A table of every post this window where someone says they actually moved, and what they moved to. Trend the count. Where people land is the closest thing to a competitor's retention that anyone outside the company can observe.
+
+**Say plainly what this is not.** Complaint volume is evidence that customers are *available*. It is not evidence that they will *stay*, with the competitor or with the client. We cannot see a competitor's activation or retention, because those live in their own analytics, and no outside tool has them. Never write a sentence implying that rising complaints mean the competitor is losing users. The honest framing, and the one to use if a client asks: this is who you can reach and why they are unhappy. Whether they stay is your product's job.
 
 **Hiring.** Open jobs by department with a chart. Headcount over time. What the job ads reveal (quote them; job ads say what marketing won't). Salary disclosure. Office rules. Who joined and from where. What the competitor is not hiring for. The client's own openings and team. Every job in a table with a link.
 
@@ -115,7 +145,7 @@ Always cover both sides: what the competitor does that **works and should be cop
 - One-off links in prose: `[label](https://…)`. Labels cannot contain `]`.
 - Bold is only for `**Why it matters for [client]:**`. Never bold numbers or phrases for emphasis.
 - Tables: short columns get a width, dates get `nw: true`, numbers get `n: true`. Example: `{ text: "Date", w: "7%", nw: true }`. The long text column gets no width and takes the rest.
-- Charts: `columns` for one thing over time, `lines` for two companies over time, `rows` for a ranked list, `share` for a percentage split. Always fill `aria`. Label first and last column of a trend, or every row of a ranked list.
+- Charts: `columns` for one thing over time, `lines` for two companies over time, `rows` for a ranked list, `share` for a percentage split (including the objection mix). Always fill `aria`. Label first and last column of a trend, or every row of a ranked list.
 - Dates: "Aug 20". Numbers: "$176K", "646K", "13,810". Ranges: "$6 to 20". Percentages: "29%". "About", never "approximately".
 - The competitor and the client by brand name. People by full name and role the first time, then surname or role.
 
@@ -185,4 +215,5 @@ Things that go wrong: Apify has a monthly cap and every call fails when it's hit
 - The recommended actions each link to a section, and that section's *What [client] should do* contains the same move in more detail.
 - No semicolons, no em dashes, no figurative phrases. Search the file for `;`, `—`, "machine", "narrative", "leak".
 - Word count is in range.
+- The objection mix adds up, names the total sorted, and shows the move since last report. No sentence anywhere claims or implies that complaint volume tells you what the competitor's retention is doing.
 - Render the page and read it top to bottom as the founder would: scorecard, actions, claims. If you can't say what to do after that pass, the report isn't finished.
