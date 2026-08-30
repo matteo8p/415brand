@@ -67,7 +67,7 @@ body.append('<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;lin
             'color:#72777d;margin:28px 0 0;padding-top:14px;border-top:1px solid #c8ccd1">'
             'Compiled Aug 27, 2026. Reach is likes, replies and reposts as X reported them at pull time. '
             'Every row links to the original post.<br><br>'
-            '415brand &middot; <a href="{{{RESEND_UNSUBSCRIBE_URL}}}" style="color:#72777d;'
+            'research415 &middot; <a href="{{{RESEND_UNSUBSCRIBE_URL}}}" style="color:#72777d;'
             'text-decoration:underline">Unsubscribe</a></p>')
 
 doc = ('<!DOCTYPE html><html><head><meta charset="UTF-8">'
@@ -95,7 +95,7 @@ t += ["3. WHAT HAPPENED IN THE CATEGORY", ""]
 for b in br.BULLETS:
     t += ["- " + strip(b), ""]
 t += ["--", "Compiled Aug 27, 2026. Every row links to the original post.",
-      "415brand. Unsubscribe: {{{RESEND_UNSUBSCRIBE_URL}}}"]
+      "research415. Unsubscribe: {{{RESEND_UNSUBSCRIBE_URL}}}"]
 text = "\n".join(t)
 
 pathlib.Path(f"{DATE}.email.html").write_text(doc)

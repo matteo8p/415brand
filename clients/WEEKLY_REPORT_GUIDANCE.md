@@ -1,6 +1,6 @@
 # How to write a weekly report
 
-This is the skill for the 415brand weekly competitive brief. Read it fully before starting a report. The reference example is `webapp/app/samples/briefs/viktor.ts` (rendered at `/samples/viktor`). When this document and the example disagree, this document wins.
+This is the skill for the research415 weekly competitive brief. Read it fully before starting a report. The reference example is `webapp/app/samples/briefs/viktor.ts` (rendered at `/samples/viktor`). When this document and the example disagree, this document wins.
 
 A weekly report is about **one competitor**, written **for one client**. It answers two questions in every section, in this order: what did the competitor do this week, and what should the client do about it. It is a list of moves with the evidence attached. It is not a description of the competitor.
 

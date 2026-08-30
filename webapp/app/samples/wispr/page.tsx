@@ -5,7 +5,7 @@ import { BriefArticle } from "../ui";
 export const metadata: Metadata = {
   title: "Sample report: Wispr Flow (weekly)",
   description:
-    "A complete 415brand competitor report: the Wispr Flow teardown. Every claim sourced, every recommended move with its closing window.",
+    "A complete research415 competitor report: the Wispr Flow teardown. Every claim sourced, every recommended move with its closing window.",
 };
 
 export default function WisprSamplePage() {

@@ -1,6 +1,6 @@
 # How to write a daily report
 
-This is the skill for the 415brand daily brief. Read it fully before starting a report. The reference example is `clients/cloudless.so/reports/08-27-2026.html`, also rendered as a sample at `/samples/wispr-daily` (`webapp/app/samples/briefs/wispr-daily.ts`). The client-specific workflow (actors, page IDs, email setup) lives in `clients/<client>/README.md`.
+This is the skill for the research415 daily brief. Read it fully before starting a report. The reference example is `clients/cloudless.so/reports/08-27-2026.html`, also rendered as a sample at `/samples/wispr-daily` (`webapp/app/samples/briefs/wispr-daily.ts`). The client-specific workflow (actors, page IDs, email setup) lives in `clients/<client>/README.md`.
 
 A daily report has one job: **give the client the posts about the competitor from the last two days that they can reply to, and tell them what to say.** Everything in it serves that. If a line doesn't help the client reply to someone or understand what the competitor did today, cut it.
 
@@ -120,7 +120,7 @@ Everything from the weekly guidance applies (plain words, straightforward, short
 ## 9. Email setup
 
 - Broadcast draft in Resend, never a direct send. A human approves every send.
-- From `415brand <reports@415brand.com>`. Subject "[Competitor] daily brief, [Mon D]". Preview text is the counts.
+- From `research415 <reports@415brand.com>`. Subject "[Competitor] daily brief, [Mon D]". Preview text is the counts.
 - All CSS inlined. Gmail and Outlook strip `<style>`. Tables become `<table width="100%" cellpadding="6" cellspacing="0" border="0">` with `valign="top"` and a border style on every cell. Drop `class`, `target`, `rel`. Keep it under 55KB. Include the unsubscribe line and a plain-text version.
 - Confirm the broadcast status is `draft`, then hand over the preview link.
 

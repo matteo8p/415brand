@@ -2,7 +2,7 @@
 
 *Research date: 2026-08-28. Sources: Ref's own three comparison pages, plus an Apify pull of X (180 posts, 7-day window) and Reddit across the terms `context7`, `traycer`, `ref.tools`, `spec driven development`. Read `REF.md` first. Items marked **[unverified]** come from a single third-party source.*
 
-> **No client conflict.** Ref sells developer tooling. The other 415brand clients sell voice dictation (cloudless.so), speech inference (sprag), and Slack AI agents (adapt.com, opentag). Nobody in the current book competes with Ref or is competed against by it. This is unlike the OpenTag / Adapt situation documented in `clients/opentag/COMPETITORS.md`.
+> **No client conflict.** Ref sells developer tooling. The other research415 clients sell voice dictation (cloudless.so), speech inference (sprag), and Slack AI agents (adapt.com, opentag). Nobody in the current book competes with Ref or is competed against by it. This is unlike the OpenTag / Adapt situation documented in `clients/opentag/COMPETITORS.md`.
 
 ## The short version
 

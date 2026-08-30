@@ -85,7 +85,7 @@ The report is built from `reports/build_report.py`: edit the `COMPLAINTS`, `SHOP
 
 Use the Resend connector. The email is a **broadcast draft**, never a direct send, because a human must approve every send (see `clients/RESEND.md`).
 
-- Domain: `415brand.com` (verified). From: `415brand <reports@415brand.com>`. Reply-to: matt@freestylevoice.com.
+- Domain: `415brand.com` (verified). From: `research415 <reports@415brand.com>`. Reply-to: matt@freestylevoice.com.
 - Segment: **cloudless.so** (`e3b1e4f6-3240-4fd3-8ce3-a2dbda9fb709`), which contains Tim's contact (`47c0dcb7-cb2c-432d-87ff-22c45819683f`) and nobody else. Do **not** use **General** (`5f922ade-…`) any more: it is empty, and now that an OpenTag segment exists a General send would reach the wrong clients. Check with `list-contacts` on the segment ID before drafting.
 - Keep the email under Gmail's ~102KB clip threshold. `reports/build_email.py` imports the data and
   prose straight out of the report builder so the two cannot drift; if it goes over, shrink the

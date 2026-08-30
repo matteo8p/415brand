@@ -1,347 +1,107 @@
+import Image from "next/image";
 import Link from "next/link";
 import { HeroForm } from "./hero-form";
-import { BriefChart } from "./samples/charts";
 
 export default function Home() {
   return (
-    <main>
-      <section className="band hero">
-        <div className="wrap">
-          <h1 className="display">Track what people are saying about your brand and your competitors'</h1>
-          <p className="lede">
-            We read every public mention of your brand and theirs. Reddit threads, X and LinkedIn posts, reviews on
-            G2, the app stores and Trustpilot. SEO & Ad performance, product pricing, job postings. You get a written report on what we found and exactly what to do about it.
-          </p>
-          <div className="cta-row">
-            <HeroForm />
-          </div>
-          <p className="hero-sub">
+    <main className="landing">
+      <section className="hero">
+        <h1>Know what people are saying about your brand and your competitors.</h1>
+        <p className="hero-lede">
+          Brand and competitor research for early-stage startups. We read every public mention of your brand and
+          theirs. Reddit threads, X and LinkedIn posts, G2, Trustpilot and the app stores, the search terms they rank
+          for, the ads they&apos;re running, and the roles they&apos;re hiring. You get a written report on what we
+          found and exactly what to do about it.
+        </p>
+        <div className="hero-cta">
+          <HeroForm />
+          <p className="sample-link">
             <Link href="/samples/wispr">Read a sample report →</Link>
           </p>
         </div>
       </section>
 
-      <section className="band">
-        <div className="wrap">
-          <h2>Brand tracking: what we find about you.</h2>
-          <table className="sheet">
-            <thead>
-              <tr>
-                <th className="n">#</th>
-                <th>The finding</th>
-                <th>What you learn</th>
-                <th>Your move</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="n">1</td>
-                <td>
-                  <b>Social mentions</b>
-                </td>
-                <td>
-                  Every post that names you on Reddit, X, LinkedIn and the forums your buyers use, ranked by reach,
-                  with the ones nobody from your team has replied to.
-                </td>
-                <td>
-                  Answer the unanswered ones. A public reply from the company turns a complaint into a
-                  recommendation, and a question into a trial.
-                </td>
-              </tr>
-              <tr>
-                <td className="n">2</td>
-                <td>
-                  <b>Reviews</b>
-                </td>
-                <td>
-                  New reviews on G2, Capterra, Trustpilot, Google and the app stores, with the recurring complaints
-                  and the words happy customers use to describe you.
-                </td>
-                <td>
-                  Fix the top complaint, then put the happy customers' own words on your landing page. They convert
-                  better than anything you would write.
-                </td>
-              </tr>
-              <tr>
-                <td className="n">3</td>
-                <td>
-                  <b>Sentiment over time</b>
-                </td>
-                <td>
-                  The split of positive, neutral and negative mentions each month, and what changed it: a launch, a
-                  price change, an outage, a viral post.
-                </td>
-                <td>
-                  Know before your numbers do. Sentiment moves weeks ahead of churn and ratings, so you get to
-                  respond while it is still cheap.
-                </td>
-              </tr>
-              <tr>
-                <td className="n">4</td>
-                <td>
-                  <b>Who is talking</b>
-                </td>
-                <td>
-                  The accounts, creators and communities that mention you most, and which ones are also
-                  recommending a competitor.
-                </td>
-                <td>
-                  Thank your advocates and recruit them. A handful of people drive most of the word of mouth in any
-                  niche.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <section>
+        <Image className="portrait" src="/me.jpg" alt="Matt" width={96} height={96} priority />
+        <p>Hi, I&apos;m Matt,</p>
+        <p>
+          research415 is me. Every morning I read every thread, review and post about you and your competitors, then
+          send you one written report by email or into your Slack.
+        </p>
+        <p>
+          I run AI agents that help me do deep research. But I still put together the report and offer my human
+          opinions on what to do about it. No AI slop is ever delivered to you. That&apos;s why the findings are things
+          a keyword alert app can&apos;t find, and why I can personally discuss anything in my report with you.
+        </p>
+        <p>
+          I started doing this because this was the exact strategy I ran to grow my startup at the early stage to find
+          customers in my ICP.
+        </p>
       </section>
 
-      <section className="band">
-        <div className="wrap">
-          <h2>Competitor tracking: what we find about them.</h2>
-          <table className="sheet">
-            <thead>
-              <tr>
-                <th className="n">#</th>
-                <th>The finding</th>
-                <th>What you learn</th>
-                <th>Your move</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="n">1</td>
-                <td>
-                  <b>Their mentions and reviews</b>
-                </td>
-                <td>
-                  What their users are unhappy about on social media and review sites, and every public "what
-                  should I switch to?" post nobody has answered, ranked by reach.
-                </td>
-                <td>
-                  Reply to the list. People asking for an alternative in public are the easiest customers you will
-                  ever win, often with a single helpful comment.
-                </td>
-              </tr>
-              <tr>
-                <td className="n">2</td>
-                <td>
-                  <b>Their ads</b>
-                </td>
-                <td>Every ad they are paying to run, what it says, and which ones they keep making copies of.</td>
-                <td>
-                  Copy what works, claim what they dropped. Companies only duplicate ads that make money, so their
-                  library shows what converts before you spend a dollar.
-                </td>
-              </tr>
-              <tr>
-                <td className="n">3</td>
-                <td>
-                  <b>Search rankings</b>
-                </td>
-                <td>
-                  Which Google searches send them customers, which they pay for, and which they ignore, with
-                  monthly volumes and click costs.
-                </td>
-                <td>
-                  Take the searches they ignore. Phrases like "[competitor] alternative" are typed by people ready
-                  to buy, and they are cheap to win.
-                </td>
-              </tr>
-              <tr>
-                <td className="n">4</td>
-                <td>
-                  <b>Pricing and plans</b>
-                </td>
-                <td>
-                  What they charge, the limits hidden in their plans, and factual mistakes on their comparison
-                  pages.
-                </td>
-                <td>
-                  Sell against their hidden caps and "contact sales" walls, and publicly correct what they get
-                  wrong about you.
-                </td>
-              </tr>
-              <tr>
-                <td className="n">5</td>
-                <td>
-                  <b>Hiring</b>
-                </td>
-                <td>
-                  Every open job, what it pays, what has sat unfilled for months, and what they stopped staffing.
-                </td>
-                <td>
-                  Attack where they can't respond. An unfilled role is something they can't do yet, and your window
-                  until the seat fills.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <section>
+        <p className="lead-in">Every morning I deliver a report with:</p>
+
+        <p className="group-label">Leads you should contact</p>
+        <p>
+          <b>Your competitors&apos; unhappy customers.</b> Customers unhappy with your competitors are looking for an
+          alternative. Reaching out to them typically has a high conversion.
+        </p>
+        <p>
+          <b>People describing your product without knowing it exists.</b> Every week somebody posts a description of
+          exactly what you offer and asks whether anything like it is out there. They are already sold, you just gotta
+          reach out.
+        </p>
+
+        <p className="group-label">Your brand</p>
+        <p>
+          <b>Everything said about your brand.</b> Sometimes people misrepresent you online: wrong price, a feature you
+          do have, a bug you fixed months ago. Catch it early and correct it before it blows out of proportion.
+        </p>
+        <p>
+          <b>What&apos;s wrong on your own side.</b> Out-of-date comparison pages, numbers that no longer match, claims
+          your customers are making that aren&apos;t true. These are reputation killers.
+        </p>
+
+        <p className="group-label">Your competitor</p>
+        <p>
+          <b>Price changes and what they shipped.</b> Competitors change prices quietly and rarely announce it. You
+          find out the morning it happens instead of hearing it from a prospect in a sales call.
+        </p>
+        <p>
+          <b>Unannounced edits to their own docs.</b> The most valuable things a competitor publishes are the ones
+          they hope nobody reads, like data policies, plan limits and security pages. A quiet edit is a decision they
+          have already made, so you see where they are heading weeks before they announce it.
+        </p>
+        <p>
+          <b>Their SEO keywords and ads.</b> What SEO keywords they rank for and pay for, so you can strategize what
+          you bid on. We also show you their ad campaigns so you can replicate what works and avoid what doesn&apos;t.
+        </p>
       </section>
 
-      <section className="band">
-        <div className="wrap">
-          <h2>How it works.</h2>
-          <div className="cols three">
-            <div>
-              <span className="num">Step 1</span>
-              <h3>Tell us which brands to track</h3>
-              <p className="muted">
-                Your own, a competitor, or both. We'll hop on an optional call to walk through your business and
-                which competitor matters most. Prefer to skip the call? Just send us the company names.
-              </p>
-            </div>
-            <div>
-              <span className="num">Step 2</span>
-              <h3>Get your first report</h3>
-              <p className="muted">
-                Within 5 business days you get the full report: every mention and review, everything they do in
-                public, what it means, and your recommended moves in order.
-              </p>
-            </div>
-            <div>
-              <span className="num">Step 3</span>
-              <h3>Keep it, or get your money back</h3>
-              <p className="muted">
-                Don't like the first report? Your first month is fully refunded, no questions asked. Otherwise a
-                fresh report lands every month with what changed. Cancel anytime.
-              </p>
-            </div>
-          </div>
-        </div>
+      <section>
+        <p className="lead-in">I typically work with early-stage startups in two buckets:</p>
+        <p>
+          <b>Consumer startups that grow through other people.</b> Distribution runs through creatives, ads, SEO, and
+          brand identity is critical.
+        </p>
+        <p>
+          <b>SaaS going up against an established incumbent.</b> Their unhappy customers say so in public, and the
+          people shopping for an alternative are searching in the open.
+        </p>
       </section>
 
-      <section className="band">
-        <div className="wrap">
-          <h2>Examples from real reports.</h2>
-          <div className="excerpt">
-            <p className="claim">
-              They mostly disappeared from free Google results this year, and now pay an estimated $446K a month to
-              make up the difference.
-            </p>
-            <p className="detail">
-              98% of their search visits are now paid. The searches that describe the product, like "best dictation
-              app", are won by review roundups and small competitors, not by them.
-            </p>
-            <div className="mini-fig">
-              <div className="cap">Google searches they show up in for free, 2026</div>
-              <BriefChart
-                spec={{
-                  kind: "columns",
-                  rows: [
-                    ["Feb", 35961],
-                    ["May", 19382],
-                    ["Jun", 5248],
-                    ["Aug", 3542],
-                  ],
-                  fmt: "num",
-                  label: [0, 3],
-                  aria: "Free Google search visibility collapsing from 35,961 phrases in February to 3,542 in August",
-                }}
-              />
-            </div>
-            <p className="move">
-              Recommended move: build pages and buy ads for the searches they abandoned, starting with the phrases
-              people type when they're ready to buy, like "best dictation app" and "[their name] alternative".
-              Their ad budget isn't defending those searches, so they're cheap to take right now.
-            </p>
-          </div>
-          <div className="excerpt">
-            <p className="claim">
-              27% of recent posts about them are complaints or people asking for alternatives. Nobody from the
-              company has replied to any of them.
-            </p>
-            <p className="detail">
-              The report listed 18 live posts worth answering, ranked by reach, with the words to answer them.
-            </p>
-            <div className="mini-fig">
-              <div className="cap">120 recent posts about them, read and tallied by hand</div>
-              <BriefChart
-                spec={{
-                  kind: "rows",
-                  rows: [
-                    ["News, neutral", 43, "neu"],
-                    ["Positive", 30, "pos"],
-                    ["Complaints, switching", 27, "neg"],
-                  ],
-                  fmt: "pct",
-                  labelAll: true,
-                  aria: "Sentiment split: 43% neutral, 30% positive, 27% complaints or switching",
-                }}
-              />
-            </div>
-            <p className="move">
-              Recommended move: give one person on your team the list and have them answer every post with a
-              helpful reply and a trial link. A rival was already replying to these threads, and the posts go stale
-              within days, so speed matters more than polish.
-            </p>
-          </div>
-          <div className="excerpt">
-            <p className="claim">
-              Their job board shows zero customer care staff and an unfilled enterprise engineering lead with
-              "unblock major Fortune 100 deals" in the description.
-            </p>
-            <p className="detail">
-              Companies don't write that unless deals are actually blocked. Their enterprise motion is stuck until
-              that seat fills.
-            </p>
-            <table className="sheet">
-              <thead>
-                <tr>
-                  <th>What their job board says</th>
-                  <th className="n">Salary</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Enterprise engineering lead, "unblock major Fortune 100 deals"</td>
-                  <td className="n">$320K–400K</td>
-                  <td>Open, relisted at a higher level</td>
-                </tr>
-                <tr>
-                  <td>AI researchers (the people who'd fix accuracy)</td>
-                  <td className="n">$250K–400K</td>
-                  <td>Open for over a year</td>
-                </tr>
-                <tr>
-                  <td>Customer care, account managers</td>
-                  <td className="n">n/a</td>
-                  <td>All closed, none filled</td>
-                </tr>
-              </tbody>
-            </table>
-            <p className="move">
-              Recommended move: go after the big-company buyers they can't serve yet. Publish your security
-              certifications and pricing while theirs sit behind "contact sales", and move now, because this window
-              closes the day that hire starts.
-            </p>
-          </div>
-          <div className="cta-row">
-            <Link className="button" href="/samples/wispr">
-              Read a sample report
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="band">
-        <div className="wrap">
-          <h2>$249 a month per brand. $899 with daily leads.</h2>
-          <p className="muted">
-            Track your own brand, a competitor, or both. Weekly gets you a full report every Monday. Daily adds a lead
-            brief every business day: named people to reply to, with what to say. Start with a two-week trial for $299 that
-            includes both, fully refundable.
-          </p>
-          <div className="cta-row">
-            <Link className="button primary" href="/pricing">
-              See pricing
-            </Link>
-            <Link className="button" href="/contact">
-              Contact us
-            </Link>
-          </div>
-        </div>
+      <section>
+        <p className="lead-in">How we&apos;ll work:</p>
+        <p>1. Just send me your company, I&apos;ll do the research. Optionally hop on a call so we get to know each other.</p>
+        <p className="step">2. We&apos;ll do a $300 2-week trial. Fully refundable if you don&apos;t want to go through.</p>
+        <p className="step">
+          3. If you like the reports and want to go through, we have two options: daily reports and weekly deep
+          reports. You choose which one suits you best.
+        </p>
+        <Link className="cta-button" href="/contact">
+          Contact
+        </Link>
       </section>
     </main>
   );

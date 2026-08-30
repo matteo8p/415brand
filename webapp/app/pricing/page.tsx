@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "415brand pricing: a two-week trial for $299, fully refundable, with daily and weekly reports included. Weekly reports $249 a month. Daily lead briefs plus weekly reports $899 a month.",
+    "research415 pricing: a two-week trial for $299, fully refundable, with daily and weekly reports included. Weekly reports $249 a month. Daily lead briefs plus weekly reports $899 a month.",
 };
 
 const TRIAL_URL = "https://buy.stripe.com/aFa4gycd9asr8lI5bJaZi04";
@@ -219,7 +219,7 @@ export default function PricingPage() {
                 <td>Wait weeks, get pricing by phone</td>
               </tr>
               <tr className="us">
-                <td>415brand</td>
+                <td>research415</td>
                 <td>Reports and leads, delivered</td>
                 <td className="n">$249–$899/mo</td>
                 <td>Read it once, reply to three people</td>

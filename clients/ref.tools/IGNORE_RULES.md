@@ -2,7 +2,7 @@
 
 Filtering is silent. Dropped posts are not shown to the reader. This file is the only record, so keep it current.
 
-These are 415brand's proposed rules, carried over from the Cloudless list and adapted for a developer-tools market. **None have been confirmed by Matt yet.** Ask him in the first working session which to keep.
+These are research415's proposed rules, carried over from the Cloudless list and adapted for a developer-tools market. **None have been confirmed by Matt yet.** Ask him in the first working session which to keep.
 
 | # | Rule | Why |
 |---|---|---|

@@ -132,7 +132,7 @@ for x in br.BULLETS:
 b.append(h2(6, "Where this came from"))
 b.append(f'<p style="{NOTE}">{inline(br.SOURCES_NOTE)}</p>')
 b.append(f'<p style="{NOTE};margin-top:26px;padding-top:12px;border-top:1px solid #c8ccd1">'
-         'Sent by 415brand. '
+         'Sent by research415. '
          f'<a href="{{{{{{RESEND_UNSUBSCRIBE_URL}}}}}}" style="{LINK}">Unsubscribe</a>.</p>')
 
 DOC_OPEN = ('<!DOCTYPE html><html><head><meta charset="utf-8">'
@@ -177,7 +177,7 @@ for x in br.BULLETS:
     t += [f"* {strip(x)}", ""]
 
 t += ["6. WHERE THIS CAME FROM", "-----------------------", strip(br.SOURCES_NOTE), "",
-      "---", "Sent by 415brand. Unsubscribe: {{{RESEND_UNSUBSCRIBE_URL}}}"]
+      "---", "Sent by research415. Unsubscribe: {{{RESEND_UNSUBSCRIBE_URL}}}"]
 
 (HERE / f"{DATE}.email.txt").write_text("\n".join(t))
 print(f"{DATE}.email.html {len(html_out)} bytes ({len(html_out)/1024:.1f} KB)")

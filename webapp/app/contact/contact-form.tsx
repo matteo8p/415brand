@@ -82,7 +82,7 @@ function MailtoContactForm() {
     const email = String(data.get("email") ?? "");
     const company = String(data.get("company") ?? "");
     const message = String(data.get("message") ?? "");
-    const subject = `415brand inquiry${name ? ` from ${name}` : ""}`;
+    const subject = `research415 inquiry${name ? ` from ${name}` : ""}`;
     const header = [name && `Name: ${name}`, email && `Email: ${email}`, company && `Company: ${company}`]
       .filter(Boolean)
       .join("\n");

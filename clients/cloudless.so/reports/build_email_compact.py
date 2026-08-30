@@ -103,7 +103,7 @@ for x in br.BULLETS:
 b.append(h2(8, "Where this came from"))
 b.append(f'<p style="{MUTE}">{il(br.SOURCES_NOTE)}</p>')
 b.append(f'<p style="{MUTE};margin-top:22px;padding-top:12px;border-top:1px solid #c8ccd1">'
-         "Sent by 415brand for Cloudless. "
+         "Sent by research415 for Cloudless. "
          f'<a href="{{{{{{RESEND_UNSUBSCRIBE_URL}}}}}}" style="{A}">Unsubscribe</a>.</p>')
 
 doc = ('<!DOCTYPE html><html><head><meta charset="utf-8">'

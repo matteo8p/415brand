@@ -1,6 +1,6 @@
-# 415brand
+# research415
 
-415brand tracks what people are saying about your brand and your competitors, and turns it into one written report a month.
+research415 tracks what people are saying about your brand and your competitors, and turns it into one written report a month.
 
 For each brand we read every public mention by hand: Reddit, X, LinkedIn, Hacker News and niche forums, plus reviews on G2, Capterra, Trustpilot, Google and the app stores. We tally sentiment, flag the posts worth replying to, and note who is doing the talking. For competitors we also cover their ads, search rankings, pricing and hiring.
 

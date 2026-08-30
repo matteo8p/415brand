@@ -23,7 +23,7 @@ Someone who paid *and* is now asking for a refund or saying quality collapsed is
 target, not a fresh subscriber. Those stay in the report. The test is the sentiment, not
 the transaction.
 
-## Proposed (added by 415brand, awaiting Tim's yes/no)
+## Proposed (added by research415, awaiting Tim's yes/no)
 
 | # | Rule | Why |
 |---|---|---|

@@ -2,7 +2,7 @@
 
 Filtering is silent. Dropped posts are not shown to the reader. This file is the only record, so keep it current.
 
-Proposed by 415brand from the first research run. **None confirmed by the founders yet.** Ask in the first working session.
+Proposed by research415 from the first research run. **None confirmed by the founders yet.** Ask in the first working session.
 
 | # | Rule | Why |
 |---|---|---|

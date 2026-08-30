@@ -1,10 +1,10 @@
 # OpenTag Competitors — Claude Tag, Viktor, Adapt, Dust
 
-*Research date: 2026-08-27. Sources: crawls of tryopentag.com, dust.tt and conifer.build; press coverage of Claude Tag (Fortune, VentureBeat, eesel); and 415brand's own prior research files `clients/adapt.com/ADAPTCOM.md` and `clients/adapt.com/VIKTOR.md` (both dated 2026-08-26), which contain far more depth on those two companies than is repeated here. Read `OPEN_TAG.md` first — this file assumes it. Items marked **[unverified]** come from a single third-party source.*
+*Research date: 2026-08-27. Sources: crawls of tryopentag.com, dust.tt and conifer.build; press coverage of Claude Tag (Fortune, VentureBeat, eesel); and research415's own prior research files `clients/adapt.com/ADAPTCOM.md` and `clients/adapt.com/VIKTOR.md` (both dated 2026-08-26), which contain far more depth on those two companies than is repeated here. Read `OPEN_TAG.md` first — this file assumes it. Items marked **[unverified]** come from a single third-party source.*
 
 > ## ⚠️ Client conflict — read before any work ships
 >
-> **Adapt.com is already a 415brand client** (`clients/adapt.com/`), and Adapt sells the same product to the same buyer as OpenTag: one shared AI agent, living in Slack, connected to company tools, usage-priced with unlimited seats, routing across Claude/GPT/Gemini/open models. They are direct competitors.
+> **Adapt.com is already a research415 client** (`clients/adapt.com/`), and Adapt sells the same product to the same buyer as OpenTag: one shared AI agent, living in Slack, connected to company tools, usage-priced with unlimited seats, routing across Claude/GPT/Gemini/open models. They are direct competitors.
 >
 > It goes further. We write Adapt a **weekly brief on Viktor** — and Viktor is also OpenTag's best-funded competitor. The reference example for our entire weekly report format (`webapp/app/samples/briefs/viktor.ts`) is that brief.
 >
@@ -117,4 +117,4 @@ Not profiled, but they show up in every buyer's evaluation and in social listeni
 
 ## Sources
 
-tryopentag.com and conifer.build (Firecrawl crawl, 2026-08-27). dust.tt/pricing (2026-08-27). Fortune (23 Jun 2026), VentureBeat and eesel on Claude Tag. `clients/adapt.com/ADAPTCOM.md` and `clients/adapt.com/VIKTOR.md` (415brand research, 2026-08-26) — subject to the conflict notice above. G2, Crunchbase and press figures for Viktor as cited in `VIKTOR.md`.
+tryopentag.com and conifer.build (Firecrawl crawl, 2026-08-27). dust.tt/pricing (2026-08-27). Fortune (23 Jun 2026), VentureBeat and eesel on Claude Tag. `clients/adapt.com/ADAPTCOM.md` and `clients/adapt.com/VIKTOR.md` (research415 research, 2026-08-26) — subject to the conflict notice above. G2, Crunchbase and press figures for Viktor as cited in `VIKTOR.md`.

@@ -6,7 +6,7 @@
 #   ./send_report.sh 08-27-2026.email.html --send
 #
 # Set these (or export them) before running:
-FROM="${RESEND_FROM:-415brand <reports@YOUR-VERIFIED-DOMAIN>}"
+FROM="${RESEND_FROM:-research415 <reports@YOUR-VERIFIED-DOMAIN>}"
 TO="${RESEND_TO:-tim@cloudless.so}"
 SUBJECT="${RESEND_SUBJECT:-Wispr Flow daily brief, Aug 27}"
 API_KEY="${RESEND_API_KEY:?Set RESEND_API_KEY (see clients/RESEND.md)}"
