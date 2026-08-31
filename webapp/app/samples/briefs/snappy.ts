@@ -3,169 +3,29 @@ import type { Brief } from "./types";
 export const snappy: Brief = {
   slug: "snappy",
   title: "Snappy weekly brief: brand & competitive analysis",
-  sub: "For the Goody team, August 30, 2026",
+  sub: "For the Goody team, August 31, 2026",
   subject: "Snappy",
   client: "Goody",
   intro: [
-    { type: "h3", text: "Scorecard" },
-    {
-      type: "scorecard",
-      rows: [
-        {
-          metric: "Monthly website visits",
-          primary: "211K",
-          us: "171K",
-          change:
-            "Goody gets 81% of Snappy's traffic on a quarter of the money raised. Sendoso, which raised $153M, gets 102K. This is a much closer race than the funding suggests.",
-          tone: "good",
-          source: "[[similarweb-snappy]] [[similarweb-goody]]",
-        },
-        {
-          metric: "Share of visitors who type the address in",
-          primary: "68%",
-          us: "60%",
-          change:
-            "Both companies are found by people who already know the name. Neither is winning the searches that describe the category.",
-          tone: "neutral",
-          source: "[[similarweb-snappy]] [[similarweb-goody]]",
-        },
-        {
-          metric: "Pages viewed per visit",
-          primary: "5.82",
-          us: "6.81",
-          change:
-            "Goody wins. People who land on Goody look at one more page than people who land on Snappy, and four more than Sendoso (2.49).",
-          tone: "good",
-          source: "[[similarweb-snappy]] [[similarweb-goody]]",
-        },
-        {
-          metric: "Average time on the site",
-          primary: "3:14",
-          us: "3:27",
-          change: "Goody wins by 13 seconds. Sendoso is 1:19.",
-          tone: "good",
-          source: "[[similarweb-snappy]] [[similarweb-goody]]",
-        },
-        {
-          metric: "Share of visitors who leave from the first page",
-          primary: "33%",
-          us: "39%",
-          change:
-            "Snappy wins. Six points more of Goody's visitors arrive, look at one page and go. That is the one traffic number Goody loses on.",
-          tone: "bad",
-          source: "[[similarweb-snappy]] [[similarweb-goody]]",
-        },
-        {
-          metric: "Facebook and Instagram ads running right now",
-          primary: "41",
-          us: "0",
-          change:
-            "Snappy has 41 live. Goody has never run a single Meta ad, in any country, active or inactive. 25 of Snappy's 41 launched between Aug 12 and Aug 19.",
-          tone: "bad",
-          source: "[[meta-snappy]] [[meta-goody]]",
-        },
-        {
-          metric: "Of those ads, how many are made by creators",
-          primary: "0 of 41",
-          us: "n/a",
-          change:
-            "Every Snappy ad is made in-house. There is no creator or influencer program running on Meta for either company.",
-          tone: "neutral",
-          source: "[[meta-snappy]]",
-        },
-        {
-          metric: "Google ads on record (US, all time)",
-          primary: "about 300",
-          us: "about 300",
-          change:
-            "Both advertise on Google and both are verified advertisers. Google rounds this number and it covers all time, not what is running today. Goody's absence is specific to Meta, not to paid advertising.",
-          tone: "neutral",
-          source: "[[google-ads-snappy]] [[google-ads-goody]]",
-        },
-        {
-          metric: "G2 rating (number of reviews)",
-          primary: "4.8 (312)",
-          us: "4.8 (235)",
-          change:
-            "A tie. G2 is where the buyer reviews the product. Goody's own blog says 4.9 for both, which is out of date.",
-          tone: "neutral",
-          source: "[[g2-snappy]] [[g2-goody]]",
-        },
-        {
-          metric: "Trustpilot rating (the site gift recipients use)",
-          primary: "1.9 (13)",
-          us: "3.4 (50 most recent)",
-          change:
-            "Goody is better and still not good. Snappy's 13 reviews were every one of them one star. Both bases are small, so read the direction and not the decimal.",
-          tone: "neutral",
-          source: "[[trustpilot-snappy]] [[trustpilot-goody]]",
-        },
-        {
-          metric: "Share of recent Trustpilot reviews at one or two stars",
-          primary: "13 of 13",
-          us: "20 of 50",
-          change:
-            "40% of Goody's 50 most recent are one or two stars. In 2026 alone it is 13 of 30. This is Goody's own number and it is the most important line on this scorecard.",
-          tone: "bad",
-          source: "[[trustpilot-goody]]",
-        },
-        {
-          metric: "Posts about it on X per day",
-          primary: "under 1",
-          us: "under 1",
-          change:
-            "100 top posts across 14 days on gifting terms named neither company once. X does not exist as a channel in this category.",
-          tone: "neutral",
-          source: "[[x-search]]",
-        },
-        {
-          metric: "Reddit posts naming it since Jul 30",
-          primary: "0",
-          us: "0",
-          change:
-            "400 posts pulled on five gifting terms. 14 were on topic, 3 were from 2026, and none named Snappy or Goody. The buying threads exist but they are older than this window.",
-          tone: "neutral",
-          source: "[[reddit]]",
-        },
-        {
-          metric: "Employees, and open jobs",
-          primary: "200+ (6 jobs)",
-          us: "about 59 (4 jobs)",
-          change:
-            "Snappy has more than three times the headcount and is hiring one engineer. Goody is hiring a product designer at $200K to 250K, its highest-paid listed role.",
-          tone: "neutral",
-          source: "[[snappy-careers]] [[goody-jobs]] [[latka]]",
-        },
-      ],
-    },
     { type: "h3", text: "Recommended actions for Goody from the analysis" },
     {
       type: "moves",
       collapsed: true,
       items: [
         {
-          action: "Tell your existing customers about the three things you already shipped.",
-          why:
-            "Three of the most common complaints in Goody's own G2 reviews are for features that already exist. Reviewers on Aug 19 asked to let employees add their own money to a gift, which shipped in May as Recipient Gift Upgrade. A May 20 reviewer said Goody has no company store, which shipped that same month. An Apr 15 reviewer asked for HubSpot, which shipped in July. These people are paying customers writing public reviews about problems Goody has solved. One email and a link to the changelog fixes it. This is the cheapest thing on this list and it costs an afternoon.",
+          action: "Reply to the bad reviews you have already fixed, and ask them to change the score.",
+          why: "Three of the loudest complaints on your G2 page are for features you shipped months ago. Two reviewers on Aug 19 and one in January asked to let employees top up a gift with their own money. You shipped that in May as Recipient Gift Upgrade. A May 20 reviewer said you have no company store. You shipped Company Stores that month. An Apr 15 reviewer asked for HubSpot. You shipped it in July. These are paying customers publicly arguing against you about problems that no longer exist, on the page every prospect reads before they buy. Reply to each one, name the feature, link the changelog, ask them to update the rating. Outcome: your highest-intent page stops selling against you, for one afternoon of work and zero dollars.",
           evidence: "pricing-and-product",
         },
         {
-          action: "Start running Meta ads now, before Snappy's holiday build finishes compounding.",
-          why:
-            "Snappy has 41 live Facebook and Instagram ads and Goody has never run one. 25 of the 41 launched in the eight days from Aug 12 to Aug 19, which is Snappy building for the fourth quarter, the only quarter that matters in gifting. Snappy runs on Facebook, Instagram, Messenger, Audience Network and Threads at once, all in-house, no creators. Goody already advertises on Google, so the media skill exists in the building. Copy the structure and not the copy: Snappy's ads never mention price, and Goody's free tier is the strongest thing it has to say.",
-          evidence: "advertising-and-social-media",
-        },
-        {
-          action: "Fix Goody's own delivery and redemption problems before selling against Snappy's.",
-          why:
-            "Delivery is the top complaint for both companies: 6 of 17 sorted Snappy complaints and 4 of 12 sorted Goody complaints. Goody's second biggest is redemption, at 3 of 12: money trapped, funds forfeited, no way to exchange. Goody cannot use Snappy's recipient reviews as a weapon while 40% of its own recent Trustpilot reviews are one or two stars. Fix the fulfilment and expiry mechanics first, then say so loudly, because nobody in this category is competing on the recipient's experience and the seat is empty.",
-          evidence: "advertising-and-social-media",
-        },
-        {
-          action: "Correct the two claims about Snappy in Goody's own comparison post.",
-          why:
-            "Goody's most-linked marketing asset says Snappy charges a 15% processing fee and supports 40+ countries. We could not find the fee anywhere on Snappy's site, and Snappy's own pages claim 150+ or 176+ countries. If a Snappy salesperson finds either line, every other true claim on that page stops being believed. Both fixes are one sentence each. While the page is open, add the comparison Goody does not have: it ranks itself first among twelve platforms but owns no page for goody vs snappy, which is a search SnackNation already owns.",
+          action: "Build the Snappy comparison page. You do not have one, and the two things you do say about Snappy are wrong.",
+          why: "ongoody.com/compare, /compare/snappy, /vs/snappy and /snappy-alternative all return 404. You have no comparison page for anyone. What you have instead is a blog roundup that says Snappy charges a 15% processing fee, which appears nowhere on Snappy's site, and supports 40+ countries, when Snappy's own pages say 150+ and 176+. Your other blog post says Snappy has global shipping, so your two pages contradict each other about the same competitor. Meanwhile SnackNation ranks for Snappy vs Goody and Sendoso publishes a page that names you. Outcome: you stop handing that search to other people, and the page survives a Snappy rep reading it.",
           evidence: "search-and-marketplaces",
+        },
+        {
+          action: "Get Meta ads live in September. Snappy has 41 running and you have never run one.",
+          why: "Not one, in any country, active or inactive, ever. Snappy launched 25 of its 41 in the eight days from Aug 12 to Aug 19, which is a holiday campaign being built while you read this, and Q4 is the only quarter that matters in gifting. You already run Google ads as a verified advertiser, so you have the account, the creative process and the people. This is a channel you have simply never switched on. Copy Snappy's structure, all five placements and video-first. Do not copy its copy: not one of those 41 ads mentions price, and free with no contract is the best sentence you own. Outcome: you are in market before October instead of arriving after the budgets are spent.",
+          evidence: "advertising-and-social-media",
         },
       ],
     },
@@ -173,53 +33,35 @@ export const snappy: Brief = {
     {
       type: "table",
       headers: [
-        { text: "Where", w: "20%" },
-        { text: "Date", w: "7%", nw: true },
-        { text: "Post" },
-        { text: "Reach", w: "14%" },
+        { text: "Where", w: "16%" },
+        { text: "When", w: "7%", nw: true },
+        { text: "What they said" },
+        { text: "Status", w: "10%" },
+        { text: "What to say, and what you get", w: "27%" },
       ],
       rows: [
         [
-          "Trustpilot, a Snappy customer of three years",
-          "Jul 15",
-          "[\"Over the past year there is more than a $1000 discrepancy with what we should have been credited... I have been ghosted and cannot escalate my concerns. I'm currently shopping for alternatives.\"](https://www.trustpilot.com/reviews/6a57cf277256d6fc08612cf6)",
-          "1 star, paying and leaving",
+          "r/SmallBusiness_US",
+          "Aug 31",
+          "[\"We have 24 people and most of us use sendoso for birthdays and welcome gifts. Some months the platform costs more than the gifts we're sending... We just need to send someone a code and let them pick a gift. Anyone using something simpler and cheaper for this?\"](https://www.reddit.com/r/SmallBusiness_US/comments/1w33n9u/simpler_way_to_send_employee_gifts/)",
+          "Shopping",
+          "Posted hours ago with zero replies. This is your free tier described by a stranger, down to the code-and-pick mechanic. Answer plainly: no platform fee, no contract, they pick their own gift and enter their own address. Gets you a 24-person account that is already leaving Sendoso.",
         ],
         [
-          "r/SmallBusinessOwners (21.9K members)",
-          "Apr 11",
-          "[\"Budget-friendly Sendoso alternatives\". A 40-person startup whose Sendoso renewal quote they \"had to read twice because I thought there was a mistake\"](https://www.reddit.com/r/SmallBusinessOwners/comments/1sinicb/budgetfriendly_sendoso_alternatives/)",
-          "8 points, 12 comments",
+          "X and LinkedIn, Henry Schuck, founder and CEO of ZoomInfo (5,799 followers)",
+          "Aug 26",
+          "[\"Most corporate gifting SUCKS so at @ZoomInfo events, we've started doing something different: giving out custom jewelry made by my sister. After 1000s of events and dinners, I've got a closet filled with YETI mugs, patagonia quarter zips and branded backpacks\"](https://x.com/HenryLSchuck/status/2092600700996079918)",
+          "Venting",
+          "The CEO of a public company saying in two places that swag is waste, which is the exact argument Snappy started running ads on nine days earlier. Do not pitch him. Agree, and say the fix is letting the recipient choose. Gets your position in front of a go-to-market audience that buys this category.",
         ],
         [
-          "r/RecruitmentAgencies (18.2K members)",
-          "May 16",
-          "[\"Consolidating Corporate Gifting Companies, 4 Vendors To 2?\". A 200-person company paying \"roughly $14k\" a year in platform access fees before anyone ordered anything](https://www.reddit.com/r/RecruitmentAgencies/comments/1tef2bs/consolidating_corporate_gifting_companies_4/)",
-          "4 points, 3 comments",
-        ],
-        [
-          "X, @WillManidis",
-          "Jul 30",
-          "[\"the disappearing of corporate gifting... counter parties so rarely know home addresses (no ea to ask)\". Goody's product thesis, written by a stranger](https://x.com/WillManidis/status/2081847567566954519)",
-          "918 likes, 29 replies",
-        ],
-        [
-          "r/sales (600K members)",
-          "Mar 20",
-          "[\"Gifting platforms like Sendoso that an IC can use independently?\". Has a corporate card, hates Thnks, company will not onboard a new vendor](https://www.reddit.com/r/sales/comments/1rz3ced/gifting_platforms_like_sendoso_that_an_ic_can_use/)",
-          "6 comments",
-        ],
-        [
-          "Trustpilot, a Snappy recipient",
-          "Jul 21",
-          "[\"How do you raise $225 on their platform and be given product options valued @ less than $100... There were no options to select multiple items up to that value.\"](https://www.trustpilot.com/reviews/6a5fdd33d9c6fcb5d4d7595f)",
-          "1 star",
+          "X, @howard",
+          "Aug 27",
+          "[\"I would like this too! a Company Library. with an amazon / rewards integration as well for corporate gifting\"](https://x.com/howard/status/2093077745555140938)",
+          "Shopping",
+          "Small thread, one reply, but he is asking for a rewards catalog wired into a workplace tool and that is your Commerce API. Low effort, low odds. Answer it last.",
         ],
       ],
-    },
-    {
-      type: "note",
-      text: "Everything below is collapsed. Click [show] on any line for the full analysis, the why, and the sources.",
     },
   ],
   sections: [
@@ -227,6 +69,57 @@ export const snappy: Brief = {
       id: "key-findings",
       title: "Key findings",
       blocks: [
+        {
+          type: "note",
+          text: "Snappy against Goody, pulled Aug 30 and 31. Every number is sourced on its row. Traffic is a Similarweb estimate and both review bases are small, which the footer sets out.",
+        },
+        {
+          type: "scorecard",
+          rows: [
+            { metric: "Monthly website visits", primary: "211K", us: "171K", tone: "good",
+              change: "Goody gets 81% of Snappy's traffic on a quarter of the money raised. Sendoso, which raised $153M, gets 102K.",
+              source: "[[similarweb-snappy|Similarweb]] [[similarweb-goody|Goody]]" },
+            { metric: "Share of visitors who type the address in", primary: "68%", us: "60%", tone: "neutral",
+              change: "Both are found by people who already know the name. Neither wins the searches that describe the category.",
+              source: "[[similarweb-snappy|Similarweb]] [[similarweb-goody|Goody]]" },
+            { metric: "Pages viewed per visit", primary: "5.82", us: "6.81", tone: "good",
+              change: "Goody wins, and also wins time on site at 3:27 against 3:14. Sendoso is 2.49 pages and 1:19.",
+              source: "[[similarweb-snappy|Similarweb]] [[similarweb-goody|Goody]]" },
+            { metric: "Share who leave from the first page", primary: "33%", us: "39%", tone: "bad",
+              change: "The one traffic number Goody loses. Six points more of its visitors arrive, look at one page and go. Fix this before paying to send anyone there.",
+              source: "[[similarweb-snappy|Similarweb]] [[similarweb-goody|Goody]]" },
+            { metric: "Facebook and Instagram ads running now", primary: "41", us: "0", tone: "bad",
+              change: "Goody has never run a Meta ad, in any country, active or inactive. 25 of Snappy's 41 launched between Aug 12 and Aug 19, which is the holiday build.",
+              source: "[[meta-snappy|Meta Ad Library]] [[meta-goody|Goody search]]" },
+            { metric: "Of those ads, how many are made by creators", primary: "0 of 41", us: "n/a", tone: "neutral",
+              change: "Every Snappy ad is made in-house. Neither company runs a creator, referral or affiliate program.",
+              source: "[[meta-snappy|Meta Ad Library]]" },
+            { metric: "Google ads on record (US, all time)", primary: "~300", us: "~300", tone: "neutral",
+              change: "Both advertise and both are verified advertisers. Google rounds this and it covers all time, not what is running today. Goody's gap is Meta, not paid advertising.",
+              source: "[[google-ads-snappy|Google Ads]] [[google-ads-goody|Goody]]" },
+            { metric: "G2 rating, where the buyer reviews", primary: "4.8 (312)", us: "4.8 (235)", tone: "neutral",
+              change: "A tie. Goody's own blog says 4.9 for both, which is out of date. Goody's reviews cluster on May 20 to 21 and Aug 19 to 20, which is a webinar review drive.",
+              source: "[[g2-snappy|G2]] [[g2-goody|Goody]]" },
+            { metric: "Trustpilot rating, where the recipient reviews", primary: "1.9", us: "3.4", tone: "neutral",
+              change: "Goody's figure covers its 50 most recent. Snappy's covers 13 reviews, every one of them a single star. Both bases are small, so read the direction and not the decimal.",
+              source: "[[trustpilot-snappy|Trustpilot]] [[trustpilot-goody|Goody]]" },
+            { metric: "Recent Trustpilot reviews at one or two stars", primary: "13 of 13", us: "20 of 50", tone: "bad",
+              change: "In 2026 alone Goody is 13 of 30. This is Goody's own number. Goody's blog calls its Trustpilot rating Excellent. It is not.",
+              source: "[[trustpilot-snappy|Trustpilot]] [[trustpilot-goody|Goody]]" },
+            { metric: "Biggest objection, and its share of complaints sorted", primary: "Delivery, 35%", us: "Delivery, 33%", tone: "bad",
+              change: "17 Snappy complaints and 12 Goody complaints sorted into one bucket each. Second place differs: Snappy is catalog quality at 29%, Goody is redemption at 25%.",
+              source: "[[trustpilot-snappy|Trustpilot]] [[g2-snappy|G2]] [[trustpilot-goody|Goody]]" },
+            { metric: "Posts about it on X per day", primary: "under 1", us: "under 1", tone: "neutral",
+              change: "67 posts on gifting terms in the seven days to Aug 31 named neither company once. X does not exist as a channel here.",
+              source: "[[x-search|X]]" },
+            { metric: "Reddit posts naming it since Aug 24", primary: "0", us: "0", tone: "neutral",
+              change: "651 posts pulled in the window and none named either company. One genuine buyer thread appeared on Aug 31 and is in the reply table.",
+              source: "[[reddit|Reddit]]" },
+            { metric: "Employees, and open jobs", primary: "200+ (6)", us: "~59 (4)", tone: "neutral",
+              change: "Snappy has more than three times the headcount and one open engineering job, in Tel Aviv, with no marketing role open. Goody's headcount is a third-party estimate.",
+              source: "[[snappy-careers|Snappy jobs]] [[goody-jobs|Goody jobs]] [[latka|GetLatka]]" },
+          ],
+        },
         {
           type: "findings",
           items: [
@@ -288,15 +181,15 @@ export const snappy: Brief = {
             },
             {
               claim:
-                "Snappy paywalls Slack and Microsoft Teams at $2,000 a year, publishes that price, and Goody does not publish a Team price at all.",
+                "Goody has no comparison page for anyone, and the two claims it does make about Snappy are both wrong.",
               body: [
                 {
                   type: "p",
-                  text: "Snappy's tiers are Essential at $0, Elevated at $2,000 a year and Enterprise on quote. Slack and Teams notifications, HR system integrations and Snappy Stores all sit behind the $2,000 line. Goody's Starter is $0 forever, Pro is $20 per user per month, and Team is \"chat with us\", priced by company size. Goody has more than 200 HR integrations against Snappy's 40-plus, and routes Slack through Zapier rather than natively. [[snappy-pricing]] [[goody-pricing]]",
+                  text: "ongoody.com/compare, /compare/snappy, /business/compare, /vs/snappy, /alternatives/snappy and /snappy-alternative all return 404. The only competitor content Goody owns is two blog posts, and they disagree with each other. The platform roundup says Snappy supports \"40+ countries\" and charges a \"15% processing fee on gifts\". The address-free post says Snappy has \"global shipping\". Snappy's own homepage says 150+ countries and its pricing page says 176+, and the fee appears nowhere on Snappy's site. Both posts also cite 4.9/5 on G2 for both companies, where the live pages read 4.8. [[goody-blog-platforms]] [[goody-blog-address]] [[snappy-home]] [[snappy-pricing]] [[g2-snappy]] [[g2-goody]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Goody:** Goody's entire comparison post is an argument about pricing transparency, and on the middle tier Snappy is the more transparent of the two. Publish a Team price or a starting price. Then point out that Snappy charges $2,000 for Slack notifications, which is the single most-wanted feature for a distributed company. [[goody-blog-platforms]]",
+                  text: "**Why it matters for Goody:** A wrong country count is checkable in a minute, and once a Snappy rep finds it every true claim on that page dies with it. Fix both lines, then build the page you do not have: Snappy paywalls Slack and Teams at $2,000 a year and you give them away. That is the comparison, and SnackNation currently owns the search for it. [[snappy-pricing]] [[goody-pricing]] [[snacknation]]",
                 },
               ],
             },
@@ -408,7 +301,7 @@ export const snappy: Brief = {
           style: "do",
           items: [
             {
-              claim: "Email every account a \"you asked, we shipped\" note this week.",
+              claim: "Reply to the three G2 reviewers asking for features you already built.",
               body: [
                 {
                   type: "p",
@@ -417,7 +310,7 @@ export const snappy: Brief = {
               ],
             },
             {
-              claim: "Publish a Team starting price.",
+              claim: "Put a number on the Team tier. Snappy publishes $2,000 and you publish nothing.",
               body: [
                 {
                   type: "p",
@@ -426,7 +319,7 @@ export const snappy: Brief = {
               ],
             },
             {
-              claim: "Build the feature matrix page that names Snappy, and put Slack on it.",
+              claim: "Make the Slack paywall the headline of the comparison page you have not built.",
               body: [
                 {
                   type: "p",
@@ -484,10 +377,7 @@ export const snappy: Brief = {
               type: "p",
               text: "The shape of the two pricing pages tells you who each company is built for. Snappy's free tier is unusually generous on geography, covering 176+ countries where Goody's free tier covers three. Goody's free tier is unusually generous on function, giving away swag with no minimums, custom Collections and unlimited sends that Snappy also gives away. The paid step is where they part: Snappy's $2,000 buys integrations, and Goody's $20 a seat buys geography and branding. A ten-person team that gifts internationally is cheaper on Snappy. A fifty-person team that gifts domestically and wants HR automation is cheaper on Goody. [[snappy-pricing]] [[goody-pricing]]",
             },
-            {
-              type: "p",
-              text: "On security, neither company makes it easy. Snappy sells single sign-on and \"top-tier compliance\" at the Enterprise tier without naming a certification on the pricing page. Goody sells SAML single sign-on as an add-on and does not publish a security or compliance page we could find, though one third-party directory describes Goody as SOC 2 certified. That claim could not be confirmed on Goody's own site and should not be repeated until it is. [[snappy-pricing]] [[goody-pricing]] [[saleshive]]",
-            },
+
             {
               type: "table",
               headers: [
@@ -518,9 +408,36 @@ export const snappy: Brief = {
                 ["Public changelog", "No", "Yes, monthly"],
               ],
             },
+            { type: "h3", text: "Audit of every claim Goody makes about Snappy" },
             {
               type: "p",
-              text: "Two claims in Goody's own comparison post need sourcing or removing. The post says Snappy takes a 15% processing fee on gifts, which appears nowhere on Snappy's pricing page or public materials. It also says Snappy supports 40+ countries, while Snappy's homepage says 150+ and its pricing page says 176+. The country figure is checkable in one minute and is wrong by a factor of four. A Snappy salesperson who finds it gets to dismiss the whole page. [[goody-blog-platforms]] [[snappy-home]] [[snappy-pricing]]",
+              text: "Goody has no comparison page. Every likely URL returns 404. Its competitor content is two blog posts, and this is every claim in them that touches Snappy, checked against Snappy's own pages on Aug 30. [[goody-blog-platforms]] [[goody-blog-address]]",
+            },
+            {
+              type: "table",
+              headers: [
+                { text: "Goody says", w: "30%" },
+                { text: "Where", w: "16%" },
+                { text: "Actually", w: "30%" },
+                { text: "Verdict", w: "12%" },
+              ],
+              rows: [
+                ["Snappy supports \"40+ countries\"", "Platform roundup", "Snappy's homepage says 150+, its pricing page says 176+", "Wrong"],
+                ["Snappy has \"global shipping\"", "Address-free post", "Broadly right, and it contradicts Goody's other post", "Contradicts"],
+                ["Snappy charges a \"15% processing fee on gifts\"", "Platform roundup", "Appears nowhere on Snappy's pricing page or public materials", "Unsourced"],
+                ["Snappy has \"4.9/5 stars on G2\"", "Platform roundup", "The live page reads 4.8 across 312 reviews", "Stale"],
+                ["Snappy integrates with \"about 30 HRIS platforms\"", "Platform roundup", "Snappy's pricing page says 40+", "Understated"],
+                ["Snappy's catalog \"can skew corporate\"", "Platform roundup", "Supported. Catalog quality is 29% of Snappy's complaints", "Holds up"],
+                ["Snappy offers \"unlimited gifts on a free plan\"", "Platform roundup", "Correct. Essential is $0 a year", "Holds up"],
+              ],
+            },
+            {
+              type: "p",
+              text: "Goody's own numbers do not survive the same audit. The roundup says Goody has \"400+ well-known brands\" while the address-free post and the API page say 600+. The roundup says Zapier connects \"9,000+\" apps while Goody's own pricing page says 5,000+. The roundup claims Goody holds an \"Excellent\" rating on Trustpilot, where 20 of the 50 most recent reviews are one or two stars and the average across them is 3.4. It also claims 4.9/5 on G2, where the live page reads 4.8. Fix these before fixing the Snappy lines, because a prospect checking one will check the other. [[goody-blog-platforms]] [[goody-blog-address]] [[goody-api]] [[goody-pricing]] [[trustpilot-goody]] [[g2-goody]]",
+            },
+            {
+              type: "p",
+              text: "One open question is now answered. Goody states plainly in its address-free post that \"Goody is SOC 2 certified\", which is Goody's own claim rather than the third-party directory we had before. There is still no security or trust page on the site carrying the certificate, and for an enterprise buyer a line in a blog post is not where procurement looks. Snappy sells \"top-tier compliance\" at its Enterprise tier without naming a certification anywhere public. Whoever publishes a real security page first wins every deal that has a security review in it. [[goody-blog-address]] [[snappy-pricing]]",
             },
           ],
         },
@@ -620,16 +537,16 @@ export const snappy: Brief = {
           style: "do",
           items: [
             {
-              claim: "Build a page for people searching for Snappy, Sendoso and Reachdesk by name.",
+              claim: "Ship three comparison pages. You currently have zero and every URL 404s.",
               body: [
                 {
                   type: "p",
-                  text: "Goody has one long post ranking twelve platforms with itself at the top. It has no page for goody vs snappy, snappy alternative, or sendoso alternative. SnackNation already owns \"Snappy vs. Goody\" and Sendoso and Reachdesk both publish pages that name Goody. Goody is being compared on other people's pages on other people's terms. Three pages, one afternoon each, using the pricing table above. [[snacknation]] [[sendoso-alternatives]] [[goody-blog-platforms]]",
+                  text: "We checked every likely URL. ongoody.com/compare, /compare/snappy, /business/compare, /vs/snappy, /alternatives/snappy, /snappy-alternative and /compare/sendoso all return 404. Goody owns one blog roundup that ranks twelve platforms with itself first, and nothing that targets a competitor's name. SnackNation ranks for \"Snappy vs. Goody\" and Sendoso publishes a page that names Goody. Three pages, one afternoon each, using the feature matrix already in this report. [[snacknation]] [[sendoso-alternatives]] [[goody-blog-platforms]]",
                 },
               ],
             },
             {
-              claim: "Fix the landing page bounce before spending on ads.",
+              claim: "Fix the 39% bounce before you pay to send anyone to that page.",
               body: [
                 {
                   type: "p",
@@ -638,7 +555,7 @@ export const snappy: Brief = {
               ],
             },
             {
-              claim: "Answer the three live Reddit threads with a person, not a link.",
+              claim: "Answer the r/SmallBusiness_US thread today, while it still has no replies.",
               body: [
                 {
                   type: "p",
@@ -799,7 +716,7 @@ export const snappy: Brief = {
           style: "do",
           items: [
             {
-              claim: "Launch a Meta campaign in September and lead with the free tier.",
+              claim: "Launch on Meta in September and lead with the price Snappy never mentions.",
               body: [
                 {
                   type: "p",
@@ -808,7 +725,7 @@ export const snappy: Brief = {
               ],
             },
             {
-              claim: "Publish a gift-choice report from Goody's own data before the holidays.",
+              claim: "Publish what recipients actually chose. You have the data Snappy has to survey for.",
               body: [
                 {
                   type: "p",
@@ -817,7 +734,7 @@ export const snappy: Brief = {
               ],
             },
             {
-              claim: "Fix delivery and expiry first, then make the recipient experience the pitch.",
+              claim: "Fix expiry and substitution, then make the recipient experience the whole pitch.",
               body: [
                 {
                   type: "p",
@@ -1105,7 +1022,7 @@ export const snappy: Brief = {
           style: "do",
           items: [
             {
-              claim: "Point the incoming Data Analyst at the gift-choice report first.",
+              claim: "Point the Data Analyst you are already hiring at the gift-choice report first.",
               body: [
                 {
                   type: "p",
@@ -1114,7 +1031,7 @@ export const snappy: Brief = {
               ],
             },
             {
-              claim: "Give the Meta campaign to the contract Product Marketing Manager on day one.",
+              claim: "Give the Meta campaign to the contract marketer on day one. Nobody else can own it.",
               body: [
                 {
                   type: "p",
@@ -1123,7 +1040,7 @@ export const snappy: Brief = {
               ],
             },
             {
-              claim: "Recruit against Snappy's customer success team, not its engineers.",
+              claim: "Recruit from Snappy's customer success team. They know which accounts are unhappy.",
               body: [
                 {
                   type: "p",
@@ -1283,6 +1200,11 @@ export const snappy: Brief = {
     "goody-pricing": { label: "Goody", href: "https://www.ongoody.com/business/pricing", logo: "goody" },
     "goody-updates": { label: "Goody", href: "https://www.ongoody.com/business/product-updates", logo: "goody" },
     "goody-api": { label: "Goody", href: "https://www.ongoody.com/business/gift-api", logo: "goody" },
+    "goody-blog-address": {
+      label: "Goody",
+      href: "https://www.ongoody.com/blog/send-employee-gifts-without-collecting-home-addresses",
+      logo: "goody",
+    },
     "goody-blog-platforms": { label: "Goody", href: "https://www.ongoody.com/blog/best-corporate-gifting-platforms", logo: "goody" },
     "goody-jobs": { label: "Goody", href: "https://jobs.ongoody.com/", logo: "ashby" },
     techcrunch: {

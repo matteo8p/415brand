@@ -80,7 +80,23 @@ Worth knowing, because these are the objections a prospect will arrive with:
 
 - **Docket.io (2026):** "Goody is focused on digital gift selection, not physical direct mail or branded merchandise fulfillment. Teams that need custom-branded swag, warehouse storage, or large-scale event kits will find Goody insufficient." **This is out of date.** Goody has print-on-demand swag with no minimums, Company Stores, and logo-to-collection generation. The warehousing half of the claim still stands.
 - **Sendoso's own comparison page:** "Goody works well for addressless sends, but it stops there." Self-serving, and now false given Salesforce Flow and HubSpot workflow triggers shipped in July 2026.
-- **[unverified]** SalesHive describes Goody as "SOC 2 certified." We could not confirm this on Goody's own site. Do not repeat it until verified — see how badly the same gap reads on Ref.
+- **SOC 2: answered, partially.** Goody states in its own blog post "How to Send Employee Gifts Without Collecting Home Addresses" that **"Goody is SOC 2 certified"**. That is now Goody's own claim rather than a third-party directory's. There is still **no security or trust page** on the site carrying the certificate, which is where a procurement team will look. Verified 2026-08-30.
+
+## Comparison pages: there are none
+
+Checked 2026-08-30. `ongoody.com/compare`, `/compare/snappy`, `/business/compare`, `/vs/snappy`, `/alternatives/snappy`, `/snappy-alternative` and `/compare/sendoso` **all return 404**. Goody owns no page targeting any competitor's name.
+
+What exists instead is two blog posts, and they contradict each other about Snappy:
+
+| Goody says about Snappy | Where | Actually |
+|---|---|---|
+| "40+ countries supported" | Platform roundup | Snappy's homepage says 150+, pricing page 176+ |
+| "Global shipping" | Address-free post | Broadly right, and contradicts the roundup |
+| "15% processing fee on gifts" | Platform roundup | Appears nowhere on Snappy's site. **Unsourced** |
+| "4.9/5 stars on G2" | Platform roundup | Live page reads 4.8 across 312 |
+| "about 30 HRIS platforms" | Platform roundup | Snappy's pricing page says 40+ |
+
+Goody's own numbers fail the same audit: 400+ brands (roundup) vs 600+ (API page and address post); Zapier "9,000+" apps (roundup) vs 5,000+ (pricing page); Trustpilot "Excellent" (roundup) vs a measured 3.4 across the 50 most recent. Meanwhile SnackNation ranks for "Snappy vs. Goody" and Sendoso publishes a page naming Goody.
 
 ## Reviews
 

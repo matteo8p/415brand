@@ -83,7 +83,7 @@ Unlike Ref, this **is** a consumer-adjacent marketing category with real paid sp
 
 ## What the Aug 30 report found (for continuity)
 
-First report built: `reports/08-30-2026.html`, rendered at `/samples/snappy`. Data pulled Aug 30.
+First report built: `reports/08-31-2026.html`, rendered at `/samples/snappy`. Data pulled Aug 30.
 **Nothing sent to Goody.** No Resend segment, no broadcast, per the status note at the top.
 
 - **Snappy runs 41 live Meta ads. Goody has never run one**, in any country, active or inactive. 25 of
@@ -105,6 +105,17 @@ First report built: `reports/08-30-2026.html`, rendered at `/samples/snappy`. Da
   says "the playbook here is still being written" twenty months after the Covver acquisition.
 - Snappy's careers page contradicts itself: header says 56% of the Fortune 100 and 9M gifts, the job
   description below says 43% and "more than five million".
+
+- **Goody has no comparison pages.** Every likely URL 404s, checked Aug 30. Its only competitor content is two
+  blog posts that disagree with each other about Snappy's country coverage, and the roundup's "15% processing
+  fee" claim is unsourced. Full audit table in `GOODY.md` and in the report's Pricing section.
+- **The reply table is thin on purpose.** 67 X posts and 651 Reddit posts in the Aug 24 to 31 window returned
+  three worth answering. The best is r/SmallBusiness_US on Aug 31: a 24-person company where "some months the
+  platform costs more than the gifts we're sending" on Sendoso, zero replies. Second is Henry Schuck, founder
+  and CEO of ZoomInfo, posting "Most corporate gifting SUCKS" to X and LinkedIn on Aug 26. Do not pad this
+  table with month-old posts. If a week has nothing, say so or drop the section.
+- **SOC 2 is answered.** Goody says "Goody is SOC 2 certified" in its own address-free blog post. Still no
+  security page on the site. That closes open question 3 below.
 
 ### Notes for the next run
 - **X is dead for this category.** 100 top posts over 14 days named neither company once. Do not build a table
