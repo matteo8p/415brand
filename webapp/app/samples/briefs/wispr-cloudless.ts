@@ -1025,22 +1025,6 @@ export const wisprCloudless: Brief = {
             },
           ],
         },
-        { type: "h3", text: "What Cloudless should do" },
-        {
-          type: "findings",
-          style: "do",
-          items: [
-            {
-              claim: "Use the missing on-device roles as a public argument.",
-              body: [
-                {
-                  type: "p",
-                  text: "Wispr's board has two AI Lab roles and neither mentions on-device or edge inference, and the Series B post commits the money to a cloud model called Canto. That is a competitor telling you in its own hiring plan that it is not coming for your position. Say so on the privacy page, with the link, because a job board is harder to argue with than a benchmark. [[wispr-jobs]] [[wispr-seriesb]]",
-                },
-              ],
-            },
-          ],
-        },
         {
           type: "toggle",
           claim: "Full analysis",

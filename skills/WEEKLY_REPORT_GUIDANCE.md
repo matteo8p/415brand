@@ -78,8 +78,10 @@ Sections 2 to 5 share one shape, in this order:
 
 - a `fig` with one or two charts that set the scene
 - `h3` **What happened**, a `findings` block with `style: "did"`, two to four items
-- `h3` **What [client] should do**, a `findings` block with `style: "do"`, two to three items
+- `h3` **What [client] should do**, a `findings` block with `style: "do"`, one to three items
 - a `toggle` called **Full analysis** with the tables, extra charts and longer paragraphs behind the findings
+
+**Drop the "What [client] should do" block entirely if the section does not produce a real action.** Some sections are intelligence, not instructions. Hiring usually is: a competitor's job board tells you where they are going, and there is rarely anything the client can do about it that week. Inventing an action to fill the shape is worse than leaving it out, because a stretched recommendation makes the reader distrust the ones that are sound. Never argue from an absence, such as a role a competitor has not posted: you cannot read a roadmap out of a job board.
 
 ## 4. How a finding is built
 
