@@ -1,0 +1,94 @@
+Claude Tag weekly brief: brand & competitive analysis
+For the OpenTag founders, August 31, 2026
+
+This email is best read as HTML. Full report:
+https://415brand.com/analysis/opentag/weekly-08-31-2026
+
+======================================================================
+
+RECOMMENDED ACTIONS
+
+1. Get a call with Ryan Katz at Moore this week, and decide first
+whether you will open Teams for them.
+   Moore is 5,000 people built out of 33 acquired companies, and on
+   Jul 29 it hired a chief information officer whose stated job is to
+   "expand the responsible use of AI". He is 32 days in, which is
+   exactly when a new CIO spends money. Katz became president of the
+   agency the same day promising clients "one connected partnership",
+   which is the internal fragmentation problem your wiki solves. Their
+   own staff describe not knowing what other parts of the company are
+   doing. One catch. Moore runs on Microsoft Teams and yours is
+   invite-only, so settle that before the first call. Scope the pitch
+   to one team with no donor data, because your SOC 2 is unfinished.
+
+2. Go back to your own launch thread and answer the 11 people who
+asked a real question and got nothing.
+   We pulled all 106 replies. Most are congratulations from your Y
+   Combinator batch. But 11 people asked something specific and nobody
+   replied. @kar2905, who runs a background-check company with 7,116
+   followers, asked "do you have zdr", meaning do you delete his data.
+   @broukhim, an investor with 3,535 followers, asked "but are you
+   locked into OpenTag?". @Viswana34226652 asked for access so he
+   could test you against Viktor. Answering these does two things at
+   once: the person may start a trial, and everyone else reading that
+   thread sees the objection answered instead of hanging there. Half a
+   day of work, and the thread is already five days old.
+
+3. Ask your 10 teams to leave a Product Hunt review, and ask the one
+who gave you 4 stars what the missing star was.
+   You have one review, at 4.0. The products Product Hunt shows next
+   to you on your own page have 8, 13, 14 and 22 reviews. Anyone
+   comparing tools there sees a product nobody has vouched for. You
+   already have 10 teams using it. Ask all of them today while the
+   listing is still marked as launched this week. Then go find the
+   person who gave you 4 stars and ask what cost you the fifth. Fix
+   that thing, tell them you fixed it, and ask them to update the
+   score. A 4.0 turning into a 5.0 is worth more than the next ten
+   cold emails you send.
+
+4. Build one page that shows what Claude Tag really costs, and put
+your prices next to it.
+   tryopentag.com/compare/claude-tag is a dead link. When somebody has
+   had enough of their Claude Tag bill, the thing they type into
+   Google is "claude tag alternative", and you have nothing there. Put
+   the real numbers on a page: you have to buy a Claude Team or
+   Enterprise seat before any work is billed, and every channel runs
+   the most expensive model whatever the job is. Then price five
+   ordinary jobs both ways. The payoff is that you stop having to be
+   personally present in every thread. People paste the link for you.
+   Your Slackbot comparison page is already good and fair, so you know
+   how to do this.
+
+======================================================================
+
+KEY FINDINGS
+
+* Moore is the best prospect OpenTag has, its new CIO is 32 days into
+an AI mandate, and the whole thing hangs on whether Teams gets opened.
+
+* Anthropic gave Claude Tag spending caps and cancelled the Sept 1
+price rise, so the bill-shock argument is smaller than it was a week
+ago.
+
+* Two free open-source rivals launched into the exact Claude Tag
+alternative slot in the same week OpenTag did, and one of them already
+does Teams.
+
+* OpenTag makes three different savings claims and two different model
+counts, and four of its five public surfaces promise Microsoft Teams
+that its own documentation says is not generally available.
+
+* The launch reached OpenTag's Y Combinator batch, not its buyers, and
+the 11 people who did ask a real question were never answered.
+
+======================================================================
+
+The rest of the report covers the Moore opportunity, pricing and
+product, search and marketplaces, advertising and social media, and
+every source. Read it here:
+https://415brand.com/analysis/opentag/weekly-08-31-2026
+
+Social data pulled Aug 30, 2026 and refreshed at 9pm UTC, covering Aug 24 to 30. Reach is likes, replies and reposts as X reported them at pull time, and X has kept likes private since June 2024, so who liked a post cannot be seen. No traffic figures this week, because Similarweb has no data for a site that went public on Aug 26. Eight complaints is a small sample and is presented as one. Complaint volume shows which customers are reachable. It is not evidence about whether Claude Tag keeps the customers it has, which nobody outside Anthropic can see.
+
+research415
+Unsubscribe: {{{RESEND_UNSUBSCRIBE_URL}}}
