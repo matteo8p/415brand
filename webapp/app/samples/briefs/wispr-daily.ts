@@ -628,7 +628,7 @@ export const wisprDaily: Brief = {
       "blocks": [
         {
           "type": "p",
-          "text": "X, Reddit and LinkedIn searches for “wispr flow” / “wisprflow” / @WisprFlow via Apify, and Wispr Flow’s page in the Meta Ad Library, all pulled Aug 26 around 3pm PT. Reach = likes / replies / reposts at pull time. Every row links to its source."
+          "text": "X, Reddit and LinkedIn searches for “wispr flow” / “wisprflow” / @WisprFlow, and Wispr Flow’s page in the Meta Ad Library, all pulled Aug 26 around 3pm PT. Reach = likes / replies / reposts at pull time. Every row links to its source."
         }
       ]
     }

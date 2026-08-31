@@ -40,10 +40,13 @@ a:hover {
   text-decoration: underline;
 }
 
+/* One measure for the whole site: the same 820px box the reports use
+   (.analysis .page), including its 24px gutters, so the wordmark, every
+   page's h1 and the report body all share one left edge. */
 .wrap {
-  max-width: 66rem;
+  max-width: 820px;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 24px;
 }
 
 /* ---------- header ---------- */
@@ -691,13 +694,13 @@ footer.site a {
 
 /* ==========================================================================
    Landing page, from "Research 415 Landing.dc.html"
-   A single-column letter. The header and footer are narrowed to the same
-   measure on this page so the wordmark, the h1 and the footer share one
-   left edge. 688px border-box = a 640px measure inside 24px gutters.
+   A single-column letter. It now shares the site-wide 820px measure set on
+   .wrap above, which is the same box the reports use, so the wordmark, the
+   h1 and the footer share one left edge on every page.
    ========================================================================== */
 
 .landing {
-  --landing-width: 688px;
+  --landing-width: 820px;
   --landing-gutter: 24px;
   max-width: var(--landing-width);
   margin: 0 auto;
@@ -705,14 +708,6 @@ footer.site a {
   font-size: 16px;
   line-height: 1.7;
   color: var(--text);
-}
-
-/* align the global chrome to the letter, on this page only */
-body:has(.landing) header.site .wrap,
-body:has(.landing) footer.site .wrap {
-  max-width: 688px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 body:has(.landing) header.site .site-inner {

@@ -37,7 +37,7 @@ Then the sections:
 3. **People happy with [competitor].** No reply. This shows what the competitor's users like, where it is spending, and where its team does and doesn't show up. Last column is "Why it matters" instead of "What [reader] can do".
 4. **New [competitor] ads.** A short stats table (new ads launched in the window, by theme, by who made them, how many Meta already marks low-impression, how many mention the client's strengths, how many mention the thing customers complain about). Then a table of the notable new creatives: Launched | Advertiser | Headline (linked to the Ad Library) | What the ad says. Then one `.why` paragraph starting "**Takeaway:**".
 5. **What happened this week.** Five short bullets. What changed, who launched what, which complaint is growing, where the competitor's team is and isn't posting. Follow-ups from yesterday go here.
-6. **Sources.** One grey `.note` line: which searches, which tools, when pulled, what "Reach" means. Every row links to its source, so this stays short.
+6. **Sources.** One grey `.note` line: which searches were run, when they were pulled, and what "Reach" means. Name the site searched, never the tool that searched it. Every row links to its source, so this stays short.
 
 No explanatory grey text under section headings. The tables speak for themselves.
 
@@ -127,6 +127,9 @@ Everything from the weekly guidance applies (plain words, straightforward, short
 ## 10. Before you finish
 
 - Every row links to its source. Every date is in the window or honestly marked.
+- Sources go at the end of the sentence or cell they support, never mid-sentence. Same rule as the weekly: the reader should never have to read around a citation.
+- Cite the primary source, never the tool that fetched it. The pill for an X post is "X", not "X via Apify". Never name Apify, an actor, a scraper, a session or a credit limit anywhere a client can read it.
+- No methodology paragraph. If a source came back empty, say what is missing and what the number rests on instead, in one clause next to the number. Why our tooling failed is our problem, not the reader's.
 - No post appears twice. Nothing from yesterday's report reappears unless the thread grew.
 - The three moves are the three best rows, and they are in the tables too.
 - Every "What [reader] can do" cell says what to do or says to skip it. None ends on a description.

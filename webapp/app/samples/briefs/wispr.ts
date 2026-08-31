@@ -1236,7 +1236,7 @@ export const wispr: Brief = {
             },
             {
               type: "note",
-              text: "Post links currently point to live searches that surface each post. The exact permalinks live in the Social Pulse artifact, which this session can't read; see the note at the end of the brief. [[x]]",
+              text: "Post links point to a live search that surfaces each post rather than to a permalink. [[x]]",
             },
             { type: "h3", text: "What people said on X (120-post sample, Aug 20 to 21)" },
             {
@@ -1698,15 +1698,15 @@ export const wispr: Brief = {
             "Wispr's own pages: [pricing](https://wisprflow.ai/pricing), [changelog](https://wisprflow.ai/whats-new), [Series B post](https://wisprflow.ai/post/series-b), [Notetaker](https://wisprflow.ai/notetaker), [vs-Willow page](https://wisprflow.ai/post/wispr-flow-vs-willow-voice), [affiliate terms](https://partners.dub.co/flow), [job board](https://jobs.ashbyhq.com/wispr-flow).",
             "Press and teardowns: [TechCrunch on the Series B](https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/), [[the-next-web]], [TechCrunch on the Notetaker](https://techcrunch.com/2026/08/05/wispr-flow-is-preparing-to-launch-a-meeting-notetaker-updated-terms-suggest/), [Shashi.co on the accuracy complaints](https://www.shashi.co/2026/08/wispr-flow-triples-to-2-billion-as.html), [Menlo's thesis](https://menlovc.com/perspective/the-keyboard-is-dying-on-schedule-the-text-box-is-next/), [Postbeam growth teardown](https://www.postbeam.ai/blog/how-wisprflow-grows), [20VC episode summary](https://finance.biggo.com/podcast/5b45d03fc082dfec), [[campaign-india]], [Voibe on the LinkedIn post](https://www.getvoibe.com/resources/wispr-flow-linkedin-dictation-analysis/).",
             "Social, Aug 20 to 21: [r/WisprFlow](https://www.reddit.com/r/WisprFlow/new/), [Reddit search](https://www.reddit.com/search/?q=%22wispr+flow%22&sort=new&t=week), [X search](https://x.com/search?q=%22wispr%20flow%22&f=live), [@WisprFlow](https://x.com/WisprFlow), [@tankots](https://x.com/tankots), [[instagram]], [[trustpilot]].",
-            'Ads and TikTok, pulled Aug 23, 2026 via Apify: [[meta-ad-library]] (400 active ads for the Wispr Flow page, start dates, variants, landing URLs), [[tiktok-wisprflow|@wisprflow]] and the top 54 [[tiktok-search|TikTok video results for "wispr flow"]].',
-            'Social, pulled Aug 23, 2026 via Apify: [[x-wispr-latest|X, latest 300 posts]] for "wispr flow" / wisprflow (Aug 21 to 23) and 300 for "willow voice"; [[reddit-wispr-new|Reddit]] posts since Jul 20 mentioning Wispr Flow, Willow Voice, plus r/WisprFlow in full (324 posts); [[willow-meta|Willow Voice\'s Meta Ad Library page]] (0 active ads); [[willow-tiktok|@willowvoice on TikTok]].',
+            'Ads and TikTok, pulled Aug 23, 2026: [[meta-ad-library]] (400 active ads for the Wispr Flow page, start dates, variants, landing URLs), [[tiktok-wisprflow|@wisprflow]] and the top 54 [[tiktok-search|TikTok video results for "wispr flow"]].',
+            'Social, pulled Aug 23, 2026: [[x-wispr-latest|X, latest 300 posts]] for "wispr flow" / wisprflow (Aug 21 to 23) and 300 for "willow voice"; [[reddit-wispr-new|Reddit]] posts since Jul 20 mentioning Wispr Flow, Willow Voice, plus r/WisprFlow in full (324 posts); [[willow-meta|Willow Voice\'s Meta Ad Library page]] (0 active ads); [[willow-tiktok|@willowvoice on TikTok]].',
           ],
         },
       ],
     },
   ],
   footer:
-    "Keyword, traffic and spend figures are third-party estimates (US database unless stated). Treat the shapes and ratios as the signal, not the exact numbers. Sample collected Aug 21, 4:15 to 4:30 PM PT. Meta Ad Library, TikTok, X and Reddit data pulled Aug 23, 2026 via Apify; X complaint counts are keyword-flagged, not hand-read. Compiled Aug 21 to 23, 2026.",
+    "Keyword, traffic and spend figures are estimates from the US database unless stated, so treat the shapes and ratios as the signal. X complaint counts are keyword-flagged rather than hand-read. Pulled Aug 21 to 23, 2026.",
   sources: {
     techcrunch: {
       label: "TechCrunch",

@@ -263,7 +263,7 @@ export function BriefArticle({ brief }: { brief: Brief }) {
             <Blocks blocks={section.blocks} sources={brief.sources} names={names} />
           </Fragment>
         ))}
-        <footer>{renderInline(brief.footer, brief.sources)}</footer>
+        {brief.footer.trim() && <footer>{renderInline(brief.footer, brief.sources)}</footer>}
       </div>
     </Fragment>
   );

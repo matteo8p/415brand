@@ -324,7 +324,7 @@ BULLETS = [
 ]
 
 SOURCES_NOTE = (
- 'We searched X, Reddit and LinkedIn for “wispr flow”, “wisprflow” and @WisprFlow using Apify (X twice, once for '
+ 'We searched X, Reddit and LinkedIn for “wispr flow”, “wisprflow” and @WisprFlow (X twice, once for '
  'newest and once for most popular), read Wispr Flow’s page in the Meta Ad Library, and searched TikTok for “wispr flow”. All pulled Aug 27 around 5pm '
  'PT. The Wispr quotes in section 5 are word for word from ' + a("docs.wisprflow.ai", FAQ) + '. Reach means likes, '
  f'replies and reposts at the time we looked. Another {DROPPED_COUNT} posts were left out under the standing ignore '

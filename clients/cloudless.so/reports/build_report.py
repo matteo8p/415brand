@@ -361,7 +361,7 @@ page = f"""<title>Wispr Flow daily brief, Aug 27</title>
 </ul>
 
 <h2 id="method"><span class="num">6</span>Sources</h2>
-<p class="note">X, Reddit and LinkedIn searches for “wispr flow” / “wisprflow” / @WisprFlow via Apify, and Wispr Flow’s page in the Meta Ad Library, all pulled Aug 26 around 3pm PT. Reach = likes / replies / reposts at pull time. Every row links to its source.</p>
+<p class="note">X, Reddit and LinkedIn searches for “wispr flow” / “wisprflow” / @WisprFlow, and Wispr Flow’s page in the Meta Ad Library, all pulled Aug 26 around 3pm PT. Reach = likes / replies / reposts at pull time. Every row links to its source.</p>
 </div></div>
 """
 

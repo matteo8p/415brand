@@ -24,7 +24,29 @@ The order is fixed. Do not add, remove or reorder top-level parts.
 
 ### Intro (above the table of contents)
 
-1. `h3` **Scorecard**, then a `scorecard` block. 12 to 14 rows, competitor vs client, one short note per row. Rows in this order:
+The header is short on purpose. It is the actions and the posts, nothing else. The reader should be able to act without scrolling.
+
+1. `h3` **Recommended actions for [client] from the analysis**, then a `moves` block with `collapsed: true`. **Three or four actions. Never more.** Each has:
+   - `action`: one sentence, imperative, plain words, saying the thing to do. "Ask your existing users to leave a review on the App Store."
+   - `why`: four to six short sentences in plain speech. The evidence, then the cost, then a sentence starting "Outcome:" that says what the client gets. Write it the way you would say it to the founder.
+   - `evidence`: the id of the section that backs it.
+   - No `window` field.
+
+   Order by impact per dollar. The first one should be the cheapest thing with the biggest payoff. Cut any action you cannot defend line by line: a weak action costs more trust than it earns.
+
+2. `h3` **Posts worth replying to this week**, then a `table` with columns Where | When | What they said | Status | What to say. No note under the heading, and no explaining how the list was filtered: the filtering is silent, the same way it is in the daily. `Status` is the durability tag (Paying and leaving, Shopping, Venting, Already gone). `What to say` is the reply in one or two plain sentences. Every post links to the original. If a metric like reach cannot be captured, drop the column rather than filling it with "not captured".
+
+Nothing else goes above the numbered sections. No scorecard, no "everything below is collapsed" note.
+
+### The scorecard
+
+The `scorecard` block is the first thing inside **Key findings**, not in the header. 12 to 14 rows, competitor vs client, one short note per row.
+
+**The value columns are narrow. Put a number in them, not a sentence.** "$361M", "2,000/week", "14,620", "Type I". Everything else goes in the note. A value longer than about 15 characters wraps into a tower and wrecks the row. Long labels belong in the `metric` column, which is wide.
+
+Use a short per-use label on every source pill inside a table: `[[sw-wispr|Similarweb]]`, not `[[sw-wispr]]`. The full label stays in `sources` and in the Sources section.
+
+Rows in this order:
    - Monthly website visits
    - Share of visits from free Google results
    - Paid search terms (US)
@@ -42,18 +64,6 @@ The order is fixed. Do not add, remove or reorder top-level parts.
    - Open jobs
 
    Drop a row only if the data truly doesn't exist for either company, and say so in the note.
-
-2. `h3` **Recommended actions for [client] from the analysis**, then a `moves` block with `collapsed: true`. **Three or four actions. Never more.** Each has:
-   - `action`: one sentence, imperative, plain words. "Get listed on G2 and Slack's app directory."
-   - `why`: four to six short sentences. The evidence, why it works, what it costs or how long it takes.
-   - `evidence`: the id of the section that backs it.
-   - No `window` field.
-
-   Order the actions by impact per dollar. The first one should be the cheapest thing with the biggest payoff.
-
-3. `h3` **Posts worth replying to this week**, then a `table` with columns Where | Date | Post | Reach. Live posts where someone doubts the competitor, complains, or asks whether to buy, ranked by reach. Every post cell links to the original. No note under the heading.
-
-4. A `note`: "Everything below is collapsed. Click [show] on any line for the full analysis, the why, and the sources."
 
 ### Numbered sections
 
@@ -77,7 +87,7 @@ Every finding in *Key findings* and *What happened* has three parts:
 
 ```
 claim   one sentence, the whole point, stands alone
-p       the evidence, 2 to 4 sentences, the numbers that matter, source pills at the end
+p       the evidence, 2 to 4 sentences, the numbers that matter, all source pills together at the very end
 why     "**Why it matters for [client]:**" then 1 to 3 sentences that end on the action
 ```
 
@@ -141,8 +151,15 @@ Always cover both sides: what the competitor does that **works and should be cop
 ## 6. Formatting rules
 
 - Use only the block types in `types.ts`: `p`, `note`, `why`, `h3`, `ul`, `links`, `findings`, `toggle`, `fig`, `table`, `scorecard`, `moves`, `changes`. No raw HTML.
-- Every factual sentence ends with one or more `[[source-id]]` pills. Define each id once in `sources` with `label`, `href` and a `logo` from `logos.tsx`. A number with no pill gets cut.
+- **Source pills go at the end of a paragraph, never in the middle of it.** Collect every source the paragraph draws on, dedupe them, and put them together after the final full stop. A pill after every sentence breaks the line the reader is following and is the single fastest way to make a good paragraph unreadable. The same rule applies to a `why`, a `claim` and a table cell: pills last, once.
+  - Right: `Wispr drew 4.4M visits in July, down 4.05%. Free Google results are its biggest channel at 29.95%. [[sw-wispr]]`
+  - Wrong: `Wispr drew 4.4M visits in July [[sw-wispr]], down 4.05% [[sw-wispr]]. Free Google results are its biggest channel at 29.95% [[sw-wispr]].`
+- Everything factual in a paragraph still has to be covered by the pills at its end, and a paragraph that would need pills from six different sources is doing too much. Split it.
+- Define each id once in `sources` with `label`, `href` and a `logo` from `logos.tsx`. A number no pill covers gets cut.
 - One-off links in prose: `[label](https://…)`. Labels cannot contain `]`.
+- **Cite the primary source, never the tool that fetched it.** The pill for an X post is "X", not "X via Apify". The pill for traffic is "Similarweb", not "Similarweb via a scraper". A reader is judging whether the claim is true, and the vendor in the middle of our pipeline tells them nothing about that. Never name Apify, an actor, a scraper, a browser pane, a session or a credit limit anywhere a client can read it.
+- **No methodology paragraph.** Do not end the report with a block explaining how the data was gathered, which tools worked, which ones failed and how to read the numbers. It is the least-read part of the report and it makes the work look uncertain. Everything it would say belongs somewhere better: caveats on estimates go next to the number, the pull date goes in one short line under the Sources heading, and a source's identity goes in its pill.
+- **When a source is missing, say what is missing, not why.** "No X or Reddit counts this week, so the objection mix is counted from G2 reviews" is useful, because it tells the reader what the number rests on. "The scraping service was unreachable and Reddit rejected the request" is our problem, not theirs. One clause, next to the affected number, never a paragraph of its own.
 - Bold is only for `**Why it matters for [client]:**`. Never bold numbers or phrases for emphasis.
 - Tables: short columns get a width, dates get `nw: true`, numbers get `n: true`. Example: `{ text: "Date", w: "7%", nw: true }`. The long text column gets no width and takes the rest.
 - Charts: `columns` for one thing over time, `lines` for two companies over time, `rows` for a ranked list, `share` for a percentage split (including the objection mix). Always fill `aria`. Label first and last column of a trend, or every row of a ranked list.
@@ -179,7 +196,7 @@ Everything below applies to every sentence in the report.
 
 **Direct address is fine in recommendations.** "Adapt should bid on them." "Y'all should spin one up." Keep evidence paragraphs in the third person.
 
-**Honest about estimates.** Traffic, spend and revenue figures from outside tools are estimates. Say so once in the footer and trust the trends and ratios, not the exact numbers. Revenue a company claims about itself is "what the founders say". When two tools disagree by more than 2x, print both.
+**Honest about estimates.** Traffic, spend and revenue figures from outside tools are estimates. Say so where the number is used, in the Full analysis paragraph that carries it, not in a footer. A wall of caveats at the end of a report is read as hedging and gets skipped; one sentence next to the number is read. Trust the trends and ratios, not the exact figures. Revenue a company claims about itself is "what the founders say". When two tools disagree by more than 2x, print both.
 
 **No character judgments.** Report what the competitor did and what it means for the client. "Not organic" when the numbers show it. Never "dishonest".
 
@@ -187,7 +204,7 @@ Everything below applies to every sentence in the report.
 
 ## 8. Data sources and how to pull them
 
-Pull everything on the same day. Note the pull date in the footer.
+Pull everything on the same day. Put the pull date in one short line under the Sources heading, not in a footer paragraph. Never name the tool that did the fetching in anything a client reads (section 6).
 
 | What | Where | How |
 |---|---|---|
@@ -211,6 +228,7 @@ Things that go wrong: Apify has a monthly cap and every call fails when it's hit
 ## 9. Before you finish
 
 - Every `[[id]]` resolves. `pnpm typecheck` passes.
+- No paragraph, `why`, `claim` or table cell has a pill anywhere but its end. Search the file for a `]]` that is followed by more prose.
 - Every post, ad and job in a table links to its original.
 - The recommended actions each link to a section, and that section's *What [client] should do* contains the same move in more detail.
 - No semicolons, no em dashes, no figurative phrases. Search the file for `;`, `—`, "machine", "narrative", "leak".

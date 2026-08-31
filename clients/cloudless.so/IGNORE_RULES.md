@@ -32,8 +32,13 @@ the transaction.
 | 5 | **Astroturf.** Templated posts from throwaway accounts — currently Willow's "I started researching…" format. | Not real people. Log the campaign, do not reply to it. |
 | 6 | **Linux-only users.** "wispr flow on linux", "arch btw". | Cloudless has no Linux build. Handy wins there and we say so. |
 | 7 | **Off-topic search noise.** Foreign-language threads and posts where Wispr appears only in a long tool list. | Search artefacts. |
+| 8 | **Wispr as a business-school case study.** r/SaaS, r/startups and LinkedIn teardowns analysing Wispr's growth, pricing or landing page. | The room is founders studying a company, not people looking for a dictation app. Nobody there installs anything. |
 
 ## Changelog
+- **2026-08-31** — rule 8 proposed after the first weekly. Two posts were cut from that report's
+  reply table on review: an r/SideProject post from someone who built their own free clone (rule 2,
+  the author is the competitor), and an r/SaaS thread debating whether Wispr's notetaker is innovative
+  (rule 8). Both had been written up as reply targets before the ignore list was applied properly.
 - **2026-08-28** — file created. Rules 1–2 from Tim; 3–7 proposed from the Aug 26–27 pull.
 
 - **2026-08-28** — the report section listing dropped posts was removed; filtering is now silent.

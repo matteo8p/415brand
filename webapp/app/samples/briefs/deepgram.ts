@@ -1,282 +1,76 @@
 import type { Brief } from "./types";
 
 export const deepgram: Brief = {
-  slug: "deepgram-08-31-2026",
+  slug: "weekly-08-31-2026",
   title: "Deepgram weekly brief & analysis",
   sub: "For Sprag, August 31, 2026",
   subject: "Deepgram",
   client: "Sprag",
   intro: [
-    { type: "h3", text: "Deepgram customers to contact this week" },
-    {
-      type: "table",
-      headers: [
-        { text: "Who to contact", w: "19%" },
-        { text: "Company", w: "16%" },
-        { text: "What they are doing with Deepgram, and how to open" },
-      ],
-      rows: [
-        [
-          "[Marcel Karas](https://github.com/dobexx)",
-          "JUNGHERZ GmbH, Germany",
-          "Spent Aug 26 fixing language detection in his Deepgram speech-to-text: three commits in one day about language hints, a language veto, and following the caller's language mid-call. [[gh-jungherz]] Open with the ISSEN numbers, because that is the same problem measured: Deepgram around 70% on code-switched audio, Sprag 90% at under 300ms. He is German, so Chorus can answer as well as listen.",
-        ],
-        [
-          "[Neevash Ramdial](https://github.com/Nash0x7E2), Co-founder",
-          "Stream (GetStream), Boulder CO",
-          "Their Vision-Agents SDK ships `deepgram-sdk`, and the most recent commit on that file, dated Aug 26, adds Gemini transcription alongside it. [[gh-stream]] They are actively adding a second provider right now, which is the moment to arrive. They resell voice inside their own product, so Deepgram's per-minute price is their gross margin.",
-        ],
-        [
-          "[Mohammed Zaid Shaikh](https://www.linkedin.com/in/mohdzaidshaikh), Founder and CTO",
-          "Cubosquare Technology (tam.ai.in), India",
-          'Asked Deepgram for startup pricing on its own page and got no reply: "Facing a lot of issues Deepgram I do not have deep pocket to switch better model… My product is all pay as you go model… But it works is fluctuating." [[li-zaid-comment]] Reply in the thread, then a direct message. Sprag is pay-as-you-go at a quarter of the price.',
-        ],
-        [
-          "[Steffen H.](https://www.linkedin.com/in/steffen-h-7a6b102), Senior Technical PM, AI and Voice",
-          "1&1 Mail & Media, Germany",
-          'Waiting on a language Deepgram has not shipped, under its Flux launch: "Can\'t wait to see this go live with German voices." [[li-flux-comments]] Chorus speaks German today. Write to him in German and lead with the ten output languages.',
-        ],
-        [
-          "[Pierson Marks](https://github.com/piersonmarks), Co-founder",
-          "Jellypod",
-          "Owns `speech-sdk/src/providers/deepgram/index.ts`, a Deepgram provider module inside a pluggable interface. [[gh-jellypod]] They have already paid the cost of being able to switch, so the ask is not a meeting. Open a pull request adding a Sprag provider and let the diff make the argument.",
-        ],
-      ],
-    },
-    {
-      type: "why",
-      text: "**Why it matters for Sprag:** these are real people, not company names, and each one has a reason to take the call. Two of them moved on Aug 26. Karas spent that day fighting the multilingual problem Sprag already wins on, and Stream added a second transcription provider, so they are choosing one now.",
-    },
-    { type: "h3", text: "Scorecard" },
-    {
-      type: "scorecard",
-      rows: [
-        {
-          metric: "Named companies found using Deepgram this week",
-          primary: "34 on their site, 59 more found in public code and posts",
-          us: "1 (ISSEN)",
-          change: "The five named people to contact are in the table above.",
-          tone: "bad",
-          source: "[[x-deepgram]] [[li-deepgram]] [[dg-customers]]",
-        },
-        {
-          metric: "Google ad creatives on record",
-          primary: "347",
-          us: "25",
-          change: "Deepgram has been advertising since Oct 2023. Sprag started Apr 2026.",
-          tone: "bad",
-          source: "[[gads-dg]] [[gads-sprag]]",
-        },
-        {
-          metric: "Google ads running, checked Aug 27",
-          primary: "173",
-          us: "0",
-          change: "Sprag's last four ads ran Aug 21 to Aug 26 and then stopped.",
-          tone: "bad",
-          source: "[[gads-dg]] [[gads-sprag]]",
-        },
-        {
-          metric: "New ad creatives launched in August",
-          primary: "33",
-          us: "4",
-          change: "Deepgram's biggest month was March, at 79, right after the funding round.",
-          tone: "neutral",
-          source: "[[gads-dg]] [[gads-sprag]]",
-        },
-        {
-          metric: "Pages on the website",
-          primary: "1,342",
-          us: "72",
-          change: "817 are guides, 304 are glossary entries, 52 are one page per language.",
-          tone: "bad",
-          source: "[[dg-sitemap]] [[sprag-sitemap]]",
-        },
-        {
-          metric: 'Comparison pages ("X vs Deepgram")',
-          primary: "11",
-          us: "0",
-          change: "Cartesia has 30, Soniox has 489. Sprag has none.",
-          tone: "bad",
-          source: "[[dg-compare]] [[cartesia-vs]] [[soniox-compare]]",
-        },
-        {
-          metric: "X posts mentioning it, last 7 days",
-          primary: "90 (about 13 a day)",
-          us: "not pulled this week",
-          change: "The Apify limit was reached before the Sprag search ran. Prior searches found no results.",
-          tone: "neutral",
-          source: "[[x-deepgram]]",
-        },
-        {
-          metric: "X posts that doubt, complain or shop around",
-          primary: "14 of 90 (16%)",
-          us: "n/a",
-          change: "Almost all are about one accuracy chart published Aug 26.",
-          tone: "good",
-          source: "[[x-deepgram]] [[aa-stt]]",
-        },
-        {
-          metric: "Reddit posts mentioning it since Jul 27",
-          primary: "25, of which 13 are job-board spam",
-          us: "0 found",
-          change: "Deepgram has no subreddit of its own. Reddit is quiet for both.",
-          tone: "good",
-          source: "[[reddit-dg]]",
-        },
-        {
-          metric: "Open jobs",
-          primary: "93",
-          us: "0 posted publicly",
-          change: "39 engineering, 18 sales, 10 customer success, 7 marketing.",
-          tone: "bad",
-          source: "[[dg-jobs]]",
-        },
-        {
-          metric: "Cheapest published price per hour of speech-to-text",
-          primary: "$0.258 batch, $0.288 streaming (a promotion)",
-          us: "$0.075",
-          change: "Deepgram's streaming list price is $0.462. The promotion ends Sep 12.",
-          tone: "good",
-          source: "[[dg-pricing]] [[sprag-pricing]]",
-        },
-        {
-          metric: "Languages the speech-to-text model handles",
-          primary: "45+, and 8 were added in August alone",
-          us: "30 in, 10 out",
-          change: "Assamese, Mongolian, Pashto, Afrikaans, Georgian, Armenian, Punjabi, Nepali.",
-          tone: "bad",
-          source: "[[dg-changelog]] [[sprag-langs]]",
-        },
-        {
-          metric: "Security paperwork big companies ask for",
-          primary: "SOC 2, HIPAA, GDPR with an EU address, PCI, and a US government standard (FIPS 140-3)",
-          us: "None published",
-          change: "Deepgram also lets customers run the models on their own servers.",
-          tone: "bad",
-          source: "[[dg-security]] [[dg-selfhosted]] [[dg-changelog]]",
-        },
-      ],
-    },
     { type: "h3", text: "Recommended actions for Sprag from the analysis" },
     {
       type: "moves",
       collapsed: true,
       items: [
         {
-          action: "Message Marcel Karas, Neevash Ramdial and Mohammed Zaid Shaikh today.",
-          why: "All three moved on Aug 26. Karas was fixing the multilingual problem Sprag already wins on. Stream added a second transcription provider, so they are choosing one now. Shaikh asked Deepgram for a startup price in public and got no answer. Each is a reply to a question their vendor left open, which is the only kind of first message that gets read.",
-          evidence: "key-findings",
-        },
-        {
-          action: "Publish a Deepgram comparison page before Sep 13, priced against Deepgram's list rate rather than its promotion.",
-          why: "Deepgram's $0.288 an hour is a promotion. On Sep 13 it goes back to $0.462, and Sprag goes from 3.8 times cheaper to 6.2 times cheaper without doing anything. Sprag has no comparison page. Deepgram has 11, Cartesia 30, Soniox 489. Write it from the numbers already in this brief.",
+          action: "Publish a comparison page showing that Deepgram charges for silence on a call and Sprag does not.",
+          why: "Deepgram's pricing page asks whether it charges for silence, answers no, and criticises competitors who round up for inflating invoices by 15 to 20%. Every Voice Agent tier on the same page bills on connection time, so silence, hold music and a caller reading out a card number all bill at the full rate. Sprag meters audio in and out, so none of that costs the same. On a real call that is worth more than the gap in the headline rates, and it is on no Sprag page. Put the two lines side by side with the arithmetic.",
           evidence: "pricing-and-product",
         },
         {
-          action: "Turn Sprag's Google ads back on and point them at the words Deepgram's 347 ads do not cover.",
-          why: "Sprag has no ads running. The last four stopped on Aug 26. Deepgram has 173 running and started 33 this month, so a broad fight is unwinnable. Deepgram has no page for audio captioning, speech-to-speech, or a model that also reads images and video. Buy those words, not the word transcription.",
+          action: "Write one Sprag adapter and send it to Vellum, litellm-rs and the STT-evals benchmark.",
+          why: "All three built or extended a speech-to-text provider interface in the last six days, and all three route in the OpenAI request format Sprag already serves, so one adapter covers all three. Vellum's assistant repository has 1,164 stars and its engineers hit Flux's language ceiling the same week. This is a week of engineering, not an outreach task, and it ends with Sprag's name in three repositories other buyers read. It is the only action here that puts Sprag in front of people already choosing a provider.",
           evidence: "search-and-marketplaces",
         },
         {
-          action: "Get Sprag listed inside the voice-agent tools that already carry Deepgram: LiveKit, Vapi, Pipecat and OpenRouter.",
-          why: "These are the tools where a buyer picks a speech provider from a dropdown, and Deepgram is already in all of them. Sprag has two integration pages, both leaning on OpenAI compatibility rather than a proper plugin. A plugin is about a week of work and puts Sprag on the list at the moment someone chooses.",
+          action: "Make interrupting the AI work without the customer writing extra code, then delete that workaround from the quickstart.",
+          why: "When a caller talks over Sprag mid-sentence, Symphony should stop and listen. Today it does not, because the standard OpenAI client expects the server to track where it got to in the reply and Sprag does not keep that. Sprag's quickstart papers over it by telling developers to write a custom transport class first. Two jobs. Keep that state server-side so the unmodified client works. Then remove the workaround from the docs. Three of the four people below wrote turn-detection code this week and will hit this within ten minutes of trying Sprag.",
+          evidence: "pricing-and-product",
+        },
+        {
+          action: "Build more pages. Google can only send someone to a page that answers what they typed, and Sprag has almost none.",
+          why: "Deepgram has 1,348 pages, so nearly any speech-to-text question a buyer types lands on one of them. Sprag has 72, and 47 of those only make sense to someone who already knows the name Sprag. Nobody searches for a name they have never heard, so those pages catch no one. Two builds fix most of it. One page per language, 52 of them, generated from the model list Sprag already publishes, so it is a script rather than a writing project. Then four pages comparing Sprag with each rival, Deepgram first because its price rises Sep 13.",
           evidence: "search-and-marketplaces",
         },
       ],
     },
-    { type: "h3", text: "Posts worth replying to this week" },
+    { type: "h3", text: "Who to contact this week" },
+    {
+      type: "note",
+      text: "Pulled Aug 30 from public code and Hacker News. All four wrote speech-provider code in the last six days, so the cost of trying Sprag is already paid on their side.",
+    },
     {
       type: "table",
       headers: [
-        { text: "Where", w: "20%" },
-        { text: "Date", w: "7%", nw: true },
-        { text: "Post" },
-        { text: "Reach", w: "14%" },
+        { text: "Who", w: "16%" },
+        { text: "Where", w: "13%" },
+        { text: "What they did this week" },
+        { text: "What to say, and what you get", w: "28%" },
       ],
       rows: [
         [
-          "X, @StatsWire",
-          "Aug 26",
-          "[Gemini 3.5 Transcribe Live just took the top spot on FLEURS streaming speech recognition. Deepgram Nova-3: 15.77%](https://x.com/StatsWire/status/2092669713231065313)",
-          "5 likes, 2 replies, 1 repost",
+          "[Alex Nork](https://github.com/alex-nork)",
+          "Vellum, 1,164 stars",
+          "Shipped three things on Aug 26: a way to pick the speech-to-text provider per customer, a change routing Deepgram's Flux through a model family rather than a fixed provider, and a fix to keep languages Flux cannot serve away from Flux. [[gh-vellum]]",
+          "They built the socket Sprag plugs into and hit Flux's language ceiling the same week. Send the adapter and open on the languages, not the price. Gets Sprag into a 1,164-star repository as a selectable provider, in front of every team running Vellum.",
         ],
         [
-          "X, @rissa_cao (Fish Audio)",
-          "Aug 26",
-          '[Today it\'s the #1 most-requested speech model on OpenRouter ahead of Google, grok, MiniMax and Deepgram](https://x.com/rissa_cao/status/2090847029924954243)',
-          "44 likes, 5 replies, 5 reposts",
+          "[Abhishek Sharma](https://github.com/abhisheksharma001)",
+          "STT-evals",
+          "Running a benchmark with seven vendor adapters and no Sprag. [[gh-sttevals]] Their notes say live traffic runs on Vapi and that 86 of 121 production calls used Deepgram Flux, and the Aug 30 commits add paid-versus-list price comparison. [[gh-sttevals-registry]]",
+          "They are already measuring the thing Sprag wins on, with their own production audio. Send a pull request adding a Sprag adapter, not an email. Gets Sprag a third-party number Sprag did not run itself, which is worth more than any self-published benchmark.",
         ],
         [
-          "X, @LatentKush (Autoloops)",
-          "Aug 26",
-          "[Launched Qwen3-ASR-1.7B. It beats Deepgram Nova-3 in accuracy, multilingual switching, while being half priced](https://x.com/LatentKush/status/2092383425198170179)",
-          "2 replies",
+          "[The litellm-rs maintainer](https://github.com/majiayu000)",
+          "litellm-rs, 108 stars",
+          "Merged native Deepgram and ElevenLabs speech providers into a Rust gateway on Aug 30, with a provider registry and per-model cost settlement. [[gh-litellm]]",
+          "The gateway routes in OpenAI format, which Sprag already speaks, so adding Sprag is close to no work for them. Gets Sprag listed in a router that other people install, which is distribution rather than one customer.",
         ],
         [
-          "X, @gauravdhiman_ai",
-          "Aug 26",
-          "[Does it support realtime streaming for conversational voice agents? If yes, what's the price as compared to deepgram and others in space?](https://x.com/gauravdhiman_ai/status/2092847729252995332)",
-          "1 reply",
-        ],
-        [
-          "X, @Kailzer",
-          "Aug 26",
-          "[What's the pricing like? Competitive with deepgram / scribe V2?](https://x.com/Kailzer/status/2092695864993341591)",
-          "asked of Google's launch",
-        ],
-        [
-          "X, @buildstack_ai",
-          "Aug 24",
-          "[Thought your voice pipeline sent everything to Deepgram? Maybe not. Diarize is now off by default (a paid add-on)](https://x.com/buildstack_ai/status/2091471269518520761)",
-          "1 like",
-        ],
-        [
-          "X, @EdCharbeneau",
-          "Aug 25",
-          "[I burned through $50 of Deepgram API credits last night](https://x.com/EdCharbeneau/status/2091650506909204850)",
-          "2 likes, 1 reply",
-        ],
-        [
-          "X, @Mad_Madi3",
-          "Aug 24",
-          "[language=multi on Deepgram romanized Arabic into Latin script at 0.49 confidence. language=ar, same audio: perfect Arabic at 0.98](https://x.com/Mad_Madi3/status/2091989230310269003)",
-          "no replies yet",
-        ],
-        [
-          "X, @VoibeAI",
-          "Aug 24",
-          "[Data retention, nobody advertises this: Deepgram, opt-out training per request](https://x.com/VoibeAI/status/2092131755864035829)",
-          "1 reply",
-        ],
-        [
-          "X, @nine_nine_six",
-          "Aug 26",
-          "[68.7 ms to first audio. API $5 per 1M chars. Cartesia and Deepgram about $30](https://x.com/nine_nine_six/status/2092661098264633630)",
-          "1 like",
-        ],
-        [
-          "X, @X_Sparkler",
-          "Aug 26",
-          "[Anyone already benchmarked latency vs Whisper v3 / Deepgram?](https://x.com/X_Sparkler/status/2092684208737284387)",
-          "1 like, 1 reply",
-        ],
-        [
-          "X, @amitgupta",
-          "Aug 26",
-          "[Deepgram Nova 3 and Eleven Labs Scribe 2 have been pretty much the only models to use. It'll be interesting to see how this one fares](https://x.com/amitgupta/status/2092887768007618672)",
-          "1 like",
-        ],
-        [
-          "r/AIToolsTipsNews",
-          "Aug 25",
-          "[The cheapest speech-to-text API per hour isn't the cheapest one to run, real billing breakdown for AI agents](https://www.reddit.com/r/AIToolsTipsNews/comments/1vxrhth/the_cheapest_speechtotext_api_per_hour_isnt_the/)",
-          "2 comments",
-        ],
-        [
-          "LinkedIn, Vinay Jain",
-          "Aug 27",
-          "[I spent the last week co-building one properly. Deepgram Flux for speech-to-text, Deepgram Aura 2 for the voice](https://www.linkedin.com/posts/vinayjain18_aiagents-deepgram-aivoice-activity-7498704740835356672-vrwf)",
-          "2 likes, 1 comment",
+          "[The developer behind Trippi](https://github.com/skrylkovs)",
+          "Trippi, Hacker News",
+          "Posted on Aug 28 setting out the whole pipeline: browser audio capture, then Deepgram speech-to-text, then DeepL translation, no backend and no account, because you bring your own keys. [[hn-trippi]]",
+          "Live translated captions is multilingual, latency-critical and cost-sensitive, and bring-your-own-key means switching is one line. Reply in the thread with the silence-billing arithmetic. Gets a trial from someone whose whole product is the workload Sprag is cheapest on.",
         ],
       ],
     },
@@ -294,71 +88,72 @@ export const deepgram: Brief = {
           type: "findings",
           items: [
             {
-              claim: "Deepgram names 34 customers on its site. Public code and public posts turn up 59 more.",
+              claim:
+                "Deepgram shipped two more turn-taking controls in the last four days, widening the one gap Sprag's own documentation admits.",
               body: [
                 {
                   type: "p",
-                  text: "Searching public code, reviews and posts found 59 companies using Deepgram that it does not name itself. Fifteen of them left a Deepgram key or SDK call in a public repository. Checking who wrote that code gives you the engineer's name and profile, which is how the people at the top of this brief were found. [[gh-search]] [[g2-deepgram]] [[x-deepgram]] [[dg-customers]]",
+                  text: "On Aug 28 Deepgram released flexible turn-taking control for Flux. A caller can now override Flux's end-of-turn detection, suppress it, or blend the two, and switch between those modes mid-conversation with a Configure message. [[dg-changelog]] Two days before that, on Aug 26, it added a ForceEndTurn client message so an application can end the user's turn from its own signal. [[dg-changelog]] Sprag's realtime documentation still tells developers to write a subclass of the OpenAI transport because the stock interruption handling expects server state Sprag does not keep. [[sprag-realtime]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** Sprag has one named customer. Everyone at the top of this brief already pays for hosted speech, has said in public which vendor they use, and can be reached today. The same searches run again next week. [[gh-search]]"
+                  text: "**Why it matters for Sprag:** three of the four people at the top of this brief wrote barge-in or turn-end code this week, so this is the first thing they will test. Sprag wins the end-to-end latency benchmark and loses the interruption demo. Fix the barge-in path before pitching any of them. [[sprag-realtime]] [[sprag-benchmarks]]",
                 },
               ],
             },
             {
               claim:
-                "Deepgram's cheapest speech-to-text price is a promotion that ends on Sep 12, and the real price is 60% higher.",
+                "Deepgram's published price is not the price. A reviewer says opting out of training costs a 50% rate discount.",
               body: [
                 {
                   type: "p",
-                  text: "Deepgram's pricing page shows Nova-3 streaming at $0.0048 a minute, which is $0.288 an hour, and prints the regular price of $0.0077 a minute, which is $0.462 an hour, next to it. Flux TTS is free until Sep 12 and then costs $0.045 per 1,000 characters. Voice Agent Standard is $0.056 a minute until Sep 12 and then $0.075. Sprag's Rhythm is $0.075 an hour. Sprag's own blog and pricing page compare against $0.29 an hour, which is the promotional number. [[dg-pricing]] [[sprag-pricing]] [[sprag-economics]]",
+                  text: "Diego P., a director at a small financial-technology company, left a four-star G2 review on Aug 28 saying there is a big data privacy trade-off, and that if you leave the Model Improvement Program that uses the audio data to train their models, you lose the 50% rate discount. He adds that this is bad for FinTech startups, that as a highly regulated industry you cannot share your data easily, and that combined with the modular pricing the cost adds up quickly when you need advanced features. [[g2-diego]] Deepgram's public pricing page mentions no such programme and no such discount. [[dg-pricing]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** on Sep 13 the honest comparison changes in Sprag's favour without Sprag lifting a finger, from 3.8 times cheaper to 6.2 times cheaper. Publish the comparison page now with both numbers on it and a dated note, so the page is already ranking when the price moves. [[dg-pricing]]",
+                  text: "**Why it matters for Sprag:** a regulated buyer who declines training is paying about double the number on Deepgram's page, on top of the promotion ending on Sep 12. Sprag should quote that review on the comparison page. Sprag also trains by default, so say plainly what Sprag charges to opt out, which is nothing. [[sprag-terms]] [[dg-pricing]]",
                 },
               ],
             },
             {
               claim:
-                "Deepgram added eight new languages in August alone, which closes the gap Sprag currently sells on.",
+                "Language coverage is Deepgram's second-biggest complaint and it is closing the gap at roughly ten languages a fortnight.",
               body: [
                 {
                   type: "p",
-                  text: "Deepgram shipped ten changelog entries in August. New Nova-3 languages: Assamese, Mongolian, Pashto, Afrikaans, Georgian, Armenian, Punjabi and Nepali. Improved models landed for roughly 25 more, including Russian, Korean, Japanese, Spanish and Urdu. Deepgram now claims 45+ languages. Sprag transcribes 30 languages and speaks 10, and those numbers are set by the open-weight Qwen models Sprag serves rather than by anything Sprag trains. [[dg-changelog]] [[sprag-langs]] [[sprag-models]]",
+                  text: "G2's own tally of the five most-mentioned complaints puts limited language support at 16 mentions and limited languages at 8, which is 24 of 60 sorted mentions, second only to price. [[g2-proscons]] In the same window Deepgram added Assamese, Mongolian and Pashto on Aug 27, and shipped improved models for Bulgarian, Croatian, Estonian, Georgian, Italian, Latvian, Lithuanian, Malay, Marathi and Telugu on Aug 28. [[dg-changelog]] It now runs 57 one-page-per-language landing pages, all of them rebuilt on Aug 28. [[dg-sitemap]] Sprag transcribes 30 languages, speaks 10, and those counts are set by the open-weight models Sprag serves. [[sprag-langs]] [[sprag-models]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** multilingual coverage is a race Sprag cannot win by shipping, because Sprag does not train the models. Sprag should stop leading with language count and lead instead with the two things Deepgram genuinely does not sell: one model that answers in speech without a transcription step, and audio captioning. [[sprag-models]]",
+                  text: "**Why it matters for Sprag:** this is the largest pool of unhappy Deepgram users and Sprag cannot win it on count, because Sprag does not train the models. Sprag can win the narrow version: the specific languages Deepgram still lacks, and code-switched audio, where Sprag's own customer measured 90% against about 70%. Sell the named language, not the number. [[sprag-issen]]",
                 },
               ],
             },
             {
               claim:
-                "Deepgram has 1,342 pages and 11 comparison pages working for it in Google. Sprag has 72 pages and no comparison page.",
+                "Deepgram's web traffic fell 9.3% in a month, and Sprag's search presence is 98.5% bought.",
               body: [
                 {
                   type: "p",
-                  text: "Deepgram's sitemap holds 1,342 addresses: 817 guides, 304 glossary entries, 52 one-per-language transcription pages, 17 industry pages and 11 comparison pages aimed at AssemblyAI, Amazon, Microsoft, Speechmatics, OpenAI, Google and ElevenLabs. Sprag's sitemap holds 72. Soniox runs 19,868 pages including 489 comparison pages, and Cartesia runs 232 including 30 comparison pages. Sprag is the only company in this group with zero pages aimed at a competitor's name. [[dg-sitemap]] [[dg-compare]] [[sprag-sitemap]] [[soniox-compare]] [[cartesia-vs]]",
+                  text: "Similarweb puts Deepgram at 706,900 visits in July, down 9.3% on the month, with its global rank sliding from 57,900 to 63,429 over three months. Direct visits are 41.2% of the total, free Google results are second and paid search third. Deepgram ranks for 5,100 search terms, 77% of them free, including the words cartesia and assemblyai. [[sw-dg]] Sprag is ranked 7,313,039 globally, too small for Similarweb to publish a visit count, down 11.3% on the month. It ranks for 59 terms, 98.5% of them paid, and the five it ranks for are pixelrag, sharpa, llama parse, lightrag and spara, none of which is a Sprag product. [[sw-sprag]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** Sprag already publishes a benchmark comparing itself to Deepgram, and already publishes a pricing calculator that names competitors. It simply has not turned either into a page that answers the search someone types before they buy. That page costs one afternoon and it is the highest-return page Sprag can publish. [[sprag-benchmarks]]",
+                  text: "**Why it matters for Sprag:** Deepgram is not growing on the web, which means the category leader is beatable in search. Sprag cannot take that ground while it ranks for nothing it sells. The comparison page and the per-language pages are the first two free terms Sprag would own. [[sw-sprag]]",
                 },
               ],
             },
             {
               claim:
-                "Deepgram's 93 open jobs say where the $130M is going: government, Asia, self-serve signup, and text-to-speech.",
+                "Deepgram's own bot described an unreleased Flux v2 in a public GitHub issue, and named the feature nobody else has.",
               body: [
                 {
                   type: "p",
-                  text: "Deepgram lists 93 open jobs. Nineteen are outside the US, including five in Singapore, four in London, two each in India, Sydney and remote-Asia. Five are aimed at the US government, among them an Enterprise Account Executive for Federal Civilian at $280K to $350K and a Defense and Edge Tech Lead at $219K to $274K. Seven roles sit on a Console team explicitly labelled Product-Led Growth, which is the self-serve signup funnel. The highest-paid role on the whole board is Director of Research, Text to Speech, at $213K to $328.3K. [[dg-jobs]]",
+                  text: "On Aug 30 an account called deepgram-robot filed an issue in Deepgram's public recipes repository describing Flux v2's unique in-band reconfiguration capabilities in both the STT and TTS directions, meaning a caller can inject new key terms and switch language mid-stream while also controlling how expressive the voice is. The issue says this demonstrates capabilities no other provider can match in a single session. [[gh-fluxv2]] Flux v2 is not on Deepgram's pricing page or changelog. The same bot has filed 56 issues since Aug 1 and 388 in total. [[gh-dgrobot]] [[dg-pricing]] [[dg-changelog]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** Deepgram is buying the two things Sprag cannot buy, government clearance work and a global sales floor, and is also rebuilding its self-serve funnel, which is the one place the two companies meet. Sprag should not wait to be found there. The counter is speed of signup and price, both of which Sprag already wins on. [[dg-jobs]] [[sprag-pricing]]",
+                  text: "**Why it matters for Sprag:** this is Deepgram's roadmap, published by accident, and it points at mid-call reconfiguration rather than at speech-to-speech or captioning. Deepgram is going deeper into the cascade it already sells. That leaves Sprag's two uncontested products uncontested for at least another release cycle. Build the positioning on them now. [[gh-fluxv2]]",
                 },
               ],
             },
@@ -387,9 +182,10 @@ export const deepgram: Brief = {
                   ["Deepgram Flux English", 0.39, "primary"],
                   ["Cartesia Ink-2", 0.43, "other"],
                   ["Deepgram Nova-3, list", 0.462, "primary"],
+                  ["Deepgram Nova-2, list", 0.35, "primary"],
                 ],
                 aria:
-                  "Published streaming speech-to-text price per hour: Sprag Rhythm $0.075, Soniox $0.12, Deepgram Nova-3 promotional $0.288, Deepgram Flux English $0.39, Cartesia Ink-2 $0.43, Deepgram Nova-3 list price $0.462.",
+                  "Published streaming speech-to-text price per hour: Sprag Rhythm $0.075, Soniox $0.12, Deepgram Nova-3 promotional $0.288, Deepgram Nova-2 list $0.35, Deepgram Flux English $0.39, Cartesia Ink-2 $0.43, Deepgram Nova-3 list price $0.462.",
               },
               legend: [
                 { series: "us", label: "Sprag" },
@@ -406,13 +202,14 @@ export const deepgram: Brief = {
                 labelAll: true,
                 rows: [
                   ["Sprag Symphony", 0.0064, "us"],
+                  ["Deepgram Custom, own model", 0.05, "primary"],
                   ["Deepgram Standard, promo", 0.056, "primary"],
                   ["Cartesia Managed Agents", 0.06, "other"],
                   ["Deepgram Standard, list", 0.075, "primary"],
                   ["Deepgram Advanced, list", 0.163, "primary"],
                 ],
                 aria:
-                  "Cost per fifty-fifty voice agent minute: Sprag Symphony $0.0064, Deepgram Standard promotional $0.056, Cartesia Managed Agents $0.06, Deepgram Standard list $0.075, Deepgram Advanced list $0.163.",
+                  "Cost per fifty-fifty voice agent minute: Sprag Symphony $0.0064, Deepgram Custom with your own language model $0.05, Deepgram Standard promotional $0.056, Cartesia Managed Agents $0.06, Deepgram Standard list $0.075, Deepgram Advanced list $0.163.",
               },
               legend: [
                 { series: "us", label: "Sprag" },
@@ -428,56 +225,57 @@ export const deepgram: Brief = {
           style: "did",
           items: [
             {
-              claim: "Deepgram put its two newest products on promotion, and both promotions end on the same day.",
+              claim: "Deepgram gave developers three new ways to control when a turn ends, in four days.",
               body: [
                 {
                   type: "p",
-                  text: "Flux TTS, Deepgram's new text-to-speech model, is free through Sep 12 with up to 45 streaming connections at once, and then costs $0.045 per 1,000 characters, which is 50% more than the Aura-2 model it replaces. Nova-3 streaming is discounted from $0.0077 to $0.0048 a minute. Voice Agent Standard is discounted from $0.075 to $0.056 a minute. Deepgram prints both the current and the regular price side by side on the pricing page, so the increase is already public. [[dg-pricing]]",
+                  text: "The Aug 28 release lets a caller override Flux's end-of-turn decision, suppress it entirely, or blend it with their own signal, and switch between those modes on the fly for a single turn using a Configure message. Deepgram's own wording is that turn-taking goes from a fixed behavior to something you shape around each moment of a conversation. [[dg-changelog]] On Aug 26 it added ForceEndTurn, which ends the user's turn from the application's signal instead of waiting for detection. [[dg-changelog]] Flux TTS reached general availability on Aug 12 with an Interrupt message that reports what the listener actually heard and what was left unsaid. [[dg-changelog]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** there is a dated moment coming when a large number of Deepgram accounts see their bill rise. Sprag should have a page live and indexed before Sep 13 that answers the search those people will run. [[dg-pricing]]",
+                  text: "**Why it matters for Sprag:** Deepgram is turning interruption into a configurable surface while Sprag's quickstart still asks developers to patch the client to make interruption work at all. A prospect reading both sets of documents draws one conclusion. This is engineering work, not messaging work. [[sprag-realtime]]",
                 },
               ],
             },
             {
               claim:
-                "Flux is Deepgram's answer to the hardest problem in voice agents, and it is the one feature Sprag has no version of.",
+                "Deepgram's pricing page argues against per-minute rounding, while its own voice agent bills by connection time.",
               body: [
                 {
                   type: "p",
-                  text: "Flux decides when a speaker has finished talking inside the speech model itself, and emits start of turn, end of turn and an early eager end of turn so the language model can start generating before the sentence is over. Deepgram's own documentation puts it plainly: traditional speech-to-text plus a separate voice-activity detector requires you to build complex interruption logic, and Flux handles this natively. Sprag's realtime documentation goes the other way. It tells developers to subclass the OpenAI transport because the stock barge-in handling expects server state that Sprag does not keep, so interrupting the model mid-reply fails without the patch. [[dg-flux]] [[dg-flux-state]] [[sprag-realtime]]",
+                  text: "A pricing question added to the page reads: does Deepgram charge for silence or round up audio time. The answer is no, Deepgram uses true per-second billing, followed by the claim that many competitors round up to the nearest 15 seconds or full minute, which can inflate your actual invoice by 15 to 20%. [[dg-pricing]] Every Voice Agent tier on the same page carries a footnote saying the rate is calculated based on websocket connection time. [[dg-pricing]] So silence is not billed on transcription and is billed on the agent product, on one page.",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** every lead in this brief who is shipping a phone agent will hit this. Sprag's benchmark wins on end-to-end latency but the docs admit a broken interruption path, and that is the first thing that breaks on a real call. Fix the barge-in path and delete the subclass from the quickstart before pitching any of these leads. [[sprag-realtime]]",
-                },
-              ],
-            },
-            {
-              claim: "Deepgram now charges separately for speaker labelling on live audio, and developers are finding out by accident.",
-              body: [
-                {
-                  type: "p",
-                  text: "On streaming, speaker diarization costs $0.0020 a minute on top of the model, redaction costs $0.0020, entity detection $0.0017 and keyterm prompting $0.0013. Only smart formatting is included. On pre-recorded audio diarization is included, which makes the two price lists inconsistent. The Vercel AI SDK shipped a fix this week because it had been sending diarize=true by default, and one developer summarised it publicly as diarize is now off by default, a paid add-on, check costs and output first. [[dg-pricing]] [[x-diarize]]",
-                },
-                {
-                  type: "why",
-                  text: "**Why it matters for Sprag:** Sprag includes word timestamps and speaker labels in Rhythm's $0.075 an hour with no add-on. Soniox already attacks Deepgram on exactly this point and names the $0.12 an hour figure. Sprag should say it just as plainly on the comparison page. [[sprag-pricing]] [[soniox-pricing]]",
+                  text: "**Why it matters for Sprag:** Sprag bills Symphony on audio tokens in and out, so silence, hold music and a caller reading a number off a card all cost less. That is a real difference on a real workload and it appears on no Sprag page. Put it on the comparison page, next to the line where Deepgram says it does not charge for silence. [[sprag-pricing]] [[dg-pricing]]",
                 },
               ],
             },
             {
               claim:
-                "Deepgram bought a drive-thru company and is now hiring a restaurant specialist, which is a vertical Sprag is not in.",
+                "The pricing page carries a set of billing terms that produce most of the surprise invoices, and none of them is in the rate table.",
               body: [
                 {
                   type: "p",
-                  text: "Deepgram's newsroom lists an acquisition of OfOne, described as bringing voice AI to drive-thru restaurants. The site now carries three restaurant solution pages and the job board lists an Enterprise AI Strategist, Deepgram for Restaurants, based in San Francisco. [[dg-newsroom]] [[dg-jobs]] [[dg-sitemap]]",
+                  text: "Accounts default to reloading $100 whenever the balance falls below $10. Refunds apply only to unused credits bought in the last 30 days, and credits older than that are non-refundable. Stereo audio is billed as two channels, so a ten-minute file costs twenty minutes. Growth-plan overages are billed at the plan rate plus a 10% premium, calculated and charged every Monday, and requests return a 402 error if the card is removed and credits run out. [[dg-pricing]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** Deepgram is moving from selling an API to selling a finished answer for one industry, which is where the margin is and where a price comparison stops working. Sprag cannot follow, and should instead take the developers Deepgram stops paying attention to while it does this. [[dg-jobs]]",
+                  text: "**Why it matters for Sprag:** Sprag has no minimum, no seat, no commitment and no auto-reload, and that is the whole pitch to a small team that got a bill it did not expect. Write the total-cost comparison, not the per-hour one. [[sprag-pricing]]",
+                },
+              ],
+            },
+            {
+              claim:
+                "Deepgram now publishes a discounted rate for every model on the committed plan, which sets the floor Sprag is really priced against.",
+              body: [
+                {
+                  type: "p",
+                  text: "The Growth plan starts at $4,000 a year and now shows a rate for each model rather than a headline discount. Nova-3 monolingual streaming is $0.0042 a minute on Growth against $0.0048 on pay-as-you-go, and its regular Growth rate is $0.0065 against $0.0077. That is $0.252 an hour today and $0.39 an hour after Sep 12. [[dg-pricing]] G2 separately reports an average discount of 26% across reviewed deals, which is deeper than the published Growth discount. [[g2-deepgram]]",
+                },
+                {
+                  type: "why",
+                  text: "**Why it matters for Sprag:** the honest comparison for a customer at any scale is Deepgram at about $0.25 to $0.39 an hour, not $0.29. Sprag is still five times cheaper at the better end. Use the Growth number on the comparison page, because using the worst case is what gets a comparison page dismissed. [[dg-pricing]] [[sprag-pricing]]",
                 },
               ],
             },
@@ -489,29 +287,20 @@ export const deepgram: Brief = {
           style: "do",
           items: [
             {
-              claim: "Publish a Deepgram comparison page this week, with both of Deepgram's prices on it.",
+              claim: "Lead the comparison page with silence, not with the per-hour rate.",
               body: [
                 {
                   type: "p",
-                  text: "Put the promotional rate and the list rate side by side, dated, with a line saying the promotion ends Sep 12. Add the add-on table, because diarization at $0.0020 a minute on streaming is $0.12 an hour on top of the model, and Sprag includes it. Add the voice-agent line, where Sprag is $0.0064 a minute against Deepgram's $0.075. Sprag already has all of these numbers on its own benchmark and pricing pages, so this is assembly rather than research. [[dg-pricing]] [[sprag-pricing]] [[sprag-benchmarks]]",
+                  text: "Open with the line where Deepgram says it does not round up, then the footnote on every Voice Agent tier saying the rate is calculated on websocket connection time, then the arithmetic on a 50-50 minute where half the connection carries no speech at all. Underneath it, the three published rates side by side, dated, with the Sep 12 promotion end. Then the training-discount line from the Aug 28 review, because a regulated buyer who declines training pays roughly double. Then the add-ons, because streaming diarization at $0.0020 a minute is $0.12 an hour on top of the model and Sprag includes it. The per-hour gap is 3.8 times today and 6.2 times from Sep 13, but on a real call with real pauses it is wider than either number, and that is the page nobody else in this category has written. [[dg-pricing]] [[g2-diego]] [[sprag-pricing]]",
                 },
               ],
             },
             {
-              claim: "Lead with the two products Deepgram does not sell, and stop leading with speed.",
+              claim: "Make interruption work on an unmodified client, then delete the workaround from the quickstart.",
               body: [
                 {
                   type: "p",
-                  text: "Deepgram has no single model that hears speech and answers in speech, and no audio captioning product. Sprag has both, and Symphony's agentic result is genuinely strong: 1.03 seconds to first audio and 1.03 seconds end to end with no failures, against Deepgram's Voice Agent at 3.30 seconds with 10 failures out of 50. That is a much better fight than speed on transcription, where Deepgram's Flux is purpose-built and Cartesia's Ink is faster than Sprag on Sprag's own numbers. [[sprag-benchmarks]] [[dg-flux]]",
-                },
-              ],
-            },
-            {
-              claim: "Fix the barge-in path before pitching anyone building a phone agent.",
-              body: [
-                {
-                  type: "p",
-                  text: "Sprag's own realtime quickstart tells developers to write a transport subclass so interruption works. Deepgram markets end-of-turn detection as its headline feature and Cartesia markets semantic endpointing with no external detector needed. A prospect comparing docs will see one company that solved it and one that documented the workaround. This is an engineering fix, not a marketing one. [[sprag-realtime]] [[dg-flux-state]] [[cartesia-ink]]",
+                  text: "The problem in one line: the standard OpenAI realtime client cancels a reply by telling the server how far the caller actually heard, and Sprag does not track that, so interrupting mid-sentence fails. Sprag's quickstart handles this by asking the developer to write a custom transport class before anything works. [[sprag-realtime]] So the fix is two jobs. Keep the playback position server-side so the stock client cancels correctly. Then take the subclass out of the docs, because a quickstart that opens with a patch is read as a product that is not finished. Deepgram sells three ways to control turn ends and has a fourth coming in Flux v2, and Cartesia decides turn ends by meaning with no separate detector, so this is the comparison a buyer makes. [[dg-changelog]] [[gh-fluxv2]] [[cartesia-ink]]",
                 },
               ],
             },
@@ -521,38 +310,42 @@ export const deepgram: Brief = {
           type: "toggle",
           claim: "Full analysis",
           body: [
-            { type: "h3", text: "Deepgram's full price list, checked Aug 27" },
+            { type: "h3", text: "Deepgram's full price list, checked Aug 30" },
             {
               type: "table",
               headers: [
                 { text: "Product" },
-                { text: "Now", w: "20%", nw: true },
-                { text: "From Sep 13", w: "20%", nw: true },
-                { text: "Per hour", w: "14%", n: true },
+                { text: "Pay as you go", w: "18%", nw: true },
+                { text: "Committed plan", w: "18%", nw: true },
+                { text: "From Sep 13", w: "18%", nw: true },
               ],
               rows: [
-                ["Nova-3 monolingual, streaming", "$0.0048/min", "$0.0077/min", "$0.29 → $0.46"],
-                ["Nova-3 multilingual, streaming", "$0.0058/min", "$0.0092/min", "$0.35 → $0.55"],
-                ["Nova-3 monolingual, pre-recorded", "$0.0043/min", "no change", "$0.26"],
-                ["Nova-3 multilingual, pre-recorded", "$0.0052/min", "no change", "$0.31"],
-                ["Flux English, streaming", "$0.0065/min", "$0.0077/min", "$0.39 → $0.46"],
-                ["Flux Multilingual, streaming", "$0.0078/min", "no change", "$0.47"],
-                ["Whisper Large, pre-recorded", "$0.0048/min", "no change", "$0.29"],
-                ["Flux TTS", "free", "$0.045 / 1K chars", "about $2.70"],
-                ["Aura-2 TTS", "$0.030 / 1K chars", "no change", "about $1.80"],
-                ["Aura-1 TTS", "$0.0150 / 1K chars", "no change", "about $0.90"],
-                ["Voice Agent, Standard", "$0.056/min", "$0.075/min", "$3.36 → $4.50"],
-                ["Voice Agent, Advanced", "$0.122/min", "$0.163/min", "$7.32 → $9.78"],
-                ["Voice Agent, bring your own model", "$0.050/min", "$0.065/min", "$3.00 → $3.90"],
+                ["Nova-3 monolingual, streaming", "$0.0048/min", "$0.0042/min", "$0.0077 and $0.0065"],
+                ["Nova-3 multilingual, streaming", "$0.0058/min", "$0.0050/min", "$0.0092 and $0.0078"],
+                ["Nova-3 monolingual, pre-recorded", "$0.0043/min", "$0.0036/min", "no change"],
+                ["Nova-3 multilingual, pre-recorded", "$0.0052/min", "$0.0043/min", "no change"],
+                ["Flux English, streaming", "$0.0065/min", "$0.0057/min", "$0.0077 and $0.0065"],
+                ["Flux Multilingual, streaming", "$0.0078/min", "$0.0068/min", "no change"],
+                ["Whisper Large, pre-recorded", "$0.0048/min", "$0.0048/min", "no change"],
+                ["Nova-2, streaming", "$0.35/hour", "about 12.5% less", "no change"],
+                ["Enhanced, older model", "$0.99/hour", "about 12.5% less", "no change"],
+                ["Base, older model", "$0.87/hour", "about 12.5% less", "no change"],
+                ["Flux TTS", "free", "free", "$0.045 and $0.0405 / 1K chars"],
+                ["Aura-2 TTS", "$0.030 / 1K chars", "$0.027 / 1K chars", "no change"],
+                ["Aura-1 TTS", "$0.0150 / 1K chars", "$0.0135 / 1K chars", "no change"],
+                ["Voice Agent, Standard", "$0.056/min", "$0.051/min", "$0.075 and $0.068"],
+                ["Voice Agent, Standard, own voice", "$0.065/min", "$0.051/min", "no change"],
+                ["Voice Agent, own language model", "$0.050/min", "$0.041/min", "$0.065 and $0.059"],
+                ["Voice Agent, Advanced", "$0.122/min", "$0.110/min", "$0.163 and $0.146"],
               ],
             },
             {
               type: "p",
-              text: "Text-to-speech prices are quoted per 1,000 characters, so the per-hour column assumes 60,000 characters of speech an hour, which is about 150 words a minute. Deepgram does not publish a characters-per-hour figure, so treat that column as a working conversion rather than a Deepgram number. [[dg-pricing]]",
+              text: "Two things in that table are new to this brief rather than new to the page. Deepgram publishes a committed-plan rate for every model, and it keeps three older models on sale at $0.35, $0.87 and $0.99 an hour for existing deployments. A customer still on Enhanced is paying thirteen times Sprag's rate for a model Deepgram no longer recommends. [[dg-pricing]] [[sprag-pricing]]",
             },
             {
               type: "p",
-              text: "Deepgram bills the Voice Agent by how long the websocket connection stays open rather than by how much speech passes through it, which its own pricing page states in a footnote on every tier. That means silence, hold music and a caller reading a number off a card all cost the same as speech. Sprag bills Symphony on audio tokens in and out, so silence is cheaper. This is a real difference and it is not on any Sprag page. [[dg-pricing]] [[sprag-pricing]]",
+              text: "Text-to-speech is quoted per 1,000 characters. At roughly 150 words a minute, an hour of speech is about 60,000 characters, which makes Aura-2 about $1.80 an hour and Flux TTS about $2.70 an hour once it starts charging. Deepgram publishes no characters-per-hour figure, so treat that conversion as ours rather than theirs. Sprag's Chorus is $0.70 an hour. [[dg-pricing]] [[sprag-pricing]]",
             },
             { type: "h3", text: "The add-ons, which are where the published price stops being the price" },
             {
@@ -570,11 +363,12 @@ export const deepgram: Brief = {
                 ["Boosting specific words (keyterms)", "$0.0013/min", "$0.0013/min", "Not offered"],
                 ["Finding names and places (entities)", "$0.0017/min", "$0.0017/min", "Not offered"],
                 ["Punctuation and casing", "included", "included", "Included"],
+                ["Opting out of model training", "50% rate discount lost", "50% rate discount lost", "Free, by email"],
               ],
             },
             {
               type: "p",
-              text: "Turning on speaker labelling for live audio adds $0.12 an hour, which is more than Sprag's entire transcription price of $0.075. A Deepgram streaming customer who wants speaker labels, redaction and keyterms is paying $0.0053 a minute in add-ons on top of the model, or $0.32 an hour, which more than doubles the promotional rate. [[dg-pricing]]",
+              text: "The last row is the expensive one and it is the only row not printed on Deepgram's pricing page. It comes from a customer review dated Aug 28. Read alongside the add-ons, a streaming customer who wants speaker labels, redaction and keyterms and who declines to have their audio used for training is paying a long way above the headline. Sprag includes timestamps and speaker labels in $0.075 an hour and charges nothing to opt out, though Sprag's opt-out is by email and applies only going forward. [[g2-diego]] [[dg-pricing]] [[sprag-terms]]",
             },
             { type: "h3", text: "What Deepgram shipped this window" },
             {
@@ -584,47 +378,51 @@ export const deepgram: Brief = {
                 { text: "What" },
               ],
               rows: [
+                ["Aug 28", "Flexible turn-taking control for Flux. Override, suppress or blend end-of-turn detection, switchable mid-conversation. [[dg-changelog]]"],
+                ["Aug 28", "Improved Nova-3 models for Bulgarian, Croatian, Estonian, Georgian, Italian, Latvian, Lithuanian, Malay, Marathi and Telugu. [[dg-changelog]]"],
+                ["Aug 28", "All 57 per-language landing pages rebuilt, plus the speech-to-text, text-to-speech and audio intelligence product pages. [[dg-sitemap]]"],
                 ["Aug 27", "Nova-3 adds Assamese, Mongolian and Pashto. Improved Czech, Danish, Swedish, Tagalog and Turkish. [[dg-changelog]]"],
-                ["Aug 27", "Deepgram Speak '26, a first company conference, announced for Oct 29 in San Francisco. [[dg-speak]]"],
-                ["Aug 27", "Deepgram is now inside Genesys Virtual Agent, its first deep contact-centre platform integration. [[li-genesys]]"],
-                ["Aug 26", "Self-hosted release adds expressivity control to Flux TTS and Japanese punctuation handling. [[dg-changelog]]"],
-                ["Aug 26", "Extended usage and billing metrics for Deepgram running inside Amazon SageMaker, published on the AWS blog. [[aws-sagemaker]]"],
-                ["Aug 19", "Deepgram CLI 0.3.0. The speak command now defaults to Flux TTS instead of Aura-2. [[dg-changelog]]"],
-                ["Aug 17", "Nova-3 adds Afrikaans and Georgian. Improved Hungarian, Macedonian, Russian, Slovak, Slovenian and Urdu. [[dg-changelog]]"],
-                ["Aug 14", "Spoken-number conversion for Bulgarian, Cantonese, Malay and Korean. [[dg-changelog]]"],
-                ["Aug 12", "Flux TTS reaches general availability and comes to self-hosted deployments. Nova-3 adds Nepali and Punjabi. [[dg-changelog]]"],
-                ["Aug 10", "Nova-3 adds Armenian. Improved Tamil, Indonesian and Belarusian. [[dg-changelog]]"],
-                ["Aug 7 and Aug 4", "Improved Nova-3 models for roughly 20 more languages across two releases. [[dg-changelog]]"],
-                ["Jul 28", "US government cryptography images (FIPS 140-3) reach general availability for self-hosted customers. [[dg-changelog]]"],
+                ["Aug 26", "ForceEndTurn client message for the Voice Agent API, ending a turn from the application's own signal. [[dg-changelog]]"],
+                ["Aug 26", "Self-hosted August release, engine 3.128.0. [[dg-changelog]]"],
+                ["Aug 25 to 28", "Fifteen guide pages published or rewritten, on latency, pricing breakdowns, accuracy metrics and voice-agent architecture. [[dg-sitemap]]"],
+                ["Aug 19", "Deepgram CLI 0.3.0, and an expressivity control for Flux TTS voices on a calm-to-animated scale. [[dg-changelog]]"],
+                ["Aug 17", "Nova-3 adds Afrikaans and Georgian, plus improved models for six more languages. [[dg-changelog]]"],
+                ["Aug 12", "Flux TTS generally available with interruption reporting, mid-session speed changes and 36 English voices across seven accents. [[dg-changelog]]"],
+                ["Aug 5 and Aug 10", "Nova-3 adds Punjabi, Nepali and Armenian. [[dg-changelog]]"],
+                ["Jul 31", "Voice agents can switch speech model and language mid-session without restarting. [[dg-changelog]]"],
               ],
             },
             {
               type: "p",
-              text: "Ten changelog entries in 24 days is a fast pace, and eight of the ten are language work. Deepgram is spending its release capacity on breadth rather than on new capability. The one exception is Flux TTS reaching general availability on Aug 12. [[dg-changelog]]",
+              text: "Read the list by theme rather than by date. Eight of the twelve entries are language work and four are turn-taking or interruption work. Deepgram is spending its release capacity on breadth of languages and on control of the conversation, which are the two things its reviewers complain about and the two things a voice-agent buyer tests first. Nothing on the list is a new product. [[dg-changelog]]",
             },
             { type: "h3", text: "Feature by feature" },
             {
               type: "table",
               headers: [{ text: "" }, { text: "Deepgram", w: "34%" }, { text: "Sprag", w: "34%" }],
               rows: [
-                ["Speech to text", "Nova-3 (45+ languages), Flux English, Flux Multilingual (10), Whisper Large", "Rhythm (30 languages plus 22 Chinese dialects)"],
-                ["Knowing when a speaker stopped", "Built into Flux: start of turn, end of turn, early end of turn", "Not offered. Docs require patching the client for interruption"],
-                ["Text to speech", "Flux TTS, Aura-2 (50+ voices), Aura-1", "Chorus, 56 voices, 10 languages"],
+                ["Speech to text", "Nova-3 (45+ languages), Flux English, Flux Multilingual, Nova-2, Whisper Large", "Rhythm (30 languages plus 22 Chinese dialects)"],
+                ["Knowing when a speaker stopped", "Built into Flux, and since Aug 28 overridable, suppressible or blended mid-call", "Not offered. Docs require patching the client for interruption"],
+                ["Text to speech", "Flux TTS (36 English voices, 7 accents), Aura-2, Aura-1", "Chorus, 56 voices, 10 languages"],
                 ["Voice cloning", "Not offered publicly", "Yes, reference clip sent inside the request"],
                 ["Making a voice from a description", "Not offered", "Yes, plain-English brief"],
                 ["One model that hears and answers in speech", "No. Voice Agent chains three models", "Yes, Symphony"],
-                ["Describing a whole audio clip", "No. Summaries and sentiment only", "Yes, Symphony Notes"],
+                ["Describing a whole audio clip", "No. Summaries, topics and sentiment only", "Yes, Symphony Notes"],
                 ["Image and video input", "No", "Yes, Symphony"],
                 ["Running on your own servers", "Yes, documented for Kubernetes, Docker, Podman and bare metal", "Contact us, no documentation"],
                 ["Regional endpoints", "EU and Australia, both live", "One endpoint"],
                 ["Security paperwork", "SOC 2 Type I and II, HIPAA with a signed agreement, GDPR, CCPA, PCI, FIPS 140-3", "None published"],
-                ["Training on customer audio", "No", "Yes by default, opt out by email"],
-                ["Free to start", "$200 of credit, no card", "Free tier, no card"],
+                ["Training on customer audio", "Opt-out costs a 50% rate discount", "Yes by default, opt out by email, free"],
+                ["Free to start", "$200 of credit, about 700 hours, no card", "Free tier, no card"],
               ],
             },
             {
               type: "p",
-              text: "Two rows in that table decide most enterprise deals and Sprag loses both. Deepgram will not train on customer audio and publishes the certificates that prove how it handles data. Sprag's terms grant it a licence to train on customer content, with an opt-out by email that only applies going forward, while the voice-cloning page tells buyers the API keeps no copy of the speaker. Those two documents disagree, and voice cloning is exactly the workload where a buyer reads both. [[sprag-terms]] [[dg-security]]",
+              text: "The training row moved this week and it moved in Sprag's favour. Last week's brief recorded Deepgram as not training on customer audio, which is what its security page implies. A customer review now says the published rates assume enrolment in a model improvement programme and that leaving it costs half the discount. Both companies train by default. Only one of them charges you to stop. [[g2-diego]] [[dg-security]] [[sprag-terms]]",
+            },
+            {
+              type: "p",
+              text: "Two rows still decide most enterprise deals and Sprag loses both. Deepgram publishes the certificates a security review asks for and runs on the buyer's own hardware if asked. Sprag publishes none of it, and its terms grant a licence to train on customer content while its voice-cloning page tells buyers the API keeps no copy of the speaker. Those two documents disagree, and voice cloning is exactly the workload where a buyer reads both. [[sprag-terms]] [[dg-security]] [[dg-selfhosted]]",
             },
           ],
         },
@@ -638,30 +436,26 @@ export const deepgram: Brief = {
           type: "fig",
           panels: [
             {
-              cap: "Pages on the website",
-              sub: "Counted from each company's own sitemap on Aug 27.",
+              cap: "Search terms each site ranks for",
+              sub: "Similarweb, July 2026. Free and paid combined.",
               chart: {
                 kind: "rows",
                 fmt: "num",
                 labelAll: true,
                 rows: [
-                  ["Soniox", 19868, "other"],
-                  ["Deepgram", 1342, "primary"],
-                  ["Cartesia", 232, "other"],
-                  ["Sprag", 72, "us"],
+                  ["Deepgram", 5100, "primary"],
+                  ["Sprag", 59, "us"],
                 ],
-                aria:
-                  "Pages listed in each sitemap: Soniox 19,868, Deepgram 1,342, Cartesia 232, Sprag 72.",
+                aria: "Search terms each site ranks for: Deepgram 5,100, Sprag 59.",
               },
               legend: [
                 { series: "primary", label: "Deepgram" },
                 { series: "us", label: "Sprag" },
-                { series: "other", label: "Others" },
               ],
             },
             {
               cap: "Pages aimed at a competitor's name",
-              sub: "The page someone lands on when they search for an alternative.",
+              sub: "Counted from each company's own sitemap on Aug 30.",
               chart: {
                 kind: "rows",
                 fmt: "num",
@@ -669,11 +463,10 @@ export const deepgram: Brief = {
                 rows: [
                   ["Soniox", 489, "other"],
                   ["Cartesia", 30, "other"],
-                  ["Deepgram", 11, "primary"],
+                  ["Deepgram", 14, "primary"],
                   ["Sprag", 0, "us"],
                 ],
-                aria:
-                  "Comparison pages published: Soniox 489, Cartesia 30, Deepgram 11, Sprag 0.",
+                aria: "Comparison pages published: Soniox 489, Cartesia 30, Deepgram 14, Sprag 0.",
               },
               legend: [
                 { series: "primary", label: "Deepgram" },
@@ -690,43 +483,57 @@ export const deepgram: Brief = {
           items: [
             {
               claim:
-                "Deepgram publishes 11 comparison pages, and two of them are written to be quoted rather than read.",
+                "Deepgram rebuilt every one of its 57 language pages on a single day, and published fifteen guides in four days.",
               body: [
                 {
                   type: "p",
-                  text: "Deepgram has a page for AssemblyAI, Amazon, Microsoft, Speechmatics, OpenAI, Google and ElevenLabs, plus two guides titled Voice AI Providers Compared and Deepgram vs OpenAI vs Google: accuracy, latency, price compared. Those two are written as neutral roundups rather than as sales pages, which is the format that answer engines quote. Sprag is not named on any of them. [[dg-compare]] [[dg-roundup]]",
+                  text: "Every page of the form deepgram.com/product/speech-to-text/japanese carries a last-modified date of Aug 28, all 57 of them, along with the speech-to-text, text-to-speech and audio intelligence product pages. [[dg-sitemap]] Between Aug 25 and Aug 28 fifteen guide pages were published or rewritten, including one on reducing latency in speech-to-text APIs, one on a speech-to-text pricing breakdown, one on how to evaluate voice quality claims from text-to-speech providers, and a rewrite of the roundup titled Voice AI Providers Compared. [[dg-sitemap]] [[dg-roundup]] The site grew from 1,342 pages on Aug 27 to 1,348 on Aug 30. [[dg-sitemap]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** Sprag is small enough that Deepgram has not noticed it, which is the best moment to publish the comparison rather than the worst. Nobody will retaliate for a page nobody at Deepgram is tracking yet. [[dg-compare]]",
+                  text: "**Why it matters for Sprag:** Deepgram is defending its search position in the same week its traffic fell 9.3%. The pages it chose are the ones a buyer reads while comparing vendors, which is the shelf Sprag is completely absent from. Sprag's 30 languages plus 22 Chinese dialects is 52 pages generated from a catalogue Sprag already publishes as a machine-readable file. [[sw-dg]] [[sprag-models]]",
                 },
               ],
             },
             {
               claim:
-                "Deepgram built a search moat out of two things Sprag could copy in a week: one page per language, and a glossary.",
+                "Deepgram has started defending against cheap newcomers, not just incumbents, and Sprag is still not named.",
               body: [
                 {
                   type: "p",
-                  text: "Deepgram runs 52 pages of the form deepgram.com/product/speech-to-text/gujarati, one per language, and 304 glossary entries explaining terms in the category. Together those are 356 of its 1,342 pages and they capture the long tail of people searching for transcription in a specific language. Soniox does the same thing at far larger scale, with 3,601 pages covering translation between individual language pairs. Sprag has one page listing all 30 languages in a table. [[dg-sitemap]] [[soniox-compare]] [[sprag-langs]]",
+                  text: "Deepgram runs 14 comparison pages. Nine sit under /compare and target AssemblyAI, Amazon, Microsoft, Speechmatics, OpenAI, Google and ElevenLabs. One targets Nuance. Four more sit under /learn and target Whisper, ElevenLabs transcription, AssemblyAI and Gladia. [[dg-compare]] [[dg-gladia]] Gladia is a low-priced European transcription API rather than an incumbent, and Similarweb ranks it as the fourth most similar site to Deepgram by audience overlap, ahead of Cartesia. [[sw-dg]] There is still no page for Cartesia, none for Soniox and none for Sprag. [[dg-compare]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** Sprag's 30 languages plus 22 Chinese dialects could become 52 pages generated from the model catalogue it already publishes as machine-readable files. That is a build, not a writing project, and it is the cheapest way to more than double the site. [[sprag-models]]",
+                  text: "**Why it matters for Sprag:** last week's read was that Deepgram only defends against incumbents. The Gladia page shows it will answer a cheap newcomer when one gets large enough to notice. Sprag is below that line today, which makes this the cheapest moment to publish the comparison page, not the most dangerous. [[dg-compare]]",
                 },
               ],
             },
             {
               claim:
-                "Deepgram is the only company in this group that has done the work to be quoted by AI assistants, and Sprag is the second.",
+                "Deepgram's distribution is 45 partner pages, and it already owns the two marketplaces Sprag was told to join.",
               body: [
                 {
                   type: "p",
-                  text: "Deepgram's documentation offers a markdown version of every page, an index at /llms.txt, and a hosted connector for coding assistants at developers.deepgram.com/_mcp/server. Sprag does the same: a markdown twin of every page, four index files, and a robots file that allows the assistant crawlers while blocking the training crawlers. Cartesia and Soniox do neither. [[dg-llms]] [[sprag-llms]] [[sprag-robots]]",
+                  text: "Deepgram publishes a page for each of 45 partners. They include Twilio, Amazon Web Services, Google Cloud, Cloudflare, Cisco, IBM, Accenture, Cognizant, Vonage, Five9, Genesys, 8x8, Carahsoft, Recall.ai, Daily, Stream, Kore, Cognigy, Lindy, Voximplant, and both LiveKit and Vapi. [[dg-partners]] Every Deepgram job advertisement repeats the same claim, that more than 200,000 developers and 1,300 or more organizations build on it, naming Twilio, Cloudflare, Sierra, Decagon, Vapi, Daily, Cresta, Granola and Jack in the Box. [[dg-jobs]] Sprag has two integration pages, both routed through generic OpenAI compatibility rather than a native plugin. [[sprag-integrations]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** this is the one distribution channel where Sprag is already at parity with a company 100 times its size. The gap is that Deepgram has 1,342 pages of material for an assistant to quote and Sprag has 72. Adding the comparison page and the language pages feeds the same channel twice. [[sprag-llms]]",
+                  text: "**Why it matters for Sprag:** last week's action was to get listed inside LiveKit and Vapi. Both are already formal Deepgram partners, so the plugin is table stakes rather than an advantage. The opening is that LiveKit added provider fallback to its agents library on Aug 30, which is a slot for a cheap second provider rather than a fight for the default. [[gh-livekit]]",
+                },
+              ],
+            },
+            {
+              claim:
+                "Sprag ranks for 59 search terms and not one of them is a Sprag product.",
+              body: [
+                {
+                  type: "p",
+                  text: "Similarweb lists Sprag's top five terms as pixelrag, sharpa, llama parse, lightrag and spara. None is a Sprag model, a Sprag product or the word sprag. Of Sprag's 59 terms, 98.5% are paid rather than free. Its top three channels are display advertising, direct visits and email, so free Google results do not appear at all. [[sw-sprag]] Deepgram ranks for 5,100 terms, 77% of them free, and its own brand terms cost between $5.07 and $22.99 a click to buy. [[sw-dg]]",
+                },
+                {
+                  type: "why",
+                  text: "**Why it matters for Sprag:** Sprag is paying for every visitor it gets and getting them on other companies' words. The fix is not a bigger budget, it is the first twenty pages that answer a question someone actually types. Start with the comparison page and the per-language pages. [[sw-sprag]]",
                 },
               ],
             },
@@ -738,29 +545,29 @@ export const deepgram: Brief = {
           style: "do",
           items: [
             {
-              claim: "Write the four comparison pages nobody else has written about Sprag.",
+              claim: "Write four comparison pages, and be accurate about where Sprag loses.",
               body: [
                 {
                   type: "p",
-                  text: "Sprag vs Deepgram, Sprag vs Soniox, Sprag vs Cartesia and Sprag vs AssemblyAI. Sprag already ran the benchmark and already publishes the methodology, which almost nobody in this category does. Put both of Deepgram's prices on the Deepgram page with the Sep 12 date. Be accurate about the places Sprag loses, because Sprag's own benchmark data shows Cartesia faster on text-to-speech, and a page that admits that will be trusted on everything else. [[sprag-benchmarks]] [[dg-pricing]]",
+                  text: "Sprag versus Deepgram, Soniox, Cartesia and AssemblyAI. Sprag has already run the benchmark and published the method, which almost nobody in this category does. Put all three Deepgram prices on the Deepgram page with the Sep 12 date and the training-discount line. Say plainly that Sprag's own data shows Cartesia faster on text-to-speech, because a page that concedes one point is believed on the rest. [[sprag-benchmarks]] [[dg-pricing]] [[g2-diego]]",
                 },
               ],
             },
             {
-              claim: "Turn the Google ads back on, narrowed to the words Deepgram does not sell against.",
+              claim: "Write one Sprag adapter and send it to the three projects that just built a provider interface.",
               body: [
                 {
                   type: "p",
-                  text: "Sprag has run 25 creatives since April in short bursts that stop after a week or two, and nothing was running as of Aug 27. Deepgram has 173 running and 347 on record, so a broad transcription buy is unwinnable. The words Deepgram has no landing page for are audio captioning, describe an audio clip, speech to speech API, voice cloning API and multimodal inference. Sprag has a product page for each of those and Deepgram has none. Run those continuously on a small budget rather than restarting a broad campaign every month. [[gads-sprag]] [[gads-dg]] [[dg-sitemap]]",
+                  text: "Vellum added per-customer speech-provider selection on Aug 26, litellm-rs merged a native Deepgram provider with a registry on Aug 30, and the STT-evals benchmark carries seven vendor adapters with Sprag absent. [[gh-vellum]] [[gh-litellm]] [[gh-sttevals-registry]] All three route in the OpenAI request format Sprag already serves, so one adapter fits all three with small changes. LiveKit also merged speech-provider fallback on Aug 30, which is a slot for a cheap second provider rather than a fight for the default. Aim there first, because a fallback provider gets measured on real traffic at no cost to the buyer. [[gh-livekit]]",
                 },
               ],
             },
             {
-              claim: "Get listed inside LiveKit, Vapi, Pipecat, OpenRouter and Hugging Face.",
+              claim: "Make one page per language, 52 of them, generated from the model list Sprag already publishes.",
               body: [
                 {
                   type: "p",
-                  text: "Pipecat shipped Deepgram Flux on SageMaker support in version 1.8.0 this week, and its release post drew reactions from Speechmatics, LiveKit, Ufonia, Lumeris and SquadStack. Deepgram sponsors VapiCon in San Francisco in November alongside AssemblyAI and Speechmatics. Sprag has two integration pages built on generic OpenAI compatibility rather than a native plugin, and appears in none of these listings. A native plugin puts Sprag in the dropdown at the moment someone picks a provider. [[li-pipecat]] [[li-vapicon]] [[sprag-integrations]]",
+                  text: "Somebody who needs Thai transcription types Thai speech to text, not Sprag. Today that search has nowhere on sprag.ai to land, because the 30 languages and 22 Chinese dialects sit together in one table on one page. Give each its own page carrying the price, the language code, a sample request, and the honest note about which languages Sprag can hear but cannot speak back. Deepgram has 57 of these and rebuilt every one on Aug 28. Sprag already serves the language list as a file a script can read, so this is a day of engineering rather than 52 pieces of writing. With the four comparison pages the site goes from 72 to about 128, and all 56 new pages are built to be found rather than to be read by someone who already arrived. [[sprag-models]] [[sprag-langs]] [[dg-sitemap]] [[sprag-sitemap]]",
                 },
               ],
             },
@@ -779,20 +586,23 @@ export const deepgram: Brief = {
                 { text: "Sprag", w: "16%", n: true },
               ],
               rows: [
-                ["Guides and articles", "817", "7"],
+                ["Guides and articles", "819", "8"],
                 ["Glossary entries", "304", "0"],
-                ["One page per language", "52", "0"],
-                ["Industry and use-case pages", "17", "0"],
-                ["Comparison pages", "11", "0"],
-                ["Customer stories", "31", "1"],
-                ["Product pages", "6", "8"],
-                ["Documentation", "separate site", "44"],
-                ["Total in sitemap", "1,342", "72"],
+                ["One page per language", "57", "0"],
+                ["Partner pages", "45", "0"],
+                ["Customer stories", "35", "1"],
+                ["Comparison pages", "14", "0"],
+                ["Projects built by developers", "14", "0"],
+                ["Industry and use-case pages", "11", "0"],
+                ["Webinars", "8", "0"],
+                ["Product pages", "62", "9"],
+                ["Documentation", "separate site", "38"],
+                ["Total in sitemap", "1,348", "72"],
               ],
             },
             {
               type: "p",
-              text: "The shape matters more than the total. Deepgram's pages are almost all built to catch a search: a language, a term, a competitor's name, an industry. Sprag's 72 are almost all product and documentation, which only catch people who already know the name Sprag. That is the difference between a site that finds customers and a site that serves them. [[dg-sitemap]] [[sprag-sitemap]]",
+              text: "The shape matters more than the total. Of Deepgram's 1,348 pages, roughly 1,250 exist to catch a search: a language, a term, a competitor's name, an industry, a partner. Of Sprag's 72, 47 are documentation and product pages, which only catch people who already know the name. That is the difference between a site that finds customers and a site that serves them. [[dg-sitemap]] [[sprag-sitemap]]",
             },
             { type: "h3", text: "Deepgram's comparison pages, in full" },
             {
@@ -801,7 +611,11 @@ export const deepgram: Brief = {
               rows: [
                 ["[assemblyai-vs-deepgram](https://deepgram.com/compare/assemblyai-vs-deepgram)", "AssemblyAI"],
                 ["[assemblyai-vs-deepgram-alternative](https://deepgram.com/compare/assemblyai-vs-deepgram-alternative)", "AssemblyAI"],
+                ["[learn/assemblyai-vs-deepgram](https://deepgram.com/learn/assemblyai-vs-deepgram)", "AssemblyAI"],
                 ["[elevenlabs-vs-deepgram](https://deepgram.com/compare/elevenlabs-vs-deepgram)", "ElevenLabs"],
+                ["[learn/elevenlabs-transcription-vs-deepgram](https://deepgram.com/learn/elevenlabs-transcription-vs-deepgram)", "ElevenLabs"],
+                ["[learn/gladia-vs-deepgram](https://deepgram.com/learn/gladia-vs-deepgram)", "Gladia, the newcomer"],
+                ["[learn/whisper-vs-deepgram](https://deepgram.com/learn/whisper-vs-deepgram)", "Whisper"],
                 ["[openai-vs-deepgram-alternative](https://deepgram.com/compare/openai-vs-deepgram-alternative)", "OpenAI"],
                 ["[google-vs-deepgram-alternative](https://deepgram.com/compare/google-vs-deepgram-alternative)", "Google"],
                 ["[amazon-vs-deepgram](https://deepgram.com/compare/amazon-vs-deepgram)", "Amazon"],
@@ -809,24 +623,42 @@ export const deepgram: Brief = {
                 ["[microsoft-vs-deepgram-alternative](https://deepgram.com/compare/microsoft-vs-deepgram-alternative)", "Microsoft"],
                 ["[speechmatics-vs-deepgram-alternative](https://deepgram.com/compare/speechmatics-vs-deepgram-alternative)", "Speechmatics"],
                 ["[nuance-vs-deepgram](https://deepgram.com/nuance-vs-deepgram)", "Nuance"],
-                ["[voice-ai-providers-compared](https://deepgram.com/learn/voice-ai-providers-compared)", "Everyone, roundup format"],
               ],
             },
             {
               type: "p",
-              text: "Note who is missing. There is no page for Cartesia, none for Soniox, and none for Sprag. Deepgram is defending against the incumbents it took share from rather than against the cheap new entrants, which is the standard mistake a company makes after a large funding round. That gap will close once one of them gets big enough to notice. [[dg-compare]]",
+              text: "Note who is still missing. There is no page for Cartesia, none for Soniox and none for Sprag, even though Similarweb puts Cartesia fifth on audience overlap with Deepgram. The roundup titled Voice AI Providers Compared was rewritten on Aug 26 and is the format answer engines quote, because it reads as a neutral survey rather than a sales page. Sprag appears in none of it. [[dg-compare]] [[dg-roundup]] [[sw-dg]]",
             },
-            { type: "h3", text: "The cheapest way to more than double the site" },
+            { type: "h3", text: "Where Deepgram's traffic actually comes from" },
+            {
+              type: "table",
+              headers: [
+                { text: "Measure" },
+                { text: "Deepgram", w: "26%" },
+                { text: "Sprag", w: "26%" },
+              ],
+              rows: [
+                ["Visits, July", "706,900", "below the reporting threshold"],
+                ["Change on the month", "down 9.3%", "down 11.3%"],
+                ["Global rank", "63,429, from 57,900 three months ago", "7,313,039"],
+                ["Pages viewed per visit", "4.22", "1.53"],
+                ["Time on site", "2 min 05 s", "2 min 54 s"],
+                ["Visitors who leave from the first page", "37.3%", "52.5%"],
+                ["Largest country", "United States, 30.6%", "United States, 100%"],
+                ["Fastest-growing country", "India, up 18.1%", "n/a"],
+                ["Search terms", "5,100", "59"],
+                ["Free share of those terms", "77%", "1.5%"],
+              ],
+            },
             {
               type: "p",
-              text: "Sprag publishes its model list as a machine-readable file that is regenerated from the live API. Thirty languages plus 22 Chinese dialects is 52 pages, each with the price, the language code, a sample request and the honest note about which languages Sprag can transcribe but not speak. Deepgram has 52 such pages and Soniox has 3,601. This is a scripted build against data Sprag already has, and it takes the site from 72 pages to 124. [[sprag-models]] [[dg-sitemap]]",
+              text: "Two numbers in that table are worth more than the rest. Deepgram gets 4.22 pages a visit and Sprag gets 1.53, which is the difference between a site people explore and a site people bounce off. India is Deepgram's fastest-growing market at 18.1% growth, and India is also where 148 of its 481 G2 reviews come from, which is a price-sensitive market Sprag serves at a quarter of the rate with no sales team required. [[sw-dg]] [[sw-sprag]] [[g2-deepgram]]",
             },
-            { type: "h3", text: "Where the ranking is coming from" },
             {
               type: "p",
-              text: "The usual traffic and paid-keyword tools were not available this week. Similarweb returned a 403, SpyFu returned a 404 on its public endpoint, and Apify hit its monthly limit after the social pulls completed. Everything in this section is counted directly from public sitemaps and from Google's own ad transparency records rather than estimated by a third party, so the numbers are exact but narrower than usual. Traffic and keyword estimates return next week. [[gads-dg]] [[dg-sitemap]]",
+              text: "Similarweb estimates Deepgram at $15M to $25M of annual revenue with 51 to 200 employees. Treat that as a range rather than a number, because outside tools infer revenue from headcount and traffic. It is useful only as a scale check: a company with 93 open jobs and a $130M funding round is spending well ahead of that revenue. [[sw-dg]] [[dg-jobs]]",
             },
-          ],
+                      ],
         },
       ],
     },
@@ -838,48 +670,38 @@ export const deepgram: Brief = {
           type: "fig",
           panels: [
             {
-              cap: "Google ad creatives still running on Aug 27",
-              sub: "Counted from Google's own advertiser records.",
+              cap: "Why people are unhappy with Deepgram",
+              sub: "60 complaint mentions sorted by G2 across 481 reviews, checked Aug 30.",
+              chart: {
+                kind: "share",
+                rows: [
+                  ["Price", 45, "neg"],
+                  ["Platform gap, languages", 40, "neg"],
+                  ["Accuracy", 15, "neu"],
+                ],
+                aria:
+                  "Deepgram complaint mix on G2: price 45%, language coverage 40%, accuracy 15%, from 60 sorted mentions.",
+              },
+            },
+            {
+              cap: "Google ad creatives on record for the domain",
+              sub: "Google's own advertiser records, checked Aug 30.",
               chart: {
                 kind: "rows",
                 fmt: "num",
                 labelAll: true,
                 rows: [
-                  ["Deepgram", 173, "primary"],
-                  ["AssemblyAI", 46, "other"],
-                  ["Cartesia", 26, "other"],
-                  ["Sprag", 3, "us"],
-                  ["Soniox", 0, "other"],
+                  ["Deepgram", 200, "primary"],
+                  ["Sprag, in the Sprag AI account", 32, "us"],
+                  ["Sprag, for the domain", 16, "us"],
                 ],
                 aria:
-                  "Google ad creatives last shown on or after Aug 25: Deepgram 173, AssemblyAI 46, Cartesia 26, Sprag 3, Soniox 0.",
+                  "Google ad creatives on record: Deepgram about 200, Sprag 32 inside the Sprag AI advertiser account and 16 for the domain.",
               },
               legend: [
                 { series: "primary", label: "Deepgram" },
                 { series: "us", label: "Sprag" },
-                { series: "other", label: "Others" },
               ],
-            },
-            {
-              cap: "New Deepgram ad creatives, by month first shown",
-              sub: "The March spike follows the funding round announced Jan 13.",
-              chart: {
-                kind: "columns",
-                fmt: "num",
-                label: [0, 7],
-                rows: [
-                  ["Jan", 5],
-                  ["Feb", 4],
-                  ["Mar", 79],
-                  ["Apr", 21],
-                  ["May", 59],
-                  ["Jun", 7],
-                  ["Jul", 3],
-                  ["Aug", 33],
-                ],
-                aria:
-                  "New Deepgram Google ad creatives by month in 2026: January 5, February 4, March 79, April 21, May 59, June 7, July 3, August 33.",
-              },
             },
           ],
         },
@@ -890,57 +712,57 @@ export const deepgram: Brief = {
           items: [
             {
               claim:
-                "Deepgram's community manager spends her days replying to strangers who mention Deepgram, and offering them the startup programme within hours.",
+                "Sprag is advertising again, and one live ad sells a free offer whose only published date runs out on Aug 31.",
               body: [
                 {
                   type: "p",
-                  text: "In one week, Naomi Carrigan replied to four separate accounts that had mentioned building on Deepgram. To one: hello, I would love to hear more about how inpublic is leveraging deepgram, I may have a community programme to help you. To another: yes, we have a startup programme for this exact purpose, it allows us to support you as you continue to grow with deepgram. Two more got the same message. Deepgram also gives every new account $200 of credit with no card, which one user described publicly as $200 free AI credits almost nobody in this niche is posting. [[x-naomi]] [[x-naomi-2]] [[dg-pricing]]",
+                  text: "Google's advertiser records show 16 ads for sprag.ai and 32 inside the verified Sprag AI account. Two of the live creatives read Hosted Qwen3.8, for Free and Browse Sprag models, pick a model and run it live. [[gads-sprag]] The blog post behind the first one is headed Qwen3.8-27B is free on Sprag through the end of August, and its text says at no cost through at least the end of August, with no later date anywhere on the page. [[sprag-free]] Last week's brief recorded nothing running, so this is a restart rather than a continuation. Deepgram's records show about 200 ads for its domain. [[gads-dg]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** this is a one-person motion with no budget behind it, and it is how Deepgram is capturing the exact builders Sprag needs. Sprag can copy it this week. The searches are already written in section 7. [[x-naomi]]",
+                  text: "**Why it matters for Sprag:** the words at least mean the offer may well continue, but a visitor arriving on Sep 1 cannot tell, and Sprag is paying for that visit. Publish the new end date, or change the creative. Either takes minutes and both are cheaper than the clicks. [[gads-sprag]] [[sprag-free]]",
                 },
               ],
             },
             {
               claim:
-                "An accuracy chart published on Aug 26 put Deepgram last, and it is the only real criticism of Deepgram on X this week.",
+                "Price and language coverage are 85% of Deepgram's counted complaints, and nobody complains about speed.",
               body: [
                 {
                   type: "p",
-                  text: "Google launched Gemini 3.5 Transcribe on Aug 26. On the FLEURS multilingual test, the chart that circulated showed Gemini 3.5 Transcribe Live at 5.50% word error rate, Google Chirp 3 at 7.32%, OpenAI at 8.97%, ElevenLabs Scribe v2 at 9.70% and Deepgram Nova-3 at 15.77%, last place by a wide margin. Replies included deepgram sitting at 15.77, that's not a close race anymore and deepgram fans have a rough chart to wake up to today. Deepgram's own site claims 5.26% for general English, so the gap is multilingual audio rather than English. Fourteen of the 90 X posts this week are this story. [[x-fleurs]] [[x-fleurs-2]] [[aa-stt]] [[dg-benchmarks]]",
+                  text: "G2 sorts 481 Deepgram reviews and publishes the five most-mentioned complaints with counts: limited language support 16, pricing issues 14, expensive 13, inaccuracy issues 9, and limited languages 8. That is 60 mentions. Grouping them gives price 27, language coverage 24 and accuracy 9. The five most-mentioned compliments are accuracy 38, speed 35, ease of use 34, quality 33 and real-time transcription 28. [[g2-proscons]] Deepgram's overall score is 4.6 out of 5, with 365 five-star reviews, 9 three-star, one two-star and no one-star. [[g2-deepgram]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** Deepgram is publicly weak on multilingual accuracy in the same week it shipped eight new languages, which is the gap between breadth and quality. Sprag's own customer says exactly this: most models like Deepgram and ElevenLabs Scribe land around 70% on hard multilingual evals and Sprag reached 90%. Put that quote next to this chart. [[sprag-issen]]",
+                  text: "**Why it matters for Sprag:** the two things people dislike are the two things Sprag can answer today, and the thing they praise most is speed, which Sprag should stop fighting on. Lead every message with cost and with the specific language, never with milliseconds. [[g2-proscons]]",
                 },
               ],
             },
             {
               claim:
-                "A competitor launched the same model Sprag serves, said it beats Deepgram, and priced it at half. Sprag said nothing.",
+                "Last week's brief counted a Deepgram employee as an unhappy customer. He is a Deepgram developer advocate.",
               body: [
                 {
                   type: "p",
-                  text: "On Aug 26, Autoloops announced Qwen3-ASR-1.7B on its platform with the line: it beats Deepgram Nova-3 in accuracy, multilingual switching, while being half priced. It's the time for open weight voice models. Qwen3-ASR-1.7B is the model Sprag serves as Rhythm, confirmed by the pipeline records in Sprag's own benchmark data. Sprag charges $0.075 an hour for it and has published a full methodology. Nobody from Sprag replied. [[x-autoloops]] [[sprag-benchmarks]]",
+                  text: "Last week's brief listed a post reading I burned through $50 of Deepgram API credits last night as a billing complaint worth replying to, and a second post from the same account as a customer signal. That account belongs to Ed Charbeneau, whose Deepgram GitHub profile lists their company as Deepgram, their role as Developer Advocate for Deepgram Partners, and the same handle as their X account. [[gh-edcharbeneau]] Of the 14 issues opened by real people on Deepgram's public repositories since Aug 10, all 14 were opened by Deepgram staff. [[gh-dgissues]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** somebody else is making Sprag's argument, about Sprag's model, in public, and collecting the attention for it. Sprag has better numbers and a real customer story. Reply to that post with the benchmark link. [[x-autoloops]]",
+                  text: "**Why it matters for Sprag:** do not write to that account, and treat brand-name search results as unverified until the author is checked. It also says something useful: outside developers are not filing issues on Deepgram's repositories at all, which means the community conversation is happening in Discord where Sprag cannot see it. [[gh-dgissues]]",
                 },
               ],
             },
             {
               claim:
-                "Deepgram is running 173 Google ads today and Sprag is running none, because Sprag's last four stopped on Aug 26.",
+                "Somebody else launched Sprag's exact argument on Hacker News on Aug 26 and the post was killed.",
               body: [
                 {
                   type: "p",
-                  text: "Google's advertiser records list 347 ad creatives for Deepgram, Inc. going back to Oct 2023, of which 173 were still shown on or after Aug 25 and 33 first appeared this month. The split is 247 text ads, 75 image and 25 video. Sprag has 25 creatives on record, all since April, run in short bursts of three or four that last five to sixteen days. The most recent burst ran Aug 21 to Aug 26. As of today Sprag has three creatives with a recent last-shown date and nothing new. [[gads-dg]] [[gads-sprag]]",
+                  text: "A comment posted on Aug 26 reads: Open Source Voice models are here. They are as good as proprietary ones, just no one put in the effort in serving them. We did and it beats deepgram on ALL benchmarks. You can try your own. We made Qwen 10x faster, and 10x more concurrent. Its better in wer in english. Wayy better in multilingual. The post is marked dead, which on Hacker News means it was flagged or killed and is hidden by default. [[hn-qwen]] That is Sprag's positioning, Sprag's model family and Sprag's competitor, written by somebody else.",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** stopping and starting teaches Google nothing and wastes the learning period every time. Either run continuously on a small number of narrow terms or do not run at all and put the money into the comparison pages. [[gads-sprag]]",
+                  text: "**Why it matters for Sprag:** the argument works and the delivery does not. A claim to beat Deepgram on ALL benchmarks with no method attached is what gets a post killed. Sprag has published its methodology, conceded where it loses, and has a named customer with numbers, which is the version of this post that survives. Write it. [[sprag-benchmarks]] [[sprag-issen]]",
                 },
               ],
             },
@@ -952,29 +774,20 @@ export const deepgram: Brief = {
           style: "do",
           items: [
             {
-              claim: "Work the lead table in the Full analysis below, starting with the nine companies.",
+              claim: "Date the free offer today, then narrow the buy to the words Deepgram has no page for.",
               body: [
                 {
                   type: "p",
-                  text: "Vokalith AI, CallKaro.AI, Divinci AI, Speko, NF Tech, airtxt.ai, SubtitleNEXT, 2X Solutions AI and Four-Leaf AI all described a production Deepgram workload in public in the last seven days. Each row has the evidence and the angle. Open with the number that applies to their workload, not with a product tour. Four of them already route across multiple providers, which means switching costs them nothing. [[x-deepgram]] [[li-deepgram]]",
+                  text: "Deepgram has about 200 ads on record and 1,348 pages, so a broad transcription buy is unwinnable. It has no landing page for audio captioning, for describing an audio clip, for speech-to-speech, for voice cloning or for a model that also reads images and video. Sprag has a product page for each. Buy those five phrases on a small continuous budget rather than restarting a broad campaign every few weeks, because stopping and starting throws away the learning period each time. [[gads-dg]] [[gads-sprag]] [[dg-sitemap]]",
                 },
               ],
             },
             {
-              claim: "Put one person on replying to Deepgram mentions, the same way Deepgram does.",
+              claim: "Write the Hacker News post the flagged one should have been.",
               body: [
                 {
                   type: "p",
-                  text: "Deepgram's version is one community manager, no budget, and a $200 credit to offer. Sprag's version has a stronger offer: Qwen3.8-27B is free on Sprag through the end of August and the transcription price is a quarter of Deepgram's. Reply from a named person with an engineering title rather than a brand account. The searches to watch are listed in section 7. [[x-naomi]] [[sprag-free]]",
-                },
-              ],
-            },
-            {
-              claim: "Answer the multilingual accuracy chart while it is still being shared.",
-              body: [
-                {
-                  type: "p",
-                  text: "Fourteen posts this week are about Deepgram finishing last on a multilingual accuracy chart. Sprag has a named customer on the record saying Deepgram and ElevenLabs Scribe land around 70% on hard multilingual evals while Sprag reached 90% at under 300ms. That is the strongest single asset Sprag owns and it is currently sitting in a blog post nobody has been pointed to. [[x-fleurs]] [[sprag-issen]]",
+                  text: "The audience is there and the argument lands, as the Trippi thread on Aug 28 and the Gemini transcription thread the same day both show. The version that survives leads with the method, publishes the losses, and names the customer. Sprag already has all three: a published benchmark harness, a text-to-speech result where Cartesia beats it, and ISSEN on the record at 90% against about 70% on hard multilingual audio. Post it as an engineer, not as a brand. [[hn-qwen]] [[hn-trippi]] [[sprag-benchmarks]] [[sprag-issen]]",
                 },
               ],
             },
@@ -984,55 +797,108 @@ export const deepgram: Brief = {
           type: "toggle",
           claim: "Full analysis",
           body: [
-            { type: "h3", text: "The names are at the top of this brief" },
+            { type: "h3", text: "The objection mix, and what it is counted from" },
+            {
+              type: "table",
+              headers: [
+                { text: "Bucket", w: "18%" },
+                { text: "Mentions", w: "10%", n: true },
+                { text: "Share", w: "9%", n: true },
+                { text: "What it sounds like, and what Sprag does about it" },
+              ],
+              rows: [
+                [
+                  "Price",
+                  "27",
+                  "45%",
+                  "Pricing can go up quickly when handling large volumes. The cost can be a factor as the scale goes up. Sprag answers this at $0.075 an hour with diarization included and no charge to opt out of training. [[g2-proscons]] [[sprag-pricing]]",
+                ],
+                [
+                  "Platform gap, languages",
+                  "24",
+                  "40%",
+                  "Deepgram does not have the language support of some other providers. Expand the specialized models to additional languages beyond English. Sprag cannot win on count. It can win on named languages and on code-switched audio. [[g2-proscons]] [[sprag-issen]]",
+                ],
+                [
+                  "Accuracy",
+                  "9",
+                  "15%",
+                  "Accuracy drops with heavy background noise or unclear speech. Speaker labels overlap on multi-speaker audio. This is a product answer, not a marketing one, and it is the one ISSEN measured. [[g2-proscons]] [[sprag-issen]]",
+                ],
+              ],
+            },
             {
               type: "p",
-              text: "The five people to contact are in the table at the top, with the evidence for each. This section covers the channel rather than the names: how Deepgram reaches those people, and what Sprag would have to do to reach them first. [[x-deepgram]] [[li-deepgram]]",
+              text: "Sixty mentions were sorted, and they come from G2's own tally of the five most-mentioned complaints across 481 reviews rather than from our reading of each review. There is no move to report since last week, because last week's brief counted themes across 90 X posts and this week's counts complaint mentions on G2. The two corpora are not comparable and pretending otherwise would invent a trend. This is the first G2 baseline, and next week's number should be measured against it. [[g2-proscons]]",
+            },
+            {
+              type: "p",
+              text: "Three buckets do not appear in G2's top five and that is a limit of the tally rather than evidence they are empty. Individual reviews in the window raise privacy, in the Aug 28 review about the training discount, workflow, in the Aug 20 review about speaker identification, and documentation, in a May review about sparse guidance on advanced configurations. None of them made the counted five. Read the share as the shape of the loudest complaints, not as the whole complaint set. [[g2-diego]] [[g2-proscons]]",
+            },
+            { type: "h3", text: "Durability of the complaints" },
+            {
+              type: "table",
+              headers: [
+                { text: "Type", w: "22%" },
+                { text: "What was found this week" },
+              ],
+              rows: [
+                [
+                  "Paying and leaving",
+                  "Nothing found this week. No review in the window uses the words cancel, refund or moving to another provider. Last week's brief found one such G2 review dated March. [[g2-deepgram]]",
+                ],
+                [
+                  "Trialling and unimpressed",
+                  "One repository dropped a Deepgram voice on quality: remove Angus (Aura-1) from Deepgram catalogue after quality rejection and standardize on Aura-2. They kept Deepgram and changed voices. [[gh-aura1]]",
+                ],
+                [
+                  "Venting",
+                  "The nine accuracy mentions on G2, all inside four-star and five-star reviews. These people are not leaving. Answer them only if it is quick. [[g2-proscons]]",
+                ],
+                [
+                  "Already gone",
+                  "Nothing found. No public post this week names a provider someone moved to from Deepgram. This is the honest read on retention and it is not in Sprag's favour.",
+                ],
+              ],
+            },
+            {
+              type: "p",
+              text: "Say the limit of this plainly. Complaint volume shows that customers are available and why they are unhappy. It does not show that Deepgram is losing them, and this week there is no public evidence that anyone left. Deepgram sits at 4.6 out of 5 with no one-star reviews across 481 of them, which is the profile of a product people complain about and keep paying for. Whether a customer Sprag wins stays is Sprag's product's job, not this report's. [[g2-deepgram]]",
             },
             { type: "h3", text: "The ad footprint" },
             {
               type: "table",
               headers: [
                 { text: "Company" },
-                { text: "Creatives on record", w: "16%", n: true },
-                { text: "Still running Aug 27", w: "16%", n: true },
-                { text: "New in August", w: "13%", n: true },
-                { text: "Running since", w: "13%", nw: true },
+                { text: "Ads on record", w: "18%", n: true },
+                { text: "What is running", w: "34%" },
               ],
               rows: [
-                ["Deepgram", "347", "173", "33", "Oct 2023"],
-                ["AssemblyAI", "153", "46", "1", "2024"],
-                ["Cartesia", "28", "26", "8", "2025"],
-                ["Sprag", "25", "3", "4", "Apr 2026"],
-                ["Soniox", "21", "0", "0", "stopped"],
+                ["Deepgram", "about 200", "Text, image and video creatives under DEEPGRAM, INC., verified"],
+                ["Sprag", "16 for the domain, 32 in the account", "Hosted Qwen3.8, for Free. Browse Sprag models, pick a model and run it live"],
               ],
             },
             {
               type: "p",
-              text: "ElevenLabs is not in that table because its record is different in kind: 400 or more creatives spread across four advertiser accounts, three of which are registered to individual people rather than to Eleven Labs Inc. That is an affiliate arrangement, not a company ad account, and it is not a model Sprag should copy. [[gads-elevenlabs]]",
+              text: "Two cautions on those numbers. Google's transparency centre reports an approximate figure for a domain rather than an exact creative count, and it says this domain includes results for multiple advertiser accounts, so the domain figure and the account figure differ for both companies. Last week's brief counted 347 creatives for Deepgram by walking the account, and this week's about 200 is Google's own domain-level estimate. Treat the gap as a difference in counting method, not as Deepgram halving its advertising. [[gads-dg]] [[gads-sprag]]",
+            },
+            { type: "h3", text: "Where the conversation is happening" },
+            {
+              type: "p",
+              text: "Similarweb attributes 55% of Deepgram's social traffic to YouTube, 19% to LinkedIn, 16% to Facebook and 10% to Reddit. [[sw-dg]] The only outgoing link from deepgram.com with measurable traffic other than search and its own docs is Discord. [[sw-dg]] That matches what the repositories show: no outside developer filed an issue on a Deepgram repository in twenty days, because support happens in Discord. [[gh-dgissues]] Sprag has no Discord, no forum and no community link anywhere on its site. [[sprag-sitemap]]",
             },
             {
               type: "p",
-              text: "Deepgram's ad mix is 247 text ads to 75 image and 25 video, which is a search-first buy rather than a brand campaign. The March spike of 79 new creatives lands two months after the funding announcement, and May's 59 is the second wave. July fell to three, then August jumped back to 33, which usually means a new campaign was approved. Meta ad data could not be pulled this week because the Apify limit was reached. [[gads-dg]]",
+              text: "Deepgram also runs an automated content pipeline into its own repositories. An account called deepgram-robot has filed 388 issues, 56 of them since Aug 1, each proposing a recipe or example for the documentation team to build. [[gh-dgrobot]] It is a cheap way to keep an examples repository full, and it is how the unreleased Flux v2 description reached a public page. A one-person company cannot copy the volume, but the idea of writing the example before the customer asks for it is free. [[gh-fluxv2]]",
             },
-            { type: "h3", text: "What people are saying, counted" },
-            {
-              type: "table",
-              headers: [{ text: "Theme" }, { text: "Posts", w: "10%", n: true }, { text: "Example" }],
-              rows: [
-                ["Someone naming Deepgram as their stack", "24", "\"STT: Deepgram over Whisper (10x faster, cheaper at scale)\""],
-                ["The multilingual accuracy chart", "14", "\"deepgram sitting at 15.77, that's not a close race anymore\""],
-                ["Deepgram's own posts and staff", "12", "Flux TTS launch, Speak '26, the 2X Solutions case study"],
-                ["Recruiters posting Deepgram jobs", "9", "Sales Development Representative, Research Staff, FDE"],
-                ["Price comparisons naming Deepgram", "8", "\"Batch rates, August 2026: Deepgram $0.258/hr\""],
-                ["Competitors positioning against Deepgram", "6", "Autoloops, Fish Audio, Voibe, NineNineSix"],
-                ["Billing or configuration surprises", "4", "diarize on by default, $50 of credits burned overnight"],
-                ["Company news", "3", "Singapore APAC headquarters, SageMaker metrics"],
-              ],
-            },
+            { type: "h3", text: "What Deepgram's integration partners are fixing" },
             {
               type: "p",
-              text: "The useful read is that almost nobody complains about Deepgram's product. Fourteen of the 90 posts are negative and thirteen of those are one accuracy chart published by a third party. There is no Reddit thread of angry customers and no subreddit to watch. Deepgram is not losing customers to unhappiness, which means Sprag has to win on price and on the two products Deepgram does not sell rather than on dissatisfaction. [[x-deepgram]] [[reddit-dg]]",
+              text: "Pipecat has handled 37 Deepgram issues and pull requests since Aug 1. Several are Flux defects: overlapping speech during a muted greeting stranding the turn, final transcripts unreadable after the stream closes, settings needing a reconnect, and a table in the Aug 30 pull request showing that on Amazon SageMaker a Configure message ends the session instead of applying the setting. [[gh-pipecat-flux]] LiveKit merged a fix on Aug 30 stopping a late transcript from marking a healthy speech provider unavailable during fallback teardown. [[gh-livekit]]",
+            },
+            {
+              type: "why",
+              text: "**Why it matters for Sprag:** Flux is shipping fast and breaking in the frameworks where buyers actually run it, and the framework maintainers are absorbing the cost. Sprag's opening is not to argue Flux is bad, it is to be the provider already configured in the fallback slot when it fails. Ship the native plugin. [[gh-pipecat-flux]] [[gh-livekit]]",
             },
           ],
         },
@@ -1047,7 +913,7 @@ export const deepgram: Brief = {
           panels: [
             {
               cap: "Deepgram's 93 open jobs, by department",
-              sub: "From the company job board on Aug 27.",
+              sub: "From the company job board on Aug 30. Unchanged since Aug 27.",
               chart: {
                 kind: "rows",
                 fmt: "num",
@@ -1069,7 +935,7 @@ export const deepgram: Brief = {
             },
             {
               cap: "Where those jobs are",
-              sub: "Nineteen of 93 are outside the United States.",
+              sub: "Twenty-three of 93 are outside the United States.",
               chart: {
                 kind: "rows",
                 fmt: "num",
@@ -1095,55 +961,56 @@ export const deepgram: Brief = {
           style: "did",
           items: [
             {
-              claim: "Deepgram is building a US government business, and pays the most for it.",
+              claim: "Deepgram posted nothing new in four days, after posting 25 roles in the previous thirty.",
               body: [
                 {
                   type: "p",
-                  text: "Five roles point at the public sector: Enterprise Account Executive, Federal Civilian in Washington D.C. at $280K to $350K, Federal Partner Manager at $200K to $250K, Senior Solutions Engineer, Federal, Senior Forward-Deployed Engineer, Federal, and a Defense and Edge Tech Lead at $219K to $274K. The federal account role is the highest-paid sales job on the board. Deepgram also shipped US government cryptography images to general availability for self-hosted customers on Jul 28, and one of its investors is In-Q-Tel, the CIA's venture arm. [[dg-jobs]] [[dg-changelog]] [[dg-series-c]]",
+                  text: "The board still holds exactly 93 listings and the most recent posting is a Software Test Engineer dated Aug 27. Nothing was added on Aug 28, 29 or 30. The four weeks before that added 25 roles, including four research posts on a single day, Aug 23. [[dg-jobs]] The departmental split is unchanged: 39 engineering, 18 sales, 10 customer success, 7 marketing, 5 research, 5 product, 4 finance, 3 general and administrative, 2 data operations. [[dg-jobs]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** this is revenue Sprag structurally cannot compete for, and it is where Deepgram's attention is going. It also means Deepgram's price will get less flexible over time, because government contracts anchor a rate card. Sprag should not chase it and should take the developer market Deepgram is de-prioritising. [[dg-jobs]]",
-                },
-              ],
-            },
-            {
-              claim: "Seven jobs are rebuilding the self-serve signup funnel, which is the only place Deepgram and Sprag actually meet.",
-              body: [
-                {
-                  type: "p",
-                  text: "Deepgram is hiring an Engineering Manager, a Senior Full-stack Engineer and a Senior Frontend Engineer all for a Console team explicitly labelled Product-Led Growth, plus a Staff Product Manager, a second Staff Product Manager for Agentic Experiences, a Staff Product Analyst for Product-Led Growth and a Staff Developer Experience Engineer at $219.3K to $276.8K. Seven roles, none filled. [[dg-jobs]]",
-                },
-                {
-                  type: "why",
-                  text: "**Why it matters for Sprag:** Deepgram's self-serve experience is a hiring plan rather than a product right now, and that is the surface every lead in this brief touches first. Sprag's signup is already good and its free tier is already generous. That advantage has a deadline on it. [[dg-jobs]] [[sprag-pricing]]",
+                  text: "**Why it matters for Sprag:** four quiet days is a pause, not a signal, and it should not be read as a slowdown until it holds for a month. The useful number is still 93 unfilled roles, which is a company that has more plan than people. Sprag's advantage is that it can ship a change the same week it decides to. [[dg-jobs]]",
                 },
               ],
             },
             {
               claim:
-                "The highest-paid role on the entire board is text-to-speech research, which says where Deepgram thinks it is behind.",
+                "Every job advertisement carries Deepgram's customer list, and it is the strongest sales asset the company publishes.",
               body: [
                 {
                   type: "p",
-                  text: "Director of Research, Text to Speech pays $213K to $328.3K, more than any other listing. Deepgram also lists Embedded AI Engineer, On-Device Models at $219.3K to $274.1K, which is Cartesia's home ground. Meanwhile Flux TTS reached general availability on Aug 12 and the command-line tool switched its default voice from Aura-2 to Flux on Aug 19. A company does not pay a premium for a research director in a product it has just shipped unless it thinks the product is not finished. [[dg-jobs]] [[dg-changelog]]",
+                  text: "All 93 listings open with the same paragraph: more than 200,000 developers and 1,300 or more organizations build voice offerings that are Powered by Deepgram, including Twilio, Cloudflare, Sierra, Decagon, Vapi, Daily, Cresta, Granola, and Jack in the Box. [[dg-jobs]] That list mixes infrastructure companies, voice-agent platforms, a note-taking app and a fast-food chain, which is a deliberate spread across developer, platform and enterprise buyers. Sprag names one customer. [[sprag-issen]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** Deepgram is about to get better at the one thing Sprag is measurably worst at. Sprag's own benchmark data puts its text-to-speech at 940ms to first audio against Cartesia's 151ms. Sprag should not build its story on speech generation. [[sprag-benchmarks]]",
+                  text: "**Why it matters for Sprag:** Sprag cannot match the list and should not try. It can match the discipline, which is putting the same specific proof in every artefact the company publishes. The ISSEN numbers should appear on the pricing page, the benchmark page and the comparison pages, not only in one blog post. [[sprag-issen]] [[sprag-pricing]]",
                 },
               ],
             },
             {
-              claim: "The marketing department is being rebuilt from scratch under a new leader.",
+              claim:
+                "The highest-paid role on the board is still text-to-speech research, and there is still no role for anything Sprag uniquely sells.",
               body: [
                 {
                   type: "p",
-                  text: "Seven marketing roles are open: VP of Demand Generation at $230K to $300K, Director of Brand Strategy and Narrative at $180K to $225K posted on Aug 26, Head of Communications, Head of Editorial Content, two Senior Product Marketing Managers and a Staff Web Engineer for marketing. Deepgram's chief marketing officer, Myra El-Bayoumi, joined from Redis where she ran a full rebrand. There is also an Executive Assistant, Marketing role, which is what a company posts when the marketing leader has more meetings than time. [[dg-jobs]] [[dg-leadership]]",
+                  text: "Director of Research, Text to Speech, posted Aug 21, pays $213K to $328.3K, more than any other listing. [[dg-jobs]] Deepgram shipped Flux TTS to general availability on Aug 12 and added an expressivity control on Aug 19, and is paying a premium for a research director on top of that. [[dg-changelog]] There is no listing anywhere on the board for speech-to-speech, audio captioning, voice cloning, voice design, or any multimodal role covering image or video. [[dg-jobs]]",
                 },
                 {
                   type: "why",
-                  text: "**Why it matters for Sprag:** the 33 new ad creatives in August and the first company conference in October are the start of this. Deepgram's marketing is about to get louder and better funded, so Sprag's window to publish comparison pages against a distracted competitor is measured in months rather than years. [[dg-jobs]]",
+                  text: "**Why it matters for Sprag:** a job board is the most honest roadmap a company publishes, and Deepgram has now told Sprag across two consecutive weeks that it is not building the two products Sprag sells alone. Sprag's own text-to-speech is its weakest measured result, so let Deepgram have that fight and take the two it is not entering. [[dg-jobs]] [[sprag-benchmarks]]",
+                },
+              ],
+            },
+            {
+              claim: "Five roles point at the US government and one pays more than any other sales job.",
+              body: [
+                {
+                  type: "p",
+                  text: "The board carries an Enterprise Account Executive for Federal Civilian in Washington D.C. at $280K to $350K, a Federal Partner Manager, a Senior Solutions Engineer for Federal, a Senior Forward-Deployed Engineer for Federal, and a Defense and Edge Tech Lead. [[dg-jobs]] Deepgram shipped US government cryptography images to general availability for self-hosted customers in July, publishes a partner page for Carahsoft, which is the reseller government buyers purchase through, and counts In-Q-Tel among its investors. [[dg-changelog]] [[dg-partners]] [[dg-series-c]]",
+                },
+                {
+                  type: "why",
+                  text: "**Why it matters for Sprag:** this is revenue Sprag structurally cannot compete for, and it will make Deepgram's pricing less flexible over time, because a government rate card anchors everything below it. Do not chase it. Take the developers Deepgram stops answering while it builds this. [[dg-jobs]]",
                 },
               ],
             },
@@ -1155,20 +1022,20 @@ export const deepgram: Brief = {
           style: "do",
           items: [
             {
-              claim: "Sell against the roles Deepgram has not filled yet.",
+              claim: "Put both founders on the about page.",
               body: [
                 {
                   type: "p",
-                  text: "Seven unfilled self-serve roles and a Senior Strategic Renewals Manager at $240K to $260K say the same thing: signup and account care are thin right now. Sprag's answer to a developer is already better, one base URL and an OpenAI-compatible client, with nothing to migrate. Put a two-line migration snippet on the comparison page showing the base URL change and nothing else. [[dg-jobs]] [[sprag-quickstart]]",
+                  text: "Sprag's about page names one person and the company has two. Deepgram publishes 93 roles with salary bands and a full leadership page, and every buyer running vendor diligence compares those two pages. A second name is an hour of work and it removes the question a one-founder page invites. This is small, and it is here because it is the cheapest credibility fix available, not because it competes with the three actions at the top. [[sprag-about]] [[dg-jobs]]",
                 },
               ],
             },
             {
-              claim: "Publish a careers page, even with two roles on it.",
+              claim: "Put audio captioning and speech-to-speech at the front of the site, and drop speed from the headline.",
               body: [
                 {
                   type: "p",
-                  text: "Sprag has no public job board and one named person on the site, while there are two founders. Deepgram's board is 93 roles with salary bands, and every enterprise buyer and every reporter looks at that page to judge whether a company is real. A page with two open roles and both founders on it is a day of work and it removes a question every prospect asks. [[dg-jobs]] [[sprag-about]]",
+                  text: "Deepgram is not hiring for either, has no landing page for either, and its unreleased Flux v2 goes further into the cascade rather than away from it. Meanwhile speed is Deepgram's second most-praised quality on G2 at 35 mentions, and Sprag's own benchmark data puts Cartesia six times faster on text-to-speech, so a speed headline invites the one comparison Sprag loses. The homepage should lead on the two products the competitive set does not sell and on the agentic result, which is 1.03 seconds end to end with no failures against Deepgram's Voice Agent at 3.30 seconds with 10 failures in 50. [[dg-jobs]] [[gh-fluxv2]] [[g2-proscons]] [[sprag-benchmarks]]",
                 },
               ],
             },
@@ -1178,7 +1045,7 @@ export const deepgram: Brief = {
           type: "toggle",
           claim: "Full analysis",
           body: [
-            { type: "h3", text: "Every job posted in the last 30 days" },
+            { type: "h3", text: "Every job posted in the last two weeks" },
             {
               type: "table",
               headers: [
@@ -1191,7 +1058,7 @@ export const deepgram: Brief = {
                 ["Aug 27", "[Software Test Engineer](https://jobs.ashbyhq.com/deepgram/4a6b5eb2-4720-4ec8-8d7d-4ae0f7bbe2cc)", "USA, remote", "$150K – $220K"],
                 ["Aug 26", "[GM, Sales (EMEA)](https://jobs.ashbyhq.com/deepgram/c8799e26-121b-47be-8bc4-7b342fa32275)", "London", "not stated"],
                 ["Aug 26", "[Director, Brand Strategy & Narrative](https://jobs.ashbyhq.com/deepgram/d7dc5974-8540-432a-a2ec-2a6691c9bb51)", "USA, remote", "$180K – $225K"],
-                ["Aug 25", "[Partner Success Engineer (AWS)](https://jobs.ashbyhq.com/deepgram/ac705109-ea86-41da-a3f2-811c35248c6a)", "USA, remote", "$195K – $235K"],
+                ["Aug 25", "[Partner Success Engineer (AWS)](https://jobs.ashbyhq.com/deepgram/ac705109-ea86-41da-a3f2-811c35248c6a)", "USA, remote", "$195K – $240K"],
                 ["Aug 24", "[Revenue Accounting Manager](https://jobs.ashbyhq.com/deepgram/67874cff-a23f-4130-aeef-845f5f739621)", "USA, remote", "not stated"],
                 ["Aug 24", "[Account Executive (Melbourne)](https://jobs.ashbyhq.com/deepgram/85fddd5f-8a08-48d4-975a-de845e1b81ac)", "Sydney", "not stated"],
                 ["Aug 23", "[Research Staff, LLMs](https://jobs.ashbyhq.com/deepgram/39c2b79b-0269-4711-9354-be5ccf747a98)", "USA, remote", "$150K – $250K"],
@@ -1204,39 +1071,30 @@ export const deepgram: Brief = {
                 ["Aug 21", "[Accounting Manager, GL & Close](https://jobs.ashbyhq.com/deepgram/17a6e0f9-6db3-4e68-b02c-2cf7318dd442)", "USA, remote", "$150K – $180K"],
                 ["Aug 21", "[Customer Success Engineer (Scaled)](https://jobs.ashbyhq.com/deepgram/b856d0c2-df8e-492a-9044-62b0fd3c30b6)", "USA, remote", "$147K – $176.5K"],
                 ["Aug 20", "[Senior Data Scientist, Data Flywheel](https://jobs.ashbyhq.com/deepgram/ba60a541-fdf7-44bf-a6bb-0e821f15af54)", "USA, remote", "$165K – $220K"],
-                ["Aug 18", "[Executive Assistant, Marketing](https://jobs.ashbyhq.com/deepgram/b74b4d59-5b3e-46ac-9928-a5c8f6b7d321)", "USA, remote", "$127K – $160K"],
-                ["Aug 14", "[Enterprise AI Strategist, Deepgram for Restaurants](https://jobs.ashbyhq.com/deepgram/8fd3acd1-31c0-4dad-a249-a8d3d5d79cc9)", "San Francisco", "not stated"],
-                ["Aug 14", "[Global Head of Real Estate and Workplace](https://jobs.ashbyhq.com/deepgram/410cab78-0105-4270-a936-bec653ae5928)", "USA, remote", "not stated"],
-                ["Aug 13", "[Staff Web Engineer, Marketing](https://jobs.ashbyhq.com/deepgram/4f9648d7-e25c-440c-8ec6-566a405c7c23)", "USA, remote", "$150K – $190K"],
-                ["Aug 6", "[Senior PMM, Voice Agent](https://jobs.ashbyhq.com/deepgram/928303de-61d6-46ec-b10a-08709e1deb4a)", "USA, remote", "$150K – $190K"],
-                ["Aug 6", "[Senior PMM, Solutions Marketing](https://jobs.ashbyhq.com/deepgram/0f597b67-3cd4-4d56-b951-d555031ee5cc)", "USA, remote", "$150K – $190K"],
-                ["Aug 5", "[Senior Pre-Sales Solutions Engineer](https://jobs.ashbyhq.com/deepgram/d28f0a61-4a59-4817-b101-3457077b01b7)", "Singapore", "not stated"],
-                ["Aug 5", "[Senior Pre-Sales Solutions Engineer](https://jobs.ashbyhq.com/deepgram/8a9bcce3-858f-4cc0-8459-2fe552b6aaa5)", "Sydney", "not stated"],
-                ["Aug 3", "[Enterprise AE (Federal Civilian)](https://jobs.ashbyhq.com/deepgram/c22e34a4-018a-4123-a752-31ed64c320c8)", "Washington D.C.", "$280K – $350K"],
               ],
             },
             {
               type: "p",
-              text: "Twenty-five roles posted in thirty days on a board that already held 68. Deepgram's revenue lead put it plainly on LinkedIn this week: Deepgram is growing faster than we can hire. High growth, higher complexity, highest caliber people. That post was recruiting for a Revenue Manager. [[dg-jobs]] [[li-karly]]",
-            },
-            { type: "h3", text: "What the finance roles say" },
-            {
-              type: "p",
-              text: "Four finance roles are open: Senior Director of Accounting at $220K to $260K, Director of Technical Accounting and Financial Reporting at $170K to $220K, Revenue Accounting Manager, and Accounting Manager for general ledger and close. Technical accounting and financial reporting is an audit-readiness hire rather than a bookkeeping one. Combined with a Senior Strategic Renewals Manager at $240K to $260K and a Billing and Analytics Software Engineer, this is a company putting its revenue reporting in order. [[dg-jobs]]",
+              text: "Four of the sixteen were posted on one day, Aug 23, and all four are research: language models, machine-learning systems, voice AI foundations and data science, each paying up to $250K. A company that has just raised does not post four research roles at once unless it intends to train new models rather than tune existing ones. That is the thing Sprag structurally cannot answer, because Sprag serves open weights it does not train. [[dg-jobs]]",
             },
             { type: "h3", text: "Where Deepgram is not hiring" },
             {
               type: "p",
-              text: "There is no role anywhere on the board for speech-to-speech, for audio captioning, for voice cloning or for voice design. There is no multimodal role covering image or video. Deepgram's 39 engineering jobs are transcription, voice agents, inference infrastructure, the console and on-device models. The four products Sprag sells that Deepgram does not are not on the hiring plan, which is the clearest signal available that Deepgram does not intend to build them soon. [[dg-jobs]]",
+              text: "There is no role on the board for speech-to-speech, audio captioning, voice cloning or voice design, and no multimodal role covering image or video input. The 39 engineering jobs are transcription, voice agents, inference infrastructure, the console and on-device models. Two consecutive weekly pulls now show the same absence, which makes it a hiring plan rather than a gap in one snapshot. [[dg-jobs]]",
             },
             {
               type: "why",
-              text: "**Why it matters for Sprag:** a competitor's job board is the most honest roadmap it publishes. Deepgram has told Sprag, in 93 listings, that it is not coming for audio captioning or native speech-to-speech in the next year. Those two products should carry Sprag's positioning. [[dg-jobs]]",
+              text: "**Why it matters for Sprag:** Deepgram has told Sprag twice, in 93 listings, that it is not coming for audio captioning or native speech-to-speech within the hiring horizon. Those two products should carry Sprag's positioning, and the comparison page should say Deepgram does not sell them rather than that Sprag is faster. [[dg-jobs]]",
+            },
+            { type: "h3", text: "What the money roles say" },
+            {
+              type: "p",
+              text: "Four finance roles are open, including a Director of Technical Accounting and Financial Reporting and a Revenue Accounting Manager posted Aug 24. Technical accounting and financial reporting is an audit-readiness hire rather than a bookkeeping one. Read alongside a Senior Strategic Renewals Manager and a billing engineer, this is a company putting its revenue reporting in order, which is what happens before a larger round or a sale. [[dg-jobs]]",
             },
             { type: "h3", text: "Sprag's own team" },
             {
               type: "p",
-              text: "Sprag's about page names one person, Ian Eaves, and the company has two founders. There is no careers page, no job board, and no LinkedIn company page. Deepgram publishes 93 roles with salary bands and thirteen named executives. For a buyer running vendor diligence, that difference is the whole risk assessment. [[sprag-about]] [[dg-leadership]]",
+              text: "Sprag's about page names one person, Ian Eaves, and the company has two founders. There is no careers page, no job board and no LinkedIn company page. Deepgram publishes 93 roles with salary bands and a full leadership page. For a buyer running vendor diligence, that difference is most of the risk assessment, and it is the cheapest gap on this list to close. [[sprag-about]] [[dg-leadership]]",
             },
           ],
         },
@@ -1250,21 +1108,20 @@ export const deepgram: Brief = {
         {
           type: "links",
           items: [
-            "[[gads-dg|Google Ads Transparency, Deepgram, Inc.]]. 347 creatives, pulled Aug 27",
-            "[[gads-sprag|Google Ads Transparency, Sprag AI]]. 25 creatives, pulled Aug 27",
-            "[[gads-elevenlabs|Google Ads Transparency, Eleven Labs Inc. and three individual accounts]]",
-            "[[x-deepgram|X search for Deepgram, last 7 days]]. 90 posts via Apify",
-            "[[li-deepgram|LinkedIn search for Deepgram, last 7 days]]. 40 posts, 120 reactions and comments via Apify",
-            "[[reddit-dg|Reddit search for Deepgram, last 30 days]]. 25 posts via Apify",
-            "[[dg-sitemap|deepgram.com/sitemap.xml]]. 1,342 addresses",
+            "[[sw-dg|Similarweb, deepgram.com]]. Visits, channels, keywords and countries for July 2026, pulled Aug 30",
+            "[[sw-sprag|Similarweb, sprag.ai]]. Same measures, pulled Aug 30",
+            "[[g2-deepgram|G2 reviews of Deepgram]]. 481 reviews, 4.6 out of 5, pulled Aug 30",
+            "[[g2-proscons|G2's counted pros and cons for Deepgram]]. 60 complaint mentions across five themes",
+            "[[gads-dg|Google Ads Transparency, deepgram.com]]. About 200 ads, pulled Aug 30",
+            "[[gads-sprag|Google Ads Transparency, sprag.ai]]. 16 for the domain, 32 in the Sprag AI account",
+            "[[dg-sitemap|deepgram.com/sitemap.xml]]. 1,348 addresses with last-modified dates",
             "[[sprag-sitemap|sprag.ai/sitemap.xml]]. 72 addresses",
-            "[[dg-jobs|Deepgram job board on Ashby]]. 93 listings with pay bands",
-            "[[g2-deepgram|G2 reviews of Deepgram, 1 to 3 stars]]. 10 reviews via Apify, 6 with a named reviewer",
-            "[[gh-search|GitHub code search]] for DEEPGRAM_API_KEY, api.deepgram.com, deepgram-sdk, flux-general-en and aura-2. 173 organisations, free via the GitHub API",
-            "[[li-dg-page|Deepgram's LinkedIn company page]]. Last month of posts plus every reactor and commenter, 1,063 rows via Apify",
-            "[[li-djc-job|LinkedIn job ads naming Deepgram]]. 60 ads pulled, 1 genuine match",
-            "[[hn-deepgram|Hacker News via Algolia]]. Free, no key",
-            "[[x-alternative|X search for people leaving Deepgram]]. Zero results in 30 days",
+            "[[dg-jobs|Deepgram job board on Ashby]]. 93 listings with pay bands, via the public posting API",
+            "[[gh-search|GitHub commit search]] for the word deepgram since Aug 20. Free, via the GitHub API",
+            "[[gh-dgissues|GitHub issue search across the deepgram organisation]]. 14 non-bot issues since Aug 10",
+            "[[gh-dgrobot|GitHub issue search for deepgram-robot]]. 388 issues, 56 since Aug 1",
+            "[[hn-search|Hacker News via Algolia]]. Free, no key",
+            "[[wayback|Wayback Machine snapshot of the Deepgram pricing page, Aug 27]]. Used to check what changed",
           ],
         },
         { type: "h3", text: "Deepgram's own pages" },
@@ -1274,18 +1131,16 @@ export const deepgram: Brief = {
             "[[dg-pricing|Deepgram pricing]]",
             "[[dg-changelog|Deepgram changelog]]",
             "[[dg-customers|Deepgram customer stories]]",
-            "[[dg-newsroom|Deepgram newsroom]]",
+            "[[dg-partners|Deepgram partners]]",
             "[[dg-security|Deepgram data security]]",
             "[[dg-selfhosted|Deepgram self-hosted]]",
             "[[dg-leadership|Deepgram leadership]]",
-            "[[dg-history|Deepgram company history]]",
             "[[dg-compare|Deepgram comparison pages]]",
+            "[[dg-gladia|Gladia vs Deepgram]]",
             "[[dg-roundup|Voice AI providers compared]]",
             "[[dg-flux|Getting started with Flux]]",
             "[[dg-flux-state|Understanding the Flux state machine]]",
-            "[[dg-flux-multi|Flux Multilingual and language prompting]]",
             "[[dg-llms|Deepgram documentation index for AI assistants]]",
-            "[[dg-benchmarks|Deepgram speech-to-text benchmarks]]",
             "[[dg-speak|Deepgram Speak '26]]",
           ],
         },
@@ -1301,22 +1156,37 @@ export const deepgram: Brief = {
             "[[sprag-quickstart|Sprag quickstart]]",
             "[[sprag-integrations|Sprag integrations]]",
             "[[sprag-issen|How ISSEN delivers AI language tutoring at scale with Sprag]]",
-            "[[sprag-economics|Voice agent economics in 2026]]",
             "[[sprag-free|Qwen3.8-27B is free on Sprag through the end of August]]",
             "[[sprag-about|Sprag about page]]",
             "[[sprag-terms|Sprag terms of service]]",
-            "[[sprag-llms|Sprag index for AI assistants]]",
-            "[[sprag-robots|Sprag robots.txt]]",
           ],
         },
-        { type: "h3", text: "Press, benchmarks and competitors" },
+        { type: "h3", text: "Public code and posts cited" },
+        {
+          type: "links",
+          items: [
+            "[[gh-vellum|Vellum's assistant repository, the Aug 26 speech-provider commits]]",
+            "[[gh-sttevals|The STT-evals benchmark repository]]",
+            "[[gh-sttevals-registry|Its provider registry, listing seven vendors and not Sprag]]",
+            "[[gh-litellm|litellm-rs pull request 1252, native Deepgram and ElevenLabs providers]]",
+            "[[gh-subgen|subgeneratorr, adding five Nova-3 languages on Aug 30]]",
+            "[[gh-livekit|LiveKit agents-js pull request 2381, speech-provider fallback]]",
+            "[[gh-pipecat-flux|Pipecat pull request 5498, Flux settings per transport]]",
+            "[[gh-pipecat-watch|Pipecat's weekly provider-research bot]]",
+            "[[gh-fluxv2|The Deepgram issue describing Flux v2's in-band reconfiguration]]",
+            "[[gh-aura1|A repository dropping the Aura-1 Angus voice on quality]]",
+            "[[gh-edcharbeneau|The Deepgram developer advocate account behind the $50 credits post]]",
+            "[[hn-trippi|Show HN: Trippi, live translated captions on Deepgram]]",
+            "[[hn-qwen|The flagged Hacker News post claiming a Qwen server beats Deepgram]]",
+            "[[hn-gemini|The Gemini 3.5 transcription thread naming Soniox and Deepgram on diarization]]",
+            "[[g2-diego|The Aug 28 G2 review on the model improvement programme and the 50% rate discount]]",
+          ],
+        },
+        { type: "h3", text: "Competitors and press" },
         {
           type: "links",
           items: [
             "[[dg-series-c|Deepgram raises $130M Series C at $1.3B valuation]]",
-            "[[aa-stt|Artificial Analysis speech-to-text leaderboard]]",
-            "[[aws-sagemaker|Deepgram enhanced metrics on Amazon SageMaker]]",
-            "[[soniox-pricing|Soniox pricing]]",
             "[[soniox-compare|Soniox comparison tool and pages]]",
             "[[cartesia-ink|Cartesia Ink-2]]",
             "[[cartesia-vs|Cartesia comparison pages]]",
@@ -1324,107 +1194,37 @@ export const deepgram: Brief = {
         },
         {
           type: "note",
-          text: "Everything in this brief was pulled on Aug 27, 2026, the day before it was sent. Ad counts come from Google's own advertiser records and page counts from published sitemaps, and both are exact. Prices are public pay-as-you-go list prices, and enterprise agreements price differently on both sides. Traffic and keyword estimates are missing this week because Similarweb and SpyFu blocked the request.",
-        },
-        { type: "h3", text: "Social posts cited" },
-        {
-          type: "links",
-          items: [
-            "[[x-fleurs|@StatsWire on the FLEURS chart]]",
-            "[[x-fleurs-2|@GabiiAH11 on Deepgram at 15.77%]]",
-            "[[x-autoloops|@LatentKush launching Qwen3-ASR-1.7B against Deepgram]]",
-            "[[x-diarize|@buildstack_ai on diarization becoming a paid add-on]]",
-            "[[x-naomi|Deepgram community reply offering the startup programme]]",
-            "[[x-naomi-2|A second Deepgram community reply the same week]]",
-            "[[x-divinci|Divinci AI changelog, bring your own Deepgram key]]",
-            "[[x-speko|Speko routing across Deepgram, ElevenLabs, Cartesia and OpenAI]]",
-            "[[x-nftech|NF Tech on choosing Deepgram over Whisper]]",
-            "[[x-subtitlenext|SubtitleNEXT at IBC 2026]]",
-            "[[x-2x|Deepgram's 2X Solutions AI case study]]",
-            "[[x-fourleaf|Four-Leaf AI using Deepgram for speech-to-text]]",
-            "[[x-ed|Ed Charbeneau on the Deepgram Agent API]]",
-            "[[x-ed-2|Ed Charbeneau on burning $50 of credits overnight]]",
-            "[[x-coval|Coval hosting a happy hour with Deepgram]]",
-            "[[x-rovensky|Max Rovensky on supporting multiple dictation providers]]",
-            "[[x-superwhisper|superwhisper on realtime with Deepgram]]",
-            "[[x-golos|Golos, an open-source dictation tool on Deepgram]]",
-            "[[x-raven|Project Raven sending parallel streams to Deepgram]]",
-            "[[x-samarth|A voice agent on Twilio, Deepgram, OpenAI and Hume]]",
-            "[[x-alexg|An Apple Watch voice interface on Deepgram and ElevenLabs]]",
-            "[[x-aly|Porting a voice feature that needs a Deepgram key]]",
-            "[[x-jp-minutes|A Japanese meeting-minutes app on Deepgram]]",
-            "[[x-segfaul|Adding a language-model pass to fix Deepgram misrecognition]]",
-            "[[x-ichiki|Switching to Deepgram for the free $200 of credit]]",
-            "[[li-genesys|Deepgram integrated into Genesys Virtual Agent]]",
-            "[[li-vinay|Vinay Jain's Deepgram Flux and Aura 2 voice agent build]]",
-            "[[li-airtxt|airtxt.ai adding bring-your-own Deepgram key]]",
-            "[[li-callkaro|CallKaro.AI on provider failover]]",
-            "[[li-latency|The voice-agent latency post Vokalith AI engaged with]]",
-            "[[li-merra|Merra, a live AI interviewer on Deepgram]]",
-            "[[li-pipecat|Pipecat 1.8.0, adding Deepgram Flux on SageMaker]]",
-            "[[li-vapicon|VapiCon 2026 sponsor list]]",
-            "[[li-karly|Deepgram is growing faster than we can hire]]",
-          ],
+          text: "All figures pulled Aug 30, 2026. Traffic and keyword figures are Similarweb estimates. Prices are public list prices.",
         },
       ],
     },
   ],
   footer: "",
   sources: {
-    "x-alternative": {
-      label: "X",
-      href: "https://x.com/search?q=%22deepgram%20alternative%22%20OR%20%22switching%20from%20deepgram%22&f=live",
-      logo: "x",
+    "sw-dg": {
+      label: "Similarweb",
+      href: "https://www.similarweb.com/website/deepgram.com/",
+      logo: "similarweb",
     },
-    "gh-jungherz": {
-      label: "GitHub",
-      href: "https://github.com/JUNGHERZ/Voice-Office-Hub/commits/main",
-      logo: "github",
+    "sw-sprag": {
+      label: "Similarweb",
+      href: "https://www.similarweb.com/website/sprag.ai/",
+      logo: "similarweb",
     },
     "g2-deepgram": {
       label: "G2",
       href: "https://www.g2.com/products/deepgram/reviews",
       logo: "g2",
     },
-    "gh-search": {
-      label: "GitHub code search",
-      href: "https://github.com/search?q=%22api.deepgram.com%22+OR+DEEPGRAM_API_KEY&type=code",
-      logo: "github",
+    "g2-proscons": {
+      label: "G2",
+      href: "https://www.g2.com/products/deepgram/reviews?qs=pros-and-cons",
+      logo: "g2",
     },
-    "gh-stream": {
-      label: "GitHub",
-      href: "https://github.com/GetStream/Vision-Agents/blob/9ee1b92b5f7e52531a0300a8d84996f76367f413/CHANGELOG.md",
-      logo: "github",
-    },
-    "gh-jellypod": {
-      label: "GitHub",
-      href: "https://github.com/Jellypod-Inc/speech-sdk/blob/df86933c6b99e34ffa7daa92cd889d9ec579db45/src/providers/deepgram/index.ts",
-      logo: "github",
-    },
-    "li-zaid-comment": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7493382911220596736",
-      logo: "linkedin",
-    },
-    "li-flux-comments": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7493299676075556864",
-      logo: "linkedin",
-    },
-    "li-djc-job": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/jobs/view/member-of-technical-staff-at-david-joseph-company-4452412618",
-      logo: "linkedin",
-    },
-    "li-dg-page": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/company/deepgram/posts",
-      logo: "linkedin",
-    },
-    "hn-deepgram": {
-      label: "Hacker News",
-      href: "https://hn.algolia.com/?query=deepgram&sort=byDate&type=all",
-      logo: "hacker-news",
+    "g2-diego": {
+      label: "G2",
+      href: "https://www.g2.com/products/deepgram/reviews",
+      logo: "g2",
     },
     "gads-dg": {
       label: "Google Ads Transparency",
@@ -1436,25 +1236,34 @@ export const deepgram: Brief = {
       href: "https://adstransparency.google.com/?domain=sprag.ai&region=US",
       logo: "google-ads-transparency",
     },
-    "gads-elevenlabs": {
-      label: "Google Ads Transparency",
-      href: "https://adstransparency.google.com/?domain=elevenlabs.io&region=US",
-      logo: "google-ads-transparency",
-    },
-    "x-deepgram": { label: "X", href: "https://x.com/search?q=deepgram&f=live", logo: "x" },
-    "li-deepgram": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/search/results/content/?keywords=deepgram&datePosted=%22past-week%22",
-      logo: "linkedin",
-    },
-    "reddit-dg": {
-      label: "Reddit",
-      href: "https://www.reddit.com/search/?q=deepgram&sort=new&t=month",
-      logo: "reddit",
-    },
     "dg-sitemap": { label: "Deepgram sitemap", href: "https://deepgram.com/sitemap.xml", logo: "deepgram" },
     "sprag-sitemap": { label: "Sprag sitemap", href: "https://sprag.ai/sitemap.xml", logo: "sprag" },
     "dg-jobs": { label: "Ashby", href: "https://jobs.ashbyhq.com/deepgram", logo: "ashby" },
+    "gh-search": {
+      label: "GitHub commit search",
+      href: "https://github.com/search?q=deepgram&type=commits&s=committer-date&o=desc",
+      logo: "github",
+    },
+    "gh-dgissues": {
+      label: "GitHub",
+      href: "https://github.com/search?q=org%3Adeepgram+is%3Aissue+created%3A%3E2026-08-10&type=issues",
+      logo: "github",
+    },
+    "gh-dgrobot": {
+      label: "GitHub",
+      href: "https://github.com/search?q=author%3Adeepgram-robot&type=issues",
+      logo: "github",
+    },
+    "hn-search": {
+      label: "Hacker News",
+      href: "https://hn.algolia.com/?query=deepgram&sort=byDate&type=all",
+      logo: "hacker-news",
+    },
+    wayback: {
+      label: "Wayback Machine",
+      href: "https://web.archive.org/web/20260827232006/https://deepgram.com/pricing",
+      logo: "wikipedia",
+    },
     "dg-pricing": { label: "Deepgram", href: "https://deepgram.com/pricing", logo: "deepgram" },
     "dg-changelog": {
       label: "Deepgram changelog",
@@ -1462,14 +1271,18 @@ export const deepgram: Brief = {
       logo: "deepgram",
     },
     "dg-customers": { label: "Deepgram", href: "https://deepgram.com/customers", logo: "deepgram" },
-    "dg-newsroom": { label: "Deepgram", href: "https://deepgram.com/company/newsroom", logo: "deepgram" },
+    "dg-partners": { label: "Deepgram", href: "https://deepgram.com/partners", logo: "deepgram" },
     "dg-security": { label: "Deepgram", href: "https://deepgram.com/data-security", logo: "deepgram" },
     "dg-selfhosted": { label: "Deepgram", href: "https://deepgram.com/self-hosted", logo: "deepgram" },
     "dg-leadership": { label: "Deepgram", href: "https://deepgram.com/company/leadership", logo: "deepgram" },
-    "dg-history": { label: "Deepgram", href: "https://deepgram.com/company/history", logo: "deepgram" },
     "dg-compare": {
       label: "Deepgram",
       href: "https://deepgram.com/compare/assemblyai-vs-deepgram",
+      logo: "deepgram",
+    },
+    "dg-gladia": {
+      label: "Deepgram",
+      href: "https://deepgram.com/learn/gladia-vs-deepgram",
       logo: "deepgram",
     },
     "dg-roundup": {
@@ -1487,32 +1300,12 @@ export const deepgram: Brief = {
       href: "https://developers.deepgram.com/docs/flux/state",
       logo: "deepgram",
     },
-    "dg-flux-multi": {
-      label: "Deepgram docs",
-      href: "https://developers.deepgram.com/docs/flux/language-prompting",
-      logo: "deepgram",
-    },
     "dg-llms": { label: "Deepgram docs", href: "https://developers.deepgram.com/llms.txt", logo: "deepgram" },
-    "dg-benchmarks": {
-      label: "Deepgram",
-      href: "https://deepgram.com/learn/speech-to-text-benchmarks",
-      logo: "deepgram",
-    },
     "dg-speak": { label: "Deepgram", href: "https://deepgram.com/speak", logo: "deepgram" },
     "dg-series-c": {
       label: "SiliconANGLE",
       href: "https://siliconangle.com/2026/01/13/real-time-voice-ai-unicorn-deepgram-raises-130m-streamline-human-machine-interactions/",
       logo: "venturebeat",
-    },
-    "aa-stt": {
-      label: "Artificial Analysis",
-      href: "https://artificialanalysis.ai/speech-to-text/models/deepgram",
-      logo: "artificial-analysis",
-    },
-    "aws-sagemaker": {
-      label: "AWS",
-      href: "https://aws.amazon.com/blogs/machine-learning/",
-      logo: "aws",
     },
     "sprag-pricing": { label: "Sprag", href: "https://sprag.ai/pricing", logo: "sprag" },
     "sprag-benchmarks": { label: "Sprag", href: "https://sprag.ai/benchmarks", logo: "sprag" },
@@ -1534,11 +1327,6 @@ export const deepgram: Brief = {
       href: "https://sprag.ai/blog/issen-delivers-ai-language-tutoring-at-scale-with-sprag",
       logo: "sprag",
     },
-    "sprag-economics": {
-      label: "Sprag",
-      href: "https://sprag.ai/blog/voice-agent-economics-in-2026",
-      logo: "sprag",
-    },
     "sprag-free": {
       label: "Sprag",
       href: "https://sprag.ai/blog/qwen3-8-27b-free-on-sprag",
@@ -1546,81 +1334,78 @@ export const deepgram: Brief = {
     },
     "sprag-about": { label: "Sprag", href: "https://sprag.ai/about", logo: "sprag" },
     "sprag-terms": { label: "Sprag", href: "https://sprag.ai/terms", logo: "sprag" },
-    "sprag-llms": { label: "Sprag", href: "https://sprag.ai/llms.txt", logo: "sprag" },
-    "sprag-robots": { label: "Sprag", href: "https://sprag.ai/robots.txt", logo: "sprag" },
-    "soniox-pricing": { label: "Soniox", href: "https://soniox.com/pricing", logo: "soniox" },
+    "gh-vellum": {
+      label: "GitHub",
+      href: "https://github.com/vellum-ai/vellum-assistant",
+      logo: "github",
+    },
+    "gh-sttevals": {
+      label: "GitHub",
+      href: "https://github.com/abhisheksharma001/stt-evals-recovered",
+      logo: "github",
+    },
+    "gh-sttevals-registry": {
+      label: "GitHub",
+      href: "https://github.com/abhisheksharma001/stt-evals-recovered/blob/main/lib/stt-providers/src/registry.ts",
+      logo: "github",
+    },
+    "gh-litellm": {
+      label: "GitHub",
+      href: "https://github.com/majiayu000/litellm-rs/pull/1252",
+      logo: "github",
+    },
+    "gh-subgen": {
+      label: "GitHub",
+      href: "https://github.com/tylerbcrawford/subgeneratorr",
+      logo: "github",
+    },
+    "gh-livekit": {
+      label: "GitHub",
+      href: "https://github.com/livekit/agents-js/pull/2381",
+      logo: "livekit",
+    },
+    "gh-pipecat-flux": {
+      label: "GitHub",
+      href: "https://github.com/pipecat-ai/pipecat/pull/5498",
+      logo: "pipecat",
+    },
+    "gh-pipecat-watch": {
+      label: "GitHub",
+      href: "https://github.com/pipecat-ai/pipecat/pulls?q=provider-watch",
+      logo: "pipecat",
+    },
+    "gh-fluxv2": {
+      label: "GitHub",
+      href: "https://github.com/deepgram/recipes/issues/648",
+      logo: "github",
+    },
+    "gh-aura1": {
+      label: "GitHub",
+      href: "https://github.com/davedavedavenm/epub-to-audiobook",
+      logo: "github",
+    },
+    "gh-edcharbeneau": {
+      label: "GitHub",
+      href: "https://github.com/dg-edcharbeneau",
+      logo: "github",
+    },
+    "hn-trippi": {
+      label: "Hacker News",
+      href: "https://news.ycombinator.com/item?id=49483356",
+      logo: "hacker-news",
+    },
+    "hn-qwen": {
+      label: "Hacker News",
+      href: "https://news.ycombinator.com/item?id=49443310",
+      logo: "hacker-news",
+    },
+    "hn-gemini": {
+      label: "Hacker News",
+      href: "https://news.ycombinator.com/item?id=49473649",
+      logo: "hacker-news",
+    },
     "soniox-compare": { label: "Soniox", href: "https://soniox.com/compare-stt", logo: "soniox" },
     "cartesia-ink": { label: "Cartesia", href: "https://www.cartesia.ai/ink", logo: "cartesia" },
     "cartesia-vs": { label: "Cartesia", href: "https://www.cartesia.ai/vs", logo: "cartesia" },
-    "x-fleurs": { label: "X", href: "https://x.com/StatsWire/status/2092669713231065313", logo: "x" },
-    "x-fleurs-2": { label: "X", href: "https://x.com/GabiiAH11/status/2092663783030173748", logo: "x" },
-    "x-autoloops": { label: "X", href: "https://x.com/LatentKush/status/2092383425198170179", logo: "x" },
-    "x-diarize": { label: "X", href: "https://x.com/buildstack_ai/status/2091471269518520761", logo: "x" },
-    "x-naomi": { label: "X", href: "https://x.com/NaomiLGBT/status/2092358920597868557", logo: "x" },
-    "x-naomi-2": { label: "X", href: "https://x.com/NaomiLGBT/status/2090605216702087547", logo: "x" },
-    "x-divinci": { label: "X", href: "https://x.com/DivinciAi/status/2090863756678926833", logo: "x" },
-    "x-speko": { label: "X", href: "https://x.com/beknabdik/status/2091944964737708054", logo: "x" },
-    "x-nftech": { label: "X", href: "https://x.com/jainilnf/status/2091110635606249570", logo: "x" },
-    "x-subtitlenext": { label: "X", href: "https://x.com/SubtitleNEXT/status/2091881346310291764", logo: "x" },
-    "x-2x": { label: "X", href: "https://x.com/DeepgramAI/status/2092303558645350443", logo: "x" },
-    "x-fourleaf": { label: "X", href: "https://x.com/FourLeaf_AI/status/2093048440758698268", logo: "x" },
-    "x-ed": { label: "X", href: "https://x.com/EdCharbeneau/status/2090937210166018508", logo: "x" },
-    "x-ed-2": { label: "X", href: "https://x.com/EdCharbeneau/status/2091650506909204850", logo: "x" },
-    "x-coval": { label: "X", href: "https://x.com/bnicholehopkins/status/2090876601651073472", logo: "x" },
-    "x-rovensky": { label: "X", href: "https://x.com/MaxRovensky/status/2093042017693528297", logo: "x" },
-    "x-superwhisper": { label: "X", href: "https://x.com/neilsuperduper/status/2092685263688392707", logo: "x" },
-    "x-golos": { label: "X", href: "https://x.com/ai_suxiaole/status/2092149728758907098", logo: "x" },
-    "x-raven": { label: "X", href: "https://x.com/mobileossfinds/status/2091934185074114787", logo: "x" },
-    "x-samarth": { label: "X", href: "https://x.com/SamarthMUFC/status/2092133433460076678", logo: "x" },
-    "x-alexg": { label: "X", href: "https://x.com/alex_here_now/status/2091763026324017171", logo: "x" },
-    "x-aly": { label: "X", href: "https://x.com/0xsilverbullet/status/2090585407708704912", logo: "x" },
-    "x-jp-minutes": { label: "X", href: "https://x.com/gatyoukatyou/status/2092489514782756998", logo: "x" },
-    "x-segfaul": { label: "X", href: "https://x.com/Seg_Faul/status/2091937859544699288", logo: "x" },
-    "x-ichiki": { label: "X", href: "https://x.com/ichikiwhere/status/2091061419773247760", logo: "x" },
-    "li-genesys": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/posts/zachfrantz_going-to-genesys-xperience-next-week-we-activity-7498812083732434944--jSw",
-      logo: "linkedin",
-    },
-    "li-vinay": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/posts/vinayjain18_aiagents-deepgram-aivoice-activity-7498704740835356672-vrwf",
-      logo: "linkedin",
-    },
-    "li-airtxt": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/posts/airtxt-ai_airtxtai-ai-dictation-meeting-notes-activity-7498794195890126848-qMZ4",
-      logo: "linkedin",
-    },
-    "li-callkaro": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/company/callkaro-ai/posts",
-      logo: "linkedin",
-    },
-    "li-latency": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/feed/update/urn:li:activity:7498741531990740993",
-      logo: "linkedin",
-    },
-    "li-merra": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/posts/manjeet-444a611a0_ai-fullstack-react-activity-7498655906491006976-cF0g",
-      logo: "linkedin",
-    },
-    "li-pipecat": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/feed/update/urn:li:activity:7498538301394595840",
-      logo: "linkedin",
-    },
-    "li-vapicon": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/posts/vapi-ai_save-500-with-an-early-bird-ticket-before-activity-7498781401517830144-Tgiw",
-      logo: "linkedin",
-    },
-    "li-karly": {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/posts/karlysebailey_deepgram-is-growing-faster-than-we-can-hire-activity-7498676740844605440-y76i",
-      logo: "linkedin",
-    },
   },
 };

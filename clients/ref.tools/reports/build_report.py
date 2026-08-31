@@ -226,9 +226,9 @@ BULLETS = [
 ]
 
 SOURCES_NOTE = (
- 'X searched via Apify `scraper_one/x-posts-search` on two queries, one for competitor names (`context7`, `traycer`, '
+ 'X searched on two queries, one for competitor names (`context7`, `traycer`, '
  '`ref.tools`, `spec-driven`) and one for the problem space (`plan mode`, `AGENTS.md`, `lost context`), both `latest` '
- 'over 48 hours, 196 posts total. Reddit via `harshmaur/reddit-scraper` across `context7`, `traycer`, `spec kit` and '
+ 'over 48 hours, 196 posts total. Reddit searched across `context7`, `traycer`, `spec kit` and '
  '`plan mode claude`, which returned heavy noise and one useful thread. Hacker News via the Algolia API. All pulled '
  'Aug 28 around 6am PT. Reach means likes, replies and reposts as the tools reported them at pull time. Translations '
  'in square brackets are ours. No ads section: neither Ref nor its competitors run paid social, so there is nothing '

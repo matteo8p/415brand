@@ -92,7 +92,7 @@ export const openrouter: Brief = {
           metric: "Reddit posts mentioning it since Aug 26",
           primary: "100 in 40 hours",
           us: "0",
-          change: "100 is the scraper's cap, so the real number is higher. r/openrouter alone has 18,328 subscribers. Experiential appears in none of them.",
+          change: "100 is the search cap, so the real number is higher. r/openrouter alone has 18,328 subscribers. Experiential appears in none of them.",
           tone: "bad",
         },
         {
@@ -772,7 +772,7 @@ export const openrouter: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "Of the 70 most recent posts pulled on Aug 28, six complain, question or ask for an alternative [[apify-x]]. The themes repeat. Quantization: \"Openrouter is terrible! I did deepseek with them and got garbage at the end of the response likely routed to some cheap ultra quanticized version\" [[x-quant]]. Rate limits: \"they are so heavily rate limited on openrouter so not many people get routed to them\" [[x-ratelimit]]. The redesign: \"@OpenRouter's new ui is so much worse than previous one... it feels like it was vibe coded\" [[x-ui]]. A fourth asked whether OpenRouter has a time-to-first-token guarantee at all [[x-ttft]].",
+                  text: "Of the 70 most recent posts pulled on Aug 28, six complain, question or ask for an alternative [[x-search]]. The themes repeat. Quantization: \"Openrouter is terrible! I did deepseek with them and got garbage at the end of the response likely routed to some cheap ultra quanticized version\" [[x-quant]]. Rate limits: \"they are so heavily rate limited on openrouter so not many people get routed to them\" [[x-ratelimit]]. The redesign: \"@OpenRouter's new ui is so much worse than previous one... it feels like it was vibe coded\" [[x-ui]]. A fourth asked whether OpenRouter has a time-to-first-token guarantee at all [[x-ttft]].",
                 },
                 {
                   type: "why",
@@ -786,7 +786,7 @@ export const openrouter: Brief = {
               body: [
                 {
                   type: "p",
-                  text: "A search for \"openrouter\" returned 100 posts covering Aug 26 15:18 to Aug 28 07:10 UTC, which is the scraper's cap rather than the real total [[apify-reddit]]. r/openrouter has 18,328 subscribers [[apify-reddit]]. The rest spread across r/SillyTavernAI, r/JanitorAI_Refuges, r/DeepSeek, r/opencode, r/LocalLLM and about forty other communities [[apify-reddit]]. The highest-engagement threads in the window were \"GLM 5.3 Flash pricing is a slap in the face\" at 76 points and 27 comments, and \"The LLM Model War Is Over\" at 61 points and 74 comments in r/vibecoding [[reddit-glm-price]] [[reddit-modelwar]].",
+                  text: "A search for \"openrouter\" returned 100 posts covering Aug 26 15:18 to Aug 28 07:10 UTC, which is a capped sample rather than the real total [[reddit-search]]. r/openrouter has 18,328 subscribers [[reddit-search]]. The rest spread across r/SillyTavernAI, r/JanitorAI_Refuges, r/DeepSeek, r/opencode, r/LocalLLM and about forty other communities [[reddit-search]]. The highest-engagement threads in the window were \"GLM 5.3 Flash pricing is a slap in the face\" at 76 points and 27 comments, and \"The LLM Model War Is Over\" at 61 points and 74 comments in r/vibecoding [[reddit-glm-price]] [[reddit-modelwar]].",
                 },
                 {
                   type: "why",
@@ -913,7 +913,7 @@ export const openrouter: Brief = {
             { type: "h3", text: "What a normal day on X looks like" },
             {
               type: "p",
-              text: "200 posts arrived in the 2 hours and 22 minutes to 07:15 UTC on Aug 28, which scales to about 709 a day [[apify-x]]. Almost none of them are about OpenRouter as a company. They are about models that just launched on it. In that window alone: Tencent's Hy4 preview at 770B parameters, Alibaba's Qwen3 8 Flash, and the reveal that the stealth model Ox Alpha was Z.ai's GLM-5.3-Flash [[apify-x]]. Accounts like LLMPriceIndex and gptbotio post automated price-change and new-model alerts using OpenRouter as the source of truth [[apify-x]].",
+              text: "200 posts arrived in the 2 hours and 22 minutes to 07:15 UTC on Aug 28, which scales to about 709 a day [[x-search]]. Almost none of them are about OpenRouter as a company. They are about models that just launched on it. In that window alone: Tencent's Hy4 preview at 770B parameters, Alibaba's Qwen3 8 Flash, and the reveal that the stealth model Ox Alpha was Z.ai's GLM-5.3-Flash [[x-search]]. Accounts like LLMPriceIndex and gptbotio post automated price-change and new-model alerts using OpenRouter as the source of truth [[x-search]].",
             },
             {
               type: "p",
@@ -940,7 +940,7 @@ export const openrouter: Brief = {
             },
             {
               type: "p",
-              text: "None of this looks like astroturfing. The accounts are ordinary, the complaints are specific and technical, and they contradict each other in the way real complaints do. That is different from what a paid campaign produces and it means the 9% complaint share can be taken at face value [[apify-x]] [[apify-reddit]].",
+              text: "None of this looks like astroturfing. The accounts are ordinary, the complaints are specific and technical, and they contradict each other in the way real complaints do. That is different from what a paid campaign produces and it means the 9% complaint share can be taken at face value [[x-search]] [[reddit-search]].",
             },
           ],
         },
@@ -1133,8 +1133,8 @@ export const openrouter: Brief = {
             "[[similarweb-or]] traffic, keywords, referrers and audience for openrouter.ai, July 2026 figures pulled Aug 28.",
             "[[similarweb-xp]] the same for experientiallabs.ai.",
             "[[meta-ads]] Meta Ad Library, US keyword search for \"openrouter\", active ads only, pulled Aug 28.",
-            "[[apify-x]] X posts search via Apify scraper_one/x-posts-search, latest and top, pulled Aug 28.",
-            "[[apify-reddit]] Reddit search via Apify harshmaur/reddit-scraper, 100-post cap, pulled Aug 28.",
+            "[[x-search]] X search for openrouter, latest and top, pulled Aug 28.",
+            "[[reddit-search]] Reddit search for openrouter, capped at 100 posts, pulled Aug 28.",
             "[[hn-search]] Hacker News search API, item and story counts for both names.",
           ],
         },
@@ -1213,7 +1213,7 @@ export const openrouter: Brief = {
     },
   ],
   footer:
-    "Traffic, keyword and audience figures are estimates from outside tools and should be read as trends and ratios, not exact numbers. Fee figures come from OpenRouter's and Experiential's own published pages. The X posts-per-day figure is scaled from a 2 hour 22 minute sample and the Reddit count is capped at 100 by the scraper, so both are floors. Headcount and revenue claims sourced to X posts are unverified and marked as such. Data pulled Aug 28, 2026 via Apify, Firecrawl and the public GitHub and Hacker News APIs. Compiled Aug 28, 2026.",
+    "Traffic and audience figures are estimates, so read the trends and ratios rather than exact numbers. The X posts-per-day figure is scaled from a short sample and the Reddit count is capped, so both are floors. Pulled Aug 28, 2026.",
   sources: {
     "similarweb-or": { label: "Similarweb", href: "https://www.similarweb.com/website/openrouter.ai/", logo: "similarweb" },
     "similarweb-xp": { label: "Similarweb", href: "https://www.similarweb.com/website/experientiallabs.ai/", logo: "similarweb" },
@@ -1222,8 +1222,8 @@ export const openrouter: Brief = {
       href: "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=openrouter&search_type=keyword_unordered",
       logo: "meta-ad-library",
     },
-    "apify-x": { label: "X via Apify", href: "https://x.com/search?q=openrouter&f=live", logo: "x" },
-    "apify-reddit": { label: "Reddit via Apify", href: "https://www.reddit.com/search/?q=openrouter&sort=new", logo: "reddit" },
+    "x-search": { label: "X", href: "https://x.com/search?q=openrouter&f=live", logo: "x" },
+    "reddit-search": { label: "Reddit", href: "https://www.reddit.com/search/?q=openrouter&sort=new", logo: "reddit" },
     "hn-search": { label: "Hacker News search", href: "https://hn.algolia.com/?query=openrouter&type=all", logo: "hacker-news" },
     "or-faq": { label: "OpenRouter FAQ", href: "https://openrouter.ai/docs/faq", logo: "openrouter" },
     "or-pricing": { label: "OpenRouter pricing", href: "https://openrouter.ai/pricing", logo: "openrouter" },

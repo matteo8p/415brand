@@ -262,6 +262,26 @@
 .analysis table.scorecard td.n {
   white-space: normal;
 }
+/* Source pills in a table cell wrap instead of running past the cell border. */
+.analysis table.data td .src {
+  max-width: 100%;
+  white-space: normal;
+  align-items: flex-start;
+  line-height: 1.25;
+  word-break: break-word;
+}
+.analysis table.data td .src .lg {
+  margin-top: 1px;
+}
+/* One pill per line inside any table cell, so a pill can never overflow it. */
+.analysis table.data td .src {
+  display: flex;
+  width: fit-content;
+  margin: 3px 0 0 0;
+}
+.analysis table.data td .src:first-child {
+  margin-top: 0;
+}
 .analysis table.scorecard td:nth-child(4) {
   color: #202122;
 }
