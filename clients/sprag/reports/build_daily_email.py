@@ -60,19 +60,26 @@ def convert_table(block):
         '<table width="100%" cellpadding="7" cellspacing="0" border="0" '
         f'style="border-collapse:collapse;border:1px solid #a2a9b1;margin:6px 0 18px;{TBL_FONT}">'
     ]
-    widths = re.findall(r'<th style="width:([^"]+)"[^>]*>|<th>', block)
+    # One entry per <th>, in order, whatever attributes it carries. Matching on
+    # `<th style=...` alone silently skips any header with a class in front of
+    # the style and shifts every later width onto the wrong column.
+    ths = re.findall(r"<th(?:\s[^>]*)?>", block)   # not <thead>
+    widths = [(re.search(r"width:([^\";]+)", t).group(1) if "width:" in t else "") for t in ths]
+    nowrap = ["nw" in t for t in ths]
     out.append("<tr>")
     for i, h in enumerate(heads):
         w = f' width="{widths[i]}"' if i < len(widths) and widths[i] else ""
-        out.append(f'<td{w} valign="top" bgcolor="#f8f9fa" style="{HEAD}">{inline_inner(h)}</td>')
+        nw = ";white-space:nowrap" if i < len(nowrap) and nowrap[i] else ""
+        out.append(f'<td{w} valign="top" bgcolor="#f8f9fa" style="{HEAD}{nw}">{inline_inner(h)}</td>')
     out.append("</tr>")
     for r in rows:
         cells = re.findall(r"<td[^>]*>(.*?)</td>", r, re.S)
         if not cells:
             continue
         out.append("<tr>")
-        for c in cells:
-            out.append(f'<td valign="top" style="{CELL}">{inline_inner(c)}</td>')
+        for i, c in enumerate(cells):
+            nw = ";white-space:nowrap" if i < len(nowrap) and nowrap[i] else ""
+            out.append(f'<td valign="top" style="{CELL}{nw}">{inline_inner(c)}</td>')
         out.append("</tr>")
     out.append("</table>")
     return "".join(out)

@@ -88,6 +88,15 @@ Things that bite (carried over from Cloudless, same subject, same actors):
 
 ## Status
 
+- **2026-09-01** — email built and queued as a Resend broadcast **draft**, id
+  `4f249bcc-08ea-4b5b-88ac-d4bad4e7ba2f`, to the `aquavoice` segment (finn, jack, mark and
+  sam @aquavoice.com). Subject "Wispr Flow daily brief, Sep 1", from
+  `research415 <reports@415brand.com>`. Status confirmed `draft`, `sent_at` null, and the
+  stored HTML is byte-identical to `reports/09-01-2026.email.html`. **Nobody has sent it.**
+  A human sends, per `clients/RESEND.md`.
+  The email is generated from the web report, not written twice: `brief_to_json.mjs` turns
+  `webapp/app/samples/briefs/aqua-daily.ts` into `brief.json`, then `build_email.py` renders
+  the HTML and plain-text copies. Re-run both after any edit to the brief or the two drift.
 - **2026-09-01** — first brief written, at `/analysis/aquavoice/daily-09-01-2026`
   (data in `webapp/app/samples/briefs/aqua-daily.ts`). Built deeper than a normal daily at the
   client's request: full Wispr ad teardown, Japan section, marketing and search. All pulls ran

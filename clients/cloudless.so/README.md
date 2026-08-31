@@ -474,3 +474,40 @@ already sent. Do not copy that here.
    that rather than leaving two clients reading the same file differently.
 2. Table sizes: the skill says three to five rows, the Aug 28 note in this file says
    ten complaints. Still Tim's call.
+
+### Sep 1 email
+
+**Broadcast draft: https://resend.com/broadcasts/8f13c95c-122f-417f-9efe-45ee730eeee8**
+Status `draft`, segment cloudless.so (Tim only, confirmed with `list-contacts` before drafting).
+From `research415 <reports@415brand.com>`, reply-to matt@freestylevoice.com.
+Subject "Wispr Flow daily brief, Sep 1". Preview text "5 Wispr complaints to reply to,
+5 people shopping around, and the 5 Wispr ads worth copying." **Matt sends from the dashboard.**
+
+Built by `reports/build_email_09_01.py`, which is a different approach from
+`build_email.py` and worth keeping. **It reads the rendered report off the dev server and
+rewrites it**, rather than importing Python lists. The email cannot drift from the report
+because it is generated from the report. Run the dev server, then:
+
+```
+python3 clients/cloudless.so/reports/build_email_09_01.py
+```
+
+It writes `daily-09-01-2026.email.html` (30.7KB, well under the 55KB target and Gmail's
+102KB clip threshold) and `.email.txt`. Same inline style vocabulary as `build_email.py`,
+so it looks like the emails already sent. Verified before drafting: all 44 links present
+and none added, every table five rows, zero `class`/`target`/`rel` attributes, no `<style>`
+block, no layout `<div>`, contents box as plain numbered text because in-page anchors do
+not navigate in webmail, unsubscribe token present.
+
+**Two bugs this builder hit, both worth remembering:**
+
+1. `re.findall(r'<th([^>]*)>', ...)` also matches `<thead>`, which silently mangles the
+   first header cell of every table into `<tr><th style="width:14%">Where`. Use `<th\b`.
+   Check the first header cell of the rendered email every time.
+2. `<div class="contents">(.*?)</div>` stops at the inner `<div class="t">`, so the
+   contents box came out empty. Match to `</ol></div>`.
+
+**The `RESEND_API_KEY` in `clients/RESEND.md` is still dead** (`API key is invalid`,
+HTTP 400, checked again Aug 31). Everything above went through the MCP connector, which
+means the 30.7KB of HTML had to be read out of the file and pasted inline. Fixing the key
+turns that into one curl. It is the slowest part of the run, every run.

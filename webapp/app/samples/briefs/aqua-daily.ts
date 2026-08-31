@@ -7,7 +7,7 @@ export const aquaDaily: Brief = {
   subject: "Wispr Flow",
   client: "Aqua",
   intro: [
-    { type: "h3", text: "Four things to do this week" },
+    { type: "h3", text: "Three things to do this week" },
     {
       type: "moves",
       collapsed: true,
@@ -23,14 +23,9 @@ export const aquaDaily: Brief = {
           evidence: "japan",
         },
         {
-          action: "Sign the four people already promoting you for free.",
-          why: "A Japanese YouTuber is running your referral code and you have no deal with him. Three Japanese users posted great stuff about Aqua this week, one got 441 likes, and nobody from Aqua said a word back. Separately, @kaleighf on X said no to 12 sponsorships in August and posted that she's waiting for Wispr or Willow to call her. Wispr's own numbers show small creators wipe the floor with big ones on this product, so these four aren't a budget compromise. They're the right size.",
-          evidence: "ads",
-        },
-        {
-          action: "Run the one ad Wispr can't run. Put your accuracy number on screen.",
-          why: "We read Wispr's 30 best ads. Not one of them says how accurate it is, because Wispr has never published a number. They sell speed instead. Meanwhile seven people said out loud on Aug 31 that Wispr got worse, and two of them left for superwhisper that same day. You've got published numbers and an independent ranking to back them up. Nobody in this category is making that argument out loud, and it's yours.",
-          evidence: "ads",
+          action: "Respond to the Japanese creators that love your product.",
+          why: "Four people in Japan promoted Aqua this week and not one of them heard back from you. [@amagishihisaya](https://x.com/amagishihisaya/status/2094386227437097223) got 441 likes saying you made him nearly twice as fast. [@Daisaku_sw](https://x.com/Daisaku_sw/status/2093148230381170763) said your accuracy means he can't give it up. [@mirailab_kay](https://x.com/mirailab_kay/status/2093932352200114359) posted about \"Send it\" working inside Codex. And a YouTuber is running your referral code with no deal in place. Reply to all four today in Japanese and hand each one a referral link.",
+          evidence: "japan",
         },
       ],
     },

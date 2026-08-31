@@ -50,7 +50,20 @@ Also found on the re-pull, and now corrected in `OPEN_TAG.md`: **OpenTag does ha
 
 ## Sept 1 daily run
 
-Output: `reports/09-01-2026.html` (from `reports/build_report_09_01.py`) and the site at `webapp/app/analysis/opentag/daily-09-01-2026`, data in `webapp/app/samples/briefs/opentag-daily.ts`. No email draft was created.
+Output: `reports/09-01-2026.html` (from `reports/build_report_09_01.py`) and the site at `webapp/app/analysis/opentag/daily-09-01-2026`, data in `webapp/app/samples/briefs/opentag-daily.ts`.
+
+Email: `reports/09-01-2026.email.html` and `.email.txt`, from `reports/build_email_09_01.py`, which imports the same lists as the report so the two cannot drift. Subject "Claude Tag daily brief, Sep 1", preview text is the counts, from `research415 <reports@415brand.com>`, segment `OpenTag` (the three founders). Set up as a Resend broadcast **draft**. A human sends it.
+
+Two things to know about the email build:
+
+- Every CSS value is copied from the `.analysis` stylesheet so the email matches the page exactly: same font stack, 15.5px body, 13.5px cells, `#c8ccd1` rules, `#a2a9b1` table borders, `#3366cc` links with no underline, and the green `#1baf7a` bar with `#176f4e` bold on the callouts. The inner table is 900px, not the usual 600px, because that is the report's `max-width`.
+- **The font stack must use single quotes around `'Segoe UI'`.** Double quotes close the `style=""` attribute and silently break every element that carries the font. This is fine in the report because that CSS lives in a `<style>` block. It is not fine inline.
+
+Broadcast for Sep 1: `bfd36409-c653-4814-8a7c-488182e8f940`, status `draft`, https://resend.com/broadcasts/bfd36409-c653-4814-8a7c-488182e8f940
+
+**The API key in `clients/RESEND.md` is rejected by the API** (`"API key is invalid"`), so `send_report.sh` and any direct `curl` will fail. Drafts go through the Resend connector until the key is replaced.
+
+Known cosmetic issue in `build_email_09_01.py`: the bullet marker cell emits `color:#202122;color:#72777d`. The second declaration wins so it renders correctly grey, but the duplicate should come out of `bullet()` next run.
 
 Sections: complaints, shopping, the ad swipe file, five bullets. Three tables, four to five rows each. No open-source section, because Claude Tag has no developer surface for a project to depend on. No "people happy with" section either, because the client README says everything past table 2 is bullets. **English-language reply targets only from this run on.**
 

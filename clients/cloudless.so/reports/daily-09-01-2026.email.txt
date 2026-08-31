@@ -1,0 +1,144 @@
+WISPR FLOW DAILY BRIEF
+For Tim at Cloudless, September 1, 2026
+
+Today's three moves: (1) Answer the two people asking out loud for a replacement: @FrancisSicuro (https://x.com/FrancisSicuro/status/2094436979853373614) wants one that does not need the internet, which is Cloudless in a sentence, and @4nushree__ (https://x.com/4nushree__/status/2094049699288477878) says she uses Wispr now and wants to switch. (2) Get into @shannholmberg's thread (https://x.com/shannholmberg/status/2094145545824829841), where @Ommiii_ (https://x.com/Ommiii_/status/2094331588163125639) and @randydesigner (https://x.com/randydesigner/status/2094457583868207434) are comparing notes on Wispr getting worse and one has already left for Superwhisper. (3) Reply to the three Aug 31 complaints that were still unanswered when this was written: @cyrusnaficy (https://x.com/cyrusnaficy/status/2094511580868456735), @Hola2Abhi (https://x.com/Hola2Abhi/status/2094301948262662568), @bsg_cap (https://x.com/bsg_cap/status/2094451599494332868).
+
+1. PEOPLE COMPLAINING ABOUT WISPR
+---------------------------------
+* X, @cyrusnaficy
+  Date: Aug 31
+  Post: Is it just me or has WisprFlow genuinely been bugging recently (https://x.com/cyrusnaficy/status/2094511580868456735)
+  Reach: 0 likes, no replies
+  What Tim can do: Nobody has answered it. Shortest reply on the list. Start here if you only have five minutes.
+
+* X, @Hola2Abhi
+  Date: Aug 31
+  Post: @tankots why is it that every time I try to write "you should do this", Wispr Flow makes it "I should do this"? It happens way too often! Are you aware of this, or its just me? (https://x.com/Hola2Abhi/status/2094301948262662568)
+  Reach: 0 likes, no replies
+  What Tim can do: He asked Wispr's founder directly and got nothing. The complaint is that the model rewrites what he said. Reply with what Cloudless does with the raw words.
+
+* X, @bsg_cap
+  Date: Aug 31
+  Post: wispr flow making lots of mistakes as i ramp up usage... this is what will stop me from adopting fully if it keeps happening (https://x.com/bsg_cap/status/2094451599494332868)
+  Reach: 0 likes, no replies
+  What Tim can do: A new user who has not committed yet and is already looking for a reason not to. Cheapest switch on this table. Ask him to try Cloudless on the same dictation and compare.
+
+* X, @Ommiii_
+  Date: Aug 31
+  Post: man wispr flow been kinda ass for me this last month (https://x.com/Ommiii_/status/2094331588163125639)
+  Reach: 5 likes, 3 replies
+  What Tim can do: The most-liked complaint of the two days, inside a big thread about work setups. Others in the same thread say they switched. Reply in the thread, not to him alone.
+
+* X, @deepak_creates
+  Date: Aug 31
+  Post: Wispr Flow has become unusable @WisprFlow (https://x.com/deepak_creates/status/2094438299746386078)
+  Reach: 3 likes, 3 replies
+  What Tim can do: Three people are already in there naming alternatives, one of them a rival's own rep. Get in before the thread closes on someone else's answer.
+
+2. PEOPLE SHOPPING AROUND OR ON THE FENCE
+-----------------------------------------
+* X, @FrancisSicuro
+  Date: Aug 31
+  Post: Without saying build my own what's a better wisprflow that doesn't require damn internet all the time (https://x.com/FrancisSicuro/status/2094436979853373614)
+  Reach: 1 like, 2 replies
+  What Tim can do: He wrote Cloudless's pitch for you and asked for it by name. Reply with the download link and the words "no internet needed". Best single post in today's brief.
+
+* X, @4nushree__
+  Date: Aug 30
+  Post: wispr flow but better. i use wispr flow rn i wanna switch to something better (https://x.com/4nushree__/status/2094049699288477878)
+  Reach: 0 likes, 2 replies
+  What Tim can do: She uses Wispr now and says she wants out. Two people have answered with nothing useful. Reply with one line and a link.
+
+* X, @_nitish_pandey_
+  Date: Aug 30
+  Post: someone created a wispr flow like project for local use right ? i need that. i have 16gb gpu free, i can use it (https://x.com/_nitish_pandey_/status/2093971255791960492)
+  Reach: 1 like, no replies
+  What Tim can do: He is about to go and set up an open-source clone. Free is not what he is missing. Reply with on-device and nothing to configure.
+
+* LinkedIn, Heather Doshay
+  Date: Aug 31
+  Post: I'm currently trying out Wispr Flow and loving it. I haven't paid yet because I've gotten free months for referring folks (https://www.linkedin.com/posts/doshay_as-promised-the-tech-stack-i-use-as-a-solopreneur-activity-7500233244332740609-EdHW)
+  Reach: 38 likes, 22 comments
+  What Tim can do: A solopreneur stack post that lists every tool she refuses to pay for. She is on Wispr only while the referral months last. Comment on the post, not in her DMs, so the other 22 commenters see it.
+
+* X, @sbliksc
+  Date: Aug 30
+  Post: Wispr flow is game changer. I'm still not buying premium tho (https://x.com/sbliksc/status/2093839321422033052)
+  Reach: 2 likes, 4 replies
+  What Tim can do: Likes the product, will not pay for it, so he is capped at 2,000 words a week. This is the one place where "no word limit" is the whole reply.
+
+3. PEOPLE HAPPY WITH WISPR
+--------------------------
+* LinkedIn, Brendan Wallace (Fifth Wall)
+  Date: Aug 31
+  Post: I am, quite literally, obsessed with Wispr Flow. It's not a Fifth Wall portfolio company. I'm not an investor. This is just a genuine obsession. I don't type anymore. (https://www.linkedin.com/posts/brendanfitzgeraldwallace_i-am-quite-literally-obsessed-with-wispr-activity-7500284423058124800-hvAJ)
+  Reach: 32 likes, 6 comments
+  Why it matters: A fund CEO writing an unpaid essay about the category. The argument he makes is that voice replaces the keyboard, not that Wispr is the only way to do it. That essay works for Cloudless too.
+
+* LinkedIn, Swapnil Tighare
+  Date: Aug 31
+  Post: I ranked 23 AI tools from S to F... Wispr Flow: voice-to-text that makes writing ridiculously fast (https://www.linkedin.com/posts/swapniltighare_i-ranked-23-ai-tools-from-s-f-and-yes-activity-7500225151473434624-fIgG)
+  Reach: 377 likes, 73 comments
+  Why it matters: The highest-reach Wispr mention anywhere in the window, in a tier list with 73 people arguing in the comments. Cloudless is not in the list and nobody named it.
+
+* X, @NotZainAgain
+  Date: Aug 30
+  Post: Wispr flow has made me so much better at enunciating my words. I get so annoyed having to fix something manually so I feel like my speaking skill has gone up to 100 (https://x.com/NotZainAgain/status/2093905307697115217)
+  Reach: 55 likes, 12 replies
+  Why it matters: Wispr's users are training themselves around its errors and calling that a feature. Useful to know what a switcher will accept as normal.
+
+* LinkedIn, Rolanda Fu (Madrona)
+  Date: Aug 31
+  Post: Today, we're excited to announce the 2026 IA40 List, 45 winners, chosen by 70+ investors across 450 nominated companies... Wispr Flow (https://www.linkedin.com/posts/rolandafu_six-years-ago-we-launched-the-madrona-ia40-activity-7500213324303798272-utZy)
+  Reach: 127 likes, 4 comments
+  Why it matters: Wispr made the Madrona IA40 list this week, also posted by @notablecap (https://x.com/notablecap/status/2094485494126285283). More press coming, so expect the complaint threads to get busier, not quieter.
+
+* X, @rahulnanda86
+  Date: Aug 31
+  Post: @WisprFlow @tankots OH MY GOD!! Thank you so much for solving this. This was so pissing off. (https://x.com/rahulnanda86/status/2094460821103636949)
+  Reach: 0 likes
+  Why it matters: Wispr's account and founder both replied to users on X in this window, which they were not doing last week. The free run of being the only answer in a thread is ending.
+
+4. WISPR ADS AND CREATOR POSTS THAT WORK, TO SEND YOUR TEAM
+-----------------------------------------------------------
+* Ad: Stop typing AI prompts (https://www.facebook.com/ads/library/?id=1689528405657643)
+  Why we know it works: Ran 132 days with 11 duplicate copies. Wispr's longest-running ad ever.
+  The hook, word for word: "This designer stopped typing prompts into ChatGPT and Midjourney. He pulls references, describes what he wants out loud, and Flow writes the prompt. No typing. No typos. This is just how he works with AI."
+  What to brief: One named person doing one real job, filmed on their own screen, product name held to the end. Brief this structure first and make the Cloudless version with the wifi visibly off.
+
+* Ad: Built a game using only voice (https://www.facebook.com/ads/library/?id=1083409960707903)
+  Why we know it works: Ran 132 days, was retired, then relaunched Aug 12 and is live again. They tested it, stopped it, and chose to bring it back.
+  The hook, word for word: "This developer built a full game without touching his keyboard. Aarav Singh used Flow to iterate with Lovable, design in Figma, and ship. Flow understands what you mean, even when coding and building with AI."
+  What to brief: The ad is a finished thing, not a feature. Pay a developer to ship something small end to end on Cloudless and film all of it.
+
+* Ad: Break free from the keyboard (https://www.facebook.com/ads/library/?id=837757698637895)
+  Why we know it works: Ran 114 days across 5 copies with no creator and no face in it.
+  The hook, word for word: "Old you: stuck clacking keys. New you: speaking ideas into reality. Wispr Flow turns your voice into clean, structured text instantly."
+  What to brief: Two lines, before and after, text on screen. The cheapest thing on this list to make and it ran four months. Give it to the editor today.
+
+* Creator ad: Same job, half the effort (https://www.facebook.com/ads/library/?id=1739394263858963), Brown Chronicle
+  Why we know it works: Live 32 days. The longest-running creator ad on Wispr's account.
+  The hook, word for word: "Same team, same job. He's done by lunch and I'm still typing. His secret: he never types anything. He talks, Flow cleans it up and formats it."
+  What to brief: The whole ad is envy of a coworker and the product only arrives in line three. Best creator template on the page. Send this one to every creator on the roster.
+
+* Creator post: @celestemariamiller (https://www.tiktok.com/@celestemariamiller/video/7677675595068738829)
+  Why we know it works: 37,300 plays and 1,429 likes on 24,600 followers, unpaid, and she has now done it twice in a week (https://www.tiktok.com/@celestemariamiller/video/7679955698272242958).
+  The hook, word for word: "This is not an ad. I just really love Wispr flow."
+  What to brief: She is making Wispr's best organic content for free, on the ADHD angle, and nobody is paying her. Message her today.
+
+Takeaway: every winner above is the same four lines. Open on a person or an annoyance, never on the product. The product arrives in line three. The close is "free". Nobody demos a feature, they finish one specific task on camera, a game shipped or a coworker beaten, never "writing". Give the team that shape and these five links. The one thing none of these ads can say is privacy or on-device, because in 1,453 creatives Wispr has never once used either word.
+
+5. WHAT HAPPENED THIS WEEK
+--------------------------
+* Accuracy is the whole story. Nine separate people said Wispr got worse between Aug 29 and Aug 31, and three named where they went: Superwhisper twice (@sajag_ (https://x.com/sajag_/status/2094477861507780635), @chiggyio (https://x.com/chiggyio/status/2094546725163704376), @randydesigner (https://x.com/randydesigner/status/2094457583868207434)). The anchor thread is still r/WisprFlow, Aug 27 (https://www.reddit.com/r/WisprFlow/comments/1vzhfsu/has_anyone_else_noticed_a_change_in_transcription/), now at 12 upvotes and 14 comments.
+
+* Wispr's paid creators have gone quiet and its unpaid ones have not. New ads fell from 278 launched on Aug 21 to 27 across Aug 29 to 31, and every one of the 27 came from Wispr's own page with no creator co-brand, against 48 of 104 on Aug 24 (Ad Library (https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=110864474787474&search_type=page&media_type=all)). brentvonn, Ace Consulting, Angel D and Marissa Armstrong are all free right now, and @kaleighf (https://x.com/kaleighf/status/2094481244507779081) said in public that Wispr and Willow are the two sponsors she wants. Section 4 has the ones to approach first.
+
+* Wispr started advertising that it is worth paying for. "A subscription worth keeping" (https://www.facebook.com/ads/library/?id=1390742489857346) launched Aug 30, the first creative in a week that argues the price instead of the speed. It is also the only angle Wispr added this week.
+
+* Wispr's team is now answering on X. Both @WisprFlow and @tankots replied to users (https://x.com/rahulnanda86/status/2094460821103636949) in this window, and @MansinMike walked a user through a settings fix (https://x.com/MansinMike/status/2094484841790050618). Last week they were only on LinkedIn. Complaints will stop sitting unanswered for two days.
+
+* Rivals are working the same threads Tim should be in. Tota's rep posted "Fancy giving @heytota a try?" into three (https://x.com/rjcrabbe/status/2094506244602056949) separate (https://x.com/rjcrabbe/status/2094503960828575894) complaint threads (https://x.com/rjcrabbe/status/2094514090756469143) on Aug 31 plus a standalone post (https://x.com/rjcrabbe/status/2094051891541926387), and Voibe ran a thread on 36 tracked Wispr outages since December and its cloud dependency (https://x.com/VoibeAI/status/2094305523948544137). That is Cloudless's argument being made by someone else.
+
+
+Sent by research415 for Cloudless. Unsubscribe: {{{RESEND_UNSUBSCRIBE_URL}}}
