@@ -251,3 +251,226 @@ cloud-commitment key finding went too, as already known.
 - **Free and reliable:** the iTunes lookup API (`itunes.apple.com/lookup?id=<id>&country=us`) returns
   rating count and average with no key, and Hacker News Algolia needs `curl` rather than Python urllib,
   which fails TLS verification on this machine.
+
+## Aug 31 daily run
+
+Rendered at `/analysis/cloudless/daily-08-31-2026`, built from
+`webapp/app/samples/briefs/wispr-cloudless-daily.ts`. Window Aug 29 to 31, pulled Aug 31.
+Follows the Aug 28 settled shape: complaints, shopping, fans, creators, week, sources, with no
+separate "New Wispr ads" section. The ad findings live in the creators table and the week bullets.
+Not yet emailed to Tim, no Resend broadcast drafted.
+
+### Tooling this run
+
+- **Apify worked**, unlike the Aug 31 weekly. X, Reddit, LinkedIn and TikTok all returned.
+- **`scraper_one/x-posts-search` caps at 100 and the cap now fills in a single day.** A
+  `timeWindowHours: 48` run came back with Aug 31 only. Run a second query with the bare phrase
+  `"wispr flow"` and `timeWindowHours: 60` to reach Aug 29 and 30, and dedupe. The dataset also
+  repeats its first 20 rows, so dedupe on `postUrl`.
+- **Use `apify/facebook-ads-scraper` for the ads, not the browser pane.** `startUrls` with the page
+  library URL and `resultsLimit: 1200` returned all 895 active ads in about four minutes, with
+  `startDateFormatted`, `snapshot.body.text`, `snapshot.title`, `collationCount`,
+  `snapshot.brandedContent.pageName` for the co-brand line, and `impressionsWithIndex` for the low
+  impression flag. `resultsLimit: 200` only reaches Aug 29, so it undercounts the window. Filter
+  and count in Python from the saved tool-result file.
+- **Meta indexes the newest days late.** Aug 30 and Aug 31 showed 4 and 2 ads against 21 on Aug 29.
+  Say so next to the number rather than reporting a collapse to two ads a day.
+- **App Store reviews are free and dated:** `itunes.apple.com/us/rss/customerreviews/id=6497229487/sortBy=mostRecent/json`
+  gives rating, title, body and an `updated` timestamp. The lookup API had Wispr at 14,682 iPhone
+  ratings and 4.84 average on Aug 31, against 14,620 in the Aug 30 weekly.
+- Reddit search is now mostly deal spam and free clones, both of which `IGNORE_RULES.md` drops.
+  Scrape `reddit.com/r/WisprFlow/new/` with `startUrls` as well, or the subreddit is invisible.
+
+### What this run found
+
+- Nine people said accuracy got worse in three days. Three named where they went, Superwhisper twice.
+- Two people asked in public for an offline replacement, which is the closest thing to a Cloudless
+  ad anyone has written this week.
+- Wispr's new ad count fell from 278 on Aug 21 to 27 across Aug 29 to 31, 16 of them dynamic
+  template creatives, and **zero carry a creator co-brand** against 48 of 104 on Aug 24.
+  brentvonn, Ace Consulting, Moe, Ashley Lee and Kio are all off the page right now.
+- Wispr ran its first price-defending creative in a week, "A subscription worth keeping", on Aug 30.
+- **Wispr's team started replying on X**, which they were not doing last week.
+
+### Follow up tomorrow
+
+- Did anyone reply to @FrancisSicuro or @4nushree__ first? Both were open when this went out.
+- Watch whether the creator co-brands come back to the Ad Library. If they stay off, either the
+  program paused or Wispr moved the spend, and both are worth knowing.
+- Check whether @kaleighf, @celestemariamiller or @sociallyjewlz got picked up by Wispr or Willow.
+- The r/WisprFlow accuracy thread from Aug 27 is the anchor and was at 14 comments. Track it.
+- Ask Tim whether rule 2 should exempt people who are *asking* for a free local tool rather than
+  already using one. @_nitish_pandey_ was kept in this report on that reading.
+
+### Aug 31 daily, revision 3 (this is the shape to keep)
+
+Section 4 went through two wrong versions before it landed. The final one is
+**"Wispr ads and creator posts that work, to send your team"**, and it is a swipe file,
+not analysis. Tim forwards the links. Three tables, five rows each, every row carrying a
+link that opens one creative, the hook quoted word for word, the evidence it worked, and
+one line of brief.
+
+- **What was wrong with version 1** (a creator list): it named creators without telling
+  Tim what to do with them.
+- **What was wrong with version 2** (format and angle performance tables): it was a chart.
+  Correct numbers, but Tim cannot forward "dynamic templates outperform static images" to
+  a freelance editor. Matt's words: "I want to give them links to actual examples."
+- **What version 3 does**: five brand ads for the ad manager, five creator-fronted ads for
+  the creators, five TikTok posts ranked by engagement. Every row is forwardable.
+
+`skills/DAILY_REPORT_GUIDANCE.md` section 5 is now this method, and is the thing to read
+before building section 4 for any client.
+
+**The evidence that an ad works, in order of strength:** how many days it ran, how many
+duplicate copies of it are live, whether it was retired and then relaunched, and for
+organic posts likes over plays rather than raw plays. Say the evidence in the row.
+
+### Aug 31 daily, revision 2
+
+Section 4 changed from "Creators posting about Wispr" to **"Wispr's ad campaigns, and what
+is working"** (Matt, Aug 31): format performance, angle performance, and the TikTok picture,
+instead of a creator list. The creator material did not disappear, it moved. Paid-creator
+performance is now a row in the angle table, and the unpaid creators are one week bullet.
+`skills/DAILY_REPORT_GUIDANCE.md` and `clients/DAILY_REPORT_GUIDANCE.md` both have a new
+section 5, "Reading the competitor's ad campaigns", which is the standing method.
+
+**Table sizes now follow the skill, not the Aug 28 note.** The skill was updated to
+"every table is three to five rows" while this report was being written, which contradicts
+the Aug 28 line above ("Sizes settled at 10 complaints, 5 shopping, 5 fans, 7 creators").
+The newer rule won. Complaints went from ten rows to five. **Tim should confirm which he
+wants**, because ten reply targets a day and five reply targets a day are different products.
+
+### Seen but not sent, Aug 31
+
+Cut from the complaints table to get to five rows. Promote any of these tomorrow if the
+thread grows.
+
+| Where | Post | Reach | Why it was cut |
+|---|---|---|---|
+| [X, @mushr00ml00p](https://x.com/mushr00ml00p/status/2094376168879194344) | "buying 1 year of wispr flow biggest mistake of my life" | 0 likes, 1 reply | Angry annual payer, good target, but three fresher zero-reply posts beat it. |
+| [X, @chiggyio](https://x.com/chiggyio/status/2094516154446282780) | "has @WisprFlow gotten less accurate for anyone else?" | 2 likes, 1 reply | Two switchers in the thread, but she has already gone back to Superwhisper. [@falcone_design](https://x.com/falcone_design/status/2094534076501832087) in the same thread is the live target. |
+| [X, @sajag_](https://x.com/sajag_/status/2094477861507780635) | "quality has deteriorated significantly MoM... Cancelling my subscription" | 1 like, 1 reply | Already switched. Still cited as a source in the week bullets. |
+| [X, @mahesh_s117](https://x.com/mahesh_s117/status/2094331819730801092) | "Stupid Wispr flow keyboard I should uninstall it." | 1 like, 1 reply | iPhone keyboard, already the most-covered complaint of the past week. |
+| [App Store, 3 stars](https://apps.apple.com/us/app/wispr-flow-ai-voice-keyboard/id6497229487) | "there's an error with the transcription and nothing can be found" | Aug 29 review | No reply possible, so it fails the "what can Tim do today" test. Keep for a post. |
+
+### Ad analysis, Aug 31 (the numbers behind section 4)
+
+Corpus: 895 live ads plus 558 finished creatives back to Oct 9, 2025. 1,453 total.
+
+- **Format.** Video 698 live, median 11 days live, 29% starved, 19% duplicated, 14% of
+  finished ones killed inside a week. Dynamic template 177 live, 6% starved, 55% duplicated,
+  33% ran 30+ days, the best-performing format. Static image 18 live, median 5 days,
+  8 of 9 finished ones killed inside a week, none ever ran a month. Carousel used once,
+  ran 49 days, never repeated.
+- **Angle.** AI prompting is the winner: 5% killed inside a week, 37% ran 30+ days, and all
+  four 132-day creatives. Speed and anti-typing is the biggest bucket and the worst live
+  starve rate at 32%. Notetaker died fast historically (median 14 days) but the current
+  batch is 53% duplicated and only 12% starved, so it is being scaled now. Language and
+  India: only 5% ever run 30 days.
+- **Creator co-brands outlive brand-made ads**, 23 days against 19, and get killed less
+  often, 13% against 17%. Which is why zero co-brands in the Aug 29 to 31 batch matters.
+- **The negative search is the headline.** Across all 1,453 creatives: privacy 0 hits,
+  on-device 0 hits, offline 1 hit and that one is about a shopkeeper going online.
+  Accuracy 33 hits, so Cloudless should not fight Wispr on accuracy. Re-run this every day.
+- **TikTok.** Zero Wispr ads in the TikTok ad library across three searches. The library
+  covers the EEA and UK only, so this rules out European TikTok spend, not American.
+  A "wispr" keyword search returned seven ads from other advertisers, three from
+  [Scrybapp](https://scrybapp.com/), a Mac dictation app selling "100% offline with Whisper
+  AI, 99+ languages, $19 lifetime license, no subscription". That is Cloudless's positioning,
+  bought against Wispr's name. **Read Scrybapp's three creatives tomorrow.**
+
+### Tooling, revision 2
+
+- `apify/facebook-ads-scraper` must be run twice, `active_status=active` and
+  `active_status=all`. Active-only has the low-impression flag but no finished creatives.
+  All has 558 finished creatives with real `endDateFormatted`, which is where lifespan and
+  kill rate come from. No `spend`, `reachEstimate` or `totalActiveTime` outside the EU.
+- TikTok EU ads library works through `lexis-solutions/tiktok-ads-scraper` (`country: "all"`,
+  `sortBy: "create_time,desc"`) and `data_xplorer/tiktok-ads-scraper` (`mode: "library"`).
+  A keyword search on a brand name returns rivals who bought that name.
+- **Apify hit its monthly hard limit during this run**, after the ad pulls and before the
+  four rival TikTok creatives could be opened. Top the plan up before tomorrow. sprich.ai's
+  ad copy is the one open item.
+
+### The swipe file that shipped Aug 31, for continuity
+
+Ads for the ad manager, ranked by days run:
+[Stop typing AI prompts](https://www.facebook.com/ads/library/?id=1689528405657643) 132d/11 copies,
+[Built a game using only voice](https://www.facebook.com/ads/library/?id=1083409960707903) 132d then relaunched,
+[Break free from the keyboard](https://www.facebook.com/ads/library/?id=837757698637895) 114d,
+[Bad prompts = bad results](https://www.facebook.com/ads/library/?id=1884523905814518) 112d,
+[Talk to AI. 10x the answers.](https://www.facebook.com/ads/library/?id=846540488130840) live 32d.
+
+Creator-fronted ads: Brown Chronicle [Same job, half the effort](https://www.facebook.com/ads/library/?id=1739394263858963)
+live 32d and the best template on the list, Ali Abdaal
+[156 wpm](https://www.facebook.com/ads/library/?id=816599691475018), Brown Chronicle
+[Code with one finger](https://www.facebook.com/ads/library/?id=1716157349595540) 4 copies,
+Dominicjseph [Your brain > your fingers](https://www.facebook.com/ads/library/?id=1070963795405951),
+Bryce Querubin [One word = full template](https://www.facebook.com/ads/library/?id=1333848632295775).
+
+TikTok by engagement rate: @mytechceo 5.5% (paid), @jakeabrams21 5.2% (unpaid),
+@celestemariamiller 3.8% (unpaid, twice in a week), @studiodanielaromero 13x her follower
+count in Spanish, @benkaluza's "Free Wispr Flow Alternatives" at 506,500 followers with
+Cloudless missing from it.
+
+**The shape every winner shares:** four lines, open on a person or an annoyance and never
+on the product, product enters in line three, close is "free", and the task shown is always
+specific (a client time tracker, a bug in Cursor) rather than "writing".
+
+**Do not repeat a swipe row on consecutive days.** Once Tim has the link, it is his. Next
+report shows what is new at the top of the library and anything that got relaunched.
+
+**The format and angle numbers from revision 2 are still true** and are in the section above.
+They did not survive into the report because they are not forwardable, but they are the right
+way to *pick* which five ads go in the swipe file. Keep computing them, publish the links.
+
+### Re-dated to Sep 1 and sending tomorrow
+
+Matt, Aug 31: "Change this report to be for 9-1, we're sending this out tmrw actually."
+Route is now `/analysis/cloudless/daily-09-01-2026`, built from
+`webapp/app/samples/briefs/wispr-cloudless-daily-09-01.ts`. The Aug 31 route is deleted.
+
+The data was pulled Aug 31 and every row is dated Aug 30 or Aug 31, which is exactly the
+two-day window a Sep 1 brief should cover, so nothing had to be cut. Time-relative wording
+was rewritten so it does not go stale overnight ("posted a few hours ago" became "nobody
+has answered it").
+
+**The brief file is dated and the route is dated.** Other clients use an undated brief file
+against a dated route, which means the next daily silently rewrites the last one that was
+already sent. Do not copy that here.
+
+**Before this sends tomorrow, two things need a human:**
+
+1. **Re-check the three unanswered complaints.** @cyrusnaficy, @Hola2Abhi and @bsg_cap are
+   in the report because nobody had replied to them on Aug 31. "Be the first reply" is the
+   whole value of those rows and it decays overnight. If Wispr's team got there first, and
+   they started replying on X this week, the rows are wrong. Open the three links.
+2. **There is no Sep 1 data in this report.** It covers Aug 30 to 31 and stops. If anything
+   happens on Sep 1 morning it will not be in here. Apify was over its monthly hard limit
+   when this was built, so a top-up is needed before any fresh pull is possible.
+
+### Aug 31 daily, revision 4 (final)
+
+- **Section 4 is one table of five examples, not fifteen.** Matt, Aug 31: "Too much
+  content on there, show the most high impact things, at most 3-5 pieces of content."
+  Three brand ads, one creator ad, one organic creator post, each labelled by kind so
+  Tim knows who to forward it to. The three-table version is dead.
+- **All small print is gone.** The report footer and the whole Sources section were
+  removed. Every row links to its source, which is the sourcing. Written into both
+  copies of the skill as a finish-list rule: no footer, no methodology paragraph, no
+  caveat about what a tool could not reach.
+- The site-wide footer in `webapp/app/layout.tsx` (contact line plus the trademark and
+  non-affiliation notice) is still there. It is on every page of the marketing site,
+  not just this report, so removing it is a separate decision. Ask Matt.
+
+**Two conflicts in the shared skill, both from other clients' sessions, both unresolved:**
+
+1. `DAILY_REPORT_GUIDANCE.md` gained a mandatory section 1, "Open source projects
+   running [competitor]", ranked by GitHub stars. That is a developer-tool play and it
+   does not fit Cloudless. Wispr Flow has no meaningful open-source dependency surface
+   and Tim's reply targets are consumers on X, not maintainers. The Aug 31 Cloudless
+   report has no such section. The skill now carries a line saying section 1 only
+   applies where the competitor has a developer surface, but somebody should confirm
+   that rather than leaving two clients reading the same file differently.
+2. Table sizes: the skill says three to five rows, the Aug 28 note in this file says
+   ten complaints. Still Tim's call.
