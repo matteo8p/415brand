@@ -45,6 +45,7 @@ site: <https://...>
 market: <e.g. United States, English-language reply targets only>
 resend_segment: <segment id, or none>
 reply_to: matt@415brand.com
+slack_channel: <the shared Slack channel id, e.g. C0BTM8JCS4U, or none>
 ---
 
 ## What they sell
@@ -76,6 +77,8 @@ Write it tight, 100 to 220 lines, plain words. Facts about how to run this clien
 
 ## 5. Write the other three files
 
+Matt's own instructions arrive as dated files in the client folder, `clients/<slug>/<MM-DD-YYYY>.md`, free text. Nothing to set up for that. The three files below are the agent's.
+
 `NOTES.md`:
 
 ```markdown
@@ -103,6 +106,8 @@ Newest first. One entry per report sent or built. The daily and weekly skills re
 ## 6. Email
 
 For a live client: create a Resend segment named for the slug, add the readers' contacts, and put the segment id in CLIENT.md. Do it through the Resend connector or the dashboard, and confirm the contact list with `list-contacts` before the first draft. Record the segment in `ops/RESEND.md`. Never use the General segment. For a prospect: `resend_segment: none`.
+
+Matt also opens a shared Slack channel per live client, `#research415-<slug>`, and posts the report link there. Put its channel id in `slack_channel`. The report skills read it for the client's requests. Nothing is ever posted there by an agent.
 
 ## 7. The first report
 

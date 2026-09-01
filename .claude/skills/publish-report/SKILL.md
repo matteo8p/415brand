@@ -65,7 +65,7 @@ If the API key is rejected, the Resend MCP connector can create the draft instea
 
 ## 6. The run log
 
-Append the entry at the top of `clients/<client>/RUNLOG.md`:
+Append the entry at the top of `clients/<client>/RUNLOG.md`. Create the file with the standard header if it does not exist:
 
 ```
 ## YYYY-MM-DD daily (window Mon D to Mon D)
@@ -76,7 +76,7 @@ Append the entry at the top of `clients/<client>/RUNLOG.md`:
 **Tooling.** what broke, what worked, in one to five bullets. Anything general goes into .claude/skills/research-pulls/SKILL.md too.
 ```
 
-Then `clients/<client>/NOTES.md`: move any Open item you applied to Standing or Done. Add anything the client or Matt said during the run. If the client gave a new ignore rule, add it to `IGNORE_RULES.md` as proposed or confirmed.
+Then `clients/<client>/NOTES.md` (create it if missing, with the Open, Standing and Done headings): record every dated note and Slack request that was applied in this run, with its date and who said it, under Standing if it keeps applying or Done if it was a one-off. Leave Matt's dated note files where they are, they are his. If the client gave a new ignore rule, add it to `IGNORE_RULES.md` as proposed or confirmed.
 
 If the client keeps a `leads/seen.jsonl`, append every row sent.
 
@@ -87,6 +87,7 @@ One short message:
 - the live URL and the archive path
 - the Resend preview link, with "draft, not sent"
 - the three moves in one line each
+- a Slack message for Matt to post in the client's channel, two lines: the link, and the one row to look at first. Matt posts it. The agent never posts in a client's channel.
 - anything that needs a human before send: rows whose value decays overnight ("nobody has replied yet" rows to re-open), a number to confirm from an admin console, an open question for the client
 
 Then stop. Matt sends.

@@ -16,11 +16,13 @@ A run takes half a day. Pull everything on the same day, and do not start writin
 Same as the daily, in order:
 
 1. `clients/<client>/CLIENT.md`, all of it. The **Report shape** section says how this client's weekly differs (two fronts instead of one competitor, no ads section, the conflict rules).
-2. `clients/<client>/NOTES.md`. **Open** items apply to this report. **Standing** items always apply.
-3. `clients/<client>/IGNORE_RULES.md`.
-4. `clients/<client>/RUNLOG.md`, the top entries, including the dailies since the last weekly. Anything the dailies already told the reader is not repeated in the weekly. The weekly says what changed since the last weekly.
-5. The last weekly: `python3 tools/report.py last <client> weekly`. The objection mix, the scorecard and the creative watch list are trended against it.
-6. `clients/<client>/research/<client>.md` and `research/competitors.md` (or the competitor's own dossier). If these do not exist, research and write them first (`new-client`).
+2. Every dated note in the client folder, `clients/<client>/<MM-DD-YYYY>.md`. Matt's own words after a call. Newest wins.
+3. The client's Slack channel (`slack_channel` in CLIENT.md), the channel and every thread since the last weekly. What they asked for, what they acted on, what they said was missing. Never post there.
+4. `clients/<client>/NOTES.md`, if it exists. Standing rulings and the record of what was applied. Create it at the end if missing.
+5. `clients/<client>/IGNORE_RULES.md`.
+6. `clients/<client>/RUNLOG.md`, the top entries, including the dailies since the last weekly, if it exists. Anything the dailies already told the reader is not repeated in the weekly. The weekly says what changed since the last weekly.
+7. The last weekly: `python3 tools/report.py last <client> weekly`. The objection mix, the scorecard and the creative watch list are trended against it.
+8. `clients/<client>/research/<client>.md` and `research/competitors.md` (or the competitor's own dossier). If these do not exist, research and write them first (`new-client`).
 
 Then the skills: `research-pulls`, `competitor-customers` (for the account table when the client is lead-first), `ad-swipe-file` (for the ad template analysis), `brief-format`, `report-style`, `publish-report`.
 

@@ -57,6 +57,16 @@ From the co-brand line, count paid creators per creator and note when they disap
 
 Say when a big-name paid post underperformed, with both numbers, as a warning about where the money goes.
 
+**When the client's focus is creator content** (OpenTag asked for this on Sept 1: "what kinds of creator content styles are working well for their competitors, so they can emulate that kind of content"), the creators table leads the report and grows past five rows. Pull creator posts about every competitor and the category itself (X, TikTok, YouTube, LinkedIn, Instagram, plus the co-branded creator ads in the Meta library), over the last week rather than two days, because creator posts take days to accumulate their numbers. Columns:
+
+The creator and post | Style | Why we know it works | The hook, word for word | What to emulate
+
+- **Style** names the format in plain words: talking head to camera, screen recording of the product doing one job, text on screen with no face, a bill or receipt reveal, a before-and-after, a "comment X to get Y" offer, a thread of screenshots, a duet or a reply video. Say the length. Say whether the product appears in the first line or the third.
+- **Why we know it works** is the engagement rate (likes over plays or views) against the creator's follower count, and whether the competitor paid for it (co-brand, #ad, a comment offer). A 2,000-follower creator at 9% beats a 5.4M-follower creator at 0.25%.
+- **What to emulate** is addressed to the founder who will make the video: the structural move, the length, where the product enters, what the close is. Say when not to copy something (a paid mechanic the client cannot fund, a style that only works with a face the client does not have).
+
+The Takeaway names the two or three styles that win across the set, with the numbers, and the one style nobody in the category is using yet.
+
 ## 6. Rules
 
 - Every link resolves to one creative.

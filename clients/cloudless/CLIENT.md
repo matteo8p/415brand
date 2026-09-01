@@ -9,6 +9,7 @@ site: https://cloudless.so
 market: Consumer, worldwide. Non-English posts can be reply targets when Tim can answer them, French has worked.
 resend_segment: e3b1e4f6-3240-4fd3-8ce3-a2dbda9fb709
 reply_to: matt@415brand.com
+slack_channel: C0BTUF18WUE
 ---
 
 # Cloudless
@@ -31,6 +32,10 @@ In priority order:
 4. Wispr's influencers, paid and unpaid (Tim, Aug 27). Paid creators come from the Meta Ad Library co-brand line ("Wispr Flow with X" or "X with Wispr Flow"). Unpaid ones from TikTok. The useful angle is the gap: big "free Wispr alternatives" videos that do not mention Cloudless, and creators asking for replacement suggestions.
 5. A source link on every claim, including the week bullets (Tim, Aug 27).
 
+**What Tim said in Slack, Aug 31 to Sept 1.** On what is working: "I'm not doing a great job of this right now. We were previously running Reddit ads, and have tried some SEO/GEO and general content marketing (like comparing word accuracy of different models/apps). But I wouldn't say anything in particular is working. We're definitely losing to FluidVoice, etc." On what he wants to try: "SEO, influencer videos. Are the two I think most about. If we could get ChatGPT/Codex whatever to recommend us that'd be ideal." On content: "Main blocker here is that that is really expensive and we're a free app. But I agree it's an awesome idea and we should be doing way more content." On money: he is actively cutting costs.
+
+So the two things every Cloudless report is judged on are **search (SEO and being recommended by ChatGPT and Codex)** and **creator videos**, and every recommendation has to be cheap: pages Tim can generate, creators paid on performance, replies that cost a minute. FluidVoice is a competitor Tim says he is losing to, so switches to it are intel worth a bullet even though the ignore list drops free-competitor posts as reply targets.
+
 ## Report shape
 
 **Daily.** Title "Wispr Flow daily brief". Subtitle "For Tim at Cloudless, Month D, YYYY". Contents box, then the green "Today's three moves" box, then:
@@ -44,6 +49,8 @@ In priority order:
 No "New Wispr ads" stats section. No "What we left out" section. No footer, no sources section, no methodology. The email carries the contents box as plain numbered text because in-page anchors do not navigate in webmail.
 
 Table size is five rows. The Aug 28 daily ran ten complaints, the shared skill then settled on three to five, and the Aug 31 and Sept 1 dailies ran five. Tim has not said which he prefers.
+
+**Search and AI recommendations, standing from Sept 1.** Tim's two priorities are SEO and creator videos, and being recommended by ChatGPT and Codex. Matt told him in Slack (Sept 1) that SEO and AI recommendations are the same job, because the assistants use web search. So: the swipe file and creators section stay, and the weekly carries a search section built around page counts and sitemaps. Matt promised the next report would map Cloudless's sitemap against Wispr Flow's and Willow Voice's and list the pages Cloudless could spin up (comparison pages against every rival, "why local-first dictation matters" articles, a Product Hunt launch for referring links). Tim: "Okay sounds great!" The ranking of any SEO finding is by what a one-person free app can ship this week.
 
 Cloudless's pitch to lean on in the advice cell: free, on-device, Mac, Windows and iOS, no word limit. Never claim a product detail that has not been confirmed. Write "if Cloudless does X, say so."
 
@@ -69,6 +76,8 @@ Cloudless's pitch to lean on in the advice cell: free, on-device, Mac, Windows a
 | App Store | iTunes lookup, free | Wispr `itunes.apple.com/lookup?id=6497229487&country=us` for rating count and average. Reviews `itunes.apple.com/us/rss/customerreviews/id=6497229487/sortBy=mostRecent/json`. Cloudless app id `6760565298`. |
 | Hacker News | Algolia, free | `hn.algolia.com/api/v1/search_by_date?query=wispr`. Use `curl` over https. |
 | Similarweb, Google Ads Transparency, Wispr's own pages | Firecrawl, weekly | Similarweb and the Meta library need `proxy: "stealth"`. Read Similarweb as markdown, a JSON extraction returned the wrong month. |
+| Sitemaps | Firecrawl `map`, weekly | `cloudless.so`, `wisprflow.ai`, `willowvoice.com`, and FluidVoice's site. Count pages by type (comparison, blog, feature, language). Wispr's comparison pages are text dumps built for search engines, for example `wisprflow.ai/post/wispr-flow-vs-willow-voice`. The gap list is the finding. |
+| FluidVoice | X and Reddit, the same queries with `fluidvoice` | Tim says he is losing to it. Count switches to it and who names it. Intel for the bullets, not reply targets. |
 
 **Noise.** Willow Voice planted 11 templated "I started researching…" posts from 11 new accounts across 11 subreddits on Aug 24 to 26. If it recurs, log the pattern once, never list the posts.
 
@@ -79,6 +88,7 @@ Cloudless's pitch to lean on in the advice cell: free, on-device, Mac, Windows a
 - Subject "Wispr Flow daily brief, Mon D" or "Wispr Flow weekly brief, Mon D". Preview text is the counts: "5 Wispr complaints to reply to, 5 people shopping around, and the 5 Wispr ads worth copying."
 - The email must match the report exactly, tables and all (Matt, Aug 28). Under 55KB. Unsubscribe line with `{{{RESEND_UNSUBSCRIBE_URL}}}`, plain-text version alongside.
 - Broadcast draft only. Matt sends from the dashboard.
+- **Slack.** Shared channel `#research415-cloudless` (`C0BTUF18WUE`) with Tim. Matt posts the report link there the morning it goes out and Tim answers in threads. Read the channel and its threads before every run. Draft the Slack message for Matt. Never post there.
 
 ## Conflicts and confidentiality
 
@@ -91,3 +101,6 @@ Cloudless's pitch to lean on in the advice cell: free, on-device, Mac, Windows a
 2. Should ignore rule 2 exempt people who are asking for a free local tool rather than already using one? `@_nitish_pandey_` was kept on that reading.
 3. Does Cloudless handle mixed-language speech? Several people raised it.
 4. Which of the proposed ignore rules 3 to 8 does Tim want kept?
+5. Paid trial and level of service. Tim (Sept 1): "I'm torn on this. I like the service, but don't have a lot of cash in the company right now. I'm actively trying to cut costs. Let me see if I can find some budget." Then: "Definitely happy to write a quote, and I'm also happy to pay. I just need to figure out how much and what level of service makes sense." Open: the price, the service level, and a testimonial quote for the site.
+6. Did Tim comment on the r/macapps "best on-device voice transcription app" thread (`reddit.com/r/macapps/comments/1w3ljff`)? He thinks he did. Check before listing it again.
+7. Does Tim want introductions to UGC creators and creator agencies that charge on performance (Matt offered, Sept 1)?

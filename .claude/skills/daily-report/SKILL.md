@@ -15,16 +15,18 @@ Total time for a run is about an hour. Pulls run in parallel and take twenty to 
 
 Read these, in this order, before doing anything else:
 
-1. `clients/<client>/CLIENT.md`. Who they are, who reads it, the report shape for this client, what not to pitch, the exact pulls, the email segment, the conflicts. The frontmatter has the machine-readable bits.
-2. `clients/<client>/NOTES.md`. Every item under **Open** applies to this report. Every item under **Standing** always applies. These are the client's own requests and Matt's rulings, and they override the defaults in this skill.
-3. `clients/<client>/IGNORE_RULES.md`. The silent filter. Dropped posts are never shown to the reader.
-4. `clients/<client>/RUNLOG.md`, the top entry. What was found last time, the rows that were cut ("Seen but not sent"), and what to follow up.
-5. Yesterday's report: `python3 tools/report.py last <client> daily` and read the JSON. Nothing in it reappears today unless the thread grew.
-6. `clients/<client>/research/` when a product fact is needed for an advice cell. Never claim a client product detail that is not in there or in CLIENT.md. Write "if [client] does X, say so."
+1. `clients/<client>/CLIENT.md`. Who they are, who reads it, the report shape for this client, what not to pitch, the exact pulls, the email segment, the Slack channel, the conflicts. The frontmatter has the machine-readable bits.
+2. **Every dated note in the client folder**, `clients/<client>/<MM-DD-YYYY>.md`. These are Matt's own words after a call or a meeting ("they really want to focus on creators, I want most of the dailies to focus on that"). Newest wins. A note changes the report shape until a later note or CLIENT.md says otherwise.
+3. **The client's Slack channel**, if `slack_channel` is set and the Slack connector is available. Read the channel and every thread since the last run. What the client asked for, what they liked, what they said they acted on, and what they did not act on. A preference stated once in Slack is a standing rule. Never post there. Draft any message for Matt.
+4. `clients/<client>/NOTES.md`, if it exists. The standing rulings collected so far and the record of which notes and Slack requests were applied. If it is missing, create it at the end of the run.
+5. `clients/<client>/IGNORE_RULES.md`. The silent filter. Dropped posts are never shown to the reader.
+6. `clients/<client>/RUNLOG.md`, the top entry, if it exists. What was found last time, the rows that were cut ("Seen but not sent"), and what to follow up. If it is missing, the previous report JSON is the only memory, and the run creates the file.
+7. Yesterday's report: `python3 tools/report.py last <client> daily` and read the JSON. Nothing in it reappears today unless the thread grew.
+8. `clients/<client>/research/` when a product fact is needed for an advice cell. Never claim a client product detail that is not in there or in CLIENT.md. Write "if [client] does X, say so."
 
-Then read the skills this run uses: `.claude/skills/research-pulls/SKILL.md` (how to pull), `.claude/skills/find-leads/SKILL.md` (what counts as a lead, how to score it), `.claude/skills/ad-swipe-file/SKILL.md` (if the client's shape has an ads section), `.claude/skills/brief-format/SKILL.md` (the JSON), `.claude/skills/report-style/SKILL.md` (how to write), `.claude/skills/publish-report/SKILL.md` (how to ship).
+Then read the skills this run uses: `.claude/skills/research-pulls/SKILL.md` (how to pull), `.claude/skills/find-leads/SKILL.md` (what counts as a lead, how to score it), `.claude/skills/ad-swipe-file/SKILL.md` (if the client's shape has an ads or creators section), `.claude/skills/brief-format/SKILL.md` (the JSON), `.claude/skills/report-style/SKILL.md` (how to write), `.claude/skills/publish-report/SKILL.md` (how to ship).
 
-If the request carries extra instructions ("focus on Hermes today", "Tim wants the influencer posts back"), treat them as an Open note: apply them, and record them in NOTES.md with today's date so the next run sees them.
+If the request carries extra instructions ("focus on Hermes today", "Tim wants the influencer posts back"), treat them exactly like a dated note: apply them, and write them into NOTES.md with today's date so the next run sees them. When a note, a Slack request and CLIENT.md disagree, the newest instruction wins, and the run log says which one was followed.
 
 If the client folder does not exist or CLIENT.md is missing, stop and run `.claude/skills/new-client/SKILL.md` first.
 
@@ -62,7 +64,7 @@ Scaffold the file: `python3 tools/report.py new <client> daily --date MM-DD-YYYY
 
 **Three moves.** One green `why` block at the top: "**Today's three moves:** (1) ... (2) ... (3) ...", each with its post linked. The three highest-value things the reader should do if they do nothing else. Pick from: a thread with many people asking what to switch to, the biggest complaint thread in the competitor's own community, the fresh posts with zero replies where the reader can be the only answer, and anything the client has to check today (a date, a number, a console).
 
-**Tables.** Three to five rows each, five cells per row:
+**Tables.** Three to five rows each, unless CLIENT.md says the client wants more (OpenTag's Tony works every row and asked for more, not fewer). Five cells per row:
 
 | Cell | Rule |
 |---|---|
@@ -75,6 +77,8 @@ Scaffold the file: `python3 tools/report.py new <client> daily --date MM-DD-YYYY
 The usual tables, in the client's order: people complaining about the competitor (the reply targets), people shopping around or on the fence, people happy with the competitor (no reply, last column is "Why it matters", only rows the reader can do something with), and for lead-first clients a table of accounts that look like a competitor's customer (Who | Where | The signal | What [client] can do) or open-source projects running the competitor (Project | Stars | The dependency | Last push | What [client] can do).
 
 **The swipe file.** One table, three to five examples in total across brand ads, creator ads and organic posts, built from the whole ad library, with the hook quoted word for word and a one-line brief. Then a `why` starting "**Takeaway:**" naming the shape the winners share and the negative search result with its corpus size. The method is `ad-swipe-file`. Only for clients whose competitor runs ads. Never repeat a swipe row on consecutive days.
+
+**The creators table.** For a client whose stated focus is creator content (OpenTag from Sept 1), this is the first and biggest section: which creator posts about the competitors and the category are working, what style each one is (talking head, screen recording, text-on-screen, a bill reveal, a comment-to-get offer), the numbers that show it worked, the hook word for word, and what to emulate. Ranked by engagement rate, not follower count. The method is the creators section of `ad-swipe-file`.
 
 **What happened this week.** Five bullets, each opening with a bold phrase, sources linked inline. What changed, who launched what, which complaint is growing, where the competitor's team is and is not posting, what the client did with yesterday's list and what came back. Follow-ups from yesterday go here. Intel from the wrong market goes here.
 
@@ -97,7 +101,7 @@ python3 tools/report.py draft <client> <slug> --create # the Resend DRAFT. A hum
 
 Open the page at phone width and read it as the founder would. Open the email HTML once. Then write the run log entry and update NOTES.md, as `publish-report` describes.
 
-Hand back: the live URL, the archive path, the Resend preview link marked draft, the three moves in one line each, and anything a human should re-check before sending. The rows built on "nobody has answered yet" decay overnight, so name them.
+Hand back: the live URL, the archive path, the Resend preview link marked draft, the three moves in one line each, a two-line Slack message for Matt to post in the client's channel (the link and the one thing to look at first), and anything a human should re-check before sending. The rows built on "nobody has answered yet" decay overnight, so name them.
 
 ## 6. Before you finish
 
@@ -109,6 +113,6 @@ Hand back: the live URL, the archive path, the Resend preview link marked draft,
 - The swipe file rows each open one specific creative, quote the hook verbatim, state the evidence it worked, and end on a brief. The negative search ran and its corpus size is stated.
 - No tool is named. No methodology, no footer, no caveat wall. Caveats sit next to their number.
 - Every row is in the client's market and language.
-- NOTES.md Open items were applied and moved. The run log has the cut rows and the follow-ups.
+- Every dated note and every Slack request since the last run was applied, and NOTES.md records which. The run log has the cut rows and the follow-ups.
 - `report.py check` is clean or every warning has a reason.
 - Read on a phone-width window. It reads as a to-do list.

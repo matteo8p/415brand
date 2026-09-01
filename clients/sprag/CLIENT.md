@@ -9,6 +9,7 @@ site: https://sprag.ai
 market: Developers and companies building voice products, worldwide. Spanish replies have been used.
 resend_segment: a8d694bd-9cb6-4e94-acdb-b69732da2615
 reply_to: matt@415brand.com
+slack_channel: C0BTTAX4FT3
 ---
 
 # Sprag
@@ -82,6 +83,7 @@ Post-level filter in `IGNORE_RULES.md`.
 - From `research415 <reports@415brand.com>`. Reply-to `matt@415brand.com`.
 - Subject "Deepgram daily brief, Mon D" or "Deepgram weekly brief, Mon D". Preview text is the counts: "5 open source projects to send a pull request, 5 accounts that look like a competitor's customer, 4 threads nobody has answered."
 - Broadcast draft only. A human sends.
+- **Slack.** Shared channel `#research415-sprag` (`C0BTTAX4FT3`) with Ian and Alex. Matt posted the Aug 31 weekly there and asked for tweaks. No reply from the client yet as of Sept 1. Read the channel and its threads before every run. Draft the Slack message for Matt. Never post there.
 
 ## Conflicts and confidentiality
 

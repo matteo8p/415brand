@@ -21,16 +21,17 @@ Say "run the daily for OpenTag" or "run the weekly for Cloudless" and follow the
 | html, email, Resend draft, run log | `.claude/skills/publish-report/SKILL.md` |
 | a new client or prospect | `.claude/skills/new-client/SKILL.md` |
 
-Extra instructions in the request ("focus on Hermes today", "Tim wants the influencer posts back") override the defaults. Apply them and record them in the client's `NOTES.md`.
+Extra instructions override the defaults, from three places, newest first: the request itself ("focus on Hermes today"), a dated note Matt dropped in the client folder (`clients/<slug>/<MM-DD-YYYY>.md`, free text, one paragraph is enough), and what the client said in their Slack channel since the last run. Apply them, and record what was applied in the client's `NOTES.md`.
 
 ## Where things are
 
 ```
-clients/<slug>/          one folder per client. Read CLIENT.md first, then NOTES.md, IGNORE_RULES.md, RUNLOG.md.
-  CLIENT.md              standing config: readers, report shape, do-not-pitch, exact pulls, email segment, conflicts. Frontmatter is machine-read.
-  NOTES.md               client requests and Matt's rulings that change the next report. Open items apply once, Standing always.
+clients/<slug>/          one folder per client. Read CLIENT.md first, then every dated note, then NOTES.md, IGNORE_RULES.md, RUNLOG.md.
+  CLIENT.md              standing config: readers, report shape, do-not-pitch, exact pulls, email segment, Slack channel, conflicts. Frontmatter is machine-read.
+  <MM-DD-YYYY>.md        a note from Matt, free text, dated. "Met the team today, they want X." The next report applies it. Newest wins.
+  NOTES.md               agent-maintained: the standing rulings, and which dated notes and Slack requests were applied when. Optional, create it if missing.
   IGNORE_RULES.md        the silent filter. Dropped posts are never shown to the reader.
-  RUNLOG.md              per-run history, newest first: found, seen but not sent, follow-ups, tooling.
+  RUNLOG.md              per-run history, newest first: found, seen but not sent, follow-ups, tooling. Create it if missing.
   research/              the client overview, competitor dossiers, prospect research. Internal, tool names allowed.
   reports/               built deliverables: <kind>-<MM-DD-YYYY>.html, .email.html, .email.txt, .broadcast.json
   leads/                 seen.jsonl and dated lead sheets, where the client uses them
@@ -46,12 +47,12 @@ Client slugs: `opentag`, `cloudless`, `sprag`, `aquavoice`, `adapt` (live), `goo
 
 ## Rules that never bend
 
-- **No agent sends an email.** Every send is a Resend broadcast draft that a human sends from the dashboard. `tools/report.py draft` has no send path. Never use the General segment.
+- **No agent sends an email or posts in a client's Slack.** Every send is a Resend broadcast draft that a human sends from the dashboard. `tools/report.py draft` has no send path. Never use the General segment. Slack channels (`slack_channel` in CLIENT.md) are read for the client's requests. Draft the Slack message for Matt, never post it.
 - **Never name a tool in anything a client reads.** Not Apify, an actor, a scraper, Firecrawl, a session, a credit limit. Cite the source: "X", "Similarweb", "Meta Ad Library".
 - **Public sources only.** No logged-in scraping, no cookies, no login walls. Every claim links to where it came from.
 - **One client's research never crosses into another's deliverable.** Conflicts and rulings are in each `CLIENT.md`. Cloudless and Aqua Voice share a competitor with a hard wall. Adapt and OpenTag are direct competitors.
 - **The reader's outcome comes first.** Plain words a founder outside the industry understands. Decided advice, never hedged. Quotes verbatim. Every table three to five rows. Every finding ends on what to do. No methodology, no caveat wall, no small print. No em dashes, no semicolons.
-- **Read `NOTES.md` before writing.** The client's own requests beat every default in the skills.
+- **Read the dated notes, the Slack channel and `NOTES.md` before writing.** The client's own requests beat every default in the skills. A preference stated once in Slack is a standing rule until they say otherwise.
 - **Never claim a client product detail that is not in their folder.** Write "if [client] does X, say so."
 - **Run `python3 tools/report.py check` before calling any report finished**, and read every warning.
 

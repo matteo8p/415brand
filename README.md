@@ -57,4 +57,4 @@ python3 tools/report.py build  opentag daily-09-02-2026     # html + email
 python3 tools/report.py draft  opentag daily-09-02-2026 --create
 ```
 
-To change how the next report for a client is written, add a dated line to `clients/<slug>/NOTES.md` under Open. The next run applies it.
+To change how the next report for a client is written, drop a dated note in the client folder, `clients/<slug>/09-02-2026.md`, in plain words: "Met the team today, they want the dailies to focus on creators." The next run applies it. The agent also reads the client's Slack channel for what they asked for since the last report.

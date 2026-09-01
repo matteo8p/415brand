@@ -4,6 +4,9 @@ Instructions from the client or from Matt that change how the next report is wri
 
 ## Open
 
+- 2026-09-01 (Matt, promised to Tim in Slack): The next report maps Cloudless's sitemap against Wispr Flow's and Willow Voice's and lists the pages Cloudless could spin up: comparison pages against every rival (Wispr's `wispr-flow-vs-willow-voice` page is the model, a text dump built for search engines), "why local-first voice dictation matters" articles, and a Product Hunt launch for referring links. Frame it as SEO and AI-assistant recommendations being one job. Tim: "Okay sounds great!"
+- 2026-09-01 (Matt, promised to Tim): Ask around for UGC creators and creator agencies that pay on performance (tiers like 3,000 to 5,000 views for $30, 5,000 to 10,000 for $80). Bring Tim names. Not a report item, a Matt item, but the creators section should favour small performance-paid creators for the same reason.
+- 2026-09-01: Check whether Tim commented on the r/macapps on-device transcription thread (`reddit.com/r/macapps/comments/1w3ljff`). He agreed it was worth it and thinks he already did.
 - 2026-08-31 (Matt, needs Tim): Confirm table size. The Aug 28 daily ran ten complaints, the shared skill says three to five, and the Aug 31 and Sept 1 dailies ran five. Ten reply targets a day and five a day are different products.
 - 2026-08-31: Ask Tim whether ignore rule 2 should exempt people who are asking for a free local tool rather than already using one.
 - 2026-08-31: Ask Tim whether Cloudless handles mixed-language speech.
@@ -12,6 +15,10 @@ Instructions from the client or from Matt that change how the next report is wri
 
 ## Standing
 
+- 2026-09-01 (Tim, Slack): His two priorities are "SEO, influencer videos", and "if we could get ChatGPT/Codex whatever to recommend us that'd be ideal." Every report is judged on search and creators first.
+- 2026-09-01 (Tim, Slack): Budget. "Main blocker here is that that is really expensive and we're a free app." He is cutting costs. Every recommendation must be cheap: pages he can generate, performance-paid creators, one-minute replies. No agency retainers, no big paid creators.
+- 2026-08-31 (Tim, Slack): "We're definitely losing to FluidVoice, etc." Track switches to FluidVoice and who names it as intel in the bullets, even though ignore rule 2 drops free-competitor posts as reply targets. Reddit ads, SEO/GEO and accuracy-comparison content have all been tried and "nothing in particular is working."
+- 2026-08-31 (Matt): The report link is posted in `#research415-cloudless` as well as emailed. Draft the Slack line for Matt.
 - 2026-08-27 (Tim): "When I was doing this myself, I had a way to leave feedback on posts sourced. A lot of these posts are saying 'I just subscribed to Wispr Flow'. Doesn't make sense to put a free version in front of that guy. Or posts about free competitors on Reddit. So I had a list of rules that I had made for posts to ignore that I built up over time." The list is `IGNORE_RULES.md`. Filtering is silent.
 - 2026-08-27 (Tim): A source on every claim, not just table rows. The week bullets and any assertion about a competitor's behaviour must be clickable. Started with the Willow astroturf claim.
 - 2026-08-27 (Tim): "Can you get their influencer posts?" Wispr's paid ad influencers and anyone talking about Wispr for free, from Meta and TikTok.
@@ -35,3 +42,4 @@ Instructions from the client or from Matt that change how the next report is wri
 - 2026-08-27 (Matt): Add sources to the Willow astroturf claim so Tim can click through. Done in the Aug 28 brief.
 - 2026-08-31: The Aug 31 daily was re-dated to Sept 1 and drafted for sending.
 - 2026-08-31: First weekly built.
+- 2026-09-01: Sept 1 daily sent by email and posted in Slack. Tim's replies are recorded under Standing and in CLIENT.md.
