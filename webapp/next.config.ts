@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const REPORT = "/analysis/sprag/deepgram-08-31-2026";
+const REPORT = "/analysis/sprag/weekly-08-31-2026";
 
 const nextConfig: NextConfig = {
   async redirects() {
@@ -15,6 +15,7 @@ const nextConfig: NextConfig = {
       "/analysis/sprag/deepgram-08-28-2026",
       "/analysis/sprag/deegram-08-28-2026",
       "/analysis/sprag/deegram-08-31-2026",
+      "/analysis/sprag/deepgram-08-31-2026",
     ];
     return old.map((source) => ({ source, destination: REPORT, permanent: false }));
   },

@@ -97,11 +97,19 @@ export type Section = { id: string; title: string; blocks: Block[] };
 
 export type Brief = {
   slug: string;
+  /** Which report this is. Client reports set it; tools/report.py reads it to pick
+   *  the email layout (daily: full, weekly: summary plus link) and the checks. */
+  kind?: "daily" | "weekly" | "leads";
   title: string;
   sub: string;
   /** Display names for the scorecard columns: the competitor and the client. */
   subject: string;
   client: string;
+  /** One or two sentences for the page's <meta name="description">. */
+  description?: string;
+  /** Email metadata read by tools/report.py: the subject line and the preview text
+   *  (for a daily, the counts: "5 complaints to reply to, 4 people shopping, 5 ads to copy"). */
+  email?: { subject: string; preview: string };
   intro: Block[];
   sections: Section[];
   footer: string;

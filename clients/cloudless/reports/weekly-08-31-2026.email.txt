@@ -1,0 +1,66 @@
+WISPR FLOW WEEKLY BRIEF: BRAND & COMPETITIVE ANALYSIS
+For Tim at Cloudless, August 31, 2026
+
+Full report: https://415brand.com/analysis/cloudless/weekly-08-31-2026
+
+RECOMMENDED ACTIONS FOR CLOUDLESS FROM THE ANALYSIS
+
+1. Ask your existing users to leave a review on the App Store.
+   Cloudless has 2 iPhone ratings. Wispr has 14,620 and added about 590 of them last week. Nobody picks the app with 2 ratings when the other one has fourteen thousand. You already have emails and contacts for your existing users and your inbound, plus 2,314 people who claimed a free seat and a Discord full of them. Reach out and ask them to leave a review. Outcome: a few hundred ratings, and the listing stops losing people before they ever open the app.
+
+2. Get the old Onit name off the site and off the download link.
+   Your enterprise page is still titled "Onit Dictate". Your download button points at onit-latest.dmg on a syntheticco.blob.core.windows.net address. Your French, Spanish and Italian pages still sell an Onit translation tool. Your X account is @onit_ai. You are asking people to trust a privacy product by downloading a file named after a company that no longer exists, from a domain that is not yours. Outcome: the download stops looking abandoned, and Google stops splitting your brand across two names.
+
+3. Re-run your accuracy benchmark against the current Wispr build, and put the date on it.
+   Your benchmark page says 11.2% word error against Wispr's 12.4%, and names the build it tested as Wispr Flow v1.5.751. Wispr previewed a new speech model on Aug 17 and says it expects 30 to 35% fewer dictations to need fixing. So the one number you can actually prove is measured against software they are replacing, and someone is going to notice. Outcome: re-run it, print the build number and the test date next to the result, and your best marketing asset stays true instead of quietly going stale.
+
+4. Buy the search terms Wispr is not bidding on.
+   All five of Wispr's top search terms are spellings of its own name, at about $2 a click. Nobody owns offline dictation, on-device dictation, or dictation with no subscription. Wispr is hiring a paid search manager right now, so these get more expensive once that person starts. Outcome: you show up for people describing the product they want, instead of only for people already searching your competitor.
+
+POSTS WORTH REPLYING TO THIS WEEK
+
+* LinkedIn
+  When: Aug 24
+  What they said: "Yikes, this is highly concerning" (https://www.linkedin.com/posts/shahank42_yikes-this-is-highly-concerning-this-activity-7493232262054998016-o8PE), on what Wispr Flow keeps from your voice
+  Status: Shopping
+  What to say: The one audience already asking your question in public, and the only complaint bucket where you are the finished answer. Do not pitch. Quote Wispr's own security page and let him come to you.
+
+* r/ProductivityApps
+  When: Aug 27
+  What they said: Don't use Wispr Flow or Superwhisper for bilingual dictation (https://www.reddit.com/r/ProductivityApps/comments/1w0hed8/dont_use_wispr_flow_or_superwhisper_for_bilingual/), with a measured 27.4% word error rate and English words coming back in Cyrillic
+  Status: Shopping
+  What to say: Ask them to re-run the same clips on Cloudless with a different local model. In a thread about measurements, a measurement beats a claim.
+
+* r/macapps
+  When: Aug 27
+  What they said: HoldSay, a voice card for dictation and meeting notes (https://www.reddit.com/r/macapps/comments/1vzvsre/holdsay_a_voice_card_for_dictation_meeting_notes/), which prices Wispr at "$144/yr, very polished, but cloud-based and subscription"
+  Status: Shopping
+  What to say: HoldSay is $69.99 once, so this is not a free competitor and rule 2 does not apply. Do not argue in someone else's launch thread. Answer the commenters weighing cloud against local, and say what Cloudless costs.
+
+* r/AssistiveTechnology
+  When: Aug 28
+  What they said: Apple Dictation vs AI voice keyboards (https://www.reddit.com/r/AssistiveTechnology/comments/1w0p2vm/apple_dictation_vs_ai_voice_keyboards_what/), from someone still deciding
+  Status: Shopping, verify first
+  What to say: Free and private both count for more in this subreddit than anywhere else. Check the account age before replying: this is one of the subreddits Willow planted posts in on Aug 25.
+
+* r/MacOSBeta
+  When: Aug 24
+  What they said: Siri app and Wispr Flow, weird behavior (https://www.reddit.com/r/MacOSBeta/comments/1vx1efz/siri_app_and_wispr_flow_weird_behavior/). Wispr's window grabs focus whenever Siri opens
+  Status: Venting
+  What to say: Two lines, no more. An app with no window and no server has nothing to grab focus. Worth answering only because it is quick.
+
+1. KEY FINDINGS
+
+* Wispr's free plan is now good enough to be the real threat to Cloudless, and it costs nothing.
+
+* Cloudless is close to invisible in search, and one of the 27 terms it shows up for is a misspelling of its own name.
+
+* Price is 48% of the complaints about Wispr, and it is the one bucket Cloudless has already decided not to chase.
+
+* Wispr's 23 open jobs close the Android and enterprise gaps, and not one of them is for on-device work.
+
+The rest of the report covers pricing and product, search and marketplaces, advertising and social media, hiring, sources. Read it here: https://415brand.com/analysis/cloudless/weekly-08-31-2026
+
+--
+research415. View online: https://415brand.com/analysis/cloudless/weekly-08-31-2026
+Unsubscribe: {{{RESEND_UNSUBSCRIBE_URL}}}

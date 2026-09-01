@@ -1,2 +1,4 @@
-clients/RESEND.md
+.env
+.dev-server.log
+.DS_Store
 __pycache__/

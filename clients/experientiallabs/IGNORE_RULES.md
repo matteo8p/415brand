@@ -10,7 +10,7 @@ Proposed by research415 from the first research run. **None confirmed by the fou
 | 2 | **Model release chatter.** "New model on OpenRouter", benchmark posts, "X is live on OpenRouter" bot accounts. | High volume, no buying intent. Wrong layer: Experiential sells the layer above the model. |
 | 3 | **Hobbyist local-inference threads.** Running a 27B on a Mac Studio, GPU rig builds, "is local feasible yet". | No inference bill to cut. Revisit only if they post a real spend number. |
 | 4 | **Roleplay and companion-app users.** r/JanitorAI, r/claudexplorers and similar, which are a large share of OpenRouter volume. | Consumer credit spend, not a company AI budget. Not the ICP. |
-| 5 | **Competing gateway vendors marketing.** TrueFoundry, Requesty, Respan, Portkey and api7 publish comparison SEO daily. | They are competitors, not leads. Log them in `COMPETITORS.md`. |
+| 5 | **Competing gateway vendors marketing.** TrueFoundry, Requesty, Respan, Portkey and api7 publish comparison SEO daily. | They are competitors, not leads. Log them in `research/competitors.md`. |
 | 6 | **Token resale and credit arbitrage.** Discount API accounts, shared keys, credit brokers. | Not companies with budgets. |
 | 7 | **Pure funding and M&A commentary** with no product angle, unless it concerns a direct competitor. | Noise. The consolidation story belongs in a week bullet, not a lead row. |
 
